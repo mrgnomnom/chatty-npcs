@@ -61,6 +61,8 @@ nobody mistakes Hans for a real person.
 
 ## Settings
 
+![The Chatty NPCs settings panel: How often, What they talk about, Display and Debug](https://raw.githubusercontent.com/mrgnomnom/chatty-npcs/main/docs/settings.png)
+
 **How often**: time between comments, earshot, chattiness, and how long before the same person or
 subject comes up again.
 
