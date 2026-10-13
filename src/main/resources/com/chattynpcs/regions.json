@@ -1,0 +1,1616 @@
+{
+	"regions": [
+		{
+			"id": "morytania",
+			"name": "Morytania",
+			"boxes": [
+				[
+					3400,
+					3150,
+					3840,
+					3600
+				],
+				[
+					3400,
+					9870,
+					3460,
+					9910
+				],
+				[
+					3480,
+					9820,
+					3530,
+					9860
+				],
+				[
+					3480,
+					9605,
+					3515,
+					9645
+				],
+				[
+					3150,
+					4540,
+					3240,
+					4600
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "tirannwn",
+			"name": "Tirannwn and Prifddinas",
+			"boxes": [
+				[
+					2140,
+					3030,
+					2370,
+					3430
+				],
+				[
+					3200,
+					6016,
+					3327,
+					6143
+				]
+			],
+			"estimated": true,
+			"note": "Second box is the Prifddinas instance",
+			"notHeartland": true
+		},
+		{
+			"id": "gnome_stronghold",
+			"name": "Tree Gnome Stronghold",
+			"city": true,
+			"boxes": [
+				[
+					2370,
+					3390,
+					2500,
+					3520
+				],
+				[
+					2395,
+					9805,
+					2425,
+					9830
+				]
+			],
+			"estimated": true,
+			"place": "Ta Quir Priw"
+		},
+		{
+			"id": "kharidian_desert",
+			"name": "Kharidian Desert",
+			"boxes": [
+				[
+					3130,
+					2690,
+					3530,
+					3125
+				]
+			],
+			"estimated": true,
+			"note": "Excludes Al Kharid"
+		},
+		{
+			"id": "fossil_island",
+			"name": "Fossil Island and Lithkren",
+			"boxes": [
+				[
+					3590,
+					3690,
+					3840,
+					3900
+				],
+				[
+					3540,
+					3970,
+					3600,
+					4030
+				]
+			],
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "kourend",
+			"name": "Great Kourend and Kebos",
+			"boxes": [
+				[
+					1200,
+					3420,
+					1900,
+					4000
+				],
+				[
+					1790,
+					9890,
+					1870,
+					9970
+				]
+			],
+			"estimated": true,
+			"place": "Kourend"
+		},
+		{
+			"id": "varlamore",
+			"name": "Varlamore",
+			"boxes": [
+				[
+					1200,
+					2800,
+					1900,
+					3400
+				],
+				[
+					1400,
+					9500,
+					1500,
+					9650
+				],
+				[
+					1280,
+					9380,
+					1340,
+					9440
+				]
+			],
+			"estimated": true,
+			"note": "Includes Cam Torum, Neypotzli and the Crypt of Tonali underground"
+		},
+		{
+			"id": "fremennik",
+			"name": "Fremennik Province and isles",
+			"boxes": [
+				[
+					2600,
+					3600,
+					2820,
+					3720
+				],
+				[
+					2490,
+					3830,
+					2640,
+					3920
+				],
+				[
+					2300,
+					3770,
+					2440,
+					3850
+				],
+				[
+					2050,
+					3850,
+					2180,
+					3960
+				],
+				[
+					2700,
+					3721,
+					2760,
+					3745
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "taverley_burthorpe",
+			"name": "Taverley and Burthorpe",
+			"boxes": [
+				[
+					2870,
+					3400,
+					2940,
+					3490
+				],
+				[
+					2830,
+					3490,
+					2930,
+					3580
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "ardougne",
+			"name": "Ardougne",
+			"boxes": [
+				[
+					2460,
+					3260,
+					2690,
+					3340
+				],
+				[
+					2561,
+					3190,
+					2634,
+					3259
+				]
+			],
+			"estimated": true,
+			"note": "East and West"
+		},
+		{
+			"id": "lumbridge",
+			"name": "Lumbridge",
+			"city": true,
+			"boxes": [
+				[
+					3190,
+					3195,
+					3250,
+					3260
+				],
+				[
+					3150,
+					3261,
+					3200,
+					3300
+				]
+			],
+			"estimated": true,
+			"place": "Lumbridge"
+		},
+		{
+			"id": "varrock",
+			"name": "Varrock",
+			"city": true,
+			"boxes": [
+				[
+					3140,
+					3380,
+					3290,
+					3510
+				],
+				[
+					3178,
+					3345,
+					3205,
+					3379
+				]
+			],
+			"estimated": true,
+			"place": "Varrock"
+		},
+		{
+			"id": "falador",
+			"name": "Falador",
+			"city": true,
+			"boxes": [
+				[
+					2935,
+					3309,
+					3066,
+					3395
+				]
+			],
+			"place": "Falador"
+		},
+		{
+			"id": "draynor",
+			"name": "Draynor Village",
+			"city": true,
+			"boxes": [
+				[
+					3075,
+					3225,
+					3130,
+					3290
+				]
+			],
+			"estimated": true,
+			"place": "Draynor"
+		},
+		{
+			"id": "al_kharid",
+			"name": "Al Kharid",
+			"city": true,
+			"boxes": [
+				[
+					3265,
+					3135,
+					3330,
+					3235
+				]
+			],
+			"estimated": true,
+			"place": "Al Kharid"
+		},
+		{
+			"id": "edgeville",
+			"name": "Edgeville",
+			"city": true,
+			"boxes": [
+				[
+					3070,
+					3465,
+					3120,
+					3520
+				]
+			],
+			"estimated": true,
+			"place": "Edgeville"
+		},
+		{
+			"id": "port_sarim",
+			"name": "Port Sarim",
+			"city": true,
+			"boxes": [
+				[
+					2995,
+					3195,
+					3060,
+					3265
+				],
+				[
+					3020,
+					3266,
+					3045,
+					3280
+				]
+			],
+			"estimated": true,
+			"place": "Port Sarim"
+		},
+		{
+			"id": "rimmington",
+			"name": "Rimmington",
+			"city": true,
+			"boxes": [
+				[
+					2906,
+					3188,
+					2991,
+					3263
+				]
+			]
+		},
+		{
+			"id": "taverley",
+			"name": "Taverley",
+			"city": true,
+			"boxes": [
+				[
+					2870,
+					3400,
+					2940,
+					3490
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "burthorpe",
+			"name": "Burthorpe",
+			"city": true,
+			"boxes": [
+				[
+					2830,
+					3520,
+					2930,
+					3580
+				]
+			],
+			"estimated": true,
+			"place": "Burthorpe"
+		},
+		{
+			"id": "east_ardougne",
+			"name": "East Ardougne",
+			"city": true,
+			"boxes": [
+				[
+					2600,
+					3260,
+					2690,
+					3340
+				]
+			],
+			"estimated": true,
+			"place": "Ardougne"
+		},
+		{
+			"id": "west_ardougne",
+			"name": "West Ardougne",
+			"city": true,
+			"boxes": [
+				[
+					2460,
+					3270,
+					2560,
+					3340
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "seers_village",
+			"name": "Seers' Village and Camelot",
+			"city": true,
+			"boxes": [
+				[
+					2690,
+					3460,
+					2775,
+					3510
+				]
+			],
+			"estimated": true,
+			"place": "Seers'"
+		},
+		{
+			"id": "catherby",
+			"name": "Catherby",
+			"city": true,
+			"boxes": [
+				[
+					2790,
+					3420,
+					2860,
+					3470
+				],
+				[
+					2830,
+					3471,
+					2869,
+					3489
+				]
+			],
+			"estimated": true,
+			"place": "Catherby"
+		},
+		{
+			"id": "yanille",
+			"name": "Yanille",
+			"city": true,
+			"boxes": [
+				[
+					2540,
+					3075,
+					2620,
+					3110
+				],
+				[
+					2535,
+					3111,
+					2560,
+					3125
+				]
+			],
+			"estimated": true,
+			"place": "Yanille"
+		},
+		{
+			"id": "rellekka",
+			"name": "Rellekka",
+			"city": true,
+			"boxes": [
+				[
+					2600,
+					3640,
+					2720,
+					3720
+				]
+			],
+			"estimated": true,
+			"place": "Rellekka"
+		},
+		{
+			"id": "canifis",
+			"name": "Canifis",
+			"city": true,
+			"boxes": [
+				[
+					3470,
+					3465,
+					3520,
+					3515
+				]
+			],
+			"estimated": true,
+			"place": "Canifis"
+		},
+		{
+			"id": "port_phasmatys",
+			"name": "Port Phasmatys",
+			"city": true,
+			"boxes": [
+				[
+					3650,
+					3460,
+					3710,
+					3510
+				]
+			],
+			"estimated": true,
+			"place": "Port Phasmatys"
+		},
+		{
+			"id": "darkmeyer",
+			"name": "Darkmeyer",
+			"city": true,
+			"boxes": [
+				[
+					3560,
+					3330,
+					3640,
+					3400
+				]
+			],
+			"estimated": true,
+			"place": "Darkmeyer"
+		},
+		{
+			"id": "meiyerditch",
+			"name": "Meiyerditch",
+			"city": true,
+			"boxes": [
+				[
+					3580,
+					3160,
+					3660,
+					3330
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "prifddinas",
+			"name": "Prifddinas",
+			"city": true,
+			"boxes": [
+				[
+					3200,
+					6016,
+					3327,
+					6143
+				]
+			],
+			"estimated": true,
+			"place": "Prifddinas"
+		},
+		{
+			"id": "lletya",
+			"name": "Lletya",
+			"city": true,
+			"boxes": [
+				[
+					2320,
+					3150,
+					2360,
+					3195
+				]
+			],
+			"estimated": true,
+			"place": "Lletya"
+		},
+		{
+			"id": "pollnivneach",
+			"name": "Pollnivneach",
+			"city": true,
+			"boxes": [
+				[
+					3335,
+					2945,
+					3385,
+					3005
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "nardah",
+			"name": "Nardah",
+			"city": true,
+			"boxes": [
+				[
+					3400,
+					2880,
+					3450,
+					2935
+				]
+			],
+			"estimated": true,
+			"place": "Nardah"
+		},
+		{
+			"id": "sophanem",
+			"name": "Sophanem",
+			"city": true,
+			"boxes": [
+				[
+					3270,
+					2755,
+					3325,
+					2810
+				]
+			],
+			"estimated": true,
+			"place": "Sophanem"
+		},
+		{
+			"id": "brimhaven",
+			"name": "Brimhaven",
+			"city": true,
+			"boxes": [
+				[
+					2740,
+					3140,
+					2820,
+					3230
+				]
+			],
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "civitas",
+			"name": "Civitas illa Fortis",
+			"city": true,
+			"boxes": [
+				[
+					1640,
+					3080,
+					1840,
+					3180
+				]
+			],
+			"estimated": true,
+			"place": "Civitas illa Fortis"
+		},
+		{
+			"id": "shilo_village",
+			"name": "Shilo Village",
+			"city": true,
+			"boxes": [
+				[
+					2820,
+					2940,
+					2880,
+					3010
+				],
+				[
+					2881,
+					2946,
+					2890,
+					3010
+				]
+			],
+			"estimated": true,
+			"note": "Unverified: the Wiki's centre disagreed, check in-game",
+			"place": "Shilo",
+			"notHeartland": true
+		},
+		{
+			"id": "grand_exchange",
+			"name": "Grand Exchange",
+			"hearsEverything": true,
+			"boxes": [
+				[
+					3142,
+					3468,
+					3186,
+					3512
+				]
+			],
+			"estimated": true,
+			"note": "Everyone passes through, so every bit of news does too",
+			"place": "the Grand Exchange"
+		},
+		{
+			"id": "burgh_de_rott",
+			"name": "Burgh de Rott",
+			"onlyHears": [
+				"morytania"
+			],
+			"boxes": [
+				[
+					3475,
+					3195,
+					3530,
+					3245
+				],
+				[
+					3480,
+					9605,
+					3515,
+					9645
+				]
+			],
+			"estimated": true,
+			"note": "Cut off and barely literate: only Morytania's own news gets here",
+			"place": "Burgh de Rott"
+		},
+		{
+			"id": "iorwerth_camp",
+			"name": "Iorwerth Camp",
+			"boxes": [
+				[
+					2170,
+					3225,
+					2230,
+					3285
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "ectofuntus",
+			"name": "Ectofuntus",
+			"boxes": [
+				[
+					3645,
+					3505,
+					3685,
+					3535
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "rellekka_province",
+			"name": "Rellekka, the Fremennik mainland, Mountain Camp and Waterbirth Island",
+			"boxes": [
+				[
+					2600,
+					3600,
+					2820,
+					3720
+				],
+				[
+					2495,
+					3720,
+					2560,
+					3775
+				],
+				[
+					1790,
+					4350,
+					1920,
+					4480
+				],
+				[
+					2700,
+					3721,
+					2760,
+					3745
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "fremennik_isles",
+			"name": "Neitiznot and Jatizso",
+			"boxes": [
+				[
+					2300,
+					3770,
+					2440,
+					3850
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "lunar_isle",
+			"name": "Lunar Isle",
+			"boxes": [
+				[
+					2050,
+					3850,
+					2180,
+					3960
+				]
+			],
+			"estimated": true,
+			"place": "Lunar Isle",
+			"notHeartland": true
+		},
+		{
+			"id": "keldagrim",
+			"name": "Keldagrim (city, palace, Blast Furnace, south-west mine and the boat approach)",
+			"boxes": [
+				[
+					2816,
+					10112,
+					2944,
+					10240
+				],
+				[
+					2690,
+					10100,
+					2816,
+					10200
+				]
+			],
+			"estimated": true,
+			"place": "Keldagrim"
+		},
+		{
+			"id": "tree_gnome_village",
+			"name": "Tree Gnome Village, the gnome maze and the Khazard battlefield",
+			"boxes": [
+				[
+					2490,
+					3150,
+					2560,
+					3205
+				],
+				[
+					2480,
+					3215,
+					2535,
+					3264
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "north_desert",
+			"name": "Northern desert: Shantay Pass, Bedabin Camp, Desert Mining Camp",
+			"boxes": [
+				[
+					3140,
+					3000,
+					3330,
+					3135
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "tai_bwo_wannai",
+			"name": "Tai Bwo Wannai",
+			"boxes": [
+				[
+					2760,
+					3030,
+					2830,
+					3100
+				]
+			],
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "kharazi_jungle",
+			"name": "Kharazi Jungle",
+			"boxes": [
+				[
+					2750,
+					2880,
+					2950,
+					2945
+				]
+			],
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "varlamore_surface",
+			"name": "Varlamore (surface only, excludes Cam Torum and Neypotzli)",
+			"boxes": [
+				[
+					1200,
+					2800,
+					1900,
+					3400
+				]
+			],
+			"estimated": true,
+			"place": "Varlamore"
+		},
+		{
+			"id": "jatizso",
+			"name": "Jatizso (town, mine entrance and the troll isle north of it)",
+			"boxes": [
+				[
+					2368,
+					3770,
+					2440,
+					3850
+				]
+			],
+			"estimated": true,
+			"place": "Jatizso"
+		},
+		{
+			"id": "neitiznot",
+			"name": "Neitiznot (town, yak pen and the troll isle north of it)",
+			"boxes": [
+				[
+					2300,
+					3770,
+					2367,
+					3850
+				]
+			],
+			"estimated": true,
+			"place": "Neitiznot"
+		},
+		{
+			"id": "gu_tanoth",
+			"name": "Gu'Tanoth",
+			"city": true,
+			"boxes": [
+				[
+					2495,
+					3005,
+					2565,
+					3065
+				]
+			],
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "arceuus",
+			"name": "Arceuus",
+			"city": true,
+			"boxes": [
+				[
+					1575,
+					3715,
+					1765,
+					3900
+				],
+				[
+					1765,
+					3820,
+					1845,
+					3900
+				]
+			],
+			"estimated": true,
+			"place": "Arceuus"
+		},
+		{
+			"id": "port_piscarilius",
+			"name": "Port Piscarilius",
+			"city": true,
+			"boxes": [
+				[
+					1765,
+					3680,
+					1870,
+					3819
+				]
+			],
+			"estimated": true,
+			"place": "Port Piscarilius"
+		},
+		{
+			"id": "hosidius",
+			"name": "Hosidius",
+			"city": true,
+			"boxes": [
+				[
+					1600,
+					3460,
+					1870,
+					3650
+				],
+				[
+					1700,
+					3650,
+					1765,
+					3680
+				],
+				[
+					1790,
+					9890,
+					1870,
+					9970
+				]
+			],
+			"estimated": true,
+			"place": "Hosidius"
+		},
+		{
+			"id": "shayzien",
+			"name": "Shayzien",
+			"city": true,
+			"boxes": [
+				[
+					1440,
+					3520,
+					1600,
+					3660
+				],
+				[
+					1440,
+					3660,
+					1560,
+					3724
+				]
+			],
+			"estimated": true,
+			"place": "Shayzien"
+		},
+		{
+			"id": "lovakengj",
+			"name": "Lovakengj",
+			"city": true,
+			"boxes": [
+				[
+					1410,
+					3725,
+					1570,
+					3900
+				]
+			],
+			"estimated": true,
+			"place": "Lovakengj"
+		},
+		{
+			"id": "the_pandemonium",
+			"name": "The Pandemonium",
+			"boxes": [
+				[
+					3020,
+					2950,
+					3075,
+					3010
+				],
+				[
+					3020,
+					9355,
+					3075,
+					9415
+				]
+			],
+			"estimated": true,
+			"note": "Island off east Karamja (wiki map 3040,2980; Steve Beanie 3050,2966; Henderson 3046,2983; Junior Jim 3058,2981; cave entrance 3046,2996). Second box is the Pandemonium Cave underground (Chartin' Charles McAtless 3046,9387).",
+			"place": "the Pandemonium",
+			"notHeartland": true
+		},
+		{
+			"id": "great_conch",
+			"name": "The Great Conch",
+			"boxes": [
+				[
+					3110,
+					2365,
+					3280,
+					2510
+				],
+				[
+					3340,
+					2190,
+					3375,
+					2225
+				],
+				[
+					3150,
+					8820,
+					3330,
+					8930
+				]
+			],
+			"estimated": true,
+			"note": "Island south of Menaphos (wiki map 3200,2435; Summer Shore 3155,2415; Guppa 3124,2404; Leff 3175,2388; Elder Nama 3174,2480; Elder Reggle 3251,2468). Second box is the Little Pearl egg island (Elder Hubber 3357,2200, Elder Root 3362,2212). Third box is underground: gryphon caves (Elder Kelmo 3240,8884) and the underwater Coral Nurseries (Chet 3297,8863, plane 1). No overlap with kharidian_desert (starts y=2690).",
+			"place": "the Conch",
+			"notHeartland": true
+		},
+		{
+			"id": "deepfin_point",
+			"name": "Deepfin Point",
+			"boxes": [
+				[
+					1920,
+					2745,
+					1975,
+					2815
+				]
+			],
+			"estimated": true,
+			"note": "Island west of the Isle of Souls (wiki map 1948,2782; Brikka's inn 1938-1942,2757-2764; Korgan 1946,2762; Shipwright Sornik 1937,2758; mine entrance 1940,2805). Deepfin Mine is underground but the wiki gives no map coordinates for it (Durrik/Dwarf pages have none), so no box; its dwarves are caught by name anyway. Outside the varlamore box (x>1900).",
+			"place": "Deepfin",
+			"notHeartland": true
+		},
+		{
+			"id": "port_roberts",
+			"name": "Port Roberts",
+			"boxes": [
+				[
+					1860,
+					3270,
+					1920,
+					3330
+				]
+			],
+			"estimated": true,
+			"note": "Floating platform NE of Civitas (wiki map 1888,3298; Marm 1902,3298). Lies INSIDE the existing varlamore/varlamore_surface box [1200,2800,1900,3400], so today its NPCs get Varlamore speech (Nilsal etc.) though none uses it; the wiki says it is under Great Kourend's jurisdiction. Speech entry must be listed before 'varlamore'.",
+			"place": "Port Roberts",
+			"notHeartland": true
+		},
+		{
+			"id": "legends_guild",
+			"name": "Legends' Guild and grounds",
+			"boxes": [
+				[
+					2700,
+					3325,
+					2760,
+					3395
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "wilderness",
+			"name": "The Wilderness (surface) and the Mage Arena bank",
+			"boxes": [
+				[
+					2944,
+					3523,
+					3392,
+					3967
+				],
+				[
+					2510,
+					4690,
+					2560,
+					4740
+				]
+			],
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "troll_country",
+			"name": "Troll country: Death Plateau, Trollheim, the Troll Stronghold and Weiss",
+			"boxes": [
+				[
+					2810,
+					3581,
+					2950,
+					3770
+				],
+				[
+					2800,
+					10030,
+					2920,
+					10110
+				],
+				[
+					2830,
+					3895,
+					2910,
+					3970
+				],
+				[
+					2830,
+					10320,
+					2880,
+					10360
+				]
+			],
+			"estimated": true,
+			"note": "Surface box covers Death Plateau (wiki 2868,3586), Trollheim (2891,3678), Troll Stronghold (2836,3680); starts at y=3581 to avoid Burthorpe. Second box is the Stronghold interior (Ug 2827,10065; quest startmap for Burntmeat 2845,10056; Burntmeat NPC page says 2909,10088 on mapID 22, hence the wide x range). Third box is Weiss (wiki 2870,3940); fourth is the Weiss cave (2854,10338).",
+			"notHeartland": true
+		},
+		{
+			"id": "piscatoris",
+			"name": "Piscatoris Fishing Colony",
+			"boxes": [
+				[
+					2300,
+					3650,
+					2375,
+					3712
+				]
+			],
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "the_outpost",
+			"name": "The Outpost",
+			"boxes": [
+				[
+					2425,
+					3335,
+					2450,
+					3360
+				]
+			],
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "observatory",
+			"name": "The Observatory",
+			"boxes": [
+				[
+					2420,
+					3140,
+					2465,
+					3195
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "jiggig",
+			"name": "Jiggig",
+			"boxes": [
+				[
+					2440,
+					3025,
+					2490,
+					3065
+				]
+			],
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "feldip_hills",
+			"name": "Feldip Hills",
+			"boxes": [
+				[
+					2500,
+					2880,
+					2680,
+					3004
+				]
+			],
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "baxtorian_falls",
+			"name": "Baxtorian Falls",
+			"boxes": [
+				[
+					2501,
+					3460,
+					2540,
+					3500
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "coal_trucks",
+			"name": "Coal Trucks",
+			"boxes": [
+				[
+					2541,
+					3455,
+					2620,
+					3505
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "barbarian_outpost",
+			"name": "Barbarian Outpost",
+			"boxes": [
+				[
+					2515,
+					3540,
+					2565,
+					3580
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "lighthouse",
+			"name": "Lighthouse",
+			"boxes": [
+				[
+					2495,
+					3615,
+					2530,
+					3650
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "tower_of_life",
+			"name": "Tower of Life",
+			"boxes": [
+				[
+					2635,
+					3205,
+					2665,
+					3235
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "sorcerers_tower",
+			"name": "Sorcerer's Tower",
+			"boxes": [
+				[
+					2696,
+					3399,
+					2709,
+					3412
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "witchaven",
+			"name": "Witchaven",
+			"boxes": [
+				[
+					2695,
+					3268,
+					2740,
+					3310
+				]
+			],
+			"place": "Witchaven",
+			"estimated": true
+		},
+		{
+			"id": "camelot",
+			"name": "Camelot",
+			"boxes": [
+				[
+					2744,
+					3483,
+					2780,
+					3522
+				]
+			],
+			"place": "Camelot",
+			"estimated": true
+		},
+		{
+			"id": "sinclair_mansion",
+			"name": "Sinclair Mansion",
+			"boxes": [
+				[
+					2725,
+					3545,
+					2765,
+					3585
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "entrana",
+			"name": "Entrana",
+			"boxes": [
+				[
+					2800,
+					3320,
+					2870,
+					3395
+				]
+			],
+			"place": "Entrana",
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "ice_mountain",
+			"name": "Ice Mountain",
+			"boxes": [
+				[
+					2941,
+					3396,
+					3069,
+					3489
+				],
+				[
+					2976,
+					3490,
+					3069,
+					3522
+				],
+				[
+					2980,
+					9790,
+					3065,
+					9860
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "goblin_village",
+			"name": "Goblin Village",
+			"boxes": [
+				[
+					2941,
+					3490,
+					2975,
+					3522
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "draynor_manor",
+			"name": "Draynor Manor",
+			"boxes": [
+				[
+					3083,
+					3329,
+					3130,
+					3388
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "wizards_tower",
+			"name": "Wizards' Tower",
+			"boxes": [
+				[
+					3095,
+					3145,
+					3125,
+					3175
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "lumbridge_swamp",
+			"name": "Lumbridge Swamp",
+			"boxes": [
+				[
+					3135,
+					3136,
+					3260,
+					3194
+				],
+				[
+					3133,
+					3195,
+					3189,
+					3215
+				],
+				[
+					3140,
+					9490,
+					3270,
+					9600
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "digsite",
+			"name": "Digsite",
+			"boxes": [
+				[
+					3340,
+					3325,
+					3395,
+					3445
+				]
+			],
+			"place": "the Digsite",
+			"estimated": true
+		},
+		{
+			"id": "giants_foundry",
+			"name": "Giants' Foundry",
+			"boxes": [
+				[
+					3350,
+					3140,
+					3375,
+					3160
+				],
+				[
+					3340,
+					11470,
+					3400,
+					11510
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "dorgesh_kaan",
+			"name": "Dorgesh-Kaan",
+			"boxes": [
+				[
+					2688,
+					5248,
+					2752,
+					5376
+				],
+				[
+					3290,
+					9590,
+					3340,
+					9650
+				]
+			],
+			"place": "Dorgesh-Kaan",
+			"estimated": true
+		},
+		{
+			"id": "myreque_hideout",
+			"name": "Myreque Hideout",
+			"boxes": [
+				[
+					3480,
+					9820,
+					3530,
+					9860
+				]
+			],
+			"estimated": true
+		},
+		{
+			"id": "mos_le_harmless",
+			"name": "Mos Le'Harmless",
+			"boxes": [
+				[
+					3640,
+					2920,
+					3860,
+					3080
+				]
+			],
+			"place": "Mos Le'Harmless",
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "remote_island",
+			"name": "Remote Island",
+			"boxes": [
+				[
+					2945,
+					2595,
+					2975,
+					2625
+				]
+			],
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "wyrmscraig",
+			"name": "Wyrmscraig",
+			"boxes": [
+				[
+					2525,
+					2185,
+					2625,
+					2295
+				]
+			],
+			"place": "Auchrie",
+			"estimated": true,
+			"notHeartland": true
+		},
+		{
+			"id": "ape_atoll",
+			"name": "Ape Atoll (Marim)",
+			"boxes": [
+				[
+					2690,
+					2690,
+					2815,
+					2815
+				]
+			],
+			"estimated": true,
+			"note": "Wiki pins: Bobawu 2757,2747; Dugopul 2801,2745; Jumaane 2781,2784; Padulah 2757,2788; Hafuba 2798,2799 and Denadu/Lofu at the temple",
+			"notHeartland": true
+		}
+	]
+}
