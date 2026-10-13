@@ -3,8 +3,8 @@
 The locals have noticed you. They have opinions. They will share them, whether or not you asked.
 
 Walk past anyone you could stop for a chat and they'll pass comment on your gear, your pet, your
-haircut, your deeds and the quests you've conspicuously failed to finish. Mostly terribly British
-about it. Occasionally a TzHaar.
+haircut, your deeds and the quests you've conspicuously failed to finish. Most annoyingly British about it.
+
 
 ![A TzHaar remarks that warm JalYt are good, and cold JalYt are dead](https://raw.githubusercontent.com/mrgnomnom/chatty-npcs/main/docs/tzhaar-warm.png)
 
