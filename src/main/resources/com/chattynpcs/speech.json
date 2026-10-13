@@ -563,9 +563,11 @@
 				"^Dominic Onion$"
 			],
 			"address": {
-				"word": "dear",
+				"word": "stranger",
 				"swap": 0.3,
-				"append": 0.12
+				"append": 0.12,
+				"untilQuest": "LUNAR_DIPLOMACY",
+				"thenWord": "dear"
 			},
 			"exclaim": {
 				"words": [
@@ -617,6 +619,7 @@
 				}
 			},
 			"sayingsPriority": 45,
+			"sayingsAfter": "LUNAR_DIPLOMACY",
 			"evidence": [
 				"LANGUAGES.md / Wiki Lunar alphabet: writing only, no spoken Lunar words; the Moon Clan speak the common tongue. No vocabulary used.",
 				"Melana Moonlander (Transcript:Melana Moonlander): 'Yes, but you were thinking of asking me how I was floating.' / 'Don't you realise we can read your mind.' / 'everyone has a resonance that is responded to by the moon' / 'especially easy to read with outsiders like yourself, as you are far louder and unguarded.' / 'That's disgusting!'",
@@ -633,7 +636,23 @@
 				"Meteora (Transcript:Meteora): 'we don't av no leader ... We auw av eqwuw right's un stuff' / 'go live it up wiv da Onerimancer.' (her accent is her own quirk and is not used)",
 				"Bouquet Mac Hyacinth (Transcript:Bouquet Mac Hyacinth): 'Watering the pretty flowers, you want to help?' / 'you should take time to enjoy the simple things.'",
 				"Dominic Onion (Transcript:Dominic Onion): 'I'd never left Lunar Isle at the time' / 'my father ... said I should become a banker like him' / 'I studied hard to find out more about magic, especially oneiromancy'",
-				"AVOIDED: the seal of passage (not needed after the elite Fremennik Diary), the state of the Fremennik feud (calmed at the end of the quest), Cyrisus (dies in While Guthix Sleeps), V and the Stone of Jas, the Fremennik Exiles."
+				"AVOIDED: the seal of passage (not needed after the elite Fremennik Diary), the state of the Fremennik feud (calmed at the end of the quest), Cyrisus (dies in While Guthix Sleeps), V and the Stone of Jas, the Fremennik Exiles.",
+				"Selene and Bouquet Mac Hyacinth (Transcript:Selene, Transcript:Bouquet Mac Hyacinth), without a seal of passage: 'What are you doing here, Fremennik?!' / 'No you do not! Begone!' then 'The player is teleported to Rellekka.'",
+				"Seal of Passage page: required 'to talk to or trade with anyone on Lunar Isle' except 'Birds-Eye' Jack; without it 'players attempting to speak with anyone will be forcibly teleported from Lunar Isle back to Rellekka'. Lokar Searunner: 'It's an ancient tradition not to attack anyone bearing a Seal of Passage, because they're probably on a diplomatic mission.'",
+				"Baba Yaga (Transcript:Baba Yaga), before the quest is finished: 'Ah, a stranger to our island. How can I help?'; after: 'Ah! [player name], I'm glad to see you've returned.' Also 'I was being polite, silly foreigner.' and 'Some diplomat.'",
+				"Pauline Polaris (Transcript:Pauline Polaris): 'Ah, a stranger to our island. What brings you here?' / 'The Fremenniks? Pah! They are just too ignorant and stubborn to listen to anything we have to say - how can we possibly associate with a race that won't listen?' / 'when the day comes that a Fremennik can prove they have the patience and interest in learning our ways, then we will perhaps share our secrets.' / 'Good luck. It's far from simple.'",
+				"Pauline Polaris (Transcript:Lunar Diplomacy): 'why would I want to give it to some random person off the streets?' / 'I am always glad to help a person in need, if they can demonstrate some insight.' / 'Get out of my sight!' / 'Nope. Not even close.'",
+				"Oneiromancer (Transcript:Lunar Diplomacy, first meeting): 'we have yet to meet one Fremennik with the perspective that this is of any value. They are always picking at us to reveal our secrets, but why should we when they view us so.' / 'Hmmm. Well you are one of them.' / 'I don't mind you trying, but I really doubt you'll achieve anything.'",
+				"Astral altar before acceptance (Transcript:Lunar Diplomacy): 'You don't have permission yet to use this altar.' / 'You have to earn the right to use the altar.'",
+				"Melana Moonlander (Transcript:Melana Moonlander): 'Don't you realise we can read your mind.' / 'it's especially easy to read with outsiders like yourself, as you are far louder and unguarded.' / 'That's disgusting!'",
+				"Rimae Sirsalis (Transcript:Rimae Sirsalis): 'It may be a bit beyond you, but although magic comes from within...'. Selene (Transcript:Selene): 'We value knowledge of self because it is this that gives us our strength!' / 'We also like to see someone listen. You know how they say a wise man listens?'",
+				"Baba Yaga (Transcript:Baba Yaga, Transcript:Lunar Diplomacy): 'The Fremennik had grown strong in body, while our clan had grown strong in mind. They overpowered our tribe and we retreated to Lunar Isle' / 'The Fremennik then swept over Gielinor destroying the altars we had made' / 'Most Fremennik felt we were stealing power from the gods.' / 'some people have gone mad from visiting their dreams.' / 'off with you! Go explore.'",
+				"Moonclan manual (Transcript:Moonclan manual): 'Our Fremennik forefathers believe 'magic' to be a possession of the gods' / 'We of course take the more enlightened view that we should use all tools at our disposal for our own betterment.'",
+				"Outsiders' view (Transcript:Lunar Diplomacy): Tommy 2-times: 'Watch your step though. The Moon Clan don't suffer outsiders easily.'; Captain Bentley: 'they are very wary of strangers, and dislike people just showing up on their island' / 'they are a very dangerous people' / 'the Moon Clan are very powerful, it wouldn't be wise to wrong them.'",
+				"Moon Clan page: 'The Moon Clan has been in a bitter war for centuries with the Fremenniks in Rellekka' and the player 'helps end the conflict'; Lunar Isle page: the adventurer 'initiates the process of reconciliation between the two clans'. Oneiromancer after the quest: 'now that you've initiated the calm between the Moon Clan and the Fremenniks'.",
+				"Bouquet Mac Hyacinth (Transcript:Bouquet Mac Hyacinth): 'Pft, you should take time to enjoy the simple things.' / 'So it seems.'",
+				"Dominic Onion (Transcript:Dominic Onion, Dominic Onion page): a Moon Clan mage from Lunar Isle running the Nightmare Zone north of Yanille; 'I'd never left Lunar Isle at the time'. He is polite and businesslike in his own dialogue; no cold lines of his own are attested, so the wary lines avoid 'our island' and 'here' so they still read in Yanille.",
+				"AVOIDED: 'spy' (never said by a Moon Clan member; the player says 'You're a spy for the Moon Clan' to the Cabin boy), any dream-world or ceremony detail, the seal itself in lines (it is not needed after the elite Fremennik Diary), Cyrisus, V and the Stone of Jas, Meteora's accent."
 			]
 		},
 		{
@@ -1036,6 +1055,107 @@
 				"Gossip subjects are all pre-quest-safe: Lalli guards golden apples in his cave near Rellekka before and after The Fremennik Trials ('me not sell you any golden apples!'); Ug loves Aga before and after Troll Romance; Arrg boasts in both states; Dad's name; Eadgar released as too skinny (Transcript:Eadgar's Ruse); Burntmeat cooks goats before Eadgar's Ruse and promises to cook only goats after My Arm's Big Adventure; Death Plateau cooks Dung and Ash ('Da cooks on da plateau not as good as Burntmeat.'); thrower trolls on Trollheim.",
 				"EXCLUDED on purpose: Snowflake and Odd Mushroom speak proper English ('I would prefer you not to kill Father.' / 'That sounds jolly exciting!') and Mother says 'he is big clever-clogs, and it makes him talk funny'; Mother and Odd Mushroom die in Making Friends with My Arm; Don't Know What only says '...'; Troll child, Troll father and Troll mother (Desert Treasure I) speak plain English ('Thanks for rescuing my mum and dad!') and 'Troll child' would be claimed by the kid persona anyway; the Desert Treasure I 'Ice troll' speaks plain English and shares its name with Fremennik Isles monsters; Ash, Dung and Mushroom have no Talk-to option; Troll general, Troll spectator, Twig, Berry, Mountain troll, Thrower troll and all ice troll monsters are attackable with no talk; drink trolls and sea trolls only have overhead combat text. 'Akka akka!' (My Arm), 'Bwahahaha!' (Burntmeat), 'Hur hur hur!' (one ice troll, and the ogres' word) are single-character quirks, so not used.",
 				"AVOIDED: Weiss and Keldagrim exile (Making Friends with My Arm spoilers, and Stronghold trolls don't know Weiss before Wolfbone arrives), Snowflake as ruler, Mother's wolf flesh and blood talk (too grisly), goutweed farming on the Stronghold roof (after My Arm's Big Adventure), the goblin 'Big High War God' (no attested troll religion), 'pet rock' (Lalli's line, and 'pet' is a banned word), Kob's war council seat in Monkey Madness II (used only as gossip in that quest's done topic), Godric in the prison."
+			]
+		},
+		{
+			"id": "barbarian",
+			"npcNames": [
+				"^Hunding$",
+				"^Litara$",
+				"^Atlas$",
+				"^Peksa$",
+				"^Sigurd$",
+				"^Barbarian guard$"
+			],
+			"outsiders": [
+				"^Tassie Slipcast$"
+			],
+			"regions": [
+				"barbarian_village"
+			],
+			"address": {
+				"word": "outlander",
+				"swap": 0.6,
+				"append": 0.25,
+				"asNoun": true
+			},
+			"exclaim": {
+				"words": [
+					"Hah",
+					"Ho ho",
+					"Bah"
+				],
+				"chance": 0.5
+			},
+			"formal": 0.3,
+			"swaps": [
+				{
+					"pattern": "\\b(Begone|Be off|Clear off)\\b",
+					"replace": "Go away",
+					"chance": 0.7
+				},
+				{
+					"pattern": "\\b(pub|tavern|inn)\\b",
+					"replace": "longhall",
+					"chance": 0.5
+				}
+			],
+			"sayingsPriority": 45,
+			"sayings": {
+				"remark": [
+					"Yyeeeaaarrrggh! That's how we scream our defiance as we fight.",
+					"We fight with the mighty sword, the vicious axe and the swift arrow.",
+					"Our ways go back to before Avarrocka was founded. Varrock, to you.",
+					"Gunthor the Brave is in the longhall. He gives a rousing welcome.",
+					"Some of our young go soft and move to the cities. We let them go.",
+					"The longhall beer is ours. Touch a barrel and see what happens.",
+					"Gunnar led us here from the mountains. Gunthor is of his blood.",
+					"A miner fell down that hole and came back babbling about treasure.",
+					"More and more folk use magic. We'll not take the gods' power."
+				],
+				"gossip": [
+					"Litara's brother went down the hole after treasure. Never came back.",
+					"Sigurd invented the log canoe by falling in the river hugging a tree.",
+					"Some snooty fella by the Champions' Guild says he out-canoes Sigurd.",
+					"Atlas charges a fortune for a workout. Runs you to Varrock castle.",
+					"Hunding sits up the tower all day, watching the Varrock road.",
+					"Checkal and that archaeologist fell out over a dig, they say."
+				],
+				"compliment": [
+					"You've a bit of barbarian blood in you, I think. The good bit.",
+					"Brave words indeed! Go down to the longhall and make good on them."
+				],
+				"insult": [
+					"You look funny.",
+					"You don't talk like a barbarian. You certainly don't smell like one.",
+					"Arrogant fool. And you smell like a raccoon's bottom."
+				]
+			},
+			"evidence": [
+				"Hunding (Transcript:Hunding): 'What are you doing in our village, outlander?' / 'Ho ho! Brave words indeed from an outerlander! Go down to the longhall and try it!'",
+				"Hunding (Transcript:Hunding): 'Bah! Go down to the longhall, and there you will find excitement aplenty! Our finest warrior, Gunthor the Brave, will give you a rousing welcome!'",
+				"Hunding (Transcript:Hunding): 'Bah! You cannot hope to learn anything of us just by strolling through our village! We are an ancient tribe, our ways date back to the time before Avarrocka was founded!'",
+				"Hunding (Transcript:Hunding): 'To this day, we fight with the mighty sword, the vicious axe and the swift arrow on the wind.' / 'Although more and more people use magical powers, we do not believe it is wise to take upon oneself the power of the gods in this way.'",
+				"Hunding (Transcript:Hunding): 'Some of our young, wishing to try so-called 'civilisation' and the softness of city life, abandon the tribe and move to the cities. It is sad to see them go, but we do not prevent them'",
+				"Hunding (Transcript:Hunding): 'a warrior called Gunnar took his friends and their families and left the larger tribe, moving south' / 'Our current chieftain, Gunthor the Brave, is a direct- line descendent of Gunnar.'",
+				"Hunding (Transcript:Hunding), to 'You look like a load of primitive savages': 'And you look like an arrogant fool. And you smell like a raccoon's bottom.'",
+				"Barbarian woman, Blue Moon Inn (Transcript:Barbarian): 'Hah! What you want with me, little city [man/woman/person]?' / 'Ha ha ha! Little [player name] wants to buy me a drink, how sweet.'",
+				"Barbarian woman, Blue Moon Inn (Transcript:Barbarian): 'You not talk like barbarian [man]. You certainly not smell like barbarian [man]!' / 'Back in village to the west, we barbarians scream our defiance as we fight. We scream 'YYEEEEEAAARRRRGGHHHH!!!' Can you do this?'",
+				"Barbarian woman, Blue Moon Inn (Transcript:Barbarian): 'Also, I strong barbarian woman; I get my own drink. Run away now, little [player name].' / 'Ha ha ha! We fight anytime you like.' / 'I not interested in talking to soft city [man] who not know what he want.'",
+				"Barbarians and Gunthor the brave (Transcript:Barbarian, Transcript:Gunthor the brave), the random taunts before they attack: 'Wanna fight?' / 'Ah, you come for fight, ja?' / 'You look funny.' / 'Grrr!' / 'What you want?' / 'Go Away!' / Gunthor: 'What do you want?' - 'What are you offering?' - 'A fight!'",
+				"Barbarians (Transcript:Barbarian), when a beer glass is used on their barrel: 'Oi - That's ours!' and every barbarian nearby turns aggressive. Wiki The Long Hall: tavern in the north of the village, owner Gunthor the brave, non-stop fires, cooked meat and beer spawns.",
+				"Atlas (Transcript:Atlas / Transcript:Below Ice Mountain): 'What do you want, little [man/woman]?' / 'Not now little one, I'm busy.' / 'Come on then! Out with it already!' / 'I'm just pulling your leg!' / 'It's a force of habit. It comes with the barbarian lifestyle.' / 'Well done, little one. You've proven your worth.' / 'Every [strongman] was once a beginner who refused to give up.' / 'Around 25,000 coins per session.' Wiki Atlas: the workout cutscene has the player running north to Varrock castle.",
+				"Checkal (Transcript:Below Ice Mountain): 'You can tell Willow she can do the heavy lifting herself.' / 'I would not help her lift a shrimp.' / 'Atlas, one of the strongest barbarians I know. You can find him in the hall north of here.' Wiki Checkal: 'We had quite a rough falling out' (Willow); examine 'He has muscles on top of muscles.'",
+				"Sigurd (Transcript:Sigurd): 'Ha Ha! Hello!' / 'I'm Sigurd the Great and Brainy.' / 'Because I invented the Log Canoe!' / 'a game of 'Smack The Tree'' / 'I won the game with a flying tackle. The tree came loose and down the river bank I went, still holding the tree.' / 'There's some snooty fella down near the Champions Guild who reckons his canoes are better than mine.'",
+				"Litara (Transcript:Litara): 'When the miner fell down that hole he'd made and came back babbling about doors, questions and treasure, my brother went to explore. No-one has seen him since.' / 'I will raise a drink for him tonight, he was a good man, even if he was a pacifist.' Examine: 'Litara, a barbarian explorer.'",
+				"Hunding (Wiki Hunding): second floor of the east tower; beginner clue 'In a village of barbarians, I am the one who guards the village from up high.' Wiki Barbarian Village: 'Lookout tower: a tall building overlooking the path from Varrock.'",
+				"Peksa (Wiki Peksa): 'Peksa is a barbarian who runs the Helmet Shop in Barbarian Village'; examine 'Always up to date with the latest fashions in helmets.' (Transcript:Scorpion Catcher): 'I gave it as a present to my brother Ivor when I visited our outpost northwest of Camelot. Well, actually I hid it in his bed so it would nip him.'",
+				"Barbarian guard, Barbarian Outpost (Transcript:Barbarian guard): 'Oi, whaddya want?' / 'Barbarians only. Are you a barbarian? You don't look like one.' / 'If you're a barbarian you need to be able to drink like one. We barbarians like a good drink.' / 'Do I look like a bank to you?' / 'Well come back when you have, you lightweight.' / 'What are you like?' / 'I never learned to read, but you look like you've drunk plenty.' / 'That's a proper barbarian spirit, that is.'",
+				"Wiki Barbarian: 'Barbarians are attackable Fremenniks found in the Barbarian Village and Outpost' with 'Attack' only (Infobox Monster), so the generic Barbarian NPCs, the Blue Moon Inn barbarian and Gunthor the brave never speak through the plugin; their taunts are evidence for the voice only. Wiki Gunthor the brave: 'Like most barbarians from Barbarian Village (except for Litara, Hunding, Atlas, and Peksa), he will attack the player if talked to.'",
+				"Wiki Barbarian Village (History) and Wiki Gunnar (barbarian): the Mountain Tribe under Gunnar crusaded against runecrafting, 'which they believe belong only to the gods'; the village was founded 'between what is now Varrock and Falador' and the barbarians 'gradually settled down'. Varrock Museum display: 'A group of the more warmongering of the mountain tribe broke away, led by a warrior called Gunnar'.",
+				"Wiki Tassie Slipcast: 'She isn't a barbarian. She comes from an unknown town and started her pottery business with a loan from Hammerspike Stoutbeard' (Transcript:Tassie Slipcast): 'Please feel free to use the pottery wheel ... And make sure you tidy up after yourself!' - so she is an outsider.",
+				"Otto Godblessed (Transcript:Barbarian Training): 'Good day to you, hearty warrior! May the spirits guide you.' / 'I follow the ways of our barbarian ancestors, communing with the spirits of the dead' / 'While you civilised folk use small, weak fishing rods, we barbarians are skilled with heavier tackle.' A sage, not a brawler, and he stands at 2502,3489 (Otto's Grotto, in baxtorian_falls), so he is left out. Captain Cain and Commander Connad at the outpost talk like officers ('soldier', 'I don't suffer idiots easily') and are left out too.",
+				"AVOIDED: 'ja' (one generic taunt), the Blue Moon barbarian's dropped articles ('I strong barbarian woman', one character's quirk), Kourend's Barbarian Camp (attackable, with a quest boss), Checkal in npcNames (not called a barbarian anywhere and he moves to Nardah after his quest; standing in the village he gets the place voice anyway), Peksa's scorpion (quest dialogue)."
 			]
 		},
 		{

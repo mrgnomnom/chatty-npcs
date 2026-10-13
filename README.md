@@ -68,7 +68,7 @@ subject comes up again.
 
 **What they talk about**: mood (Kind, Balanced or Rude; gossip comes up regardless), how much of it
 is quest gossip, how thick the local flavour is (0% for plain English, 200% for laid on with a
-trowel), and whether city guards and bankers join in.
+trowel), and whether city guards, bankers and your house pets join in.
 
 **Display**: show in the chatbox, and make it look like public chat.
 

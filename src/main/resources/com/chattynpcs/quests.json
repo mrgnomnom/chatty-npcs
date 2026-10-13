@@ -2196,6 +2196,10 @@
 				],
 				"troll/gossip": [
 					"Big human feast in Lumbridge, me hear. Nobody invite trolls. Rude."
+				],
+				"barbarian/gossip": [
+					"The Duke's table frozen in time, they say. Our meat's never frozen.",
+					"A Lumbridge feast got attacked, I hear. At last, a feast worth it."
 				]
 			},
 			"wrap": false
@@ -2238,6 +2242,9 @@
 				],
 				"troll/gossip": [
 					"Dragons stirring, humans say. Dragon just big lizard. Big dinner."
+				],
+				"barbarian/gossip": [
+					"Dragons stirring, city folk say. Good. A dragon is a proper fight."
 				]
 			},
 			"wrap": false
@@ -2319,6 +2326,10 @@
 				"troll/gossip": [
 					"Human kill Galvek dragon, me hear. Dragons breathe fire. Good it dead.",
 					"Ships sail from fur town after dragon, me hear. Trolls stay. We sink."
+				],
+				"barbarian/gossip": [
+					"A dragon called Galvek, slain, they say. A saga for the longhall.",
+					"Ships sailed from Rellekka to fight dragons, I hear. Our cousins!"
 				]
 			},
 			"wrap": false
@@ -2360,6 +2371,9 @@
 				],
 				"troll/gossip": [
 					"Trouble in elf lands, humans say. Elves far away. Not troll problem."
+				],
+				"barbarian/gossip": [
+					"A wall through Ardougne, they say. City folk hide behind walls."
 				]
 			},
 			"wrap": false
@@ -2414,6 +2428,10 @@
 				],
 				"troll/gossip": [
 					"Human king chopped by own people, me hear. Trolls just pick biggest."
+				],
+				"barbarian/gossip": [
+					"The elves have their crystal city back, they say. Glass walls. Soft.",
+					"Ardougne's king answered for his lies, they say. Good."
 				]
 			},
 			"wrap": false
@@ -2450,6 +2468,9 @@
 				],
 				"troll/gossip": [
 					"Gnome called Glough loose again, me hear. Gnome small. Not even snack."
+				],
+				"barbarian/gossip": [
+					"That gnome Glough slipped his guards again, they say. Gnomes! Hah!"
 				]
 			},
 			"wrap": false
@@ -2509,6 +2530,9 @@
 				"troll/gossip": [
 					"Gnome drink potion, turn into big monster, me hear. Still lose. Hah.",
 					"Kob went to gnome war talks, me hear. Kob come back. Kob not say much."
+				],
+				"barbarian/gossip": [
+					"Glough drank a potion and grew into a monster, they say. Still lost."
 				]
 			},
 			"wrap": false
@@ -2523,7 +2547,10 @@
 					"IN_PROGRESS"
 				],
 				"region": "kharidian_desert",
-				"anywhere": true
+				"anywhere": true,
+				"requires": [
+					"DESERT_TREASURE_I"
+				]
 			},
 			"lines": {
 				"gossip": [
@@ -2542,6 +2569,9 @@
 				],
 				"troll/gossip": [
 					"Diggers find door in desert nobody open, me hear. Trolls use rocks."
+				],
+				"barbarian/gossip": [
+					"A sealed vault in the desert, they say. Give me an axe and a day."
 				]
 			},
 			"wrap": false
@@ -2594,6 +2624,10 @@
 				"troll/gossip": [
 					"Human fight big leviathan thing, me hear. Trolls stay out of water.",
 					"Big old thing under Weiss, me hear. Human went down. Trolls stay up."
+				],
+				"barbarian/gossip": [
+					"A Digsite scholar turned out a Mahjarrat, they say. Magic folk. Bah!",
+					"Some beast under the sea by the desert, slain, I hear. A big fish!"
 				]
 			},
 			"wrap": false
@@ -2608,7 +2642,10 @@
 					"IN_PROGRESS"
 				],
 				"region": "taverley_burthorpe",
-				"anywhere": true
+				"anywhere": true,
+				"requires": [
+					"TEMPLE_OF_IKOV"
+				]
 			},
 			"lines": {
 				"gossip": [
@@ -2625,6 +2662,9 @@
 				],
 				"troll/gossip": [
 					"Druids want old heroes, me hear. Trolls not asked. Trolls never asked."
+				],
+				"barbarian/gossip": [
+					"The druids are sending for old heroes, they say. Nobody sent for us."
 				]
 			},
 			"wrap": false
@@ -2687,6 +2727,9 @@
 				],
 				"troll/gossip": [
 					"Lucien got big magic rock, me hear. Trolls got rocks too. Not magic."
+				],
+				"barbarian/gossip": [
+					"Lucien's got a staff and a stone now, they say. Wizard's weapons. Bah!"
 				]
 			},
 			"wrap": false
@@ -2894,7 +2937,10 @@
 					"NOT_STARTED",
 					"IN_PROGRESS"
 				],
-				"region": "kharidian_desert"
+				"region": "kharidian_desert",
+				"requires": [
+					"DESERT_TREASURE_I"
+				]
 			},
 			"lines": {
 				"gossip": [
@@ -3006,6 +3052,9 @@
 				],
 				"troll/gossip": [
 					"Vampyre lord dead in swamp land, me hear. Vampyres only drink. Waste."
+				],
+				"barbarian/gossip": [
+					"Lord Drakan's dead, I hear. A vampyre lord. Now that was a fight."
 				]
 			},
 			"wrap": false

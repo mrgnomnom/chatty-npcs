@@ -109,16 +109,27 @@ class ChatterData
 		 */
 		boolean newsOnly;
 		/**
+		 * Knows every quest that starts in their own region, not just within earshot: the town
+		 * watch hears the city's news
+		 */
+		boolean cityNews;
+		/**
 		 * Openers and closers only where nobody has a voice of their own: "Blimey." suits Lumbridge,
 		 * not Darkmeyer
 		 */
 		boolean plainOnly;
+		/**
+		 * Only while the player hasn't finished this quest: the Moon Clan are cold to you until
+		 * you've made their peace with the Fremennik. List the warmer persona after this one.
+		 */
+		String untilQuest;
 		/**
 		 * Their own oaths in place of "Blimey" and "Gadzooks" on shared lines: a pirate's "Arr"
 		 */
 		Words exclaim;
 
 		transient List<Pattern> compiledNames;
+		transient Quest compiledUntil;
 	}
 
 	static class Topic
@@ -157,6 +168,11 @@ class ChatterData
 		 * Only NPCs standing in one of these regions say it
 		 */
 		List<String> regions = Collections.emptyList();
+		/**
+		 * Only once the player has finished this quest
+		 */
+		String afterQuest;
+		transient Quest compiledAfter;
 		/**
 		 * Keyed by tone ("insult"), persona and tone ("kid/insult"), or "starter/insult" for
 		 * what the NPC who gives out a quest says about it.
@@ -370,6 +386,10 @@ class ChatterData
 		Map<String, Map<String, List<String>>> sayingsIn = Collections.emptyMap();
 		int sayingsPriority = 40;
 		/**
+		 * Their sayings only once the player has finished this quest: friendlier talk for friends
+		 */
+		String sayingsAfter;
+		/**
 		 * Quotes from in-game dialogue, or the Wiki, showing they really talk like this
 		 */
 		List<String> evidence = Collections.emptyList();
@@ -499,6 +519,7 @@ class ChatterData
 		sayings.regions = regions;
 		sayings.inVoice = true;
 		sayings.wrap = false;
+		sayings.afterQuest = speech.sayingsAfter;
 		return sayings;
 	}
 

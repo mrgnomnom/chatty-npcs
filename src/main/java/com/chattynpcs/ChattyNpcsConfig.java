@@ -225,6 +225,18 @@ public interface ChattyNpcsConfig extends Config
 	}
 
 	@ConfigItem(
+		keyName = "housePets",
+		name = "House pets",
+		description = "Pets roaming your house pass comment too. Turn off and they keep their thoughts to themselves",
+		section = contentSection,
+		position = 5
+	)
+	default boolean housePets()
+	{
+		return true;
+	}
+
+	@ConfigItem(
 		keyName = "showInChat",
 		name = "Show in chatbox",
 		description = "Also put comments in the chatbox, in case you miss the speech bubble",

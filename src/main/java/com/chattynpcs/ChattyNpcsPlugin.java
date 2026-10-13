@@ -397,6 +397,11 @@ public class ChattyNpcsPlugin extends Plugin
 				continue;
 			}
 
+			if (!config.housePets() && isHousePet(npc))
+			{
+				continue;
+			}
+
 			// Re-check, they might have become attackable since they spawned
 			if ((isChatty(npc) || isGuardOnWatch(npc) || isGoblinAtEase(npc)) && npc.getWorldLocation().distanceTo(myLocation) <= radius)
 			{
@@ -511,6 +516,28 @@ public class ChattyNpcsPlugin extends Plugin
 			}
 		}
 		return talkable;
+	}
+
+	/**
+	 * One of the player's pets let loose in their house, which is an instance, unlike the
+	 * same pet out in the world following someone
+	 */
+	private boolean isHousePet(NPC npc)
+	{
+		ChatterData data = this.data;
+		String name = npc.getName();
+		if (data == null || name == null || npc.getWorldView() == null || !npc.getWorldView().isInstance())
+		{
+			return false;
+		}
+		for (ChatterData.Topic topic : data.topics)
+		{
+			if (topic.pet != null && topic.pet.compiled != null && topic.pet.compiled.matcher(name).find())
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 
 	private static boolean isGoblin(NPC npc)

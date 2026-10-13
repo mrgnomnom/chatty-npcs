@@ -256,6 +256,11 @@ class LinePicker
 		for (ChatterData.Persona persona : data.personas)
 		{
 			persona.compiledNames = compileAll(persona.npcNames);
+			if (persona.untilQuest != null)
+			{
+				persona.compiledUntil = Quest.valueOf(persona.untilQuest);
+				quests.add(persona.compiledUntil);
+			}
 			if (persona.speech != null && !speechById.containsKey(persona.speech))
 			{
 				throw new IllegalArgumentException(persona.id + " has an unknown speech " + persona.speech);
@@ -282,6 +287,11 @@ class LinePicker
 			for (String region : topic.regions)
 			{
 				requireRegion(region, topic.id);
+			}
+			if (topic.afterQuest != null)
+			{
+				topic.compiledAfter = Quest.valueOf(topic.afterQuest);
+				quests.add(topic.compiledAfter);
 			}
 			if (topic.quest != null)
 			{
@@ -365,6 +375,11 @@ class LinePicker
 			{
 				continue;
 			}
+			// A persona for before a quest stands aside once it's done
+			if (persona.compiledUntil != null && hearer != null && hearer.quests.get(persona.compiledUntil) == QuestState.FINISHED)
+			{
+				continue;
+			}
 			if (persona.speech != null)
 			{
 				ChatterData.Speech race = raceOf(npcName, location);
@@ -436,6 +451,7 @@ class LinePicker
 	 */
 	Comment pick(CharacterReader.Snapshot snapshot, String npcName, WorldPoint npcLocation, ChattyNpcsConfig.Mood mood, long topicCooldownMillis, long now)
 	{
+		hearer = snapshot;
 		ChatterData.Persona persona = personaFor(npcName, npcLocation);
 		if (persona == null)
 		{
@@ -445,7 +461,6 @@ class LinePicker
 		ChatterData.Speech speech = speechFor(npcName, npcLocation);
 		boolean race = speech != null && speech == raceOf(npcName, npcLocation);
 		speakerNameWords = nameWords(npcName);
-		hearer = snapshot;
 		heartland = speech == null && npcLocation != null && npcLocation.getY() < UNDERGROUND_Y
 			&& !"sharp".equals(persona.temperament)
 			&& data.regions.stream().noneMatch(r -> r.notHeartland && r.contains(npcLocation.getX(), npcLocation.getY()));
@@ -466,7 +481,7 @@ class LinePicker
 		}
 
 		// A news-teller hears everything that starts in their own part of the world
-		ChatterData.Region home = persona.newsOnly ? homeRegion(npcLocation) : null;
+		ChatterData.Region home = persona.newsOnly || persona.cityNews ? homeRegion(npcLocation) : null;
 
 		List<ChatterData.Topic> candidates = new ArrayList<>();
 		List<Map<String, String>> candidateVars = new ArrayList<>();
@@ -591,6 +606,10 @@ class LinePicker
 	private Map<String, String> match(ChatterData.Topic topic, CharacterReader.Snapshot snapshot, WorldPoint npcLocation, ChatterData.Speech speech, ChatterData.Region home)
 	{
 		if (!topic.regions.isEmpty() && topic.regions.stream().noneMatch(r -> inRegion(r, npcLocation)))
+		{
+			return null;
+		}
+		if (topic.compiledAfter != null && snapshot.quests.get(topic.compiledAfter) != QuestState.FINISHED)
 		{
 			return null;
 		}

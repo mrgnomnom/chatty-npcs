@@ -1611,6 +1611,21 @@
 			"estimated": true,
 			"note": "Wiki pins: Bobawu 2757,2747; Dugopul 2801,2745; Jumaane 2781,2784; Padulah 2757,2788; Hafuba 2798,2799 and Denadu/Lofu at the temple",
 			"notHeartland": true
+		},
+		{
+			"id": "barbarian_village",
+			"name": "Barbarian Village",
+			"boxes": [
+				[
+					3070,
+					3404,
+					3118,
+					3456
+				]
+			],
+			"estimated": true,
+			"place": "Barbarian Village",
+			"note": "Wiki map centre 3080,3427; longhall 3075-3086,3436-3447 (Gunthor 3081,3444); Peksa 3075,3430; Litara and the Stronghold hole 3081,3420; Hunding's tower 3097,3429; Tassie 3085,3409; Sigurd's canoe station 3112,3409. The Barbarianism music area runs x 3066-3112, y 3404-3456; x starts at 3070 so it never touches ice_mountain (ends 3069) and y stops at 3456, under edgeville (starts 3465). Clear of varrock and the Grand Exchange (start 3140)."
 		}
 	]
 }

@@ -15,6 +15,7 @@ import net.runelite.api.Quest;
 import net.runelite.api.QuestState;
 import net.runelite.api.coords.WorldPoint;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
@@ -1030,6 +1031,34 @@ public class LinePickerTest
 		}
 		assertTrue(understood);
 		assertEquals("banker", fresh(0).personaFor("Banker", mos).id);
+	}
+
+	@Test
+	public void theMoonClanWarmToYouOnlyOnceYouveMadePeace()
+	{
+		WorldPoint lunarIsle = new WorldPoint(2100, 3900, 0);
+		CharacterReader.Snapshot s = snapshot("bald");
+		s.quests.put(Quest.LUNAR_DIPLOMACY, QuestState.IN_PROGRESS);
+		for (int i = 0; i < 40; i++)
+		{
+			LinePicker.Comment c = pick(fresh(i), s, "Oneiromancer", lunarIsle, ChattyNpcsConfig.Mood.BALANCED, 0);
+			assertEquals("moon_clan_wary", c.getPersona());
+			assertFalse(c.getText(), c.getTopicId().contains("_sayings") || c.getText().contains("dear"));
+		}
+		s.quests.put(Quest.LUNAR_DIPLOMACY, QuestState.FINISHED);
+		assertEquals("moon_clan", pick(fresh(0), s, "Oneiromancer", lunarIsle, ChattyNpcsConfig.Mood.BALANCED, 0).getPersona());
+	}
+
+	@Test
+	public void barbarianVillageIsBarbaric()
+	{
+		WorldPoint village = new WorldPoint(3082, 3420, 0);
+		CharacterReader.Snapshot s = snapshot("bald");
+		for (String name : new String[]{"Hunding", "Peksa", "Barbarian guard"})
+		{
+			assertEquals(name, "barbarian", pick(fresh(0), s, name, village, ChattyNpcsConfig.Mood.BALANCED, 0).getPersona());
+		}
+		assertNotEquals("barbarian", pick(fresh(0), s, "Tassie Slipcast", village, ChattyNpcsConfig.Mood.BALANCED, 0).getPersona());
 	}
 
 	@Test

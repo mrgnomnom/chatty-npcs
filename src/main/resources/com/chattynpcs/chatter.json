@@ -44,6 +44,34 @@
 			"sharesGossip": false
 		},
 		{
+			"id": "barbarian",
+			"speech": "barbarian",
+			"temperament": "sharp",
+			"tones": {
+				"compliment": 0.7,
+				"insult": 1.3,
+				"remark": 1.1
+			},
+			"openers": [
+				"insult|remark: Bah!",
+				"insult|remark: What do you want?",
+				"Hah!",
+				"remark|compliment: Ho ho!",
+				"insult: Grrr!"
+			],
+			"closers": [
+				"insult: Go away!",
+				"insult|remark: Wanna fight?",
+				"remark|compliment: Ha ha ha!",
+				"insult: Run away now, little one.",
+				"compliment: You've proven your worth."
+			],
+			"openerChance": 0.35,
+			"closerChance": 0.3,
+			"ownLinesOnly": true,
+			"sharesGossip": false
+		},
+		{
 			"id": "cat",
 			"speech": "cat",
 			"temperament": "plain",
@@ -223,7 +251,8 @@
 			"openerChance": 0.3,
 			"closerChance": 0.35,
 			"ownLinesOnly": true,
-			"sharesGossip": true
+			"sharesGossip": true,
+			"cityNews": true
 		},
 		{
 			"id": "ogre",
@@ -245,6 +274,33 @@
 				"Hur, hur, hur."
 			],
 			"openerChance": 0.35,
+			"closerChance": 0.3,
+			"ownLinesOnly": true,
+			"sharesGossip": false
+		},
+		{
+			"id": "moon_clan_wary",
+			"speech": "moon_clan",
+			"untilQuest": "LUNAR_DIPLOMACY",
+			"temperament": "sharp",
+			"tones": {
+				"compliment": 0.5,
+				"insult": 1.4,
+				"remark": 1.1
+			},
+			"openers": [
+				"Hmmm.",
+				"Ah. A stranger.",
+				"insult: Pah.",
+				"insult|remark: Pft."
+			],
+			"closers": [
+				"Off with you.",
+				"insult|remark: Begone.",
+				"insult: I was being polite.",
+				"insult|remark: Good luck. It is far from simple."
+			],
+			"openerChance": 0.3,
 			"closerChance": 0.3,
 			"ownLinesOnly": true,
 			"sharesGossip": false
@@ -990,6 +1046,15 @@
 				],
 				"troll/compliment": [
 					"Twisty bow. Shoot far. Trolls like far. Far is where rocks go."
+				],
+				"barbarian/compliment": [
+					"The swift arrow on the wind. Aitan would want a go with that bow."
+				],
+				"barbarian/insult": [
+					"A bow that bent? Hah! Did you win it or wrestle it?"
+				],
+				"barbarian/remark": [
+					"Twisted bow. Fine for the wind. A sword for the longhall, mind."
 				]
 			}
 		},
@@ -1203,6 +1268,27 @@
 				],
 				"mos_pirate/compliment": [
 					"Bold as brass, goin' about like that. I'll give ye that."
+				],
+				"moon_clan_wary/insult": [
+					"I read minds, not bodies. Put something on.",
+					"Outsiders are loud and unguarded, they say. Clearly.",
+					"Nothing on, and nothing within. I checked."
+				],
+				"moon_clan_wary/remark": [
+					"We clothe ourselves by magic. You seem to have given up entirely."
+				],
+				"moon_clan_wary/compliment": [
+					"Nothing hidden, inside or out. Honest. I will grant you that much."
+				],
+				"barbarian/insult": [
+					"No clothes at all? Hah! Is this how city folk fight now?",
+					"Starkers in our village? Even Gunthor wears a helmet."
+				],
+				"barbarian/remark": [
+					"Not a stitch on. Brave, that. Or the longhall beer's been at you."
+				],
+				"barbarian/compliment": [
+					"Fighting in your skin! Ho ho! There's barbarian blood in you."
 				]
 			}
 		},
@@ -1326,6 +1412,15 @@
 				],
 				"troll/remark": [
 					"Cape burning. Human walk around burning. Humans strange."
+				],
+				"barbarian/compliment": [
+					"A cape of living fire. Ho ho! There's a saga in that."
+				],
+				"barbarian/insult": [
+					"Lava on your back and still you walk like city folk."
+				],
+				"barbarian/remark": [
+					"That cape's burning. Mind the beer barrels."
 				]
 			}
 		},
@@ -1466,6 +1561,24 @@
 				],
 				"mos_pirate/insult": [
 					"Paper hat in a pirate town? Bold, or daft, landlubber."
+				],
+				"guard/remark": [
+					"Paper hat worth a castle. I'll be walking very close behind you."
+				],
+				"guard/insult": [
+					"Wearing that in the street. You want robbing, and then you'll want me."
+				],
+				"guard/compliment": [
+					"A {item}. Half the thieves in town just noticed. So did I."
+				],
+				"barbarian/insult": [
+					"A paper hat! Peksa sells proper helmets, you know."
+				],
+				"barbarian/remark": [
+					"Paper on your head. One axe and it's confetti."
+				],
+				"barbarian/compliment": [
+					"A paper hat in a barbarian village. Hah! That takes nerve."
 				]
 			}
 		},
@@ -1585,6 +1698,33 @@
 				],
 				"mos_pirate/insult": [
 					"Fancy cape. Can ye tie a knot, though?"
+				],
+				"moon_clan_wary/insult": [
+					"A cape for mastering everything. Did it come with patience? No. I see."
+				],
+				"moon_clan_wary/remark": [
+					"Mastery of every craft. And yet you came for ours. Hmph."
+				],
+				"moon_clan_wary/compliment": [
+					"Master of everything, they say. Everything but yourself. A start."
+				],
+				"guard/compliment": [
+					"That cape. Master of everything, they say. Try standing still."
+				],
+				"guard/remark": [
+					"Done everything, that cape says. Not a shift on the gate, I'd wager."
+				],
+				"guard/insult": [
+					"Master of everything, and still walking through my gate like anyone."
+				],
+				"barbarian/compliment": [
+					"Good at everything, that cape says. Even drinking? Prove it."
+				],
+				"barbarian/insult": [
+					"A cape for being good at everything. Fighting too? We'll see."
+				],
+				"barbarian/remark": [
+					"Cape of every colour. Ours are furs. Furs don't boast."
 				]
 			}
 		},
@@ -1684,6 +1824,15 @@
 				],
 				"troll/remark": [
 					"Heavy armour. Human sink in sea like troll now."
+				],
+				"barbarian/compliment": [
+					"Dark armour like a mountainside. Who's in there, a giant?"
+				],
+				"barbarian/insult": [
+					"All that black plate and such a small person inside. Hah!"
+				],
+				"barbarian/remark": [
+					"Armour like a mountain. Our forefathers would've charged it anyway."
 				]
 			}
 		},
@@ -1809,6 +1958,33 @@
 				],
 				"mos_pirate/insult": [
 					"Burny cape. Don't ye go near the rum stores with that."
+				],
+				"moon_clan_wary/insult": [
+					"A cape of fire. Loud, like the rest of your thoughts."
+				],
+				"moon_clan_wary/remark": [
+					"That cape fought something terrible. It did not teach you patience."
+				],
+				"moon_clan_wary/compliment": [
+					"A cape of fire. A trial survived. Ours is harder. Still, I grant it."
+				],
+				"guard/remark": [
+					"That cape's on fire. Keep it off the thatch."
+				],
+				"guard/insult": [
+					"A burning cape inside the walls. That's a fire risk, and a report."
+				],
+				"guard/compliment": [
+					"Fire cape. Earned the hard way, I hear. Still no smoking in town."
+				],
+				"barbarian/compliment": [
+					"You stood in fire for that cape. Hah! That's barbarian spirit."
+				],
+				"barbarian/insult": [
+					"A fire cape? Keep it off the thatch. We like our longhall."
+				],
+				"barbarian/remark": [
+					"Cape of fire. The longhall fire never goes out either."
 				]
 			}
 		},
@@ -2044,6 +2220,35 @@
 				],
 				"mos_pirate/compliment": [
 					"A fine head for a bandana, that."
+				],
+				"moon_clan_wary/insult": [
+					"A bare head. Your thoughts were easy to read already. Now easier.",
+					"Nothing between your thoughts and me. I wish there were."
+				],
+				"moon_clan_wary/remark": [
+					"Nothing to hide under, up there. Nothing to hide, either, I expect."
+				],
+				"moon_clan_wary/compliment": [
+					"A clear head. Keep it that way. I can see straight in."
+				],
+				"guard/remark": [
+					"Description: bald. Saves me a line of ink.",
+					"No helmet, no hair. At least I can see what you're thinking."
+				],
+				"guard/insult": [
+					"No hair. Easier to describe to the sergeant, I'll give you that."
+				],
+				"guard/compliment": [
+					"Nothing on your head to hide a weapon under. I like that."
+				],
+				"barbarian/insult": [
+					"Bald as a river stone. Nothing for a foe to grab. Or admire."
+				],
+				"barbarian/remark": [
+					"No hair? A helmet will fit you fine. Peksa's shop is just there."
+				],
+				"barbarian/compliment": [
+					"A bare head and no fear. That's a warrior's look, that."
 				]
 			}
 		},
@@ -2189,6 +2394,31 @@
 				],
 				"leprechaun/insult": [
 					"Fancy cape. Can it hold a rake? Nay. Then I'm still needed."
+				],
+				"moon_clan_wary/insult": [
+					"The {item}. You are thinking of mentioning it. I would not.",
+					"Years at one craft. Hours of patience with us? Not one, I notice."
+				],
+				"moon_clan_wary/compliment": [
+					"The {item}. Patience, then. Perhaps you can learn to listen too."
+				],
+				"guard/compliment": [
+					"The {item}. The watch gives you a cloak. It leaks."
+				],
+				"guard/remark": [
+					"The {item}. A master, then. Masters still pay the toll."
+				],
+				"guard/insult": [
+					"Fancy cape. Doesn't exempt you from anything. I've checked."
+				],
+				"barbarian/compliment": [
+					"A cape for a skill. Is the skill swinging an axe? Then good."
+				],
+				"barbarian/insult": [
+					"A cape for one skill. If it's not fighting, I'm not impressed."
+				],
+				"barbarian/remark": [
+					"A master's cape. We don't give capes. We give scars."
 				]
 			}
 		},
@@ -2281,6 +2511,15 @@
 				],
 				"troll/remark": [
 					"Dat armour big. Human inside small. Like nut in big shell."
+				],
+				"barbarian/compliment": [
+					"Heavy brown plate, and you carry it like nothing. Good."
+				],
+				"barbarian/insult": [
+					"Armour of the goblins' war god? On you? Hah!"
+				],
+				"barbarian/remark": [
+					"Big war plate. It was the goblins' god's, they say. Yours now."
 				]
 			}
 		},
@@ -2416,6 +2655,15 @@
 				],
 				"tortugan/insult": [
 					"Everyone's errands done. Humans do love to be busy."
+				],
+				"moon_clan_wary/insult": [
+					"A cape for meddling everywhere. Now you have come to meddle with us."
+				],
+				"moon_clan_wary/remark": [
+					"Been everywhere, that cape says. Nowhere taught you to listen."
+				],
+				"moon_clan_wary/compliment": [
+					"A cape for helping everyone. We did not ask. Still. It is something."
 				]
 			}
 		},
@@ -2595,6 +2843,35 @@
 				],
 				"mos_pirate/compliment": [
 					"Still on yer feet? Tough as old rope, ye be."
+				],
+				"moon_clan_wary/insult": [
+					"Hurt, and thinking about it very loudly. Do it elsewhere.",
+					"You are in pain. I know. I can hear it. Keep it to yourself."
+				],
+				"moon_clan_wary/remark": [
+					"Bleeding on our doorstep will not earn you anything."
+				],
+				"moon_clan_wary/compliment": [
+					"Wounded, and still upright. Strong in body. We went the other way."
+				],
+				"guard/remark": [
+					"You're bleeding on the paving. Someone will have to mop that.",
+					"You look half dead. Don't finish the job on my patch."
+				],
+				"guard/insult": [
+					"If you're going to fall over, do it outside the walls."
+				],
+				"guard/compliment": [
+					"Walked in that state and still upright. Fair enough."
+				],
+				"barbarian/remark": [
+					"You're hurt. Good. Means you've been fighting, not talking."
+				],
+				"barbarian/insult": [
+					"Bleeding already? Bah! Walk it off, little one."
+				],
+				"barbarian/compliment": [
+					"Wounded and still on your feet. The longhall would drink to that."
 				]
 			}
 		},
@@ -2701,6 +2978,24 @@
 				],
 				"troll/remark": [
 					"Mouldy armour. Smell like goat left out too long. Me still eat goat."
+				],
+				"guard/remark": [
+					"That armour came out of a grave. Grave-robbing's a crime. Somewhere."
+				],
+				"guard/insult": [
+					"Tomb armour in the street. If it's got a smell, keep upwind of me."
+				],
+				"guard/compliment": [
+					"Old armour. Looks like it's seen things. So have I. Mostly carts."
+				],
+				"barbarian/compliment": [
+					"Dug that out of a grave? Hah! A warrior keeps what he wins."
+				],
+				"barbarian/insult": [
+					"Grave armour. Smells like it too. Stand downwind."
+				],
+				"barbarian/remark": [
+					"Old armour from the swamp tombs. The dead don't need it. Fair."
 				]
 			}
 		},
@@ -2901,6 +3196,25 @@
 				],
 				"mos_pirate/compliment": [
 					"That be a fine haul ye're wearin', and no mistake."
+				],
+				"moon_clan_wary/insult": [
+					"All that gold, and still you came picking at our secrets.",
+					"You are thinking about what it is all worth. Loudly. How mainland."
+				],
+				"moon_clan_wary/remark": [
+					"Gold buys nothing from us. Patience might. You brought the wrong one."
+				],
+				"moon_clan_wary/compliment": [
+					"Wealthy, and not thinking about it. Unusual, for a mainlander."
+				],
+				"barbarian/insult": [
+					"All that shiny metal. Did you win it, or buy it? Buy it, I bet."
+				],
+				"barbarian/remark": [
+					"Rich, are you? Then you're buying in the longhall tonight."
+				],
+				"barbarian/compliment": [
+					"Armour like that gets taken off the beaten. Hah! Well taken."
 				]
 			}
 		},
@@ -2997,6 +3311,22 @@
 				],
 				"troll/compliment": [
 					"Many metals. Clever. Troll teeth not know which bit hurt first."
+				],
+				"guard/insult": [
+					"Half of that kit's not yours, is it? I'm asking officially.",
+					"Armour from four different smiths. Or four different victims."
+				],
+				"guard/remark": [
+					"Three metals, one adventurer. Where did the rest come from?"
+				],
+				"barbarian/insult": [
+					"Armour from three different smiths? Pick one and fight in it."
+				],
+				"barbarian/remark": [
+					"Mismatched plate. Stripped off whoever you beat, I'd guess."
+				],
+				"barbarian/compliment": [
+					"Odd bits of armour, all won in fights, I'd wager. Good."
 				]
 			}
 		},
@@ -3127,6 +3457,24 @@
 				],
 				"troll/compliment": [
 					"Bronze shine like pretty rock. Me like pretty rocks."
+				],
+				"guard/insult": [
+					"Bronze, head to toe. I'll not be needing a second man for you."
+				],
+				"guard/remark": [
+					"Bronze. The watch issues better than that, and we're issued nothing."
+				],
+				"guard/compliment": [
+					"Bronze armour. Harmless. I like harmless."
+				],
+				"barbarian/insult": [
+					"Bronze! Hah! Peksa sells better in his sleep."
+				],
+				"barbarian/remark": [
+					"Bronze armour. Our young ones start in that. Then they grow."
+				],
+				"barbarian/compliment": [
+					"Bronze, but worn with a straight back. It's a start."
 				]
 			}
 		},
@@ -3240,6 +3588,32 @@
 				],
 				"leprechaun/insult": [
 					"Ye'll run yer legs off and still miss the waterin', so ye will."
+				],
+				"moon_clan_wary/insult": [
+					"Dressed for running away. Sensible, around us.",
+					"Running clothes. Rushing about is a mainland habit. We think first."
+				],
+				"moon_clan_wary/remark": [
+					"Dressed for running. You will not outrun a thought."
+				],
+				"moon_clan_wary/compliment": [
+					"Light on your feet. Quiet, almost. Almost."
+				],
+				"guard/insult": [
+					"Rooftop clothes. Rooftops are not a thoroughfare. Get down.",
+					"I know those clothes. Off the roofs. There's a perfectly good road."
+				],
+				"guard/remark": [
+					"Running kit. Where to, and why, and does it involve my gate?"
+				],
+				"barbarian/insult": [
+					"Running clothes? We don't run. We scream and charge."
+				],
+				"barbarian/remark": [
+					"Light clothes for running. Run at things, I hope."
+				],
+				"barbarian/compliment": [
+					"Quick on your feet, eh? Good. Then charge faster."
 				]
 			}
 		},
@@ -3330,6 +3704,15 @@
 				],
 				"troll/compliment": [
 					"Whip look fast. Hit many times. Troll skin thick, though. Try."
+				],
+				"barbarian/remark": [
+					"Not a sword, not an axe. What is that, a rope?"
+				],
+				"barbarian/insult": [
+					"You fight with a whip? Ho ho! Try it on Gunthor."
+				],
+				"barbarian/compliment": [
+					"A whip. Odd weapon. Fast, though. Fast is good."
 				]
 			}
 		},
@@ -3504,6 +3887,35 @@
 				],
 				"troll/remark": [
 					"Human look like fighter. Trolls chuck rocks at fighters. From far."
+				],
+				"moon_clan_wary/insult": [
+					"Strong in body. We grew strong in mind. One of us chose well.",
+					"Built like a Fremennik. Thinking like one too, I expect."
+				],
+				"moon_clan_wary/remark": [
+					"Strength of arm. That is how the Fremennik settle things. Not us."
+				],
+				"moon_clan_wary/compliment": [
+					"A strong arm. Fine. Now show me a strong mind. I am waiting."
+				],
+				"guard/compliment": [
+					"You could handle yourself, I'd say. Please don't, inside the walls."
+				],
+				"guard/insult": [
+					"Someone built like you gets a watchman each. You've got me."
+				],
+				"guard/remark": [
+					"Seen a few of your sort. The walls are still standing. Mostly.",
+					"If there's a fight in town tonight, I'll know where to look."
+				],
+				"barbarian/compliment": [
+					"You carry yourself like a warrior. Gunthor would want a word."
+				],
+				"barbarian/insult": [
+					"Strong, are you? Hah! Our young ones say that too. Wanna fight?"
+				],
+				"barbarian/remark": [
+					"There's a fighter under all that. The longhall's that way."
 				]
 			}
 		},
@@ -3677,6 +4089,34 @@
 				],
 				"mos_pirate/compliment": [
 					"Honest rags. Better'n stolen silk, some days."
+				],
+				"moon_clan_wary/insult": [
+					"Rags, and still wanting our secrets. You cannot afford those either.",
+					"You came all this way with nothing. Not even patience, I see."
+				],
+				"moon_clan_wary/remark": [
+					"Poor in purse. Poorer in insight, from what I hear in there."
+				],
+				"moon_clan_wary/compliment": [
+					"No gold, no pretence. Nearly honest. Nearly."
+				],
+				"guard/insult": [
+					"No coin on you. So what are you planning to do for some?"
+				],
+				"guard/remark": [
+					"Skint, by the look. The cells are free, mind. Don't get ideas."
+				],
+				"guard/compliment": [
+					"Nothing on you worth stealing. Easiest patrol I'll have all day."
+				],
+				"barbarian/insult": [
+					"Rags! Hah! Even our young ones wear furs."
+				],
+				"barbarian/remark": [
+					"Nothing worth taking off you. Saves everyone a fight."
+				],
+				"barbarian/compliment": [
+					"No gold and still you came. That's spirit, little one."
 				]
 			}
 		},
@@ -3722,6 +4162,13 @@
 				],
 				"goblin/compliment": [
 					"Human not scared of Wilderness. Not run from battle. Commandment!"
+				],
+				"guard/remark": [
+					"Nobody patrols out here. Whatever happens to you is your own affair.",
+					"This isn't my patch. Nothing is, out here."
+				],
+				"guard/insult": [
+					"No law out here. Can't arrest anyone. Terrible for morale."
 				]
 			}
 		},
@@ -4025,6 +4472,34 @@
 				],
 				"mos_pirate/compliment": [
 					"Been runnin' from the Horrors? Wise, that be."
+				],
+				"moon_clan_wary/insult": [
+					"Out of breath. Even your thoughts are panting. Do it elsewhere.",
+					"Tired already? We hold a thought steady for years. You cannot walk."
+				],
+				"moon_clan_wary/remark": [
+					"Rest if you must. Not near me. I can hear you thinking."
+				],
+				"moon_clan_wary/compliment": [
+					"Worn out and still walking. Stubborn. The Fremennik are, too."
+				],
+				"guard/remark": [
+					"Out of breath. Running from something, or to it? Either's a report."
+				],
+				"guard/insult": [
+					"Running in the streets. Walk, or explain why."
+				],
+				"guard/compliment": [
+					"Knackered, are you? Try standing still all day. That's tiring."
+				],
+				"barbarian/insult": [
+					"Puffing already? Atlas would run you to Varrock and back."
+				],
+				"barbarian/remark": [
+					"Out of breath? Bah. City legs."
+				],
+				"barbarian/compliment": [
+					"Tired and still marching. Our forefathers walked here from mountains."
 				]
 			}
 		},
@@ -4144,6 +4619,35 @@
 				],
 				"troll/compliment": [
 					"Small human, big nerve. Trolls respect nerve. Then eat it. Sorry."
+				],
+				"moon_clan_wary/insult": [
+					"Not a fighter. Not a thinker either, from what I can hear.",
+					"Weak in body. I hoped that meant strong in mind. I was wrong."
+				],
+				"moon_clan_wary/remark": [
+					"No need to fight us. You would not get far. Nobody does."
+				],
+				"moon_clan_wary/compliment": [
+					"Not a fighter. Good. We have had enough of those from the mainland."
+				],
+				"guard/insult": [
+					"Don't go picking fights. You'd lose, and I'd have the paperwork."
+				],
+				"guard/remark": [
+					"You're no threat. Writing that down. Nicest thing I'll write today."
+				],
+				"guard/compliment": [
+					"You I don't need to watch. That's a relief, frankly."
+				],
+				"barbarian/insult": [
+					"Little one, you'd not last a round in the longhall.",
+					"Soft. City soft. Come back when you've got some scars."
+				],
+				"barbarian/remark": [
+					"A beginner. Atlas says every strongman was one once. Hah!"
+				],
+				"barbarian/compliment": [
+					"Small, but you walked into our village. Brave, that."
 				]
 			}
 		},
@@ -4233,6 +4737,33 @@
 				],
 				"troll/remark": [
 					"Blue metal. Troll chuck rock at it, rock bounce. Annoying."
+				],
+				"moon_clan_wary/insult": [
+					"Rune armour. Every mainlander wears it. They all think alike, too."
+				],
+				"moon_clan_wary/remark": [
+					"Rune armour. Heavy. We would simply think ourselves safe."
+				],
+				"moon_clan_wary/compliment": [
+					"Rune armour, and no boasting behind it. Rare, for the mainland."
+				],
+				"guard/remark": [
+					"Rune. The captain's got one piece. Never stops talking about it."
+				],
+				"guard/insult": [
+					"Rune armour. Either you're very good or someone's very dead."
+				],
+				"guard/compliment": [
+					"Rune, head to toe. Ever fancy the watch, we'd put you up front."
+				],
+				"barbarian/remark": [
+					"Blue metal. The city lords buy it for their guards."
+				],
+				"barbarian/insult": [
+					"Rune plate and still you flinch. The armour's braver than you."
+				],
+				"barbarian/compliment": [
+					"Rune armour, and you look like you earned it. Good."
 				]
 			}
 		},
@@ -4344,6 +4875,34 @@
 				],
 				"troll/compliment": [
 					"No weapon an' still come up here. Brave. Or stupid. Me not know which."
+				],
+				"moon_clan_wary/insult": [
+					"Unarmed. Trusting, or foolish? I read your mind. Foolish.",
+					"No weapon. And no magic worth the name. I looked."
+				],
+				"moon_clan_wary/remark": [
+					"We carry no weapons. We never needed them. You will see."
+				],
+				"moon_clan_wary/compliment": [
+					"Unarmed. At least you did not come to us as a warrior. Small mercies."
+				],
+				"guard/compliment": [
+					"No weapon. Good. You've no idea how rare that is on this gate."
+				],
+				"guard/remark": [
+					"Unarmed. Either very law-abiding or very confident."
+				],
+				"guard/insult": [
+					"No weapon on you. So what's in the bag, then?"
+				],
+				"barbarian/remark": [
+					"No weapon? Either very brave or very stupid. Which is it?"
+				],
+				"barbarian/insult": [
+					"Unarmed, in our village? Ho ho! Try that in the longhall."
+				],
+				"barbarian/compliment": [
+					"No sword and no fear. Hah! Fists, is it? We like fists."
 				]
 			}
 		},
@@ -4369,6 +4928,20 @@
 				],
 				"fremennik/insult": [
 					"Robes and runes, outerlander. The gods give runes. We don't make them."
+				],
+				"guard/remark": [
+					"Wizard's hat. No spells in the street, and that includes cantrips.",
+					"If anything turns into a toad on this patch, I'll know who to ask."
+				],
+				"guard/insult": [
+					"Robes and a pointy hat. Either a wizard or a danger. Both, usually."
+				],
+				"barbarian/insult": [
+					"Wizard robes? Bah! We leave the gods' power to the gods.",
+					"A wizard, in our village? Ho ho! Brave, or lost?"
+				],
+				"barbarian/remark": [
+					"Blue robes. Gunnar went to war over your sort's runes, you know."
 				]
 			}
 		},
@@ -5161,6 +5734,28 @@
 				],
 				"troll/compliment": [
 					"Yak hide on human. Warm. Trolls not need warm. Trolls got rock skin."
+				],
+				"moon_clan_wary/insult": [
+					"Fremennik hide. Of course. Sent to pick at our secrets.",
+					"Dressed as a Fremennik. Thinking like one, too. I can hear it.",
+					"That hide smells of Rellekka. So do your thoughts.",
+					"Fremennik dress. Do you listen? No. I thought not."
+				],
+				"moon_clan_wary/remark": [
+					"Fremennik gear. We remember what they did. We are not forgetful.",
+					"They dress in hides. We dress in thought. You chose."
+				],
+				"moon_clan_wary/compliment": [
+					"Fremennik hide, and a quiet mind in it. I did not know they made any."
+				],
+				"barbarian/compliment": [
+					"Furs and hide! You look like one of us. Nearly."
+				],
+				"barbarian/remark": [
+					"Mountain tribe furs. Our forefathers wore those coming south."
+				],
+				"barbarian/insult": [
+					"Fur and hide, but a city walk. We can tell, you know."
 				]
 			}
 		},
@@ -5480,6 +6075,31 @@
 				],
 				"troll/remark": [
 					"Red metal. Troll cook pull dat off first. Then stew."
+				],
+				"moon_clan_wary/insult": [
+					"Dragon metal. Bought, by the look of your memories. I had a look.",
+					"Dragon metal. Red as a Fremennik temper. You match."
+				],
+				"moon_clan_wary/compliment": [
+					"Dragon metal, worn without swagger. I will give you that much."
+				],
+				"guard/remark": [
+					"Red metal armour. Costs more than the gatehouse. Mind the paint."
+				],
+				"guard/insult": [
+					"Dragon armour in the street. That's a robbery waiting to happen."
+				],
+				"guard/compliment": [
+					"Dragon metal. Whatever you did to afford it, do it outside the walls."
+				],
+				"barbarian/compliment": [
+					"Red metal! Rare. Did you win that in a fight? Say you did."
+				],
+				"barbarian/insult": [
+					"Red armour. Pretty. Does it fight, or just shine?"
+				],
+				"barbarian/remark": [
+					"Dragon metal, they call that. We call it a good day's loot."
 				]
 			}
 		},
@@ -5763,6 +6383,15 @@
 				],
 				"troll/remark": [
 					"Big sword. Troll just use big rock. Rock cheaper."
+				],
+				"barbarian/compliment": [
+					"Now that is a sword! Gunthor would want a swing of that."
+				],
+				"barbarian/insult": [
+					"A sword taller than you. Who carries who?"
+				],
+				"barbarian/remark": [
+					"A sword from the god wars, they say. Swing it, don't talk about it."
 				]
 			}
 		},
@@ -7697,6 +8326,15 @@
 				],
 				"kid/remark": [
 					"You smell like a cow. A nice cow, though."
+				],
+				"guard/compliment": [
+					"Leather. Nothing a watchman need worry about. Carry on."
+				],
+				"guard/remark": [
+					"Leather armour. Same as ours, only yours fits."
+				],
+				"guard/insult": [
+					"Leather. Not armour, strictly. A thick coat with ambitions."
 				]
 			}
 		},
@@ -7724,6 +8362,15 @@
 				],
 				"kid/compliment": [
 					"Your armour's got buttons all over! Can I press one?"
+				],
+				"guard/remark": [
+					"Studded leather. Studs are for show. The watch has tried."
+				],
+				"guard/insult": [
+					"Studs on the leather. Don't lean on the paintwork."
+				],
+				"guard/compliment": [
+					"Studded leather. Sensible. Nobody starts a riot in studded leather."
 				]
 			}
 		},
@@ -7778,6 +8425,24 @@
 				],
 				"troll/compliment": [
 					"Iron. Heavy. Human carry heavy good. Nearly troll."
+				],
+				"guard/remark": [
+					"Iron. Same as the cell doors. You'll feel at home if it comes to it."
+				],
+				"guard/insult": [
+					"Iron armour, and rusting. Keep it off the benches."
+				],
+				"guard/compliment": [
+					"Iron. Honest metal. Nothing to worry a watchman."
+				],
+				"barbarian/remark": [
+					"Iron. Good honest metal. Half the longhall wears it."
+				],
+				"barbarian/insult": [
+					"Iron plate, dented already? Or did it come that way?"
+				],
+				"barbarian/compliment": [
+					"Iron on your back. Plain and heavy. That's how we like it."
 				]
 			}
 		},
@@ -7835,6 +8500,24 @@
 				],
 				"troll/compliment": [
 					"Shiny steel. Human look like strong tin. Strong tin good."
+				],
+				"guard/remark": [
+					"Steel. Half the town's in steel. Hard to tell you apart. Useful."
+				],
+				"guard/insult": [
+					"Steel armour. Fancy yourself a guard? We've standards. Low ones."
+				],
+				"guard/compliment": [
+					"Steel. Decent kit. Keep it clean and I've no complaints."
+				],
+				"barbarian/remark": [
+					"Steel. Every city soldier wears it. You could pass for one."
+				],
+				"barbarian/insult": [
+					"Shiny steel. Not a scratch on it. So you've not used it."
+				],
+				"barbarian/compliment": [
+					"Steel, and scratched. Now that's armour that's been somewhere."
 				]
 			}
 		},
@@ -7868,6 +8551,13 @@
 				],
 				"goblin/compliment": [
 					"Black armour. Dark colour. Goblins like dark earthy colour. Close."
+				],
+				"guard/remark": [
+					"Black armour. Stands out at night. Makes my job easier.",
+					"Black armour. Not against the rules. I did check."
+				],
+				"guard/insult": [
+					"Black armour. I'll need to see what's under the helmet."
 				]
 			}
 		},
@@ -7920,6 +8610,15 @@
 				],
 				"kid/remark": [
 					"Can you do magic with that? Do some! Do a fire!"
+				],
+				"guard/remark": [
+					"Staff with a stone on it. Keep the stone pointed at the sky."
+				],
+				"guard/insult": [
+					"No spells inside the walls. The sign's by the gate. The scorched one."
+				],
+				"guard/compliment": [
+					"A staff. At least you can't swing it very fast."
 				]
 			}
 		},
@@ -7946,6 +8645,15 @@
 				],
 				"kid/compliment": [
 					"Can I have a go on your bow? I'll aim at the chickens."
+				],
+				"guard/remark": [
+					"Bow stays unstrung in town. The rabbits are outside the wall."
+				],
+				"guard/insult": [
+					"A bow. In a street. Who exactly are you planning to shoot?"
+				],
+				"guard/compliment": [
+					"Little bow. Harmless enough. Keep it that way."
 				]
 			}
 		},
@@ -8020,6 +8728,15 @@
 				],
 				"troll/remark": [
 					"Blue metal. Troll not know dat one. Troll bite it, find out."
+				],
+				"guard/remark": [
+					"Mithril. Light, they say. Light enough to outrun me? Don't test it."
+				],
+				"guard/compliment": [
+					"Mithril. Tidy. Nobody causes trouble in mithril. There's a first time."
+				],
+				"guard/insult": [
+					"Mithril armour, is it? Blue. Suspicious colour, blue."
 				]
 			}
 		},
@@ -8071,6 +8788,15 @@
 				],
 				"troll/remark": [
 					"Green metal. Not a plant. Me check. Not a plant."
+				],
+				"guard/compliment": [
+					"Adamant. Proper kit. The watch gets leather and a whistle."
+				],
+				"guard/remark": [
+					"Green metal on the gate. I'm noting it. Green."
+				],
+				"guard/insult": [
+					"Adamant head to toe. Expecting a war in the market, are we?"
 				]
 			}
 		},
@@ -8100,6 +8826,15 @@
 				],
 				"goblin/remark": [
 					"Green dragon skin. Human kill dragon? Goblins just shout at dragon."
+				],
+				"guard/remark": [
+					"Green hide. Archer, then. Bow stays on your back in town."
+				],
+				"guard/insult": [
+					"Green dragonhide. Suspiciously quiet boots to go with it, I'll bet."
+				],
+				"guard/compliment": [
+					"Green hide, sensible boots. You'll do."
 				]
 			}
 		},
@@ -8207,6 +8942,26 @@
 				],
 				"troll/remark": [
 					"Helmet with horns. Trolls bash dat off first. Then dinner."
+				],
+				"moon_clan_wary/insult": [
+					"A Fremennik helm. Pah. Horns do nothing for the mind beneath.",
+					"A Fremennik helm. Is it to keep thoughts in? It is not working.",
+					"Horns on your head. The Fremennik way: look fierce, think little."
+				],
+				"moon_clan_wary/remark": [
+					"A northern helm. They sent one of their own again. We are watching."
+				],
+				"moon_clan_wary/compliment": [
+					"A Fremennik helm, on someone who listens. A first."
+				],
+				"barbarian/compliment": [
+					"A horned helm! Now that's a proper helmet. Peksa would approve."
+				],
+				"barbarian/remark": [
+					"Horns on your helmet. Our cousins up north wear those."
+				],
+				"barbarian/insult": [
+					"Horned helm, no scars. The helmet's done more fighting than you."
 				]
 			}
 		},
@@ -8293,6 +9048,13 @@
 				],
 				"kid/remark": [
 					"Does your stick do sparks? Make it do sparks!"
+				],
+				"guard/remark": [
+					"Battlestaff, is it? It's the battle part I'm not keen on.",
+					"Staff like that, I'll want both hands on it and both in view."
+				],
+				"guard/insult": [
+					"Keep that staff still. Last one that waved, we lost a roof."
 				]
 			}
 		},
@@ -8316,6 +9078,15 @@
 				],
 				"kid/compliment": [
 					"That's a big bow! Can you hit a bird? Not a nice bird."
+				],
+				"guard/remark": [
+					"Proper longbow. Unstrung inside the walls, if you please."
+				],
+				"guard/insult": [
+					"A bow that size, you could hit the next town. Don't."
+				],
+				"guard/compliment": [
+					"Fine bow. I'll want it on your back, not in your hand."
 				]
 			}
 		},
@@ -8442,6 +9213,15 @@
 				],
 				"troll/compliment": [
 					"Human wear dragon skin! Human eat dragon? Big human. Big dinner."
+				],
+				"guard/remark": [
+					"Dragonhide. Archer's kit. I'll want the quiver covered in town."
+				],
+				"guard/insult": [
+					"Dragon leather. Dragons don't come through this gate. Nor do arrows."
+				],
+				"guard/compliment": [
+					"Hide armour. Quiet, light, no clanking. The sergeant would weep."
 				]
 			}
 		},
@@ -8462,6 +9242,24 @@
 				],
 				"kid/remark": [
 					"Can you turn me into a frog? Go on, just for a bit."
+				],
+				"guard/remark": [
+					"Mystic robes. No fireballs in town. We've had letters."
+				],
+				"guard/insult": [
+					"Wizard, are you? Keep your hands where I can see them. Both."
+				],
+				"guard/compliment": [
+					"Fancy robes. At least you'll not be hiding a sword in those."
+				],
+				"barbarian/insult": [
+					"Fancy robes. All that magic and not one scar. Bah!"
+				],
+				"barbarian/remark": [
+					"Magic robes. We don't trust it. The sword doesn't lie."
+				],
+				"barbarian/compliment": [
+					"Fine robes. Still, you walked in here. There's nerve in that."
 				]
 			}
 		},
@@ -8508,6 +9306,15 @@
 				],
 				"kid/insult": [
 					"Your bow's all sparkly. Is it for fairies?"
+				],
+				"guard/remark": [
+					"Glowing bow. Shouldn't glow. I'm noting the glow."
+				],
+				"guard/insult": [
+					"Enchanted bow, in a crowd. I'd call that a public hazard."
+				],
+				"guard/compliment": [
+					"Pretty bow. I'll not pretend I'm not watching it."
 				]
 			}
 		},
@@ -8557,6 +9364,15 @@
 				],
 				"kid/compliment": [
 					"Is that from a dragon? Did you fight it yourself?"
+				],
+				"barbarian/compliment": [
+					"Red metal blade! Hah! Our forefathers would've fought you for it."
+				],
+				"barbarian/insult": [
+					"Dragon weapon, and not a notch in it. Bought, then."
+				],
+				"barbarian/remark": [
+					"A red blade. The mighty sword, the vicious axe. Good choice."
 				]
 			}
 		},
@@ -15400,6 +16216,16 @@
 				"slayer_master/insult": [
 					"Still not done with {task}? I'd have finished twice by now.",
 					"Is it {task} still? You're taking your time about it."
+				],
+				"guard/remark": [
+					"Off after {task}, is it? Good. Fewer of them, fewer of my problems.",
+					"If {task} follow you home, that's a report. Mine."
+				],
+				"guard/insult": [
+					"Sent after {task}? Don't bring any back through the gate."
+				],
+				"guard/compliment": [
+					"Someone's got to deal with {task}. Rather you than the watch."
 				]
 			}
 		},
@@ -15794,6 +16620,79 @@
 				"mos_pirate/insult": [
 					"What's a landlubber like ye doin' here?",
 					"Watch where yer goin', landlubber!"
+				],
+				"moon_clan_wary/insult": [
+					"I can hear what you are thinking. Don't.",
+					"Picking at our secrets, like the rest of them. I can hear it.",
+					"You think very loudly for someone with so little to say.",
+					"Outsiders are so easy to read. I wish you were worth reading.",
+					"You were about to ask something. The answer is no.",
+					"Patience and interest. Show me either, and we might talk.",
+					"I read your mind. It did not take long.",
+					"The Fremennik never listen. You have the look of one who does not."
+				],
+				"moon_clan_wary/remark": [
+					"We do not suffer outsiders easily. Do keep walking.",
+					"Our secrets are our own. Do stop thinking about them.",
+					"A wise man listens. Try it.",
+					"You have not earned the right to anything of ours. Yet.",
+					"Mainlanders always want something. I am waiting to hear what.",
+					"The Fremennik broke our altars. We keep our secrets closer now."
+				],
+				"moon_clan_wary/compliment": [
+					"You listen, at least. More than most of your kind manage.",
+					"Your thoughts are quieter than most outsiders'. Only slightly.",
+					"Not entirely ignorant. For a mainlander, that is high praise.",
+					"There may be some insight in you. Very well hidden."
+				],
+				"guard/remark": [
+					"Twelfth hour on this gate. Or thirteenth. I've stopped counting.",
+					"Nothing to report. Nothing to report. I could say it in my sleep.",
+					"The sergeant says stand up straight. The sergeant isn't here.",
+					"Counted the carts in. Now I count them out. That's the job.",
+					"Feet went numb an hour ago. The rest of me is catching up.",
+					"Rations again. If you can call a turnip rations.",
+					"The captain's on inspection. Has been since breakfast. In the pub.",
+					"Quiet shift. Don't say it. You'll jinx it.",
+					"Word is there's trouble coming. Word is always that. Still here.",
+					"Paperwork for the paperwork now. The sergeant invented a form for it.",
+					"Bells go, I go home. Bells haven't gone. So here I stand.",
+					"My relief's late. My relief is always late. I think he's a rumour.",
+					"Nobody's tried the gate all day. Bit insulting, really.",
+					"A cat came through the gate earlier. Didn't stop for questions.",
+					"Guarding, mostly. Standing, technically.",
+					"Someone's been chalking rude words on the wall. Not me. Officially.",
+					"They promised a new helmet. That was three sergeants ago."
+				],
+				"guard/compliment": [
+					"You walked through without causing a fuss. Rarer than you'd think.",
+					"Watched you cross the square. No bother. I appreciate that.",
+					"You've the look of someone who pays their tolls. Carry on."
+				],
+				"guard/insult": [
+					"State your business. Loitering counts as business, by the way.",
+					"You've walked past this post more than once. I'm writing it down.",
+					"Nothing in your hands. Which is exactly what a thief would say.",
+					"Looking at the gate a lot, aren't you. Gates are for walking through.",
+					"Anything to declare? No? That's what they all say."
+				],
+				"barbarian/remark": [
+					"Yyeeeaaarrrggh! Try it. Go on. Louder.",
+					"Sword, axe and arrow for us. The gods can keep their magic.",
+					"The longhall fire never goes out. Nor does the beer.",
+					"We came down from the mountains with Gunnar. We're not going back.",
+					"Nothing happens in this village without a fight breaking out. Good.",
+					"The beer's in the longhall. The meat's in the longhall. Go on, then."
+				],
+				"barbarian/insult": [
+					"What do you want, little one? Not a fight, I can tell.",
+					"Soft city folk. Never know what they want. Bah!",
+					"You look funny. No, really. Has nobody told you?",
+					"Strolling through our village teaches you nothing. Bah!"
+				],
+				"barbarian/compliment": [
+					"You've the look of someone who'd scream and charge. Good.",
+					"Not bad, for an outsider. The longhall might even let you in."
 				]
 			}
 		}
