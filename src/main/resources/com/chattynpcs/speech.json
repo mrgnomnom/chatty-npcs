@@ -9,7 +9,8 @@
 				"word": "JalYt",
 				"swap": 0.7,
 				"append": 0.35,
-				"asNoun": true
+				"asNoun": true,
+				"vocative": "{tzhaar_name}"
 			},
 			"exclaim": {
 				"words": [
@@ -97,7 +98,8 @@
 				"TzHaar-Ket-Keh (Transcript:TzHaar-Ket-Keh): 'We increased the depth at which eggs are incubated... newly hatched TzHaar had more memories' / 'we went too deep... We now call it the Inferno.' / 'We pushed it too far! JalYt would not understand.'",
 				"TzHaar-Mej-Bal (Transcript:TzHaar-Mej-Bal): 'This is TzHaar terminal chamber, TzHaar rest here to draw warmth from the volcano.' / 'As TzHaar grow older we lose heat and begin to solidify.' / Haar-Tok 'can not move or communicate but the former TzHaar remains conscious.'",
 				"Wiki TzHaar: 'Although they are made of rock, they still need to eat, so they hunt the volcanic creatures'; the four castes are 'considered equal in power and respectability'; Haar-Tok are displayed as statues or broken down into TokKul",
-				"LANGUAGES.md: Yt = cold, dead; JalYt = 'cold foreigner' (basis of the warm/cold JalYt compliment)"
+				"LANGUAGES.md: Yt = cold, dead; JalYt = 'cold foreigner' (basis of the warm/cold JalYt compliment)",
+				"Wiki TzHaar#Titles: Mor Ul Rek's TzHaar address you as Race-Caste-Honorific-Name: JalYt; Mej (Magic+Prayer), Ket (Strength+Defence), Xil (Attack+Agility), Hur (Crafting+Smithing), ties in that order; Xo after showing the fire cape, Kal after TzKal-Zuk. TzHaar-Ket-Keh: 'Give it your best shot JalYt-[caste]-Xo-[player name].'"
 			]
 		},
 		{
@@ -1842,7 +1844,8 @@
 				"swap": 0.7,
 				"append": 0.25,
 				"untilQuest": "THE_FREMENNIK_TRIALS",
-				"thenWord": "{kin}"
+				"thenWord": "{kin}",
+				"vocative": "{fremennik_name}"
 			},
 			"exclaim": {
 				"words": [
@@ -1953,7 +1956,8 @@
 				"Brundt the Chieftain (Transcript:Brundt the Chieftain): Koschei 'seemed to have been burnt somehow before he had landed in the water' / 'He still had no recollection... Someday I fear he may regain his memory'",
 				"Wiki Rellekka (History): the Mountain Tribe 'felt like the people of Rellekka had grown too complacent and too reliant on tools rather than skill' after Rellekka was built",
 				"Wiki Rellekka: market stalls 'are heavily guarded by Rellekka's market guards'",
-				"Greeting 'Well met': Sigli (Trials) 'Well met, outerlander.' / Torfinn 'Well met [Fremennik name].' / Brundt 'Well met, [brother/sister] [Fremennik name].'"
+				"Greeting 'Well met': Sigli (Trials) 'Well met, outerlander.' / Torfinn 'Well met [Fremennik name].' / Brundt 'Well met, [brother/sister] [Fremennik name].'",
+				"Wiki Fremennik name: given on finishing the Trials, one of 16 prefixes (Bal Bar Dal Dar Den Dok Jar Jik Lar Rak Ral Ril Sig Tal Thor Ton) and 16 suffixes (dar dor dur kal kar kir kur lah lak lim lor rak tin ton tor vald); used to address you in Rellekka, Neitiznot, Jatizso, Miscellania, Waterbirth and more."
 			]
 		},
 		{

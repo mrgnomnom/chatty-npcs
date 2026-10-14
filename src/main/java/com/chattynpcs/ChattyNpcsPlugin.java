@@ -22,14 +22,18 @@ import net.runelite.api.GameState;
 import net.runelite.api.NPC;
 import net.runelite.api.NPCComposition;
 import net.runelite.api.Player;
+import net.runelite.api.Quest;
+import net.runelite.api.QuestState;
 import net.runelite.api.coords.LocalPoint;
 import net.runelite.api.coords.WorldPoint;
+import net.runelite.api.widgets.Widget;
 import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.events.GameTick;
 import net.runelite.api.events.NpcChanged;
 import net.runelite.api.events.NpcDespawned;
 import net.runelite.api.events.NpcSpawned;
 import net.runelite.api.events.VarbitChanged;
+import net.runelite.api.gameval.InterfaceID;
 import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 import net.runelite.client.callback.ClientThread;
@@ -73,6 +77,11 @@ public class ChattyNpcsPlugin extends Plugin
 	 * Goblins pass comment even though you could attack them, so long as they aren't fighting.
 	 * Cave goblins are Dorgeshuun, and talkable anyway.
 	 */
+	/**
+	 * Every Fremennik name: one of sixteen beginnings and one of sixteen endings
+	 */
+	private static final Pattern FREMENNIK_NAME = Pattern.compile(
+		"\\b(Bal|Bar|Dal|Dar|Den|Dok|Jar|Jik|Lar|Rak|Ral|Ril|Sig|Tal|Thor|Ton)(dar|dor|dur|kal|kar|kir|kur|lah|lak|lim|lor|rak|tin|ton|tor|vald)\\b");
 	private static final Pattern GOBLIN = Pattern.compile("^(?!Cave goblin).*\\bgoblin\\b", Pattern.CASE_INSENSITIVE);
 
 	@Inject
@@ -97,6 +106,9 @@ public class ChattyNpcsPlugin extends Plugin
 
 	@Inject
 	private Gson gson;
+
+	@Inject
+	private ConfigManager configManager;
 
 	// Only touched on the client thread
 	/**
@@ -213,6 +225,8 @@ public class ChattyNpcsPlugin extends Plugin
 	@Subscribe
 	public void onGameTick(GameTick event)
 	{
+		learnFremennikName();
+
 		Player me = client.getLocalPlayer();
 		if (picker == null || me == null)
 		{
@@ -371,6 +385,11 @@ public class ChattyNpcsPlugin extends Plugin
 			ChatterData data = this.data;
 			LinePicker picker = this.picker;
 			cachedSnapshot = characterReader.read(data.baldHairKits, picker.quests(), config.pretendQuests(), config.pretendStats());
+			String fremennikName = configManager.getRSProfileConfiguration(ChattyNpcsConfig.GROUP, ChattyNpcsConfig.FREMENNIK_NAME);
+			if (fremennikName != null && !fremennikName.isEmpty())
+			{
+				cachedSnapshot.vars.put("fremennik_name", fremennikName);
+			}
 			cachedTick = tick;
 		}
 		return cachedSnapshot;
@@ -516,6 +535,42 @@ public class ChattyNpcsPlugin extends Plugin
 			}
 		}
 		return talkable;
+	}
+
+	/**
+	 * The Fremennik never tell the plugin your name, but they say it to you: when one greets you in
+	 * dialogue, remember it for this account
+	 */
+	private void learnFremennikName()
+	{
+		Widget text = client.getWidget(InterfaceID.ChatLeft.TEXT);
+		if (text == null || text.isHidden() || text.getText() == null)
+		{
+			return;
+		}
+		Widget speaker = client.getWidget(InterfaceID.ChatLeft.NAME);
+		String speakerName = speaker != null && speaker.getText() != null ? speaker.getText() : "";
+		java.util.regex.Matcher m = FREMENNIK_NAME.matcher(text.getText());
+		while (m.find())
+		{
+			String name = m.group();
+			// Real Fremennik who happen to fit the pattern, so they can be talked about
+			if (name.equals("Thorvald") || name.equals("Jarvald") || speakerName.contains(name))
+			{
+				continue;
+			}
+			// Only a name they've given you
+			if (Quest.THE_FREMENNIK_TRIALS.getState(client) != QuestState.FINISHED)
+			{
+				return;
+			}
+			if (!name.equals(configManager.getRSProfileConfiguration(ChattyNpcsConfig.GROUP, ChattyNpcsConfig.FREMENNIK_NAME)))
+			{
+				configManager.setRSProfileConfiguration(ChattyNpcsConfig.GROUP, ChattyNpcsConfig.FREMENNIK_NAME, name);
+				cachedTick = -1;
+			}
+			return;
+		}
 	}
 
 	/**

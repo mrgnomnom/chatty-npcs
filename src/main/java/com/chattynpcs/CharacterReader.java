@@ -25,6 +25,7 @@ import net.runelite.api.gameval.DBTableID;
 import net.runelite.api.gameval.InterfaceID;
 import net.runelite.api.gameval.InventoryID;
 import net.runelite.api.gameval.VarPlayerID;
+import net.runelite.api.gameval.VarbitID;
 import net.runelite.api.kit.KitType;
 import net.runelite.api.widgets.Widget;
 import net.runelite.client.game.ItemManager;
@@ -165,6 +166,7 @@ class CharacterReader
 		readCarried(s);
 		readPet(s);
 		readAppearance(s, player, baldHairKits);
+		readTzHaarName(s, player);
 		readStats(s, player, pretendStats);
 		readQuests(s, quests, pretendQuests);
 		readSlayerTask(s);
@@ -265,6 +267,55 @@ class CharacterReader
 		{
 			s.pet = follower.getName();
 		}
+	}
+
+	/**
+	 * The name the TzHaar of Mor Ul Rek give you: race, caste from your strongest pair of skills,
+	 * Xo once you've shown them your fire cape, Kal once you've beaten TzKal-Zuk, then your own name
+	 */
+	private void readTzHaarName(Snapshot s, Player player)
+	{
+		String name = player.getName();
+		if (name == null)
+		{
+			return;
+		}
+		// Ties go to the first caste listed
+		String caste = "Mej";
+		int best = level(Skill.MAGIC) + level(Skill.PRAYER);
+		int ket = level(Skill.STRENGTH) + level(Skill.DEFENCE);
+		if (ket > best)
+		{
+			caste = "Ket";
+			best = ket;
+		}
+		int xil = level(Skill.ATTACK) + level(Skill.AGILITY);
+		if (xil > best)
+		{
+			caste = "Xil";
+			best = xil;
+		}
+		if (level(Skill.CRAFTING) + level(Skill.SMITHING) > best)
+		{
+			caste = "Hur";
+		}
+
+		String cape = s.worn.getOrDefault(EquipmentInventorySlot.CAPE, "");
+		String honour = "";
+		if (client.getVarpValue(VarPlayerID.TOTAL_ZUK_KILLS) > 0 || cape.startsWith("Infernal"))
+		{
+			honour = "-Kal";
+		}
+		else if (client.getVarbitValue(VarbitID.INFERNO_SACRIFICED_FIRECAPE) > 0 || cape.startsWith("Fire cape") || cape.startsWith("Fire max cape"))
+		{
+			honour = "-Xo";
+		}
+		s.vars.put("tzhaar_name", "JalYt-" + caste + honour + "-" + name.replace('\u00A0', ' '));
+	}
+
+	private int level(Skill skill)
+	{
+		return client.getRealSkillLevel(skill);
 	}
 
 	private void readAppearance(Snapshot s, Player player, Collection<Integer> baldHairKits)

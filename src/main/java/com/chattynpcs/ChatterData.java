@@ -43,6 +43,11 @@ class ChatterData
 	 * Hair kit ids that render as a bald head.
 	 */
 	List<Integer> baldHairKits = Collections.emptyList();
+	/**
+	 * What a slayer master tells you when you ask for tips, by task name in lower case. A topic's
+	 * {tip} is one of these for the player's current task
+	 */
+	Map<String, List<String>> slayerTips = Collections.emptyMap();
 
 	/**
 	 * Checked in order; the first persona with a matching NPC name wins. A persona with no
@@ -281,6 +286,10 @@ class ChatterData
 		 */
 		String place;
 		/**
+		 * Only there to name a spot, like one bank in a city: never anyone's home for the news
+		 */
+		boolean nameOnly;
+		/**
 		 * Not the sort of town the heartland/ lines are written for, though nobody here has a
 		 * voice of their own: Karamja, islands, the wilds
 		 */
@@ -424,6 +433,12 @@ class ChatterData
 		 */
 		String untilQuest;
 		String thenWord;
+		/**
+		 * What they call you to your face once you've earned the word, built from what you're known
+		 * by, e.g. "{tzhaar_name}". Talk about you keeps the plain word: "a JalYt", never a full name.
+		 * Until it's known, the plain word does
+		 */
+		String vocative;
 
 		transient Pattern compiledVocative;
 		transient Quest compiledUntil;

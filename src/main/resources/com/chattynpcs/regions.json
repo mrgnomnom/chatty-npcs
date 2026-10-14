@@ -1207,7 +1207,8 @@
 				]
 			],
 			"estimated": true,
-			"notHeartland": true
+			"notHeartland": true,
+			"place": "Piscatoris"
 		},
 		{
 			"id": "the_outpost",
@@ -1610,7 +1611,8 @@
 			],
 			"estimated": true,
 			"note": "Wiki pins: Bobawu 2757,2747; Dugopul 2801,2745; Jumaane 2781,2784; Padulah 2757,2788; Hafuba 2798,2799 and Denadu/Lofu at the temple",
-			"notHeartland": true
+			"notHeartland": true,
+			"place": "Marim"
 		},
 		{
 			"id": "barbarian_village",
@@ -1626,6 +1628,636 @@
 			"estimated": true,
 			"place": "Barbarian Village",
 			"note": "Wiki map centre 3080,3427; longhall 3075-3086,3436-3447 (Gunthor 3081,3444); Peksa 3075,3430; Litara and the Stronghold hole 3081,3420; Hunding's tower 3097,3429; Tassie 3085,3409; Sigurd's canoe station 3112,3409. The Barbarianism music area runs x 3066-3112, y 3404-3456; x starts at 3070 so it never touches ice_mountain (ends 3069) and y stops at 3456, under edgeville (starts 3465). Clear of varrock and the Grand Exchange (start 3140)."
+		},
+		{
+			"id": "bank_varrock_west",
+			"name": "Varrock West bank",
+			"boxes": [
+				[
+					3170,
+					3423,
+					3201,
+					3458
+				]
+			],
+			"place": "Varrock West",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/List_of_banks {{Map|x=3185|y=3441}}; Banker_(Varrock) pins 3187,3436-3446",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_varrock_east",
+			"name": "Varrock East bank",
+			"boxes": [
+				[
+					3242,
+					3410,
+					3265,
+					3432
+				]
+			],
+			"place": "Varrock East",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/List_of_banks {{Map|x=3254|y=3421}}; Banker_(Varrock) pins 3251-3256,3418",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_falador_west",
+			"name": "Falador West bank",
+			"boxes": [
+				[
+					2935,
+					3356,
+					2958,
+					3380
+				]
+			],
+			"place": "Falador West",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/List_of_banks {{Map|x=2946|y=3367}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_falador_east",
+			"name": "Falador East bank",
+			"boxes": [
+				[
+					3003,
+					3347,
+					3027,
+					3368
+				]
+			],
+			"place": "Falador East",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/List_of_banks {{Map|x=3015|y=3357}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_zanaris",
+			"name": "Zanaris bank",
+			"boxes": [
+				[
+					2372,
+					4447,
+					2396,
+					4471
+				]
+			],
+			"place": "Zanaris",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Zanaris) {{Map|x=2384|y=4459|mapID=28}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_ardougne_south",
+			"name": "Ardougne South bank",
+			"boxes": [
+				[
+					2641,
+					3272,
+					2665,
+					3296
+				]
+			],
+			"place": "Ardougne South",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/List_of_banks {{Map|x=2653|y=3284}}; optional: current place is acceptable",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_ardougne_north",
+			"name": "Ardougne North bank",
+			"boxes": [
+				[
+					2605,
+					3322,
+					2629,
+					3340
+				]
+			],
+			"place": "Ardougne North",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/List_of_banks {{Map|x=2617|y=3333}}; optional: current place is acceptable",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_mage_arena",
+			"name": "Mage Arena bank",
+			"boxes": [
+				[
+					2522,
+					4702,
+					2546,
+					4726
+				]
+			],
+			"place": "the Mage Arena",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Gundai {{Map|x=2534|y=4714|mapID=-1}} (surface entrance 3090,3956 per List_of_banks)",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_fishing_guild",
+			"name": "Fishing Guild bank",
+			"boxes": [
+				[
+					2578,
+					3406,
+					2598,
+					3426
+				]
+			],
+			"place": "the Fishing Guild's",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/List_of_banks {{Map|x=2588|y=3416}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_emirs_arena",
+			"name": "Emir's Arena bank",
+			"boxes": [
+				[
+					3371,
+					3259,
+					3394,
+					3282
+				]
+			],
+			"place": "the Emir's Arena",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Fadli {{Map|x=3382|y=3270}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_etceteria",
+			"name": "Etceteria bank",
+			"boxes": [
+				[
+					2608,
+					3883,
+					2632,
+					3907
+				]
+			],
+			"place": "Etceteria",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Etceteria) {{Map|x=2620|y=3895}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_rogues_den",
+			"name": "Rogues' Den bank",
+			"boxes": [
+				[
+					3030,
+					4960,
+					3056,
+					4984
+				]
+			],
+			"place": "the Rogues' Den",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Emerald_Benedict {{Map|x=3042|y=4972|mapID=10137}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_mor_ul_rek",
+			"name": "Mor Ul Rek banks",
+			"boxes": [
+				[
+					2434,
+					5167,
+					2458,
+					5191
+				],
+				[
+					2530,
+					5130,
+					2554,
+					5154
+				]
+			],
+			"place": "Mor Ul Rek",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/TzHaar-Ket-Zuh {{Map|x=2446|y=5179|mapID=23}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_void_knights",
+			"name": "Void Knights' Outpost bank",
+			"boxes": [
+				[
+					2656,
+					2639,
+					2680,
+					2663
+				]
+			],
+			"place": "the Void Knights' Outpost",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Squire_(Void_Knights_banker) {{Map|x=2668|y=2651|mapID=-1}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_warriors_guild",
+			"name": "Warriors' Guild bank",
+			"boxes": [
+				[
+					2833,
+					3533,
+					2853,
+					3553
+				]
+			],
+			"place": "the Warriors' Guild's",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Jade_(Warriors'_Guild) {{Map|x=2843|y=3543}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_tarns_lair",
+			"name": "Tarn's Lair bank",
+			"boxes": [
+				[
+					3183,
+					4557,
+					3207,
+					4581
+				]
+			],
+			"place": "Tarn's Lair",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Odovacar {{Map|3195,4569|mapID=24}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_cooks_guild",
+			"name": "Cooks' Guild bank",
+			"boxes": [
+				[
+					3136,
+					3437,
+					3157,
+					3458
+				]
+			],
+			"place": "the Cooks' Guild's",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Varrock) pins 3147,3448 / 3148,3448",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_kourend_castle",
+			"name": "Kourend Castle bank",
+			"boxes": [
+				[
+					1600,
+					3670,
+					1624,
+					3694
+				]
+			],
+			"place": "Kourend Castle",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/List_of_banks {{Map|x=1612|y=3682|plane=2}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_ourania",
+			"name": "Ourania Cave bank",
+			"boxes": [
+				[
+					3001,
+					5613,
+					3025,
+					5637
+				]
+			],
+			"place": "the Ourania Cave",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Eniola {{Map|x=3013|y=5625|mapID=-1}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_corsair_cove",
+			"name": "Corsair Cove bank",
+			"boxes": [
+				[
+					2558,
+					2853,
+					2582,
+					2877
+				]
+			],
+			"place": "Corsair Cove",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Yusuf {{Map|x=2570|y=2865}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_ver_sinhaza",
+			"name": "Ver Sinhaza bank",
+			"boxes": [
+				[
+					3638,
+					3194,
+					3664,
+					3218
+				]
+			],
+			"place": "Ver Sinhaza",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Ver_Sinhaza) pins 3649-3652,3206",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_farming_guild",
+			"name": "Farming Guild bank",
+			"boxes": [
+				[
+					1238,
+					3748,
+					1262,
+					3772
+				]
+			],
+			"place": "the Farming Guild's",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Farming_Guild) {{Map|x=1250|y=3760}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_ferox_enclave",
+			"name": "Ferox Enclave bank",
+			"boxes": [
+				[
+					3123,
+					3617,
+					3147,
+					3641
+				]
+			],
+			"place": "Ferox Enclave",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Ferox_Enclave) {{Map|x=3135|y=3629}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_the_node",
+			"name": "The Node bank",
+			"boxes": [
+				[
+					3084,
+					3015,
+					3108,
+					3039
+				]
+			],
+			"place": "the Node",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Group_Storage_tutor {{Map|x=3096|y=3027}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_clan_hall",
+			"name": "Clan Hall bank",
+			"boxes": [
+				[
+					1735,
+					5466,
+					1759,
+					5490
+				]
+			],
+			"place": "the Clan Hall",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Clan_Hall) {{Map|mapID=-1|1747,5478|rectX=6|rectY=4}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_ancient_prison",
+			"name": "Ancient Prison bank",
+			"boxes": [
+				[
+					2892,
+					5193,
+					2916,
+					5217
+				]
+			],
+			"place": "the Ancient Prison",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Ashuelot_Reis {{Map|x=2904|y=5205|mapID=-1}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_cam_torum",
+			"name": "Cam Torum bank",
+			"boxes": [
+				[
+					1441,
+					9555,
+					1466,
+					9580
+				]
+			],
+			"place": "Cam Torum",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Cam_Torum) pins 1451-1456,9565-9570 plane=1",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_hunter_guild",
+			"name": "Hunter Guild bank",
+			"boxes": [
+				[
+					1531,
+					3029,
+					1553,
+					3052
+				]
+			],
+			"place": "the Hunter Guild's",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Hunter_Guild) {{Map|x=1542|y=3041}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_fortis_east",
+			"name": "Fortis east bank",
+			"boxes": [
+				[
+					1769,
+					3082,
+					1792,
+					3104
+				]
+			],
+			"place": "Fortis East",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Civitas_illa_Fortis) pins 1778-1781,3092; optional: current place is acceptable",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_fortis_west",
+			"name": "Fortis west bank",
+			"boxes": [
+				[
+					1636,
+					3109,
+					1659,
+					3131
+				]
+			],
+			"place": "Fortis West",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Civitas_illa_Fortis) pins 1646-1649,3120; optional: current place is acceptable",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_aldarin",
+			"name": "Aldarin bank",
+			"boxes": [
+				[
+					1390,
+					2919,
+					1414,
+					2943
+				]
+			],
+			"place": "Aldarin",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Aldarin_bank {{Map|1399,2927|rectX=7|rectY=8}}",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_mistrock",
+			"name": "Mistrock bank",
+			"boxes": [
+				[
+					1370,
+					2852,
+					1394,
+					2876
+				]
+			],
+			"place": "Mistrock",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Mistrock) pins 1380,2864 / 1383,2864",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_quetzacalli",
+			"name": "Quetzacalli Gorge bank",
+			"boxes": [
+				[
+					1508,
+					3217,
+					1532,
+					3241
+				]
+			],
+			"place": "Quetzacalli Gorge",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Quetzacalli_Gorge_bank polygon 1517-1523,3226-3232",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_darkfrost",
+			"name": "Darkfrost bank",
+			"boxes": [
+				[
+					1514,
+					3281,
+					1538,
+					3305
+				]
+			],
+			"place": "the Darkfrost",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Bank_buffalo pin 1526,3293",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_auburnvale",
+			"name": "Auburnvale bank",
+			"boxes": [
+				[
+					1404,
+					3341,
+					1428,
+					3365
+				]
+			],
+			"place": "Auburnvale",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Auburnvale) pins 1415-1417,3352-3354",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_tal_teklan",
+			"name": "Tal Teklan bank",
+			"boxes": [
+				[
+					1233,
+					3109,
+					1257,
+					3133
+				]
+			],
+			"place": "Tal Teklan",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Tal_Teklan) pin 1245,3121",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_nemus_retreat",
+			"name": "Nemus Retreat bank",
+			"boxes": [
+				[
+					1375,
+					3298,
+					1399,
+					3322
+				]
+			],
+			"place": "Nemus Retreat",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Bank_buffalo pin 1387,3310",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_great_conch",
+			"name": "Great Conch bank",
+			"boxes": [
+				[
+					3172,
+					2406,
+					3196,
+					2430
+				]
+			],
+			"place": "the Great Conch",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(tortugan) pins 3184,2418-2419; optional: current place is acceptable",
+			"nameOnly": true
+		},
+		{
+			"id": "bank_boat",
+			"name": "Bank boat",
+			"boxes": [
+				[
+					2268,
+					2532,
+					2292,
+					2556
+				]
+			],
+			"place": "the Barracuda Belt",
+			"estimated": true,
+			"note": "https://oldschool.runescape.wiki/w/Banker_(Bank_boat) {{Map|x=2279|y=2544}}; Bank_Crab 2281,2545",
+			"nameOnly": true
 		}
 	]
 }

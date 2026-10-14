@@ -13,6 +13,10 @@ public interface ChattyNpcsConfig extends Config
 {
 	String GROUP = "chattynpcs";
 	String DEBUG_MODE = "debugMode";
+	/**
+	 * Saved per account: the name the Fremennik gave you, picked up from their dialogue
+	 */
+	String FREMENNIK_NAME = "fremennikName";
 
 	@ConfigSection(
 		name = "How often",
@@ -245,7 +249,7 @@ public interface ChattyNpcsConfig extends Config
 	)
 	default boolean showInChat()
 	{
-		return true;
+		return false;
 	}
 
 	@ConfigItem(

@@ -10,6 +10,7 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.Random;
+import java.util.TreeMap;
 import net.runelite.api.EquipmentInventorySlot;
 import net.runelite.api.Quest;
 import net.runelite.api.QuestState;
@@ -68,6 +69,7 @@ public class LinePickerTest
 		Map<String, String> vars = new java.util.HashMap<>();
 		vars.put("item", "x");
 		vars.put("task", "x");
+		vars.put("tip", "x");
 		for (ChatterData.Topic topic : data.topics)
 		{
 			for (List<String> lines : topic.lines.values())
@@ -118,6 +120,17 @@ public class LinePickerTest
 					// Excitement is an exclamation mark, not capitals. HAM is a name.
 					assertFalse(where + " shouts in capitals", line.replace("HAM", "").matches(".*\\b[A-Z]{2,}\\b.*"));
 				}
+			}
+		}
+		for (Map.Entry<String, List<String>> tips : data.slayerTips.entrySet())
+		{
+			assertEquals("tips are keyed in lower case", tips.getKey().toLowerCase(java.util.Locale.ROOT), tips.getKey());
+			for (String tip : tips.getValue())
+			{
+				String where = "slayer tip for " + tips.getKey() + ": " + tip;
+				assertTrue(where + " is too long for a speech bubble", tip.length() <= 70);
+				assertFalse(where + " has a number in it", tip.matches(".*\\d.*"));
+				assertFalse(where + " uses a banned word", banned.matcher(tip).find());
 			}
 		}
 		for (ChatterData.Persona persona : data.personas)
@@ -709,11 +722,11 @@ public class LinePickerTest
 		assertFalse(picker.greetingDue("Hans", VARROCK_WEST_BANK, 0));
 		String greeting = pick(picker, s, "Banker", VARROCK_WEST_BANK, ChattyNpcsConfig.Mood.BALANCED, 0).getText();
 		assertFalse(picker.greetingDue("Banker", VARROCK_WEST_BANK, 60_000));
-		assertTrue(greeting, greeting.matches(".*[Ww]elcome.*Varrock bank.*"));
+		assertTrue(greeting, greeting.matches(".*[Ww]elcome.*Varrock West bank.*"));
 		// Not again while you're still there, nor from the banker at the next booth
 		for (int i = 1; i <= 10; i++)
 		{
-			assertFalse(pick(picker, s, "Banker", VARROCK_WEST_BANK, ChattyNpcsConfig.Mood.BALANCED, i * 60_000L).getText().contains("Varrock bank"));
+			assertFalse(pick(picker, s, "Banker", VARROCK_WEST_BANK, ChattyNpcsConfig.Mood.BALANCED, i * 60_000L).getText().contains("Varrock West bank"));
 		}
 		// Standing there a long while without a word is still the same visit
 		for (long t = 11 * 60_000L; t <= 50 * 60_000L; t += 60_000L)
@@ -722,7 +735,7 @@ public class LinePickerTest
 		}
 		assertFalse(picker.greetingDue("Banker", VARROCK_WEST_BANK, 60 * 60_000L));
 		// Back after a long while away, and they greet you again
-		assertTrue(pick(picker, s, "Banker", VARROCK_WEST_BANK, ChattyNpcsConfig.Mood.BALANCED, 2 * 60 * 60_000L).getText().contains("Varrock bank"));
+		assertTrue(pick(picker, s, "Banker", VARROCK_WEST_BANK, ChattyNpcsConfig.Mood.BALANCED, 2 * 60 * 60_000L).getText().contains("Varrock West bank"));
 		assertTrue(picker.talksFreely("Banker", VARROCK_WEST_BANK));
 		assertFalse(picker.talksFreely("Hans", VARROCK_WEST_BANK));
 	}
@@ -1059,6 +1072,129 @@ public class LinePickerTest
 			assertEquals(name, "barbarian", pick(fresh(0), s, name, village, ChattyNpcsConfig.Mood.BALANCED, 0).getPersona());
 		}
 		assertNotEquals("barbarian", pick(fresh(0), s, "Tassie Slipcast", village, ChattyNpcsConfig.Mood.BALANCED, 0).getPersona());
+	}
+
+	@Test
+	public void theTzHaarCallYouByTheNameTheyGaveYou()
+	{
+		WorldPoint city = new WorldPoint(2480, 5170, 0);
+		CharacterReader.Snapshot s = snapshot("bald");
+		s.vars.put("tzhaar_name", "JalYt-Ket-Kal-Mr Gnome");
+		boolean named = false;
+		for (int i = 0; i < 200; i++)
+		{
+			String text = pick(fresh(i), s, "TzHaar-Hur-Tel", city, ChattyNpcsConfig.Mood.BALANCED, 0).getText();
+			assertFalse(text, text.contains("a JalYt-") || text.contains("an JalYt-"));
+			named |= text.contains("JalYt-Ket-Kal-Mr Gnome");
+		}
+		assertTrue(named);
+	}
+
+	@Test
+	public void theFremennikUseYourFremennikNameOnceYouveEarnedIt()
+	{
+		WorldPoint rellekka = new WorldPoint(2660, 3670, 0);
+		CharacterReader.Snapshot s = snapshot("bald");
+		s.vars.put("fremennik_name", "Dartor");
+		s.quests.put(Quest.THE_FREMENNIK_TRIALS, QuestState.IN_PROGRESS);
+		boolean named = false;
+		for (int i = 0; i < 200; i++)
+		{
+			assertFalse(pick(fresh(i), s, "Thora", rellekka, ChattyNpcsConfig.Mood.BALANCED, 0).getText().contains("Dartor"));
+		}
+		s.quests.put(Quest.THE_FREMENNIK_TRIALS, QuestState.FINISHED);
+		for (int i = 0; i < 200; i++)
+		{
+			named |= pick(fresh(i), s, "Thora", rellekka, ChattyNpcsConfig.Mood.BALANCED, 0).getText().contains("Dartor");
+		}
+		assertTrue(named);
+	}
+
+	/**
+	 * Statement, exposition, then a little verdict: "Olaf would sing of that cape. Badly, but at
+	 * length." Fine once. Thousands of them is a script, so no voice may lean on it
+	 */
+	@Test
+	public void voicesDontAllTalkInTheSameShape()
+	{
+		Pattern tagged = Pattern.compile("^(.*[.!?]) ([A-Z][^.!?]{0,22}[.!?])$");
+		Pattern sentenceEnd = Pattern.compile("[.!?](?=\\s|$)");
+		Map<String, int[]> voices = new TreeMap<>();
+		for (ChatterData.Topic topic : data.topics)
+		{
+			for (Map.Entry<String, List<String>> entry : topic.lines.entrySet())
+			{
+				String voice = entry.getKey().contains("/") ? entry.getKey().split("/")[0] : "plain";
+				for (String line : entry.getValue())
+				{
+					String body = line.replaceFirst("^[a-z|]+:\\s*", "");
+					int[] counts = voices.computeIfAbsent(voice, v -> new int[3]);
+					counts[0]++;
+					Matcher m = tagged.matcher(body);
+					if (m.matches() && m.group(1).length() > m.group(2).length())
+					{
+						counts[1]++;
+					}
+					if (sentenceEnd.matcher(body).results().count() >= 3)
+					{
+						counts[2]++;
+					}
+				}
+			}
+		}
+		for (Map.Entry<String, int[]> voice : voices.entrySet())
+		{
+			int[] c = voice.getValue();
+			if (c[0] < 20)
+			{
+				continue;
+			}
+			// Goblins, trolls, ogres, TzHaar and parrots talk in short bursts, "Shiny hat. Me want. Give.", so a
+			// short last sentence is just how they talk
+			if (Arrays.asList("goblin", "troll", "ogre", "tzhaar", "parrot").contains(voice.getKey()))
+			{
+				continue;
+			}
+			assertTrue(voice.getKey() + ": " + c[1] + " of " + c[0] + " lines end on a little verdict", c[1] * 4 <= c[0]);
+			assertTrue(voice.getKey() + ": " + c[2] + " of " + c[0] + " lines run to three sentences", c[2] * 5 <= c[0]);
+		}
+	}
+
+	@Test
+	public void slayerMastersPassOnTipsForYourTask()
+	{
+		data.slayerTips = java.util.Collections.singletonMap("araxytes", java.util.Collections.singletonList("Pray against their melee and they'll not touch you."));
+		CharacterReader.Snapshot s = snapshot("slayer_task");
+		s.vars.put("task", "araxytes");
+		boolean tipped = false;
+		for (int i = 0; i < 100; i++)
+		{
+			tipped |= pick(fresh(i), s, "Vannaka", new WorldPoint(3146, 9914, 0), ChattyNpcsConfig.Mood.BALANCED, 0).getText().contains("Pray against their melee");
+		}
+		assertTrue(tipped);
+		s.vars.put("task", "cows");
+		for (int i = 0; i < 100; i++)
+		{
+			LinePicker.Comment c = pick(fresh(i), s, "Vannaka", new WorldPoint(3146, 9914, 0), ChattyNpcsConfig.Mood.BALANCED, 0);
+			assertNotEquals("slayer_tip", c.getTopicId());
+		}
+	}
+
+	@Test
+	public void bankersNameTheirBank()
+	{
+		CharacterReader.Snapshot s = snapshot("bald");
+		String greeting = null;
+		for (int i = 0; i < 50 && greeting == null; i++)
+		{
+			LinePicker.Comment c = pick(fresh(i), s, "Banker", new WorldPoint(3651, 3206, 0), ChattyNpcsConfig.Mood.BALANCED, 0);
+			if (c.getText().contains("bank"))
+			{
+				greeting = c.getText();
+			}
+		}
+		assertNotNull(greeting);
+		assertTrue(greeting, greeting.contains("Ver Sinhaza"));
 	}
 
 	@Test

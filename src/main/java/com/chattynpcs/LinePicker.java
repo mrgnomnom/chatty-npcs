@@ -40,6 +40,11 @@ class LinePicker
 	 * Don't wrap lines that are already long, overhead text gets hard to read
 	 */
 	private static final int MAX_WRAPPED_LENGTH = 70;
+	/**
+	 * A line that fits as written can still overflow once a long name goes in: "fossil island
+	 * wyverns", "Dragon hunter crossbow (t)". Past this, pick another line
+	 */
+	private static final int MAX_FILLED_LENGTH = 80;
 	private static final double LEAN_BOOST = 2.5;
 	/**
 	 * How much more a quest giver wants to talk about their own quest than anything else
@@ -93,6 +98,7 @@ class LinePicker
 	 * A line that already opens with an exclamation of its own: "Oi! ...", "Grrr! ...", "Blimey. ..."
 	 */
 	private static final Pattern INTERJECTION = Pattern.compile("^[A-Z][\\w']*(?:,? [\\w']+)?[!.] ");
+	private static final Pattern SENTENCE_END = Pattern.compile("[.!?](?=\\s|$)");
 	private static final Pattern WRAPPER_TONES = Pattern.compile("^([a-z|]+):\\s*(.*)$");
 	/**
 	 * How much more a news-teller would rather talk about local trouble that's still unsolved
@@ -452,6 +458,7 @@ class LinePicker
 	Comment pick(CharacterReader.Snapshot snapshot, String npcName, WorldPoint npcLocation, ChattyNpcsConfig.Mood mood, long topicCooldownMillis, long now)
 	{
 		hearer = snapshot;
+		pickTip(snapshot);
 		ChatterData.Persona persona = personaFor(npcName, npcLocation);
 		if (persona == null)
 		{
@@ -908,7 +915,7 @@ class LinePicker
 		ChatterData.Region best = null;
 		for (ChatterData.Region region : data.regions)
 		{
-			if (location != null && region.contains(location.getX(), location.getY()) && (best == null || region.area() < best.area()))
+			if (!region.nameOnly && location != null && region.contains(location.getX(), location.getY()) && (best == null || region.area() < best.area()))
 			{
 				best = region;
 			}
@@ -982,7 +989,7 @@ class LinePicker
 	private String greeting(ChatterData.Persona persona, ChatterData.Speech speech, WorldPoint location)
 	{
 		ChatterData.Region region = placeAt(location);
-		String you = speech != null && speech.address != null ? addressWord(speech.address) : DEFAULT_ADDRESS.get(random.nextInt(DEFAULT_ADDRESS.size()));
+		String you = speech != null && speech.address != null ? vocativeWord(speech.address, addressWord(speech.address)) : DEFAULT_ADDRESS.get(random.nextInt(DEFAULT_ADDRESS.size()));
 		String text = persona.greetings.get(random.nextInt(persona.greetings.size()))
 			.replace("{you}", you)
 			.replace("{place}", region != null ? region.place : "our");
@@ -1261,6 +1268,12 @@ class LinePicker
 		{
 			return line;
 		}
+		// A line that's already had its say doesn't need a "Hail." in front or a "Fight well." after:
+		// three tidy sentences in a row is how a script talks, not a person
+		if (SENTENCE_END.matcher(line).results().count() > 1)
+		{
+			return line;
+		}
 		if (random.nextDouble() < persona.openerChance)
 		{
 			String opener = pickWrapper(persona.openers, tone);
@@ -1429,7 +1442,9 @@ class LinePicker
 		if (address != null)
 		{
 			String word = addressWord(address);
-			out = replace(out, address.compiledVocative, strength(address.swap), m -> word);
+			String name = vocativeWord(address, word);
+			out = replace(out, address.compiledVocative, strength(address.swap), m -> name);
+
 			if (address.asNoun)
 			{
 				out = replace(out, NOUN_ADDRESS, strength(address.swap), m -> m.group(1) == null ? word : article(word) + " " + word);
@@ -1437,7 +1452,7 @@ class LinePicker
 			boolean aimedAtYou = ChatterData.COMPLIMENT.equals(tone) || ChatterData.INSULT.equals(tone);
 			if (aimedAtYou && !addressesYou(out) && !out.toLowerCase(Locale.ROOT).contains(word.toLowerCase(Locale.ROOT)) && random.nextDouble() < strength(address.append))
 			{
-				out = FIRST_SENTENCE.matcher(out).replaceFirst("$1, " + Matcher.quoteReplacement(word) + "$2");
+				out = FIRST_SENTENCE.matcher(out).replaceFirst("$1, " + Matcher.quoteReplacement(name) + "$2");
 			}
 		}
 		return out.length() <= MAX_WRAPPED_LENGTH ? out : line;
@@ -1489,12 +1504,22 @@ class LinePicker
 	 */
 	private String earnedAddress(String text, ChatterData.Speech speech)
 	{
-		if (speech == null || speech.address == null || speech.address.compiledUntil == null)
+		if (speech == null || speech.address == null)
 		{
 			return text;
 		}
 		String word = addressWord(speech.address);
-		return word.equals(speech.address.word) ? text : text.replaceAll("\\b" + Pattern.quote(speech.address.word) + "\\b", Matcher.quoteReplacement(word));
+		String out = word.equals(speech.address.word) ? text : text.replaceAll("\\b" + Pattern.quote(speech.address.word) + "\\b", Matcher.quoteReplacement(word));
+		String name = vocativeWord(speech.address, word);
+		if (!name.equals(word))
+		{
+			// Said to your face, "JalYt, ..." or "..., JalYt.", it's the name they gave you
+			String quoted = Pattern.quote(word);
+			String named = out.replaceFirst("^" + quoted + ",", Matcher.quoteReplacement(name) + ",")
+				.replaceAll(", " + quoted + "([.!?])", ", " + Matcher.quoteReplacement(name) + "$1");
+			out = named.length() <= MAX_WRAPPED_LENGTH ? named : out;
+		}
+		return out;
 	}
 
 	/**
@@ -1507,6 +1532,46 @@ class LinePicker
 			return address.thenWord.replace("{kin}", hearer.vars.getOrDefault("kin", "friend"));
 		}
 		return address.word;
+	}
+
+	/**
+	 * A slayer master's advice for the task in hand, if they've any
+	 */
+	private void pickTip(CharacterReader.Snapshot snapshot)
+	{
+		String task = snapshot.vars.get("task");
+		List<String> tips = task == null ? null : data.slayerTips.get(task.toLowerCase(Locale.ROOT));
+		if (tips == null || tips.isEmpty())
+		{
+			snapshot.vars.remove("tip");
+			return;
+		}
+		snapshot.vars.put("tip", tips.get(random.nextInt(tips.size())));
+	}
+
+	/**
+	 * The name they've given you, once they've given it: "JalYt-Ket-Kal-Zezima", or your Fremennik name
+	 */
+	private String vocativeWord(ChatterData.Address address, String word)
+	{
+		if (address.vocative == null || hearer == null
+			|| (address.compiledUntil != null && hearer.quests.get(address.compiledUntil) != QuestState.FINISHED))
+		{
+			return word;
+		}
+		Matcher m = PLACEHOLDER.matcher(address.vocative);
+		StringBuffer out = new StringBuffer();
+		while (m.find())
+		{
+			String value = hearer.vars.get(m.group(1));
+			if (value == null || value.isEmpty())
+			{
+				return word;
+			}
+			m.appendReplacement(out, Matcher.quoteReplacement(value));
+		}
+		m.appendTail(out);
+		return out.toString();
 	}
 
 	private String pickWord(ChatterData.Words words)
@@ -1674,6 +1739,10 @@ class LinePicker
 			m.appendReplacement(sb, Matcher.quoteReplacement(value));
 		}
 		m.appendTail(sb);
+		if (sb.length() > MAX_FILLED_LENGTH)
+		{
+			return null;
+		}
 
 		// Placeholders like {item} can start a sentence
 		if (sb.length() > 0)

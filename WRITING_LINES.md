@@ -31,25 +31,63 @@ Before writing:
 
 ## Anatomy of a line
 
-Most good lines are two beats: an observation, then a deflating twist.
+A line is something a person says, not a joke with a setup and a punchline. Real people trail off,
+ask you things, exclaim, interrupt themselves, and say one thing and stop. Read a voice's lines
+back to back: if they all have the same rhythm, they sound like one writer in different hats.
 
-| Beat 1: the observation | Beat 2: the twist |
+**The trap: observation, exposition, quip.** "A fire cape. They say the caves are hot. Lovely."
+One of these is fine. Two thousand of them is a script. The tests cap it: at most a quarter of any
+voice's lines may end on a short tag sentence after a longer one ("Badly, but at length.",
+"Keep at it.", "Bold.").
+
+Mix the shapes. Across a voice's lines, aim for roughly:
+
+| Shape | Example | Share |
+| --- | --- | --- |
+| One sentence, and stop | "You'll want a bigger axe than that for the trolls." | a third or more |
+| A question at you | "Did you really go into the caves for that?" | a fifth |
+| An exclamation or reaction | "Ooh, that's a fire cape, isn't it!" | some |
+| Thinking aloud, trailing off | "A bald head like that, in this wind... rather you than me." | some |
+| Self-interruption or correction | "Is that bronze? No, it's rust. Mostly rust." | a little |
+| Two sentences | "Doric's still waiting on clay. Somebody fetch the man some clay." | the rest |
+| Three sentences | | rarely |
+
+Punctuation follows speech: commas, question marks, exclamation marks and "..." for trailing off
+are all welcome. Not the long dash: the game's font may not draw it. Use a comma or "..." instead.
+
+**Each voice has its own rhythm,** not just its own words:
+
+| Voice | Rhythm |
 | --- | --- |
-| "A fire cape. Lovely." | "The infernal one's redder, mind." |
-| "Doric's still waiting on clay." | "It's clay. It just lies there." |
-| "Did for Galvek, did you?" | "You'd never know to look at you." |
-| "Lathas hid in a wardrobe, they say." | "A king! In a wardrobe!" |
+| TzHaar, goblins, trolls, ogres | Clipped fragments, no articles, one idea: "Shiny hat. Me want." |
+| Gnomes | Bouncy run-ons strung with "and", excitable questions |
+| Dwarves | Blunt, one line, done. Judgement first |
+| Fremennik, barbarians | Declarations and challenges. Saga talk. Questions are dares |
+| Toffs, wizards, vicars | Long single sentences with a clause or two; they enjoy their own voice |
+| Kids | Questions, exclamations, non sequiturs. Never a tidy two-beat joke |
+| Nans | Fussing, trailing off, "dear", advice nobody asked for |
+| Guards | Orders and flat reports. Short. Bored |
+| Bankers, traders, barkeeps | Patter: talk aimed at you, often a question or an offer |
+| Ordinary locals | Everything above, in moderation. Mostly one sentence |
 
-One-beat lines work when the observation is already funny: "Not even a vest? Brave."
+**Name the thing.** "You earned that the hard way" could be about anything; "You earned that cape
+the hard way, didn't you?" is about you. Say which cape, which boots, which dragon.
+
+**Tag questions are British, not American.** Not "huh?", "right?" or "yeah?", but "didn't you?",
+"weren't you?", "isn't it?", "eh?", "I'll bet", "I expect", "I shouldn't wonder". The TzHaar have
+their own: ", no?"
+
+One-beat lines are the default, not the exception: "Not even a vest? Brave." A second sentence has
+to earn its place.
 
 **Shape rules**
 
-- One or two short sentences. Aim for under 60 characters; 70 is a hard limit (the tests enforce it).
+- Usually one sentence, sometimes two, rarely three. Aim for under 60 characters; 70 is a hard limit (the tests enforce it).
 - Plain words first. At most one dialect marker per line, and only for the personas that use one.
 - British spelling: armour, colour, grey.
 - Don't start a line with `{item}`. The plugin capitalises the first letter, but "Red partyhat,
   is it?" reads oddly. Put the item mid-sentence.
-- End on the joke. Don't add a one-word verdict ("Pathetic.", "Tragic.", "Typical.").
+- Don't bolt a verdict on the end ("Pathetic.", "Tragic.", "Bold.", "Keep at it."). If the joke needs a tag to land, rewrite the joke.
 - No capitals for emphasis ("Were you SCARED?"). Excitement is an exclamation mark; the game's
   NPCs never shout in capitals. Names keep their normal capital, and HAM is the only acronym.
 
