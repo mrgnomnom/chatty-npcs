@@ -1285,7 +1285,8 @@ class LinePicker
 				return opener + " " + line;
 			}
 		}
-		else if (random.nextDouble() < persona.closerChance)
+		// A question waits for an answer, so nothing gets tacked on after it
+		else if (!line.endsWith("?") && random.nextDouble() < persona.closerChance)
 		{
 			String closer = pickWrapper(persona.closers, tone);
 			if (closer != null && line.length() + closer.length() < MAX_WRAPPED_LENGTH && !saysAlready(line, closer) && !echoes(line, closer)

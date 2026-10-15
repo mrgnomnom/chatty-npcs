@@ -1007,7 +1007,7 @@
 				"Oh. 'Ello."
 			],
 			"closers": [
-				"Times is hard.",
+				"Good day to you.",
 				"Mind how you go."
 			],
 			"openerChance": 0.3,
@@ -1175,8 +1175,7 @@
 			],
 			"closers": [
 				"Saradomin smile on you.",
-				"Mind the gravestones.",
-				"The collection plate's by the door."
+				"Go in peace."
 			],
 			"openerChance": 0.3,
 			"closerChance": 0.35
@@ -1209,7 +1208,6 @@
 			],
 			"closers": [
 				"Mind the gliders.",
-				"compliment|remark: Gnomeball later?",
 				"Safe travels, human."
 			],
 			"openerChance": 0.35,
@@ -1234,7 +1232,7 @@
 			"closers": [
 				"Carry on.",
 				"compliment|remark: Jolly good.",
-				"Do mind the carpet."
+				"Good day."
 			],
 			"openerChance": 0.35,
 			"closerChance": 0.3
@@ -1329,8 +1327,7 @@
 			],
 			"closers": [
 				"Mind your step.",
-				"compliment|remark: Pie, anyone?",
-				"Mind the anvil."
+				"Good mining to you."
 			],
 			"openerChance": 0.35,
 			"closerChance": 0.3
@@ -1466,7 +1463,7 @@
 			"closers": [
 				"insult|remark: Be off wi' you.",
 				"Mind the mud.",
-				"compliment|remark: Nice weather for it."
+				"Go careful."
 			],
 			"openerChance": 0.35,
 			"closerChance": 0.3
@@ -1487,8 +1484,8 @@
 			],
 			"closers": [
 				"Mind how you go.",
-				"compliment|remark: Nice weather for it.",
-				"remark: Mustn't grumble."
+				"Take care, now.",
+				"Cheerio."
 			],
 			"openerChance": 0.3,
 			"closerChance": 0.3,
