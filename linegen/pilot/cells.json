@@ -1,0 +1,772 @@
+{
+	"voices": {
+		"gnome": {
+			"npc": "Gnome",
+			"x": 2460,
+			"y": 3440,
+			"plane": 0,
+			"speech": "gnome"
+		},
+		"varrock": {
+			"npc": "Man",
+			"x": 3215,
+			"y": 3425,
+			"plane": 0
+		}
+	},
+	"cells": [
+		{
+			"id": "gnome/iron_armour/insult",
+			"voice": "gnome",
+			"topic": "iron_armour",
+			"tone": "insult",
+			"worn": {
+				"BODY": "Iron platebody",
+				"LEGS": "Iron platelegs"
+			}
+		},
+		{
+			"id": "gnome/steel_armour/compliment",
+			"voice": "gnome",
+			"topic": "steel_armour",
+			"tone": "compliment",
+			"worn": {
+				"BODY": "Steel platebody",
+				"LEGS": "Steel platelegs",
+				"HEAD": "Steel full helm"
+			}
+		},
+		{
+			"id": "gnome/dragon_armour/compliment",
+			"voice": "gnome",
+			"topic": "dragon_armour",
+			"tone": "compliment",
+			"worn": {
+				"BODY": "Dragon platebody",
+				"LEGS": "Dragon platelegs"
+			}
+		},
+		{
+			"id": "gnome/dragon_armour/insult",
+			"voice": "gnome",
+			"topic": "dragon_armour",
+			"tone": "insult",
+			"worn": {
+				"BODY": "Dragon platebody"
+			}
+		},
+		{
+			"id": "gnome/abyssal_whip/compliment",
+			"voice": "gnome",
+			"topic": "abyssal_whip",
+			"tone": "compliment",
+			"worn": {
+				"WEAPON": "Abyssal whip"
+			}
+		},
+		{
+			"id": "gnome/abyssal_whip/insult",
+			"voice": "gnome",
+			"topic": "abyssal_whip",
+			"tone": "insult",
+			"worn": {
+				"WEAPON": "Abyssal whip"
+			}
+		},
+		{
+			"id": "gnome/rune_scimitar/compliment",
+			"voice": "gnome",
+			"topic": "rune_scimitar",
+			"tone": "compliment",
+			"worn": {
+				"WEAPON": "Rune scimitar"
+			}
+		},
+		{
+			"id": "gnome/dragon_scimitar/remark",
+			"voice": "gnome",
+			"topic": "dragon_scimitar",
+			"tone": "remark",
+			"worn": {
+				"WEAPON": "Dragon scimitar"
+			}
+		},
+		{
+			"id": "gnome/green_dhide/insult",
+			"voice": "gnome",
+			"topic": "green_dhide",
+			"tone": "insult",
+			"worn": {
+				"BODY": "Green d'hide body"
+			}
+		},
+		{
+			"id": "gnome/graceful/compliment",
+			"voice": "gnome",
+			"topic": "graceful",
+			"tone": "compliment",
+			"worn": {
+				"HEAD": "Graceful hood",
+				"BODY": "Graceful top",
+				"LEGS": "Graceful legs",
+				"CAPE": "Graceful cape",
+				"GLOVES": "Graceful gloves",
+				"BOOTS": "Graceful boots"
+			}
+		},
+		{
+			"id": "gnome/graceful/insult",
+			"voice": "gnome",
+			"topic": "graceful",
+			"tone": "insult",
+			"worn": {
+				"HEAD": "Graceful hood",
+				"BODY": "Graceful top",
+				"LEGS": "Graceful legs",
+				"CAPE": "Graceful cape",
+				"GLOVES": "Graceful gloves",
+				"BOOTS": "Graceful boots"
+			}
+		},
+		{
+			"id": "gnome/barrows/remark",
+			"voice": "gnome",
+			"topic": "barrows",
+			"tone": "remark",
+			"worn": {
+				"BODY": "Dharok's platebody",
+				"HEAD": "Dharok's helm"
+			}
+		},
+		{
+			"id": "gnome/fire_cape/compliment",
+			"voice": "gnome",
+			"topic": "fire_cape",
+			"tone": "compliment",
+			"worn": {
+				"CAPE": "Fire cape"
+			}
+		},
+		{
+			"id": "gnome/fire_cape/insult",
+			"voice": "gnome",
+			"topic": "fire_cape",
+			"tone": "insult",
+			"worn": {
+				"CAPE": "Fire cape"
+			}
+		},
+		{
+			"id": "gnome/infernal_cape/remark",
+			"voice": "gnome",
+			"topic": "infernal_cape",
+			"tone": "remark",
+			"worn": {
+				"CAPE": "Infernal cape"
+			}
+		},
+		{
+			"id": "gnome/partyhat/compliment",
+			"voice": "gnome",
+			"topic": "partyhat",
+			"tone": "compliment",
+			"worn": {
+				"HEAD": "Red partyhat"
+			}
+		},
+		{
+			"id": "gnome/partyhat/insult",
+			"voice": "gnome",
+			"topic": "partyhat",
+			"tone": "insult",
+			"worn": {
+				"HEAD": "Blue partyhat"
+			}
+		},
+		{
+			"id": "gnome/max_cape/remark",
+			"voice": "gnome",
+			"topic": "max_cape",
+			"tone": "remark",
+			"worn": {
+				"CAPE": "Max cape"
+			}
+		},
+		{
+			"id": "gnome/twisted_bow/compliment",
+			"voice": "gnome",
+			"topic": "twisted_bow",
+			"tone": "compliment",
+			"worn": {
+				"WEAPON": "Twisted bow"
+			}
+		},
+		{
+			"id": "gnome/void/insult",
+			"voice": "gnome",
+			"topic": "void",
+			"tone": "insult",
+			"worn": {
+				"BODY": "Void knight top",
+				"LEGS": "Void knight robe"
+			}
+		},
+		{
+			"id": "gnome/saradomin_cape/compliment",
+			"voice": "gnome",
+			"topic": "saradomin_cape",
+			"tone": "compliment",
+			"worn": {
+				"CAPE": "Saradomin cape"
+			}
+		},
+		{
+			"id": "gnome/skillcape/compliment",
+			"voice": "gnome",
+			"topic": "skillcape",
+			"tone": "compliment",
+			"worn": {
+				"CAPE": "Cooking cape"
+			}
+		},
+		{
+			"id": "gnome/skillcape/insult",
+			"voice": "gnome",
+			"topic": "skillcape",
+			"tone": "insult",
+			"worn": {
+				"CAPE": "Fishing cape"
+			}
+		},
+		{
+			"id": "gnome/pet_rocky/remark",
+			"voice": "gnome",
+			"topic": "pet_rocky",
+			"tone": "remark",
+			"pet": "Rocky"
+		},
+		{
+			"id": "gnome/pet_beaver/compliment",
+			"voice": "gnome",
+			"topic": "pet_beaver",
+			"tone": "compliment",
+			"pet": "Beaver"
+		},
+		{
+			"id": "gnome/pet_heron/insult",
+			"voice": "gnome",
+			"topic": "pet_heron",
+			"tone": "insult",
+			"pet": "Heron"
+		},
+		{
+			"id": "gnome/pet_rock_golem/remark",
+			"voice": "gnome",
+			"topic": "pet_rock_golem",
+			"tone": "remark",
+			"pet": "Rock golem"
+		},
+		{
+			"id": "gnome/bald/insult",
+			"voice": "gnome",
+			"topic": "bald",
+			"tone": "insult",
+			"facts": [
+				"bald"
+			]
+		},
+		{
+			"id": "gnome/starkers/remark",
+			"voice": "gnome",
+			"topic": "starkers",
+			"tone": "remark",
+			"facts": [
+				"starkers"
+			]
+		},
+		{
+			"id": "gnome/skint/insult",
+			"voice": "gnome",
+			"topic": "skint",
+			"tone": "insult",
+			"facts": [
+				"skint"
+			]
+		},
+		{
+			"id": "gnome/loaded/compliment",
+			"voice": "gnome",
+			"topic": "loaded",
+			"tone": "compliment",
+			"facts": [
+				"loaded"
+			]
+		},
+		{
+			"id": "gnome/low_hp/remark",
+			"voice": "gnome",
+			"topic": "low_hp",
+			"tone": "remark",
+			"facts": [
+				"low_hp"
+			]
+		},
+		{
+			"id": "gnome/knackered/remark",
+			"voice": "gnome",
+			"topic": "knackered",
+			"tone": "remark",
+			"facts": [
+				"knackered"
+			]
+		},
+		{
+			"id": "gnome/low_combat/insult",
+			"voice": "gnome",
+			"topic": "low_combat",
+			"tone": "insult",
+			"facts": [
+				"low_combat"
+			]
+		},
+		{
+			"id": "gnome/small_talk/remark",
+			"voice": "gnome",
+			"topic": "small_talk",
+			"tone": "remark"
+		},
+		{
+			"id": "gnome/grand_tree_todo/remark",
+			"voice": "gnome",
+			"topic": "grand_tree_todo",
+			"tone": "remark",
+			"quests": {
+				"THE_GRAND_TREE": "NOT_STARTED"
+			}
+		},
+		{
+			"id": "gnome/grand_tree_done/compliment",
+			"voice": "gnome",
+			"topic": "grand_tree_done",
+			"tone": "compliment",
+			"quests": {
+				"THE_GRAND_TREE": "FINISHED"
+			}
+		},
+		{
+			"id": "gnome/monkey_madness_i_done/compliment",
+			"voice": "gnome",
+			"topic": "monkey_madness_i_done",
+			"tone": "compliment",
+			"quests": {
+				"MONKEY_MADNESS_I": "FINISHED",
+				"THE_GRAND_TREE": "FINISHED"
+			}
+		},
+		{
+			"id": "gnome/monkey_madness_ii_local_todo/gossip",
+			"voice": "gnome",
+			"topic": "monkey_madness_ii_local_todo",
+			"tone": "gossip",
+			"quests": {
+				"MONKEY_MADNESS_II": "NOT_STARTED",
+				"THE_GRAND_TREE": "FINISHED",
+				"MONKEY_MADNESS_I": "FINISHED"
+			}
+		},
+		{
+			"id": "gnome/monkey_madness_ii_local/gossip",
+			"voice": "gnome",
+			"topic": "monkey_madness_ii_local",
+			"tone": "gossip",
+			"quests": {
+				"MONKEY_MADNESS_II": "FINISHED",
+				"THE_GRAND_TREE": "FINISHED",
+				"MONKEY_MADNESS_I": "FINISHED"
+			}
+		},
+		{
+			"id": "varrock/iron_armour/insult",
+			"voice": "varrock",
+			"topic": "iron_armour",
+			"tone": "insult",
+			"worn": {
+				"BODY": "Iron platebody",
+				"LEGS": "Iron platelegs"
+			}
+		},
+		{
+			"id": "varrock/steel_armour/compliment",
+			"voice": "varrock",
+			"topic": "steel_armour",
+			"tone": "compliment",
+			"worn": {
+				"BODY": "Steel platebody",
+				"LEGS": "Steel platelegs",
+				"HEAD": "Steel full helm"
+			}
+		},
+		{
+			"id": "varrock/dragon_armour/compliment",
+			"voice": "varrock",
+			"topic": "dragon_armour",
+			"tone": "compliment",
+			"worn": {
+				"BODY": "Dragon platebody",
+				"LEGS": "Dragon platelegs"
+			}
+		},
+		{
+			"id": "varrock/dragon_armour/insult",
+			"voice": "varrock",
+			"topic": "dragon_armour",
+			"tone": "insult",
+			"worn": {
+				"BODY": "Dragon platebody"
+			}
+		},
+		{
+			"id": "varrock/abyssal_whip/compliment",
+			"voice": "varrock",
+			"topic": "abyssal_whip",
+			"tone": "compliment",
+			"worn": {
+				"WEAPON": "Abyssal whip"
+			}
+		},
+		{
+			"id": "varrock/abyssal_whip/insult",
+			"voice": "varrock",
+			"topic": "abyssal_whip",
+			"tone": "insult",
+			"worn": {
+				"WEAPON": "Abyssal whip"
+			}
+		},
+		{
+			"id": "varrock/rune_scimitar/compliment",
+			"voice": "varrock",
+			"topic": "rune_scimitar",
+			"tone": "compliment",
+			"worn": {
+				"WEAPON": "Rune scimitar"
+			}
+		},
+		{
+			"id": "varrock/dragon_scimitar/remark",
+			"voice": "varrock",
+			"topic": "dragon_scimitar",
+			"tone": "remark",
+			"worn": {
+				"WEAPON": "Dragon scimitar"
+			}
+		},
+		{
+			"id": "varrock/green_dhide/insult",
+			"voice": "varrock",
+			"topic": "green_dhide",
+			"tone": "insult",
+			"worn": {
+				"BODY": "Green d'hide body"
+			}
+		},
+		{
+			"id": "varrock/graceful/compliment",
+			"voice": "varrock",
+			"topic": "graceful",
+			"tone": "compliment",
+			"worn": {
+				"HEAD": "Graceful hood",
+				"BODY": "Graceful top",
+				"LEGS": "Graceful legs",
+				"CAPE": "Graceful cape",
+				"GLOVES": "Graceful gloves",
+				"BOOTS": "Graceful boots"
+			}
+		},
+		{
+			"id": "varrock/graceful/insult",
+			"voice": "varrock",
+			"topic": "graceful",
+			"tone": "insult",
+			"worn": {
+				"HEAD": "Graceful hood",
+				"BODY": "Graceful top",
+				"LEGS": "Graceful legs",
+				"CAPE": "Graceful cape",
+				"GLOVES": "Graceful gloves",
+				"BOOTS": "Graceful boots"
+			}
+		},
+		{
+			"id": "varrock/barrows/remark",
+			"voice": "varrock",
+			"topic": "barrows",
+			"tone": "remark",
+			"worn": {
+				"BODY": "Dharok's platebody",
+				"HEAD": "Dharok's helm"
+			}
+		},
+		{
+			"id": "varrock/fire_cape/compliment",
+			"voice": "varrock",
+			"topic": "fire_cape",
+			"tone": "compliment",
+			"worn": {
+				"CAPE": "Fire cape"
+			}
+		},
+		{
+			"id": "varrock/fire_cape/insult",
+			"voice": "varrock",
+			"topic": "fire_cape",
+			"tone": "insult",
+			"worn": {
+				"CAPE": "Fire cape"
+			}
+		},
+		{
+			"id": "varrock/infernal_cape/remark",
+			"voice": "varrock",
+			"topic": "infernal_cape",
+			"tone": "remark",
+			"worn": {
+				"CAPE": "Infernal cape"
+			}
+		},
+		{
+			"id": "varrock/partyhat/compliment",
+			"voice": "varrock",
+			"topic": "partyhat",
+			"tone": "compliment",
+			"worn": {
+				"HEAD": "Red partyhat"
+			}
+		},
+		{
+			"id": "varrock/partyhat/insult",
+			"voice": "varrock",
+			"topic": "partyhat",
+			"tone": "insult",
+			"worn": {
+				"HEAD": "Blue partyhat"
+			}
+		},
+		{
+			"id": "varrock/max_cape/remark",
+			"voice": "varrock",
+			"topic": "max_cape",
+			"tone": "remark",
+			"worn": {
+				"CAPE": "Max cape"
+			}
+		},
+		{
+			"id": "varrock/twisted_bow/compliment",
+			"voice": "varrock",
+			"topic": "twisted_bow",
+			"tone": "compliment",
+			"worn": {
+				"WEAPON": "Twisted bow"
+			}
+		},
+		{
+			"id": "varrock/void/insult",
+			"voice": "varrock",
+			"topic": "void",
+			"tone": "insult",
+			"worn": {
+				"BODY": "Void knight top",
+				"LEGS": "Void knight robe"
+			}
+		},
+		{
+			"id": "varrock/saradomin_cape/compliment",
+			"voice": "varrock",
+			"topic": "saradomin_cape",
+			"tone": "compliment",
+			"worn": {
+				"CAPE": "Saradomin cape"
+			}
+		},
+		{
+			"id": "varrock/skillcape/compliment",
+			"voice": "varrock",
+			"topic": "skillcape",
+			"tone": "compliment",
+			"worn": {
+				"CAPE": "Cooking cape"
+			}
+		},
+		{
+			"id": "varrock/skillcape/insult",
+			"voice": "varrock",
+			"topic": "skillcape",
+			"tone": "insult",
+			"worn": {
+				"CAPE": "Fishing cape"
+			}
+		},
+		{
+			"id": "varrock/pet_rocky/remark",
+			"voice": "varrock",
+			"topic": "pet_rocky",
+			"tone": "remark",
+			"pet": "Rocky"
+		},
+		{
+			"id": "varrock/pet_beaver/compliment",
+			"voice": "varrock",
+			"topic": "pet_beaver",
+			"tone": "compliment",
+			"pet": "Beaver"
+		},
+		{
+			"id": "varrock/pet_heron/insult",
+			"voice": "varrock",
+			"topic": "pet_heron",
+			"tone": "insult",
+			"pet": "Heron"
+		},
+		{
+			"id": "varrock/pet_rock_golem/remark",
+			"voice": "varrock",
+			"topic": "pet_rock_golem",
+			"tone": "remark",
+			"pet": "Rock golem"
+		},
+		{
+			"id": "varrock/bald/insult",
+			"voice": "varrock",
+			"topic": "bald",
+			"tone": "insult",
+			"facts": [
+				"bald"
+			]
+		},
+		{
+			"id": "varrock/starkers/remark",
+			"voice": "varrock",
+			"topic": "starkers",
+			"tone": "remark",
+			"facts": [
+				"starkers"
+			]
+		},
+		{
+			"id": "varrock/skint/insult",
+			"voice": "varrock",
+			"topic": "skint",
+			"tone": "insult",
+			"facts": [
+				"skint"
+			]
+		},
+		{
+			"id": "varrock/loaded/compliment",
+			"voice": "varrock",
+			"topic": "loaded",
+			"tone": "compliment",
+			"facts": [
+				"loaded"
+			]
+		},
+		{
+			"id": "varrock/low_hp/remark",
+			"voice": "varrock",
+			"topic": "low_hp",
+			"tone": "remark",
+			"facts": [
+				"low_hp"
+			]
+		},
+		{
+			"id": "varrock/knackered/remark",
+			"voice": "varrock",
+			"topic": "knackered",
+			"tone": "remark",
+			"facts": [
+				"knackered"
+			]
+		},
+		{
+			"id": "varrock/low_combat/insult",
+			"voice": "varrock",
+			"topic": "low_combat",
+			"tone": "insult",
+			"facts": [
+				"low_combat"
+			]
+		},
+		{
+			"id": "varrock/small_talk/remark",
+			"voice": "varrock",
+			"topic": "small_talk",
+			"tone": "remark"
+		},
+		{
+			"id": "varrock/romeo_juliet_todo/remark",
+			"voice": "varrock",
+			"topic": "romeo_juliet_todo",
+			"tone": "remark",
+			"quests": {
+				"ROMEO__JULIET": "NOT_STARTED"
+			}
+		},
+		{
+			"id": "varrock/demon_slayer_todo/remark",
+			"voice": "varrock",
+			"topic": "demon_slayer_todo",
+			"tone": "remark",
+			"quests": {
+				"DEMON_SLAYER": "NOT_STARTED"
+			}
+		},
+		{
+			"id": "varrock/demon_slayer_done/compliment",
+			"voice": "varrock",
+			"topic": "demon_slayer_done",
+			"tone": "compliment",
+			"quests": {
+				"DEMON_SLAYER": "FINISHED"
+			}
+		},
+		{
+			"id": "varrock/gertrudes_cat_todo/gossip",
+			"voice": "varrock",
+			"topic": "gertrudes_cat_todo",
+			"tone": "gossip",
+			"quests": {
+				"GERTRUDES_CAT": "NOT_STARTED"
+			}
+		},
+		{
+			"id": "varrock/gertrudes_cat_done/compliment",
+			"voice": "varrock",
+			"topic": "gertrudes_cat_done",
+			"tone": "compliment",
+			"quests": {
+				"GERTRUDES_CAT": "FINISHED"
+			}
+		},
+		{
+			"id": "varrock/the_curse_of_arrav_done/compliment",
+			"voice": "varrock",
+			"topic": "the_curse_of_arrav_done",
+			"tone": "compliment",
+			"quests": {
+				"THE_CURSE_OF_ARRAV": "FINISHED"
+			}
+		},
+		{
+			"id": "varrock/children_of_the_sun_todo/gossip",
+			"voice": "varrock",
+			"topic": "children_of_the_sun_todo",
+			"tone": "gossip",
+			"quests": {
+				"CHILDREN_OF_THE_SUN": "NOT_STARTED"
+			}
+		}
+	]
+}

@@ -1,0 +1,233 @@
+pair	voice	the player	tone	A	B	better
+1	gnome	followed by a Rocky	remark	Ah, human. Is that little raccoon of yours eyeing my purse?	Must remember to latch the pantry tonight... no reason.	
+2	gnome	looks: skint	insult	Did the goblins dress you? Even they'd have picked a better hat.	Gnomes brought oranges to Gielinor, human, and you can't run to one.	
+3	gnome	looks: starkers	remark	Hello, human! Laundry day, is it?	Mind the nets on the agility course, human. They'll leave a pattern.	
+4	gnome	wearing Green d'hide body	insult	Green dragonhide. Still smells faintly of dragon, that.	Here, look, the big one's dressed as a hedge.	
+5	varrock	wearing Void knight top, Void knight robe	insult	My curtains look like that, and I've been meaning to change them.	Void robes. You look like a very serious sack.	
+6	gnome	wearing Abyssal whip	insult	Do keep that thing coiled indoors.	Showy things, whips. We use a bow and stand further back.	
+7	varrock	looks: loaded	compliment	Oh, hello. Look at you, done up like a duke.	Ooh, very grand. The guards'll be saluting you by mistake.	
+8	varrock	wearing Blue partyhat	insult	That blue partyhat's out of a cracker, surely.	Looks like a little crown. King of what, exactly?	
+9	gnome	looks: bald	insult	I can see my reflection in that head. Mind the gliders.	The pilots could signal from the top of the Tree with that head.	
+10	gnome	wearing Dharok's platebody, Dharok's helm	remark	Come and sit by the Tree, human. Old things do well round here.	Grave armour. Humans dig up the oddest things.	
+11	gnome	wearing Cooking cape	compliment	If I'd a cape that stopped me burning things, I'd never take it off.	The cooking cape! Proper dedication, that.	
+12	varrock	wearing Red partyhat	compliment	Very jolly. Brightens up the square, a hat like that.	Hello there. That red partyhat is worth more than this whole town.	
+13	varrock	looks: skint	insult	Spare some change? No, I can see you can't.	Hello there. That whole outfit wouldn't buy a pie.	
+14	gnome	Monkey Madness I: finished; The Grand Tree: finished	compliment	Ah, human. Megal, you found the tenth squad on Ape Atoll, and alive?	Word is you went about Ape Atoll as a monkey, and nobody guessed.	
+15	varrock	followed by a Rock golem	remark	There's a rock walking behind you. I thought I'd mention it.	Cor. Is your rock meant to be following you like that?	
+16	gnome	wearing Fishing cape	insult	You paid a master for that, human? We'd have knitted you one.	Lovely fishing cape, human. Bit of a cardigan, mind.	
+17	varrock	wearing Dragon platebody, Dragon platelegs	compliment	That red armour's proper quality. You don't see much of it.	Nothing in Horvik's window comes close to that red armour.	
+18	varrock	Demon Slayer: finished	compliment	Varrock's still here. Aris says that's down to you.	Here, that's the one who did for the demon. No, don't point.	
+19	gnome	wearing Dragon scimitar	remark	Did the monkeys sell you that scimitar, or did you have to ask nicely?	That'd make short work of the swamp toads, human. Too short.	
+20	varrock	Demon Slayer: not started	remark	Delrith, it's called. Sounds like a cough.	Cor. The fortune teller's ever so worried about a demon.	
+21	gnome	nothing in particular	remark	Welcome, human! Could murder a cup of tea.	We keep a gnome at King Roald's court. All that stone, poor soul.	
+22	varrock	wearing Dragon platebody	insult	Here, someone's gone and dressed as a tomato.	Red metal armour. Hope you didn't have to fight the dragon for it.	
+23	gnome	wearing Fishing cape	insult	Is your cape for something useful, human? Cooking, say?	Lovely fishing cape. Bit of a cardigan, mind.	
+24	varrock	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	insult	That you on my roof at dawn? Thought so.	Running clothes on and still walking? What did you buy them for, then?	
+25	varrock	looks: low_hp	remark	The guards won't carry you, you know. I've asked.	Cor. You've been in the wars, haven't you?	
+26	gnome	wearing Max cape	remark	Must have taken you years, that. Mind the gliders.	My battas never rise, and that one's done every craft there is.	
+27	varrock	followed by a Beaver	compliment	Hello, handsome. Leave the church pews be, it's draughty enough.	A beaver! Handsome creature, and what fine teeth on it.	
+28	gnome	looks: knackered	remark	Puffed out, human? We don't run here, because we glide.	Lean on the rail a moment. The platforms aren't going anywhere.	
+29	gnome	followed by a Beaver	compliment	Lovely creature... I'll just stand in front of this sapling a moment.	A beaver! Handsome creature, and what fine teeth on it.	
+30	varrock	wearing Iron platebody, Iron platelegs	insult	Iron armour. Give it a wipe, it's going orange at the edges.	Did nobody tell you Horvik does steel as well, guv?	
+31	gnome	Monkey Madness Ii: finished; The Grand Tree: finished; Monkey Madness I: finished	gossip	Zooknock's up by the gnomeball field now. Hope he likes noise.	They say Awowogei himself came to the Stronghold to talk peace!	
+32	varrock	wearing Dragon platebody	insult	Red armour. Lovely. You'll match the blood splatter.	Must have cost a fortune. Shame the colour came with it.	
+33	varrock	Romeo & Juliet: not started	remark	Oh, here comes Romeo. Look busy.	Young love. Loud, isn't it?	
+34	varrock	looks: skint	insult	Haggling with Baraek, were you? He won, by the look of it.	That whole outfit wouldn't buy a pie. Take care, now.	
+35	gnome	looks: low_hp	remark	Hello, human! You've been in the wars, haven't you?	Tangled toad's legs, that's what's wanted. Where's that recipe...	
+36	gnome	looks: bald	insult	Nothing up top for a hat to grip. Mind the wind on the platforms.	A head like a gnomeball. Stay well clear of the pitch, human.	
+37	varrock	looks: knackered	remark	Here, that one's puffing like the palace bear.	You look absolutely knackered. Cheerio.	
+38	gnome	followed by a Rocky	remark	Where's my worm batta gone? It was on this step a moment ago.	Hello, human! Is that little raccoon of yours eyeing my purse?	
+39	varrock	wearing Infernal cape	remark	Lava for a cape. I can't carry soup without spilling it.	Hello there. Takes a certain sort to sit in lava for fun.	
+40	varrock	looks: loaded	compliment	Not often you see that much on one back, even at the Grand Exchange.	Look at you, done up like a duke. Take care, now.	
+41	varrock	wearing Twisted bow	compliment	My whole street wouldn't fetch the price of that bow.	Oh, hello. Gadzooks, who grew that bow?	
+42	gnome	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	insult	Graceful, is it? We'll see on the ladder.	Running clothes on and still walking? What did you buy them for, then?	
+43	gnome	looks: low_hp	remark	You look awful. Go and have a sit down and a cup of tea.	Pale as Gianne dough, human, and that's not a good colour on you.	
+44	varrock	looks: low_hp	remark	Who did that to you? No, don't tell me, I'll not sleep.	Hello there. You're looking a bit worse for wear, traveller.	
+45	gnome	looks: loaded	compliment	Great Guthix, human! That's a castle's worth of armour you've got on.	Fine work on that, whoever made it. Not gnome work, but fine.	
+46	gnome	followed by a Rocky	remark	It walks like it's counting the doors, that creature of yours.	Is that little raccoon of yours eyeing my purse?	
+47	varrock	wearing Abyssal whip	compliment	Half the kingdom's got a whip like that, and it's the better half.	I could do with a whip like that for the pigeons on my sill.	
+48	varrock	wearing Dragon scimitar	remark	Did the monkeys sell you that scimitar, or did you have to ask nicely?	Jagged edge on that. Keep it off my basket.	
+49	varrock	looks: bald	insult	The pigeons will think that's a lovely place to land.	Oh, hello. Bald as a coot, you.	
+50	gnome	wearing Cooking cape	compliment	Half the big folk can't boil an egg, and here's a master.	The cooking cape, human. Somebody's been at it for years, then.	
+51	varrock	wearing Fire cape	compliment	You earned that cape the hard way, didn't you?	Cold old day. I'd stand by that cape, if you'd let me.	
+52	varrock	followed by a Heron	insult	All legs and no conversation. The bird's much the same.	That bird's caught more fish than you have today, I'd wager. Cheerio.	
+53	gnome	Monkey Madness I: finished; The Grand Tree: finished	compliment	That's the one who found the squad. Taller in person.	Great Guthix, you found the tenth squad on Ape Atoll, and alive?	
+54	gnome	wearing Iron platebody, Iron platelegs	insult	You'd go through the log on our course in that iron, not over it.	Iron armour. Give it a wipe, it's going orange at the edges.	
+55	gnome	wearing Cooking cape	compliment	The cooking cape, human! Proper dedication, that.	We gnomes like a thing done properly, and that cape says done.	
+56	gnome	wearing Abyssal whip	compliment	Half the kingdom's got a whip like that, and it's the better half.	I'd borrow that whip for catching toads, if you'd let me, human.	
+57	gnome	wearing Abyssal whip	insult	Do keep that thing coiled indoors, human.	Red and black, like a burnt batta. Somebody should have watched it.	
+58	varrock	wearing Dharok's platebody, Dharok's helm	remark	Cor. Some poor brother's missing that.	Gear that old... I'd want to know where it's been.	
+59	varrock	The Curse Of Arrav: finished	compliment	Blimey. You faced Arrav himself and walked away, brave soul, I hear.	You'll be in the museum yourself one day, next to Arrav.	
+60	varrock	Romeo & Juliet: not started	remark	Somebody ought to help that lad, before he sighs himself to death.	Young love. Loud, isn't it?	
+61	gnome	Monkey Madness Ii: finished; The Grand Tree: finished; Monkey Madness I: finished	gossip	Steve's taken Nieve's post, and he knows whose boots he's in.	Glough's brew made monsters of gorillas, they say, and then of him.	
+62	varrock	nothing in particular	remark	Some say the king's not much good. I couldn't possibly comment.	More goblins about these days, they say. Mind how you go.	
+63	varrock	wearing Abyssal whip	insult	Do keep that thing coiled indoors. Mind how you go.	Whips on every corner. Like a cattle market, this town.	
+64	gnome	looks: low_hp	remark	Big folk never eat enough, and look what comes of it.	You need a cocktail and a lie down, human, and in that order.	
+65	gnome	wearing Red partyhat	compliment	That red partyhat is worth more than this whole town.	All those points and not one bent. Somebody keeps that hat in a box.	
+66	varrock	wearing Green d'hide body	insult	Skinned it yourself, did you? It looks home-made.	Green dragonhide. Still smells faintly of dragon, that.	
+67	gnome	wearing Dragon platebody	insult	Dragon armour. Very dear. Very red. Very easy to spot in a crowd.	Every big one in red wants a glider ride. Poor glider.	
+68	varrock	followed by a Heron	insult	It looks down its beak at me. Learnt that from you, I expect.	That bird's caught more fish than you have today, I'd wager.	
+69	gnome	wearing Void knight top, Void knight robe	insult	That one's in the knights' gear. Was it a prize or a punishment?	Void robes. You look like a very serious sack.	
+70	gnome	nothing in particular	remark	My worm batta's gone cold again. Talking does that to a batta.	The gliders don't stop for humans when they barely stop for us.	
+71	varrock	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	insult	Running clothes. Running from what, exactly?	Is that a burglar? No, just one of the rooftop runners.	
+72	varrock	looks: low_combat	insult	I'd not trust you to carry my shopping home.	The chickens round here would have you, I shouldn't wonder. Cheerio.	
+73	varrock	followed by a Beaver	compliment	Smarter coat than anything in Thessalia's shop, that.	A beaver! Handsome creature, and what fine teeth on it.	
+74	gnome	followed by a Heron	insult	A heron. Does it do the fishing while you hold the bucket?	Those legs would be round the agility course while you're on the log.	
+75	gnome	wearing Rune scimitar	compliment	Did you take that off a fire giant, human? Brave, if so.	A rune scimitar, human! Now you look like you mean business.	
+76	gnome	wearing Red partyhat	compliment	Welcome, human! That red partyhat is worth more than this whole town.	That hat would do nicely up the Tree at Christmas, human.	
+77	varrock	followed by a Rocky	remark	They say those only take to a thief. I'd not like to say more.	Is that little raccoon of yours eyeing my purse?	
+78	varrock	looks: low_hp	remark	Tea stall's by the east bank. Sugar in it, for the shock.	You've been in the wars, haven't you?	
+79	varrock	The Curse Of Arrav: finished	compliment	Arrav, him in the museum? And you crossed swords with him?	You faced Arrav himself and walked away, brave soul, I hear.	
+80	gnome	wearing Dharok's platebody, Dharok's helm	remark	Been rummaging in tombs again?	Six brothers wore that sort of gear, they say. Wonder which this was.	
+81	gnome	wearing Abyssal whip	compliment	Half the kingdom's got a whip like that, and it's the better half.	Red and black and all in segments... like a king worm, only fiercer.	
+82	varrock	followed by a Rock golem	remark	Blimey. Is your rock meant to be following you like that?	Keep it away from the dark wizards. They'd stand it in their circle.	
+83	gnome	wearing Green d'hide body	insult	Green dragonhide, human. Still smells faintly of dragon, that.	Green! I took you for one of us, human, till I saw the leather.	
+84	gnome	wearing Saradomin cape	compliment	From a god, that cape. Mine came off a market stall.	Ah, human. Very proper, Saradomin's colours on your back.	
+85	varrock	followed by a Rocky	remark	Hand on the shopping, I think, till that's gone past.	Hello there. Is that mask on your creature nature, or its own choice?	
+86	gnome	wearing Fire cape	compliment	A fire cape! Great Guthix, human. Did you have to stand in the fire?	Half the big folk boast about the Fight Cave. You just wear the cape.	
+87	varrock	Romeo & Juliet: not started	remark	She's up on a balcony, he's down in the square. Neither of them moves.	Young love. Loud, isn't it?	
+88	varrock	wearing Dharok's platebody, Dharok's helm	remark	Six brothers, they say, and each had a set like that. The washing!	Some poor brother's missing that. Mind how you go.	
+89	gnome	wearing Rune scimitar	compliment	A rune scimitar! Now you look like you mean business.	Rune... I could peel a lot of oranges with that.	
+90	varrock	wearing Steel platebody, Steel platelegs, Steel full helm	compliment	Sensible steel. Nothing flash, and nothing wrong with it.	Steel armour. Nice and bright. Someone's been saving up.	
+91	varrock	wearing Iron platebody, Iron platelegs	insult	Iron armour. Give it a wipe, it's going orange at the edges.	The muggers won't look twice at iron. That's one blessing.	
+92	gnome	followed by a Rock golem	remark	Somebody will take it for a gnomeball one day and break a toe.	Welcome, human! Is your rock meant to be following you like that?	
+93	varrock	wearing Fire cape	compliment	That's a fire cape, that. Don't stare, it was earned.	Cor. You earned that cape the hard way, didn't you?	
+94	varrock	looks: bald	insult	Aris could read your future off that head.	Hello there. The sun's bouncing right off your head, traveller.	
+95	varrock	nothing in particular	remark	Looks like rain. It always looks like rain.	Blue Moon was heaving last night. My head's still in there.	
+96	gnome	wearing Fire cape	compliment	There's a seat by the fire for you, human... well, you've your own.	Ah, human. You earned that cape the hard way, didn't you?	
+97	varrock	looks: bald	insult	Is that a helmet? No. No, that's all head.	Oh, hello. The sun's bouncing right off your head, traveller.	
+98	gnome	looks: low_combat	insult	A war tortoise would walk right over you and never notice.	The gnome children would have you in a scrap, human, fair warning.	
+99	gnome	wearing Dragon platebody, Dragon platelegs	compliment	That red armour's proper quality. You don't see much of it.	Red armour... and me in the same green for years.	
+100	gnome	looks: loaded	compliment	The King doesn't dress half so well, and don't tell him I said so.	Ah, human. Look at you, done up like a duke.	
+101	gnome	wearing Dragon scimitar	remark	Curved like a glider's wing, that blade, but nastier.	Did the monkeys sell you that scimitar, or did you have to ask nicely?	
+102	gnome	wearing Blue partyhat	insult	A paper hat worth a castle. Gielinor's a funny old place.	Points everywhere on that hat. One's plenty, if you ask a gnome.	
+103	varrock	looks: starkers	remark	Oh, hello. Laundry day, is it?	Somebody fetch a guard. Or a blanket. A blanket, I think.	
+104	varrock	wearing Red partyhat	compliment	Never got so much as a cracker, me. Not one Christmas.	Oh, hello. That red partyhat is worth more than this whole town.	
+105	gnome	wearing Steel platebody, Steel platelegs, Steel full helm	compliment	Most big folk clank, human, but you rather chime.	Steel armour, human. Nice and bright. Someone's been saving up.	
+106	gnome	wearing Fire cape	insult	Fire cape, human. Took a few goes, I expect.	Every one in a fire cape tells the same story at the bar.	
+107	varrock	looks: starkers	remark	Pillory's behind the general store, if that's where you're headed.	Oh, hello. Not even a vest, in this wind?	
+108	varrock	wearing Void knight top, Void knight robe	insult	Is that Void kit fancy dress, or do people really go about in it?	Looks like a priest's been put through a mangle.	
+109	gnome	looks: low_combat	insult	Guthix likes balance, and you're tipping well towards harmless.	The gnome children would have you in a scrap, human, fair warning.	
+110	varrock	followed by a Rock golem	remark	Walked past rocks all my life. Never had one walk past me.	Did that rock just... tell me it didn't move.	
+111	varrock	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	compliment	Wish the ones in plate moved as quietly as you.	Hello there. Looking very light on your feet today.	
+112	varrock	wearing Saradomin cape	compliment	Saradomin smile on you, with his star on that blue cape.	Did Saradomin give you that? Well, he's got taste.	
+113	gnome	looks: loaded	compliment	Rometti would sell his shop for that outfit, human.	I'll need a new hat if they're all going to look like that.	
+114	varrock	looks: loaded	compliment	Hello there. Look at you, done up like a duke.	That'd keep the Blue Moon in ale for a year, that would.	
+115	gnome	wearing Infernal cape	remark	That cape looks heavy, human. Even for one of the big folk.	Here, look, the one wearing a lava flow. Don't stand downhill.	
+116	varrock	wearing Steel platebody, Steel platelegs, Steel full helm	compliment	Sits well on you, that steel. Some folk wear it like a barrel.	Steel armour. Nice and bright. Someone's been saving up.	
+117	gnome	wearing Steel platebody, Steel platelegs, Steel full helm	compliment	Iron and coal, cooked properly. We'd call that a good recipe.	Steel armour. Nice and bright. Someone's been saving up.	
+118	varrock	Children Of The Sun: not started	gossip	A Varlamore prince at the palace, says the Herald, with knights too.	I'll believe this Shining Kingdom when I see it shine.	
+119	varrock	wearing Max cape	remark	Red and gold, that cape. Looks like it came off a throne.	Oh, hello. Must have taken you years, that.	
+120	gnome	wearing Dragon platebody, Dragon platelegs	compliment	Red armour, human! You can see you coming from the Grand Tree.	Dear stuff, that red metal, and you wear it like a work shirt.	
+121	varrock	wearing Abyssal whip	compliment	I'd move for that whip, and I don't move for anyone.	Half the kingdom's got a whip like that, and it's the better half.	
+122	gnome	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	insult	They say that cloth helps you get your breath back. Need it, do you?	Running clothes on a human. The agility course will still beat you.	
+123	gnome	wearing Infernal cape	remark	Takes a certain sort to sit in lava for fun. Mind the gliders.	Cooled on top and hot underneath, like a good chocolate bomb.	
+124	varrock	wearing Dragon scimitar	remark	Red blade... that reminds me, I've the beetroot to fetch.	Did the monkeys sell you that scimitar, or did you have to ask nicely?	
+125	varrock	wearing Void knight top, Void knight robe	insult	Very smart, if you're a magpie.	Is that Void kit fancy dress, or do people really go about in it?	
+126	varrock	wearing Fishing cape	insult	All those years at it, and then you had to pay for the cape.	Lovely fishing cape. Bit of a cardigan, mind.	
+127	gnome	wearing Max cape	remark	Very long cape. It'd trail on the floor on a gnome... twice.	Ah, human. Must have taken you years, that.	
+128	varrock	wearing Saradomin cape	compliment	Saradomin blessed a whole river, they say. Now he's done your cape.	Very proper, Saradomin's colours on your back. Mind how you go.	
+129	gnome	Monkey Madness Ii: finished; The Grand Tree: finished; Monkey Madness I: finished	gossip	Glough drank his own brew and brought the cave down on himself.	Nieve's grave is up by the swamp. I go past it most mornings.	
+130	varrock	wearing Fire cape	insult	Couldn't buy one, so you went and sat in a cave for it?	A fire cape. Lovely. The infernal one's redder, mind.	
+131	gnome	looks: bald	insult	All that way up and not a hair. Where do they grow them?	I can see my reflection in that head, human. Mind the gliders.	
+132	varrock	looks: knackered	remark	Oh, hello. You look absolutely knackered.	Running in Varrock? Nobody runs here unless the guards are after them.	
+133	varrock	wearing Fire cape	insult	All those waves, and you've come out dressed as a hearth rug.	Fire cape. Took a few goes, I expect.	
+134	gnome	wearing Iron platebody, Iron platelegs	insult	Our battle tortoises go faster than that, human, with three aboard.	Ah, human. Iron armour, and you still want a lift on a glider, kar?	
+135	gnome	wearing Infernal cape	remark	A lava cape in a tree town... I'll be checking the leaves after.	Hello, human! Takes a certain sort to sit in lava for fun.	
+136	varrock	wearing Cooking cape	compliment	The cooking cape! Proper dedication, that.	Wears it quietly, too. That's how you can tell.	
+137	gnome	wearing Rune scimitar	compliment	Curved and quick, that blade. Very nearly gnomish, human.	A rune scimitar, human! Now you look like you mean business.	
+138	varrock	wearing Dragon platebody, Dragon platelegs	compliment	All that red metal... and I've been saving for a new hat since spring.	Dragon armour, redder than the Cook's face, and very smart with it!	
+139	varrock	wearing Rune scimitar	compliment	A rune scimitar! Now you look like you mean business.	Cor, there's an edge on that! Mind my sleeve.	
+140	gnome	wearing Twisted bow	compliment	Hello, human! Megal, who grew that bow?	Black limbs, white streaks. Like a magpie made into a bow.	
+141	gnome	followed by a Heron	insult	That bird's caught more fish than you have today, I'd wager.	A bird that could fly anywhere, and it chose to walk behind you.	
+142	varrock	Demon Slayer: not started	remark	Fortune-tellers. You give her a coin, she gives you a demon.	Hello there. The fortune teller's ever so worried about a demon.	
+143	gnome	followed by a Rock golem	remark	Ah, human. Is your rock meant to be following you like that?	Kar, grit all over the platform, and I'd only just swept it.	
+144	gnome	wearing Green d'hide body	insult	Scaly green leather. Looks like a toad gave up halfway.	Green dragonhide. Still smells faintly of dragon, that.	
+145	varrock	wearing Max cape	remark	A max cape! Your mother must be ever so proud... or worried.	Finished, then? Everything?	
+146	varrock	looks: skint	insult	That whole outfit wouldn't buy a pie. Mind how you go.	Mind the muggers. No, on second thoughts, they'll leave you be.	
+147	varrock	followed by a Beaver	compliment	Better company than most in the Blue Moon, I'd say.	Hard worker, a beaver. Good company for a woodcutter.	
+148	gnome	wearing Dragon platebody	insult	Red metal armour. Hope you didn't have to fight the dragon for it.	Great Guthix, red! Are you meant to be a warning, human?	
+149	gnome	followed by a Beaver	compliment	Hello, handsome. Anything you like, only not the Grand Tree.	A beaver! Handsome creature, and what fine teeth on it.	
+150	gnome	wearing Void knight top, Void knight robe	insult	Void robes, human. You look like a very serious sack.	A knight with no horse, human? Not even a tortoise?	
+151	gnome	wearing Fire cape	insult	A fire cape, human. Lovely. The infernal one's redder, mind.	Stood in a cave for that, human? We'd have sent a tortoise.	
+152	gnome	wearing Twisted bow	compliment	We'd need a ladder to draw that, human. You make it look easy.	Great Guthix, human, a twisted bow! Did it grow like that on the tree?	
+153	gnome	Monkey Madness Ii: not started; The Grand Tree: finished; Monkey Madness I: finished	gossip	House arrest, they called it. Seems the house didn't agree.	Narnode's doubled the watch on the Grand Tree and won't say why.	
+154	gnome	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	compliment	Ah, human. Looking very light on your feet today.	You'd race a terrorbird in that and lose with dignity, human.	
+155	varrock	wearing Rune scimitar	compliment	All rusty daggers round here. Nice to see a proper blade for once.	A rune scimitar! Now you look like you mean business.	
+156	varrock	wearing Twisted bow	compliment	Gadzooks, who grew that bow?	Don't gawp. Yes, it's one of those bows.	
+157	varrock	wearing Dragon scimitar	remark	Did the monkeys sell you that scimitar, or did you have to ask nicely?	That's a lot of sword for a trip to the bank.	
+158	gnome	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	insult	Hood up, face hidden. Either shy or owes Blurberry money.	Running clothes. Running from what, exactly?	
+159	varrock	wearing Abyssal whip	insult	Does it come with a horse, that whip?	That whip's from the Abyss? Keep it away from the washing.	
+160	gnome	nothing in particular	remark	The glider to Lemanto Andra crashes every landing. One way only.	Hello, human! Could murder a cup of tea.	
+161	varrock	Children Of The Sun: not started	gossip	A Sun Queen, they've got. Imagine our king in a sun hat.	Noah reckons a kingdom shut for centuries sounds like a prison.	
+162	varrock	wearing Fire cape	insult	Keep that cape away from Baraek's furs, would you, guv?	Fire cape. Took a few goes, I expect.	
+163	varrock	wearing Rune scimitar	compliment	A rune scimitar... and here's me with a bread knife.	A rune scimitar! Now you look like you mean business.	
+164	gnome	wearing Blue partyhat	insult	Wearing a blue partyhat round here? You're either brave or daft.	Dressed for a party, human, and you've come to see a tree.	
+165	varrock	wearing Fire cape	compliment	The palace guards couldn't get one of those between them.	A fire cape! Nicely done, that.	
+166	gnome	followed by a Beaver	compliment	Fine flat tail on it. Our pilots would envy a rudder like that.	Hard worker, a beaver. Good company for a woodcutter.	
+167	varrock	wearing Green d'hide body	insult	Green dragonhide. Still smells faintly of dragon, that.	You look like a cabbage that's been in a fight.	
+168	gnome	looks: low_combat	insult	The gnome children would have you in a scrap, human, fair warning.	The guards on the gate waved you through without a look, I expect.	
+169	varrock	looks: knackered	remark	Hello there. You look absolutely knackered.	Running from Romeo? He does go on.	
+170	varrock	wearing Dragon platebody, Dragon platelegs	compliment	Dragon armour, redder than the Cook's face, and very smart with it!	Red's a cheerful colour on a grey day in the square.	
+171	varrock	wearing Dharok's platebody, Dharok's helm	remark	The museum would give its eye teeth for that old gear.	Cor. Been rummaging in tombs again?	
+172	gnome	wearing Dragon platebody, Dragon platelegs	compliment	Lovely colour. Rometti would ask where you had it dyed.	That red armour's proper quality, human. You don't see much of it.	
+173	gnome	wearing Saradomin cape	compliment	Hello, human! Very proper, Saradomin's colours on your back.	Rometti sells blue, human, but not a blue like that.	
+174	gnome	wearing Fishing cape	insult	Ah, the fishing cape. You'll want everyone to know, then.	Ooh, a master's cape! Oh... that one.	
+175	gnome	wearing Saradomin cape	compliment	Proven yourself to a god, human. We'd settle for a gnomeball goal.	Very proper, Saradomin's colours on your back. Safe travels, human.	
+176	gnome	wearing Dragon scimitar	remark	Can't smith them, they say. Then who sharpens them, I wonder?	Did the monkeys sell you that scimitar, or did you have to ask nicely?	
+177	varrock	wearing Max cape	remark	Hello there. Must have taken you years, that.	Every skill there is... and I still can't get my bread to rise.	
+178	gnome	wearing Dragon platebody	insult	Dragon armour. Very dear. Very red. Very easy to spot in a crowd.	That's a great deal of training to look like a redberry, human.	
+179	gnome	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	compliment	Looking very light on your feet today, human. Mind the gliders.	Look at that one. Dressed like they mean to race the glider.	
+180	gnome	wearing Twisted bow	compliment	Your bow's bent! Oh. It's meant to be like that?	The archers on the tortoises would give their hats for that bow.	
+181	gnome	looks: knackered	remark	Even the war tortoises stop for a breather, human.	Have a sit down. You're red as a beetroot.	
+182	varrock	wearing Cooking cape	compliment	The cooking cape. Somebody's been at it for years, then.	Manners, now. That's a master going by.	
+183	gnome	Monkey Madness I: finished; The Grand Tree: finished	compliment	You found the tenth squad, human? Narnode hasn't stopped smiling.	Look, it's the monkey one. No, the good sort of monkey one.	
+184	gnome	looks: skint	insult	That whole outfit wouldn't buy a pie. Mind the gliders.	Nothing much to tear in a gnomeball tackle, at least.	
+185	gnome	followed by a Rock golem	remark	Hello, human! Is your rock meant to be following you like that?	Oaknock's statues have the decency to keep still, at least.	
+186	varrock	wearing Saradomin cape	compliment	Father Lawrence ought to see that cape. When he's sober, mind.	Oh, hello. Saradomin smile on you, with his star on that blue cape.	
+187	gnome	looks: skint	insult	That whole outfit wouldn't buy a pie, human.	Even the swamp toads are better turned out, human.	
+188	varrock	wearing Twisted bow	compliment	Gnarled as an old oak, that bow, and twice as handsome.	Your bow's bent! Oh. It's meant to be like that?	
+189	varrock	wearing Fishing cape	insult	I've done the washing every day for years. Where's my cape?	Ah, the fishing cape. You'll want everyone to know, then.	
+190	gnome	wearing Dharok's platebody, Dharok's helm	remark	Funny old gear, human. Rometti would want it brushed, at least.	Welcome, human! Been rummaging in tombs again?	
+191	varrock	nothing in particular	remark	Blimey. More goblins about these days, they say.	Aris says I'll come into money. She said that last year as well.	
+192	varrock	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	compliment	Looking very light on your feet today. Mind how you go.	You'd be to Lumbridge and back before my kettle boiled.	
+193	varrock	looks: low_combat	insult	I wouldn't fancy your chances against a goblin. Take care, now.	The palace bear's kept in a cage for your sake, I expect.	
+194	gnome	Monkey Madness Ii: not started; The Grand Tree: finished; Monkey Madness I: finished	gossip	Glough and Anita kept separate houses, they say. Now he's kept none.	Narnode's doubled the watch on Ta Quir Priw and won't say why.	
+195	gnome	wearing Abyssal whip	insult	Gulluck sells proper weapons up the Tree, human, if you tire of that.	Do keep that thing coiled indoors. Mind the gliders.	
+196	gnome	wearing Fire cape	compliment	A fire cape, human! Nicely done, that.	That cape suits the leaves, human. Autumn all year round.	
+197	varrock	The Curse Of Arrav: finished	compliment	Ye gods! You took Arrav's heart from Zemouregal's own vault?	Still beating, the heart was, I heard. You kept your nerve, then.	
+198	varrock	Demon Slayer: finished	compliment	Varrock owes you one for seeing off the demon Delrith, I hear.	Saw the new card on Silverlight in the museum. That's you, isn't it?	
+199	gnome	looks: knackered	remark	Have a sit down. You're red as a beetroot.	Been racing the terrorbirds, human? They do tend to win.	
+200	gnome	Monkey Madness Ii: not started; The Grand Tree: finished; Monkey Madness I: finished	gossip	I keep thinking I see him in the swamp. It's a toad, every time.	Glough's slipped house arrest. Nobody slips house arrest on their own.	
+201	varrock	wearing Dragon platebody	insult	Dragon armour. Very dear. Very red. Very easy to spot in a crowd.	All that red, and the pickpockets have spotted you from the gate.	
+202	varrock	wearing Steel platebody, Steel platelegs, Steel full helm	compliment	Steel armour. Nice and bright. Someone's been saving up.	Steel's a good honest buy. Horvik won't have robbed you on that.	
+203	gnome	wearing Void knight top, Void knight robe	insult	You'll frighten the children, human. They'll take you for a crow.	Is that Void kit fancy dress, or do people really go about in it?	
+204	varrock	wearing Iron platebody, Iron platelegs	insult	A step up from bronze, iron is. A small step, mind.	Iron armour. Give it a wipe, it's going orange at the edges.	
+205	gnome	wearing Abyssal whip	compliment	Swing that at gnomeball and nobody would tackle you, human.	A whip from the Abyss! Quick hands, human, nearly gnome-quick.	
+206	varrock	followed by a Rocky	remark	Keep that creature clear of the fur stall. Baraek might price it.	Oh, hello. Is that little raccoon of yours eyeing my purse?	
+207	varrock	wearing Infernal cape	remark	Stand back a bit. That cape's alive, or near enough.	Blimey. Takes a certain sort to sit in lava for fun.	
+208	varrock	wearing Cooking cape	compliment	The cooking cape! Proper dedication, that.	Best at one thing... I'm not even the best at pastry on my street.	
+209	varrock	Demon Slayer: finished	compliment	Saw off a demon and still out doing errands. Fair play.	Cor. Varrock owes you one for seeing off the demon Delrith, I hear.	
+210	varrock	wearing Fishing cape	insult	Must be a long story behind that cape. Please don't tell it.	Ah, the fishing cape. You'll want everyone to know, then.	
+211	gnome	wearing Max cape	remark	A max cape! Your mother must be ever so proud... or worried.	That collar's very smart, human. The rest is a lot of cape.	
+212	varrock	wearing Abyssal whip	insult	Do keep that thing coiled indoors. Cheerio.	Never trust a weapon that bends, I always say.	
+213	varrock	looks: starkers	remark	Here, don't look. No, I said don't look.	Cor. Not even a vest, in this wind?	
+214	gnome	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	compliment	Get your breath back at Blurberry's, human. Not that you need to.	Graceful! Now you move like a gnome, human, or nearly.	
+215	varrock	wearing Blue partyhat	insult	Don't laugh. It's probably meant to be a crown.	Hello there. That blue partyhat's out of a cracker, surely.	
+216	gnome	wearing Red partyhat	compliment	Megal! Is that a real red partyhat on your head?	Points on your hat, and more than one! You've gnome taste, human.	
+217	varrock	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	insult	Running clothes on and still walking? What did you buy them for, then?	Light as a moth, and about as much use in a fight.	
+218	gnome	looks: starkers	remark	We wear green here, mostly, but any colour would be a start.	Welcome, human! Laundry day, is it?	
+219	gnome	looks: starkers	remark	Hudo sells dough, human, not trousers, I'm afraid.	Ah, human. Laundry day, is it?	
+220	varrock	wearing Red partyhat	compliment	That red partyhat is worth more than this whole town. Take care, now.	Somebody pulled a cracker with you, then. Lucky them.	
+221	gnome	followed by a Heron	insult	Long legs and a sharp beak. It'd beat you at gnomeball, that bird.	That bird's caught more fish than you have today, I'd wager.	
+222	varrock	wearing Blue partyhat	insult	They say those hats only turn up at Christmas. Somebody tell yours.	Oh, hello. That blue partyhat's out of a cracker, surely.	
+223	gnome	wearing Fire cape	insult	A fire cape. Lovely. The infernal one's redder, mind.	Did TzTok-Jad not have anything in green, human?	
+224	varrock	wearing Abyssal whip	compliment	Plenty of whips come through here. Yours is kept nice.	Half the kingdom's got a whip like that, and it's the better half.	
+225	varrock	followed by a Heron	insult	They say herons follow keen fishers. Keen, I'll grant you.	A heron. Does it do the fishing while you hold the bucket?	
+226	varrock	wearing Green d'hide body	insult	Green dragonhide. Still smells faintly of dragon, that.	I'm sure I've seen that green coat twice today already.	
+227	varrock	wearing Infernal cape	remark	Takes a certain sort to sit in lava for fun. Take care, now.	Looks like a pie crust cooling, that, with the filling coming through.	
+228	varrock	looks: low_combat	insult	I wouldn't fancy your chances against a goblin.	The guards are short of men, they say. Not that short.	
+229	gnome	wearing Steel platebody, Steel platelegs, Steel full helm	compliment	Megal, steel! The children will be checking their faces in you.	Steel! Bright as a glider wing, human, and very smart.	
+230	gnome	wearing Blue partyhat	insult	Is it Christmas up there, human? It's not down here.	A paper hat worth a castle, human. Gielinor's a funny old place.	
+231	gnome	wearing Iron platebody, Iron platelegs	insult	Here, listen to that one clank. No, don't point.	Hello, human! Iron armour, and you still want a lift on a glider, kar?	
+232	varrock	wearing Graceful hood, Graceful top, Graceful legs, Graceful cape, Graceful gloves, Graceful boots	compliment	Mind, that one's quicker than the pickpockets.	Light on your feet, you. Barely heard you coming.	

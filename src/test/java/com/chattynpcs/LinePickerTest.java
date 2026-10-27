@@ -93,7 +93,7 @@ public class LinePickerTest
 		prefixes.add("heartland");
 		data.personas.forEach(p -> prefixes.add(p.id));
 		Set<String> tones = new HashSet<>(ChatterData.TONES);
-		Pattern banned = Pattern.compile("(?i)\\b(bloody|arse|arsed|muppet|just saying|no offence|lovely jubbly|sweet as a nut|on my life|oi oi|pet|duck|petal|ta-ra|telly|radio|lycra|rave|insurance|CV|fiver|tenner|cash|charity shop|stag do|bins|guide|cute|awesome|baddie|pathetic|useless|monday|tuesday|wednesday|thursday|friday|saturday|sunday)\\b");
+		Pattern banned = LineRules.BANNED;
 
 		for (ChatterData.Topic topic : data.topics)
 		{
@@ -142,13 +142,12 @@ public class LinePickerTest
 	@Test
 	public void politePersonasNeverGetSharpLines()
 	{
-		LinePicker picker = new LinePicker(data, new Random(11));
 		CharacterReader.Snapshot s = snapshot("bald", "starkers", "loaded");
 		s.worn.put(EquipmentInventorySlot.HEAD, "Red partyhat");
 
 		for (int i = 0; i < 300; i++)
 		{
-			LinePicker.Comment c = pick(picker, s, "Banker", null, ChattyNpcsConfig.Mood.RUDE, i);
+			LinePicker.Comment c = pick(fresh(i), s, "Banker", null, ChattyNpcsConfig.Mood.RUDE, 0);
 			assertNotNull(c);
 			assertFalse(c.getKey() + ": " + c.getText(), c.getKey().startsWith("plain/") || c.getKey().startsWith("sharp/"));
 		}
@@ -186,14 +185,13 @@ public class LinePickerTest
 	@Test
 	public void notableGearWinsAndFillsItem()
 	{
-		LinePicker picker = new LinePicker(data, new Random(2));
 		CharacterReader.Snapshot s = snapshot();
 		s.worn.put(EquipmentInventorySlot.CAPE, "Infernal cape");
 
 		int infernal = 0;
 		for (int i = 0; i < 200; i++)
 		{
-			LinePicker.Comment c = pick(picker, s, "Hans", null, ChattyNpcsConfig.Mood.BALANCED, i);
+			LinePicker.Comment c = pick(fresh(i), s, "Hans", null, ChattyNpcsConfig.Mood.BALANCED, 0);
 			assertNotNull(c);
 			assertFalse(c.getText(), c.getText().contains("{"));
 			if (c.getTopicId().equals("infernal_cape"))
@@ -207,7 +205,6 @@ public class LinePickerTest
 	@Test
 	public void rudeOnlyInsultsAndKindOnlyCompliments()
 	{
-		LinePicker picker = new LinePicker(data, new Random(3));
 		CharacterReader.Snapshot s = snapshot("bald", "skint", "low_hp");
 		s.worn.put(EquipmentInventorySlot.CAPE, "Fire cape");
 		s.quests.put(Quest.COOKS_ASSISTANT, QuestState.NOT_STARTED);
@@ -218,9 +215,9 @@ public class LinePickerTest
 		{
 			String npc = npcs[i % npcs.length];
 			// A banker's welcome is the same whatever the mood
-			LinePicker.Comment rude = pick(picker, s, npc, LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.RUDE, i);
+			LinePicker.Comment rude = pick(fresh(i), s, npc, LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.RUDE, 0);
 			assertTrue(npc + ": " + rude.getText(), rude.getTone().equals(ChatterData.INSULT) || rude.getTone().equals(ChatterData.GOSSIP) || rude.getTopicId().equals("greeting"));
-			LinePicker.Comment kind = pick(picker, s, npc, LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.KIND, i);
+			LinePicker.Comment kind = pick(fresh(i), s, npc, LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.KIND, 0);
 			assertTrue(npc + ": " + kind.getText(), kind.getTone().equals(ChatterData.COMPLIMENT) || kind.getTone().equals(ChatterData.GOSSIP) || kind.getTopicId().equals("greeting"));
 		}
 	}
@@ -259,14 +256,14 @@ public class LinePickerTest
 		s.facts.remove("always");
 		s.quests.put(Quest.COOKS_ASSISTANT, QuestState.NOT_STARTED);
 
-		assertNull(pick(picker, s, "Hans", FALADOR, ChattyNpcsConfig.Mood.BALANCED, 0));
-		assertEquals("cooks_assistant_todo", pick(picker, s, "Hans", LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.BALANCED, 1).getTopicId());
+		// Someone with no lines of their own, so it's the gossip that comes up
+		assertNull(pick(picker, s, "Man", FALADOR, ChattyNpcsConfig.Mood.BALANCED, 0));
+		assertEquals("cooks_assistant_todo", pick(picker, s, "Man", LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.BALANCED, 1).getTopicId());
 	}
 
 	@Test
 	public void questGiverTalksInFirstPerson()
 	{
-		LinePicker picker = new LinePicker(data, new Random(8));
 		CharacterReader.Snapshot s = snapshot();
 		s.facts.remove("always");
 		s.quests.put(Quest.COOKS_ASSISTANT, QuestState.NOT_STARTED);
@@ -274,8 +271,25 @@ public class LinePickerTest
 		List<String> starterLines = data.topics.stream()
 			.filter(t -> t.id.equals("cooks_assistant_todo"))
 			.findFirst().get().lines.get("starter/insult");
-		LinePicker.Comment c = pick(picker, s, "Cook", LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.RUDE, 0);
-		assertTrue(c.getText(), starterLines.stream().anyMatch(c.getText()::contains));
+		for (int i = 0; i < 10; i++)
+		{
+			LinePicker.Comment c = pick(fresh(i), s, "Cook", LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.RUDE, 0);
+			// His quest in his own words, or a line written for him: never gossip about himself
+			assertTrue(c.getText(), starterLines.stream().anyMatch(c.getText()::contains) || ownTopic(c.getTopicId(), "Cook"));
+		}
+	}
+
+	private boolean ownTopic(String topicId, String npc)
+	{
+		return data.topics.stream().anyMatch(t -> t.id.equals(topicId) && t.character != null && t.character.name.equals(npc));
+	}
+
+	/**
+	 * His quest itself, or his own lines for where you are in it
+	 */
+	private boolean aboutQuest(String topicId, String questTopic, Quest quest)
+	{
+		return topicId.equals(questTopic) || data.topics.stream().anyMatch(t -> t.id.equals(topicId) && t.character != null && t.character.quests.containsKey(quest.name()));
 	}
 
 	@Test
@@ -293,7 +307,7 @@ public class LinePickerTest
 		int own = 0;
 		for (int i = 0; i < 5; i++)
 		{
-			if (pick(picker, s, "Cook", LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.BALANCED, i).getTopicId().equals("cooks_assistant_todo"))
+			if (aboutQuest(pick(picker, s, "Cook", LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.BALANCED, i).getTopicId(), "cooks_assistant_todo", Quest.COOKS_ASSISTANT))
 			{
 				own++;
 			}
@@ -408,6 +422,118 @@ public class LinePickerTest
 		assertTrue(picker.matchingTopics(s, BURGH_DE_ROTT).contains("blood_moon_rises_local_todo"));
 		// And it's Morytania's business, not Falador's
 		assertFalse(picker.matchingTopics(s, FALADOR).contains("blood_moon_rises_local_todo"));
+	}
+
+	@Test
+	public void raidsKeepQuiet()
+	{
+		CharacterReader.Snapshot s = snapshot();
+		// Osmumten has been sealed away for decades, wherever he's standing
+		assertTrue(fresh(0).silent("Osmumten", null));
+		// Anyone inside a raid: the Tombs, the Theatre and the Chambers
+		for (WorldPoint inside : Arrays.asList(new WorldPoint(3680, 5144, 0), new WorldPoint(3168, 4320, 0), new WorldPoint(3232, 5730, 0)))
+		{
+			assertTrue(inside.toString(), fresh(0).silent("Hans", inside));
+		}
+		for (int i = 0; i < 50; i++)
+		{
+			assertNull(pick(fresh(i), s, "Osmumten", new WorldPoint(3680, 5144, 0), ChattyNpcsConfig.Mood.BALANCED, i));
+			assertNull(pick(fresh(i), s, "Vyre Orator", new WorldPoint(3663, 3224, 0), ChattyNpcsConfig.Mood.BALANCED, i));
+		}
+		assertFalse(fresh(0).silent("Hans", LUMBRIDGE_CASTLE));
+		assertNotNull(pick(fresh(0), s, "Hans", LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.BALANCED, 0));
+	}
+
+	private static final WorldPoint ARCHIVE_LOBBY = new WorldPoint(4117, 5550, 0);
+
+	@Test
+	public void theArchiveAllianceTalksAndNobodyElse()
+	{
+		// The alliance's own people, though Montoya has a combat level and the druids nothing to click
+		for (String name : Arrays.asList("General Montoya", "Record Keeper", "Druid", "Temple Knight", "Alliance builder", "Banker"))
+		{
+			assertTrue(name, fresh(0).atEase(name, ARCHIVE_LOBBY));
+			assertFalse(name, fresh(0).silent(name, ARCHIVE_LOBBY));
+		}
+		// Only there: a druid in Taverley is just a druid
+		assertFalse(fresh(0).atEase("Druid", new WorldPoint(2925, 3480, 0)));
+		// Everyone else in the Archive keeps quiet: the bosses, and Ocellus before his fight
+		for (String name : Arrays.asList("Hooded Figure", "Ocellus", "Eva Cashien", "Sprite"))
+		{
+			assertTrue(name, fresh(0).silent(name, ARCHIVE_LOBBY));
+			assertTrue(name, fresh(0).silent(name, new WorldPoint(4127, 5672, 0)));
+		}
+
+		CharacterReader.Snapshot s = snapshot();
+		s.quests.put(Quest.WHILE_GUTHIX_SLEEPS, QuestState.FINISHED);
+		s.quests.put(Quest.THE_FRACTURED_ARCHIVE, QuestState.FINISHED);
+		// Four lines in five are about the Archive; the fifth about your hat, or the news
+		s.worn.put(EquipmentInventorySlot.HEAD, "Bronze full helm");
+		int archive = 0;
+		int said = 0;
+		for (int i = 0; i < 500; i++)
+		{
+			LinePicker.Comment c = pick(fresh(i), s, "General Montoya", ARCHIVE_LOBBY, ChattyNpcsConfig.Mood.BALANCED, i);
+			if (c != null)
+			{
+				said++;
+				archive += c.getTopicId().equals("general_montoya_after_fractured_archive") ? 1 : 0;
+			}
+		}
+		assertTrue(said > 450);
+		double share = archive / (double) said;
+		assertTrue("archive share " + share, share > 0.72 && share < 0.88);
+
+		// A long stay with the builders: once their Archive lines are all said, they mostly keep
+		// quiet rather than talk of nothing but your gear
+		CharacterReader.Snapshot during = snapshot();
+		during.quests.put(Quest.WHILE_GUTHIX_SLEEPS, QuestState.FINISHED);
+		during.quests.put(Quest.THE_FRACTURED_ARCHIVE, QuestState.IN_PROGRESS);
+		during.worn.put(EquipmentInventorySlot.HEAD, "Bronze full helm");
+		LinePicker stay = fresh(7);
+		int own = 0;
+		int spoke = 0;
+		for (int i = 0; i < 300; i++)
+		{
+			LinePicker.Comment c = pick(stay, during, "Alliance builder", ARCHIVE_LOBBY, ChattyNpcsConfig.Mood.BALANCED, i * 10_000L);
+			if (c != null)
+			{
+				spoke++;
+				own += c.getTopicId().startsWith("alliance_builder_") ? 1 : 0;
+			}
+		}
+		assertTrue("spoke " + spoke, spoke >= 10);
+		assertTrue("own share over a long stay " + own / (double) spoke, own / (double) spoke > 0.7);
+
+		// In the raid itself, nothing but the raid. The quartermaster has his own calls, so he's left
+		// to them
+		WorldPoint vault = new WorldPoint(4127, 5672, 0);
+		assertTrue(fresh(0).silent("Quartermaster", vault));
+		// A quartermaster anywhere else is just a quartermaster
+		assertFalse(fresh(0).silent("Quartermaster", new WorldPoint(2195, 3140, 0)));
+		for (int i = 0; i < 100; i++)
+		{
+			// The alliance's people only ever say their own Archive lines in there
+			LinePicker.Comment c = pick(fresh(i), s, "Druid", vault, ChattyNpcsConfig.Mood.BALANCED, i);
+			assertNotNull(c);
+			assertTrue(c.getTopicId(), c.getTopicId().startsWith("druid_archive_"));
+		}
+		// Ocellus never speaks, in any phase or as the hooded figure before his fight, wherever the
+		// raid's rooms turn out to be on the map,
+		// and nor does any of the raid's bosses, even standing about before a fight
+		List<String> bosses = Arrays.asList("Ocellus", "Hooded Figure", "Archive Guardian", "Ezekiel", "Bork", "The Smorks", "Moia",
+			"Dreadnoth the Jellied", "Dagon'hai Elder", "Dagon'hai Monk", "Xarth");
+		for (WorldPoint anywhere : Arrays.asList(ARCHIVE_LOBBY, vault, LUMBRIDGE_CASTLE, null))
+		{
+			for (String boss : bosses)
+			{
+				assertTrue(boss, fresh(0).silent(boss, anywhere));
+				assertNull(boss, pick(fresh(0), s, boss, anywhere, ChattyNpcsConfig.Mood.BALANCED, 0));
+			}
+		}
+		// Anyone else in there, however talkative, has nothing of the raid's to say
+		assertTrue(fresh(0).silent("Guardian of Armadyl", vault));
+		assertTrue(fresh(0).silent("Alliance Navigator", vault));
 	}
 
 	private static final WorldPoint GRAND_EXCHANGE = new WorldPoint(3164, 3488, 0);
@@ -590,29 +716,28 @@ public class LinePickerTest
 	@Test
 	public void babbleUnlessYouCanUnderstandThem()
 	{
-		LinePicker picker = new LinePicker(data, new Random(28));
 		CharacterReader.Snapshot s = snapshot("bald");
 		for (int i = 0; i < 20; i++)
 		{
-			String text = pick(picker, s, "Monkey", null, ChattyNpcsConfig.Mood.BALANCED, i * 1000L).getText();
+			String text = pick(fresh(i), s, "Monkey", null, ChattyNpcsConfig.Mood.BALANCED, 0).getText();
 			assertTrue(text, text.matches("((Ook|Ah|Uh)[.!]? ?)+"));
 			assertTrue(text, text.chars().filter(c -> c == ' ').count() >= 7);
 		}
 
 		s.worn.put(EquipmentInventorySlot.AMULET, "M'speak amulet");
-		assertFalse(pick(picker, s, "Monkey", null, ChattyNpcsConfig.Mood.BALANCED, 99000).getText().startsWith("Ook"));
+		assertFalse(pick(fresh(28), s, "Monkey", null, ChattyNpcsConfig.Mood.BALANCED, 99000).getText().startsWith("Ook"));
 		s.worn.put(EquipmentInventorySlot.AMULET, "Amulet of glory");
 		s.worn.put(EquipmentInventorySlot.WEAPON, "Ninja monkey greegree");
-		assertFalse(pick(picker, s, "Monkey", null, ChattyNpcsConfig.Mood.BALANCED, 99500).getText().startsWith("Ook"));
+		assertFalse(pick(fresh(28), s, "Monkey", null, ChattyNpcsConfig.Mood.BALANCED, 99500).getText().startsWith("Ook"));
 		// Having finished their story isn't enough: you have to be wearing something
 		s.worn.clear();
 		s.quests.put(Quest.MONKEY_MADNESS_II, QuestState.FINISHED);
-		assertTrue(pick(picker, s, "Monkey", null, ChattyNpcsConfig.Mood.BALANCED, 99800).getText().matches("((Ook|Ah|Uh)[.!]? ?)+"));
+		assertTrue(pick(fresh(28), s, "Monkey", null, ChattyNpcsConfig.Mood.BALANCED, 99800).getText().matches("((Ook|Ah|Uh)[.!]? ?)+"));
 
-		String ghost = pick(picker, s, "Ghost villager", null, ChattyNpcsConfig.Mood.BALANCED, 100000).getText();
+		String ghost = pick(fresh(28), s, "Ghost villager", null, ChattyNpcsConfig.Mood.BALANCED, 100000).getText();
 		assertTrue(ghost, ghost.matches("[WwOoh .!]+"));
 		s.worn.put(EquipmentInventorySlot.LEGS, "Morytania legs 3");
-		assertFalse(pick(picker, s, "Ghost villager", null, ChattyNpcsConfig.Mood.BALANCED, 101000).getText().startsWith("Woo"));
+		assertFalse(pick(fresh(28), s, "Ghost villager", null, ChattyNpcsConfig.Mood.BALANCED, 101000).getText().startsWith("Woo"));
 	}
 
 	@Test
@@ -652,7 +777,7 @@ public class LinePickerTest
 
 		int news = 0;
 		int spoken = 0;
-		java.util.Deque<String> recent = new java.util.ArrayDeque<>();
+		Set<String> heard = new HashSet<>();
 		for (int i = 0; i < 300; i++)
 		{
 			LinePicker.Comment c = picker.pick(s, "Ghost villager", phasmatys, ChattyNpcsConfig.Mood.BALANCED, 5000, i * 5000L);
@@ -665,16 +790,11 @@ public class LinePickerTest
 			{
 				news++;
 			}
-			String line = c.getText();
-			assertFalse("repeated within a few lines: " + line, recent.contains(line));
-			recent.addLast(line);
-			if (recent.size() > 10)
-			{
-				recent.removeFirst();
-			}
+			assertTrue("repeated: " + c.getText(), heard.add(c.getText()));
 		}
 		assertTrue("quest news was " + news + " of " + spoken, news < spoken * 0.45);
-		assertTrue("only said " + spoken, spoken > 250);
+		// Then they run out of things you haven't heard, and keep quiet
+		assertTrue("only said " + spoken, spoken > 40);
 	}
 
 	@Test
@@ -942,7 +1062,7 @@ public class LinePickerTest
 		{
 			// After the trials, nobody calls you outerlander
 			String said = pick(fresh(i), s, "Brundt the Chieftain", rellekka, ChattyNpcsConfig.Mood.BALANCED, 0).getText();
-			assertFalse(said, said.contains("outerlander"));
+			assertFalse(said, said.matches("(?i).*\\bouterlander\\b.*"));
 			// Thurgo never gossips about Thurgo
 			assertFalse(pick(fresh(i), s, "Thurgo", rellekka, ChattyNpcsConfig.Mood.BALANCED, 0).getText().contains("Thurgo"));
 		}
@@ -1218,8 +1338,70 @@ public class LinePickerTest
 		assertEquals("dragon_slayer_ii_done", pick(picker, s, "Hans", FALADOR, ChattyNpcsConfig.Mood.BALANCED, 0).getTopicId());
 	}
 
+	private static ChatterData.Topic ownTopic(String id, String name, String... lines)
+	{
+		ChatterData.Topic topic = new ChatterData.Topic();
+		topic.id = id;
+		topic.priority = 30;
+		topic.character = new ChatterData.CharacterRule();
+		topic.character.name = name;
+		topic.lines = new java.util.HashMap<>();
+		topic.lines.put("starter/" + ChatterData.REMARK, Arrays.asList(lines));
+		return topic;
+	}
+
 	@Test
-	public void repeatsTheOldestLineWhenEverythingsBeenSaidButNeverJustNow()
+	public void namedPeopleSayTheirOwnLinesFirst()
+	{
+		ChatterData.Topic hans = ownTopic("hans_own", "Hans", "Round the castle again, me.", "These walls have seen me twice today.", "Another lap, another lap.");
+		ChatterData.Topic cook = ownTopic("cook_own", "Cook", "That cake won't bake itself.");
+		cook.character.quests = new java.util.HashMap<>();
+		cook.character.quests.put("COOKS_ASSISTANT", Arrays.asList("NOT_STARTED", "IN_PROGRESS"));
+		// Only these, not the lines the real Hans and Cook ship with
+		List<ChatterData.Topic> topics = new ArrayList<>();
+		data.topics.stream().filter(t -> t.character == null).forEach(topics::add);
+		topics.add(hans);
+		topics.add(cook);
+		data.topics = topics;
+		CharacterReader.Snapshot s = snapshot("bald");
+		s.worn.put(EquipmentInventorySlot.CAPE, "Fire cape");
+
+		int own = 0;
+		for (int i = 0; i < 50; i++)
+		{
+			LinePicker.Comment c = pick(fresh(i), s, "Hans", LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.BALANCED, 0);
+			if (c.getTopicId().equals("hans_own"))
+			{
+				own++;
+				// Already in his own words: nothing stuck on, nothing translated
+				assertEquals(c.getWritten(), c.getText());
+			}
+			assertNotEquals("hans_own", pick(fresh(i), s, "Bob", LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.BALANCED, 0).getTopicId());
+		}
+		// Most of the time, though a fire cape still gets a word in
+		assertTrue("Hans said his own lines " + own + " times in 50", own > 30);
+
+		// The Cook only frets about his cake until you've helped
+		s.quests.put(Quest.COOKS_ASSISTANT, QuestState.FINISHED);
+		for (int i = 0; i < 30; i++)
+		{
+			assertNotEquals("cook_own", pick(fresh(i), s, "Cook", LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.BALANCED, 0).getTopicId());
+		}
+
+		// Once you've heard all of his, Hans talks like anyone else
+		LinePicker picker = fresh(3);
+		Set<String> heard = new HashSet<>();
+		for (int i = 0; i < 6; i++)
+		{
+			LinePicker.Comment c = pick(picker, s, "Hans", LUMBRIDGE_CASTLE, ChattyNpcsConfig.Mood.BALANCED, i);
+			assertNotNull(c);
+			assertTrue(heard.add(c.getText()));
+		}
+		assertTrue(heard.containsAll(hans.lines.get("starter/remark")));
+	}
+
+	@Test
+	public void nobodyRepeatsALineYouveHeardTheyKeepQuietInstead()
 	{
 		ChatterData.Topic topic = new ChatterData.Topic();
 		topic.id = "only_six";
@@ -1237,15 +1419,41 @@ public class LinePickerTest
 			said.add(pick(picker, s, "Hans", null, ChattyNpcsConfig.Mood.BALANCED, i).getText());
 		}
 		assertEquals(6, new HashSet<>(said).size());
-		// All six have been said now, so it goes back to the one said longest ago
-		assertEquals(said.get(0), pick(picker, s, "Hans", null, ChattyNpcsConfig.Mood.BALANCED, 6).getText());
+		// Everything's been heard, from Hans or anyone else
+		assertNull(pick(picker, s, "Hans", null, ChattyNpcsConfig.Mood.BALANCED, 6));
+		assertNull(pick(picker, s, "Bob", null, ChattyNpcsConfig.Mood.BALANCED, 7));
+		// A month on, it's fair game again
+		assertNotNull(pick(picker, s, "Hans", null, ChattyNpcsConfig.Mood.BALANCED, HeardLines.REHEAR_MILLIS + 10));
+	}
 
-		// With only two lines, it keeps quiet rather than repeat one of the last few
+	@Test
+	public void whatYouveHeardIsRememberedNextTime()
+	{
+		ChatterData.Topic topic = new ChatterData.Topic();
+		topic.id = "only_two";
+		topic.fact = "always";
+		topic.wrap = false;
+		topic.lines = new java.util.HashMap<>();
 		topic.lines.put(ChatterData.REMARK, Arrays.asList("First.", "Second."));
-		picker = new LinePicker(data, new Random(16));
-		assertNotNull(pick(picker, s, "Hans", null, ChattyNpcsConfig.Mood.BALANCED, 0));
-		assertNotNull(pick(picker, s, "Hans", null, ChattyNpcsConfig.Mood.BALANCED, 1));
-		assertNull(pick(picker, s, "Hans", null, ChattyNpcsConfig.Mood.BALANCED, 2));
+		data.topics = new ArrayList<>(Arrays.asList(topic));
+		long now = 1_800_000_000_000L;
+
+		HeardLines yesterday = new HeardLines();
+		LinePicker picker = new LinePicker(data, new Random(16));
+		picker.listenWith(yesterday);
+		String first = pick(picker, snapshot(), "Hans", null, ChattyNpcsConfig.Mood.BALANCED, now).getText();
+		assertTrue(yesterday.takeChanged());
+		assertFalse(yesterday.takeChanged());
+
+		// Saved as JSON, loaded into the next session
+		Gson gson = new Gson();
+		HeardLines today = new HeardLines();
+		today.load(gson.fromJson(gson.toJson(yesterday.save(now)), HeardLines.Saved.class));
+		picker = new LinePicker(data, new Random(99));
+		picker.listenWith(today);
+		String second = pick(picker, snapshot(), "Hans", null, ChattyNpcsConfig.Mood.BALANCED, now + 60_000).getText();
+		assertNotEquals(first, second);
+		assertNull(pick(picker, snapshot(), "Hans", null, ChattyNpcsConfig.Mood.BALANCED, now + 120_000));
 	}
 
 	@Test

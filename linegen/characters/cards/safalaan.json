@@ -1,0 +1,97 @@
+{
+	"id": "safalaan",
+	"npc": "Safalaan Hallow",
+	"x": 3628,
+	"y": 9635,
+	"plane": 0,
+	"region": null,
+	"speech": null,
+	"who": "The tall, charismatic leader of the Sanguinesti Myreque, who escaped the Meiyerditch ghettos years ago and helped found the resistance. He runs the hidden base beneath northern Meiyerditch, scouting Castle Drakan and planning against the Drakans, and carries a power against vampyres he cannot control or remember using. He wants the people of Meiyerditch to have something real to hope for.",
+	"notices": [
+		"whether a passer-by was followed, and by what",
+		"how someone would fare against the vyrewatch",
+		"a Myreque ally, greeted with 'Myreque prevail'",
+		"a brave or reckless look, which he admires and worries about in equal measure"
+	],
+	"values": [
+		"the people of Meiyerditch and their hope",
+		"the lives of his comrades over any victory",
+		"real hope over false symbols",
+		"leading well, and not letting people down again"
+	],
+	"measuresBy": [
+		"the vyrewatch",
+		"the Drakans and their castle",
+		"how many have died to the vampyres",
+		"the Theatre of Blood, and the people who throw their lives away in it"
+	],
+	"talksAbout": [
+		"leading the Sanguinesti Myreque, and the escape from the ghettos (char.safalaan.leader, char.safalaan.escaped_ghetto)",
+		"Old Man Ral and Trader Sven (char.safalaan.old_man_ral, char.safalaan.trader_sven)",
+		"the castle sketches, Sarius and Vanescula's interest, the haemalchemy book (char.safalaan.castle_sketches, char.safalaan.vanescula_interest, char.safalaan.haemalchemy)",
+		"Serafina, the comrades lost, his strange power (char.safalaan.serafina, char.safalaan.three_lost, char.safalaan.strange_power)",
+		"Ranis's death and the turning tide (char.safalaan.ranis_turning)",
+		"after everything: his heritage, being a wyrd, his thirst, Vanescula, Vampyrium (char.safalaan.heritage, char.safalaan.wyrd, char.safalaan.mastering_thirst, char.safalaan.no_forgiveness, char.safalaan.vampyrium_peace)"
+	],
+	"address": "\"my friend\" or \"friend\": \"Good luck, my friend.\"",
+	"grammar": [
+		"courteous, well-turned sentences; a natural leader's 'we'",
+		"'Myreque prevail!' as greeting and farewell",
+		"brief praise ('Brave, very brave.') before getting back to business",
+		"dry, self-mocking asides, darker once he is a wyrd"
+	],
+	"rhythm": "Warm and commanding, with a strategist's calm; grows dry and gallows-humoured as his story darkens.",
+	"canon": [
+		"\"Myreque prevail!\" (Transcript:Darkness of Hallowvale)",
+		"\"Brave, very brave.\" (Transcript:Darkness of Hallowvale)",
+		"\"Together we can pull back the darkness of Hallowvale.\" (Transcript:Darkness of Hallowvale)",
+		"\"I don't have unlimited blood you know!\" (Transcript:A Taste of Hope)",
+		"\"Maybe I should eat you...\" (Transcript:Safalaan Hallow, after The Blood Moon Rises)"
+	],
+	"neverSay": [
+		"anything hinting at his Icyene blood, his parents, Larina, or Vanstrom being his father before Sins of the Father is finished",
+		"anything hinting that he becomes a vampyre before The Blood Moon Rises is finished",
+		"that Serafina was a trap, or anything about the abomination or the deaths of Mekritus, Andiess and Flaygian, before A Taste of Hope is finished",
+		"in 'always' lines: anything that assumes he is still human, or still in Meiyerditch",
+		"anything warm about Vanescula Drakan",
+		"swearing"
+	],
+	"states": [
+		{
+			"id": "always",
+			"quests": {}
+		},
+		{
+			"id": "darkness_of_hallowvale_in_progress",
+			"quests": {
+				"DARKNESS_OF_HALLOWVALE": "IN_PROGRESS"
+			}
+		},
+		{
+			"id": "after_darkness_of_hallowvale",
+			"quests": {
+				"DARKNESS_OF_HALLOWVALE": "FINISHED",
+				"A_TASTE_OF_HOPE": "NOT_STARTED"
+			}
+		},
+		{
+			"id": "a_taste_of_hope_in_progress",
+			"quests": {
+				"A_TASTE_OF_HOPE": "IN_PROGRESS"
+			}
+		},
+		{
+			"id": "after_a_taste_of_hope",
+			"quests": {
+				"A_TASTE_OF_HOPE": "FINISHED",
+				"SINS_OF_THE_FATHER": "NOT_STARTED"
+			}
+		},
+		{
+			"id": "after_the_blood_moon_rises",
+			"quests": {
+				"THE_BLOOD_MOON_RISES": "FINISHED"
+			}
+		}
+	]
+}

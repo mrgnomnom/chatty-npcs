@@ -1,0 +1,621 @@
+{"facts": [
+	{
+		"id": "char.elena.healer",
+		"says": "Elena is a healer from Ardougne with a real head for chemistry, and she keeps her own house across the way from her parents, Edmond and Alrena, in the north-west corner of East Ardougne.",
+		"source": "https://oldschool.runescape.wiki/w/Elena",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": null
+	},
+	{
+		"id": "char.elena.crossed_wall",
+		"says": "Elena went over the wall into West Ardougne to nurse the people there through the plague, and her parents have heard nothing from her since.",
+		"source": "https://oldschool.runescape.wiki/w/Plague_City",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne", "west_ardougne"],
+		"gate": {"quest": "PLAGUE_CITY", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.elena.kidnapped",
+		"says": "Elena was snatched on her way back east with plague samples she hoped would lead her to a cure, and she's locked in a cellar under a house the mourners say is riddled with plague.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Plague_City",
+		"canon": "in-game",
+		"knownIn": ["west_ardougne"],
+		"gate": {"quest": "PLAGUE_CITY", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.elena.no_symptoms",
+		"says": "Elena hasn't a single symptom of the plague, and reckons the story that she caught it was put about by the people who took her.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Plague_City",
+		"canon": "in-game",
+		"knownIn": ["west_ardougne"],
+		"gate": {"quest": "PLAGUE_CITY", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.elena.rescued",
+		"says": "Elena got out once the player found the cellar key and talked their way past the mourners with a warrant from the city warder Bravek, and then made her own way home.",
+		"source": "https://oldschool.runescape.wiki/w/Plague_City",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": {"quest": "PLAGUE_CITY", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.elena.distillator_taken",
+		"says": "The mourners took Elena's distillator off her and keep it in their headquarters in West Ardougne, and without it she can't test a single sample.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Biohazard",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": {"quest": "BIOHAZARD", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.elena.guidor",
+		"says": "Elena learned her trade from Guidor, an old chemist who lives in the south-east corner of Varrock and still gets his chemicals from the chemist in Rimmington.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Biohazard",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": null
+	},
+	{
+		"id": "char.elena.varrock_guards",
+		"says": "Last time Elena visited Guidor somebody told the Varrock guards she was carrying plague samples, so now they search everyone going to his end of the city.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Biohazard",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": {"quest": "BIOHAZARD", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.elena.no_plague",
+		"says": "Guidor's tests showed Elena's sample wasn't poisonous at all: there is no plague in West Ardougne, and somebody has been lying about it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Biohazard",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": {"quest": "BIOHAZARD", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.elena.blames_lathas",
+		"says": "Elena pointed out that King Lathas had the wall built and called the mourners in, so he must know what was really going on, and sent the player to the castle to have it out with him.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Biohazard",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": {"quest": "BIOHAZARD", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.elena.kept_in_dark",
+		"says": "When the player came back from the king they wouldn't tell Elena why he'd lied, as he'd sworn them to secrecy, and she went on fretting about the people over the wall all the same.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Biohazard",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": {"quest": "BIOHAZARD", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.elena.learned_truth",
+		"says": "Elena has since heard the whole story from the player: the king lied about his brother, he and the elf Lord Iorwerth were working towards the Dark Lord, and the mourners are Iorwerth's elves in disguise.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Mourning%27s_End_Part_I",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": {"quest": "MOURNINGS_END_PART_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.elena.apple_toxin",
+		"says": "Elena reluctantly showed the player how to brew a toxin from the mould on rotten apples, insisting it be made properly so nobody died, and lent them a big sieve for the straining.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Mourning%27s_End_Part_I",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": {"quest": "MOURNINGS_END_PART_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.elena.sieves",
+		"says": "By some freak accident Elena had hundreds of sieves delivered at once, so she's never short of one to hand out.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Elena",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": {"quest": "MOURNINGS_END_PART_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.elena.arrested",
+		"says": "Elena was arrested and thrown in the castle prison after she went round telling people the plague was a lie and some of them reported her.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Song_of_the_Elves",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne"],
+		"gate": {"quest": "SONG_OF_THE_ELVES", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.elena.prison_escape",
+		"says": "Elena broke out of her cell by melting the grate into the sewers with sulphuric acid fetched from her own cabinet, a thing she says nobody in her line of work should be without.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Song_of_the_Elves",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne", "prifddinas"],
+		"gate": {"quest": "SONG_OF_THE_ELVES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.elena.resistance",
+		"says": "Once she knew the truth about the king, Elena quietly gathered allies into the Ardougne Resistance and planned his overthrow with Councillor Halgrive, though she hated building the uprising on a deception of their own.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Song_of_the_Elves",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne", "prifddinas"],
+		"gate": {"quest": "SONG_OF_THE_ELVES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.elena.lathas_end",
+		"says": "The resistance stormed the castle, Lathas was dragged out and put to death before the people in the market, and Elena found that when the moment came she felt only empty.",
+		"source": "https://oldschool.runescape.wiki/w/King_Lathas",
+		"canon": "in-game",
+		"knownIn": ["ardougne", "east_ardougne", "prifddinas"],
+		"gate": {"quest": "SONG_OF_THE_ELVES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.elena.justice_not_killing",
+		"says": "Elena has given her life to healing people and thinks every life has worth, so she wanted Lord Iorwerth to face justice but didn't believe killing him was the same thing.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Song_of_the_Elves",
+		"canon": "in-game",
+		"knownIn": ["prifddinas"],
+		"gate": {"quest": "SONG_OF_THE_ELVES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.elena.prifddinas",
+		"says": "Elena now lives among the Meilyr clan in Prifddinas, the first human ever to settle in the city, and is learning all she can from their ways, which are unlike anything she'd seen.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Elena",
+		"canon": "in-game",
+		"knownIn": ["prifddinas"],
+		"gate": {"quest": "SONG_OF_THE_ELVES", "states": ["FINISHED"]}
+	},
+
+	{
+		"id": "char.king_arthur.court",
+		"says": "King Arthur leads the Knights of the Round Table and holds court on the ground floor of Camelot, the castle east of Seers' Village.",
+		"source": "https://oldschool.runescape.wiki/w/King_Arthur",
+		"canon": "in-game",
+		"knownIn": ["camelot", "seers_village"],
+		"gate": null
+	},
+	{
+		"id": "char.king_arthur.from_afar",
+		"says": "Arthur and his knights came to Gielinor from another world, and are only passing the time here until their own homeland needs them again, which he says won't be for a good while yet.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:King_Arthur",
+		"canon": "in-game",
+		"knownIn": ["camelot", "seers_village"],
+		"gate": null
+	},
+	{
+		"id": "char.king_arthur.sinclair_castle",
+		"says": "Camelot was once Lord Sinclair's castle: with old King Ulthas's blessing he gave it up to Arthur's knights and moved his family to a smaller mansion just to the north.",
+		"source": "https://oldschool.runescape.wiki/w/King_Arthur",
+		"canon": "in-game",
+		"knownIn": ["camelot", "seers_village", "sinclair_mansion"],
+		"gate": null
+	},
+	{
+		"id": "char.king_arthur.knights",
+		"says": "Arthur's knights at Camelot include Sir Lancelot, Sir Gawain, Sir Kay, Sir Bedivere, Sir Lucan, Sir Palomedes, Sir Pelleas and Sir Tristram.",
+		"source": "https://oldschool.runescape.wiki/w/Camelot",
+		"canon": "in-game",
+		"knownIn": ["camelot", "seers_village"],
+		"gate": null
+	},
+	{
+		"id": "char.king_arthur.lancelot",
+		"says": "Sir Lancelot calls himself the greatest knight in the land and doubts that a mere commoner could ever succeed where the Round Table has failed.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Merlin%27s_Crystal",
+		"canon": "in-game",
+		"knownIn": ["camelot"],
+		"gate": null
+	},
+	{
+		"id": "char.king_arthur.merlin",
+		"says": "Merlin, the wizard, is Arthur's closest confidant and lives in Camelot, and the knights admit he's the only one of them who knows anything about magic.",
+		"source": "https://oldschool.runescape.wiki/w/Camelot",
+		"canon": "in-game",
+		"knownIn": ["camelot", "seers_village"],
+		"gate": null
+	},
+	{
+		"id": "char.king_arthur.merlin_crystal",
+		"says": "Merlin has got himself trapped inside a magic crystal; the knights found him in a cave, carried him up to his tower in Camelot, and nothing they've tried will break it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Merlin%27s_Crystal",
+		"canon": "in-game",
+		"knownIn": ["camelot", "seers_village"],
+		"gate": {"quest": "MERLINS_CRYSTAL", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.king_arthur.knighthood",
+		"says": "Arthur tells anyone who wants to join the Round Table that they must first prove themselves on a quest, and the quest of the moment is freeing Merlin.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:King_Arthur",
+		"canon": "in-game",
+		"knownIn": ["camelot"],
+		"gate": {"quest": "MERLINS_CRYSTAL", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.king_arthur.morgan",
+		"says": "The knights blame the sorceress Morgan Le Faye for Merlin's crystal; she lives in a keep to the south of Camelot, guarded by renegade knights under Sir Mordred.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Merlin%27s_Crystal",
+		"canon": "in-game",
+		"knownIn": ["camelot"],
+		"gate": {"quest": "MERLINS_CRYSTAL", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.king_arthur.merlin_freed",
+		"says": "Merlin's crystal was finally shattered with Excalibur, which the Lady of the Lake had kept until someone worthy came for it, and Arthur dubbed Merlin's rescuer an honorary Knight of the Round Table.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Merlin%27s_Crystal",
+		"canon": "in-game",
+		"knownIn": ["camelot", "seers_village"],
+		"gate": {"quest": "MERLINS_CRYSTAL", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_arthur.grail_news",
+		"says": "Word has reached Arthur that the Holy Grail has passed into Gielinor, a second chance after none of his knights brought it back the last time they went after it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Holy_Grail",
+		"canon": "in-game",
+		"knownIn": ["camelot"],
+		"gate": {"quest": "HOLY_GRAIL", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.king_arthur.percival_missing",
+		"says": "Young Sir Percival rode off months ago after the golden boots of Arkaneeses and still hasn't come home, which has Arthur getting worried.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Holy_Grail",
+		"canon": "in-game",
+		"knownIn": ["camelot"],
+		"gate": {"quest": "HOLY_GRAIL", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.king_arthur.grail_home",
+		"says": "The Holy Grail is back at Camelot, and Sir Percival has stayed behind as king of the Fisher Realm, where the dead land sprang back to life the moment he took the throne.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Holy_Grail",
+		"canon": "in-game",
+		"knownIn": ["camelot", "seers_village"],
+		"gate": {"quest": "HOLY_GRAIL", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_arthur.turned_to_stone",
+		"says": "The Sinclair children joined Morgan Le Faye in a plot to take Camelot back: Arthur was turned to granite and hidden under the Black Knights' Fortress, while his knights and Merlin were locked up in Keep Le Faye.",
+		"source": "https://oldschool.runescape.wiki/w/King%27s_Ransom",
+		"canon": "in-game",
+		"knownIn": ["camelot", "seers_village", "sinclair_mansion"],
+		"gate": {"quest": "KINGS_RANSOM", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_arthur.escape",
+		"says": "Arthur was brought back out of the stone with the Holy Grail and an animate rock spell, and slipped home from the fortress dressed up as one of its guards.",
+		"source": "https://oldschool.runescape.wiki/w/King%27s_Ransom",
+		"canon": "in-game",
+		"knownIn": ["camelot", "seers_village"],
+		"gate": {"quest": "KINGS_RANSOM", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_arthur.merlin_frogs",
+		"says": "By the time Arthur got home, Merlin had chased the Sinclair children out of Camelot with puffs of smoke and frogs, and warned them he'd turn the lot into rabbits if they set foot outside their house again.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:King%27s_Ransom",
+		"canon": "in-game",
+		"knownIn": ["camelot", "seers_village", "sinclair_mansion"],
+		"gate": {"quest": "KINGS_RANSOM", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_arthur.training_grounds",
+		"says": "Arthur's knights train every day on the top floor of Camelot, testing themselves against one another, and Arthur has opened the training grounds to the knight who rescued him.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:King%27s_Ransom",
+		"canon": "in-game",
+		"knownIn": ["camelot"],
+		"gate": {"quest": "KINGS_RANSOM", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_arthur.war_council",
+		"says": "Arthur sat on King Roald's council of rulers in Varrock against the dragons, warning that he'd seen the horrors of war first hand and that carrying the fight to the dragons' island would be a great risk.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_II",
+		"canon": "in-game",
+		"knownIn": ["camelot"],
+		"gate": {"quest": "DRAGON_SLAYER_II", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_arthur.lathas_plot",
+		"says": "Before his fall, King Lathas of Ardougne admitted he had made a pact with the elf Lord Iorwerth to get rid of his own brother and drive King Arthur out.",
+		"source": "https://oldschool.runescape.wiki/w/King_Lathas",
+		"canon": "in-game",
+		"knownIn": ["camelot", "ardougne", "east_ardougne"],
+		"gate": {"quest": "SONG_OF_THE_ELVES", "states": ["FINISHED"]}
+	},
+
+	{
+		"id": "char.narnode.foundations",
+		"says": "Down a passage only the king uses lie the Stronghold's foundations: roots that gnome mages made long ago and that have grown, over the ages, into the whole Stronghold.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Grand_Tree",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "THE_GRAND_TREE", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.narnode.guardians_report",
+		"says": "Narnode's tree guardians have reported the Grand Tree getting worse for a couple of months now, and he has never seen the like of it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Grand_Tree",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "THE_GRAND_TREE", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.narnode.asks_hazelmere",
+		"says": "Narnode wasn't convinced by Glough's talk of human sabotage, and wanted a bark sample taken to the old mage Hazelmere, sending a translation book along since Hazelmere only speaks the old tongue.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Grand_Tree",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "THE_GRAND_TREE", "states": ["IN_PROGRESS"]}
+	},
+	{
+		"id": "char.narnode.trusts_glough",
+		"says": "Narnode thinks Glough the best tree guardian he has and a good gnome at heart, even if he's been a little strange since his wife died and has the whole town nervous of humans.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Grand_Tree",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "THE_GRAND_TREE", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.narnode.welcoming_vow",
+		"says": "Having been fooled by Glough all along, Narnode has vowed to make the Stronghold a welcoming place for everyone, humans included.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Grand_Tree",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "THE_GRAND_TREE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.narnode.secret_mine",
+		"says": "Very few gnomes know about the mine beneath the Grand Tree: the roots just north of where Narnode holds court part when you push on them, which he puts down to magic trees being magic trees.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Grand_Tree",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "THE_GRAND_TREE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.narnode.daero",
+		"says": "Narnode is pleased with Daero, the head tree guardian he appointed after Glough, who learns quickly and serves him well.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:King_Narnode_Shareen",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "THE_GRAND_TREE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.narnode.royal_seal",
+		"says": "Narnode gives anyone he sends on his business a copy of the royal seal, so that people know they act for the king.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Monkey_Madness_I",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "MONKEY_MADNESS_I", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.narnode.secret_orders",
+		"says": "Narnode writes his orders in a secret code on paper that destroys itself, and keeps spares, since orders get lost all the time.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Monkey_Madness_I",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "MONKEY_MADNESS_I", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.narnode.treasury",
+		"says": "Narnode went to the Royal Treasury in person to pay the human who found the tenth squad alive, and took them into the squad on Sergeant Garkor's word.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Monkey_Madness_I",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "MONKEY_MADNESS_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.narnode.guard_training",
+		"says": "Every member of Narnode's Royal Guard has to go through a training programme, and Daero is the one in charge of it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Monkey_Madness_I",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "THE_GRAND_TREE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.narnode.glough_watched",
+		"says": "Narnode had kept Glough under close watch ever since the trouble on Ape Atoll, and he still got out of the Stronghold; the king calls him very dangerous and wants him found and stopped.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Monkey_Madness_II",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "MONKEY_MADNESS_II", "states": ["IN_PROGRESS"]}
+	},
+	{
+		"id": "char.narnode.nieve_honoured",
+		"says": "Narnode has promised that Nieve's sacrifice in the fight against Glough will not be forgotten.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Monkey_Madness_II",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "MONKEY_MADNESS_II", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.narnode.peace_reasons",
+		"says": "Narnode wasn't sure he could trust Awowogei, but agreed to peace with Ape Atoll anyway, since turning it down would have been foolish when chances like that come so rarely.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Monkey_Madness_II",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "MONKEY_MADNESS_II", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.narnode.seed_pods",
+		"says": "Narnode's royal seed pods, handed down through his family for generations, take whoever communes with one straight back to the Grand Tree, and he now sells them to the hero who stopped Glough.",
+		"source": "https://oldschool.runescape.wiki/w/King_Narnode_Shareen",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "MONKEY_MADNESS_II", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.narnode.cute_pet",
+		"says": "Narnode has taken in one of the cute little creatures that have been turning up around the Stronghold, and keeps it by him in the Grand Tree.",
+		"source": "https://oldschool.runescape.wiki/w/King_Narnode_Shareen",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "THE_EYES_OF_GLOUPHRIE", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.narnode.spies",
+		"says": "The cute creatures turned out to be spies planted by the Arposandran gnomes and the mage Glouphrie, and ever since Narnode has grumbled that you should never trust a mage.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Eyes_of_Glouphrie",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "THE_EYES_OF_GLOUPHRIE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.narnode.oaknock_seed",
+		"says": "Narnode gave the human who rooted out the spies a small crystal seed that had passed from king to king since Oaknock, who said only a hero of the gnomes should have it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Eyes_of_Glouphrie",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": {"quest": "THE_EYES_OF_GLOUPHRIE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.narnode.restaurant",
+		"says": "Narnode is one of the customers who has gnome dishes delivered from Aluft Gianne's restaurant, and he thanks whoever brings them as his son.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:King_Narnode_Shareen",
+		"canon": "in-game",
+		"knownIn": ["gnome_stronghold"],
+		"gate": null
+	},
+
+	{
+		"id": "char.brundt.chieftain",
+		"says": "Brundt is the chieftain of Rellekka and holds court in the longhall, and as chieftain he's the one who decides whether his people may speak with outerlanders at all.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Brundt_the_Chieftain",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": null
+	},
+	{
+		"id": "char.brundt.outerlander_word",
+		"says": "To the Fremennik an outerlander is anyone not born in Rellekka, or anyone they don't yet know and trust, and Brundt insists it isn't meant as an insult.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Brundt_the_Chieftain",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": null
+	},
+	{
+		"id": "char.brundt.keep_apart",
+		"says": "Brundt says his people keep themselves to themselves to stay out of wars with outerlanders and their strange, deadly magic, and want no part in outerlander squabbles.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Brundt_the_Chieftain",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": null
+	},
+	{
+		"id": "char.brundt.not_barbarians",
+		"says": "Outerlanders tend to call the Fremennik barbarians, which Brundt puts down to them not understanding Fremennik ways.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Brundt_the_Chieftain",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": null
+	},
+	{
+		"id": "char.brundt.helm",
+		"says": "Brundt's horned helm has saved his life more times than he cares to remember, so he doesn't take kindly to jokes about it, and Skulgrimen's shop sells helms like it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Brundt_the_Chieftain",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": null
+	},
+	{
+		"id": "char.brundt.joining",
+		"says": "There are only two ways to become Fremennik: be born one, or win the votes of at least seven of the twelve elders on the council.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Fremennik_Trials",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": null
+	},
+	{
+		"id": "char.brundt.named",
+		"says": "Brundt welcomed the player into the Fremennik himself once the council's votes were in, declared them outerlander no more and gave them a Fremennik name.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Fremennik_Trials",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": {"quest": "THE_FREMENNIK_TRIALS", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.brundt.koschei",
+		"says": "A Fremennik raiding party once fished Koschei out of the icy northern sea, burnt, naked and with no memory but that one word; Yrsa nursed him back, he passed his trials, and Brundt half fears he'll remember his past one day and leave.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Brundt_the_Chieftain",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": {"quest": "THE_FREMENNIK_TRIALS", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.brundt.outerlander_origin",
+		"says": "Brundt tells that all men were once Fremennik, until some of them mined the rune rocks the tribe had voted to leave to the gods and built temples for them, and were cast out to become the outerlanders.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Brundt_the_Chieftain",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": null
+	},
+	{
+		"id": "char.brundt.moon_clan_magic",
+		"says": "Brundt can't abide the Moon Clan of Lunar Isle: they do everything by magic, which the Fremennik never use, and keep it all to themselves.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Lunar_Diplomacy",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": null
+	},
+	{
+		"id": "char.brundt.moon_clan_war",
+		"says": "The Fremennik are at war with the Moon Clan, their bitterest enemies, and Brundt holds out little hope for anyone trying to make peace, though he'll hand them a Seal of Passage to try.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Lunar_Diplomacy",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": {"quest": "LUNAR_DIPLOMACY", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.brundt.lunar_progress",
+		"says": "Brundt heard about the player's doings on Lunar Isle almost as soon as they were done, and thinks the Fremennik can really make progress with the Moon Clan now.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Lunar_Diplomacy",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": {"quest": "LUNAR_DIPLOMACY", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.brundt.ancient_rock",
+		"says": "When the mountain camp folk split from Rellekka they took the tribe's ancient rock, just an ordinary rock that stood for refusing to use runestones, and Brundt won't meet them until they give it back.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Mountain_Daughter",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": {"quest": "MOUNTAIN_DAUGHTER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.brundt.mountain_talks",
+		"says": "Brundt met the mountain camp's man in the longhall once their rock came back, and the two peoples now at least admit the other exists, which he counts as surprisingly good going.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Brundt_the_Chieftain",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": {"quest": "MOUNTAIN_DAUGHTER", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.brundt.ungael",
+		"says": "Brundt knew Ungael as a dark island whose beast had killed some of his finest warriors, and when the dragons massed there he took the Fremennik to war beside the outerlanders, though he had little patience for their council in Varrock.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_II",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": {"quest": "DRAGON_SLAYER_II", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.brundt.sandpit_rustling",
+		"says": "Freygerd and Reeso, who run the sandpit a little north of the longhall, heard something rustling by their hut one night and asked for someone official to look into it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Fremennik_Exiles",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": {"quest": "THE_FREMENNIK_EXILES", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.brundt.serpent_king",
+		"says": "Long ago basilisks under the Jormungand, the Serpent King, enslaved the Fremennik until the hero V sealed him in a prison on the Island of Stone; the bards' ballad says V killed him, but bards bend the truth.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Fremennik_Exiles",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": {"quest": "THE_FREMENNIK_EXILES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.brundt.exile_and_shield",
+		"says": "When the five councillors who never voted for the player pushed for their exile during the basilisk scare, Brundt quietly helped them remake V's shield to win the council round, and drank two kegs of beer before facing it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Fremennik_Exiles",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": {"quest": "THE_FREMENNIK_EXILES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.brundt.jormungand_beaten",
+		"says": "Brundt and the player fought the Jormungand on the Island of Stone and stopped the End of Things, and Brundt gave the player the credit at the celebration in the longhall afterwards.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Fremennik_Exiles",
+		"canon": "in-game",
+		"knownIn": ["rellekka", "rellekka_province"],
+		"gate": {"quest": "THE_FREMENNIK_EXILES", "states": ["FINISHED"]}
+	}
+]}

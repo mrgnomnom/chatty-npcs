@@ -1,0 +1,52 @@
+# Names the lines may use that have no infobox on the OSRS Wiki, so aren't in wiki_names.txt.
+# Each was found on the Wiki before it went in; the comment says where.
+
+# People, peoples and families
+Fitzharmon # Dimintheis's family, Family Crest
+Gilob # Gilob, Dwarf Cannon
+Grimhand # Alfred Grimhand's Barcrawl
+Hector # One-Eyed Hector, Pirate's Treasure
+Humpy Plumpy # Scrambled!
+Kinshra # Kinshra
+Lumbcook # Franizzard Van Lumbcook, Recipe for Disaster
+Rantuki # Tribal Totem
+Razorlor # Lair of Tarn Razorlor
+Scarface # Scarface Pete, Brimhaven
+Tasakaal # List of races, Mount Karuulm
+Velam # Twilight's Promise
+Dumpling # The Path of Glouphrie
+Barrelor # Rum Deal
+Rollie # King Roald, Garden of Tranquillity
+Sarge # Transcript:Murder Mystery
+Varlaless # Varlamore
+Sarad # Saradomin, cut off on purpose by a priest of Elidinis
+Chosen Commander # Land of the Goblins
+Asrol # Squire Asrol, The Knight's Sword
+Vey Lance # Sir Vey Lance, Temple Knights
+Crux Eqal # the Guthixian order, Crux Eqal (organisation)
+Guardians of Armadyl # Guardians of Armadyl (organisation)
+Temple Knights # Temple Knights (organisation)
+Smorks # Bork's goblin crew, The Smorks
+
+# Titles, things and places
+Highness # Royal Trouble
+Majesty # King Roald II
+Seventh # King Shayzien the Seventh, Tale of the Righteous
+Vizier # Radimus Erkle, Legends' Guild
+Herald # Children of the Sun
+Helmsman # Sven the Helmsman
+Dread # Ribbiting Tale of a Lily Pad Labour Dispute
+Dreamland # Dream World
+Earth Sciences # The Dig Site
+Adventurous # Cabin Fever
+Aargh # Creature of Fenkenstrain
+Fifth Age # Fifth Age
+Fourth Age # Fourth Age
+Nexus # the Archive's central chamber, Transcript:General Montoya
+Aspirant # what the Record Keeper calls adventurers, Transcript:Record Keeper
+Bank of Gielinor # Bank of Gielinor (organisation)
+Second Age # Second Age; the banker's book of poems, Transcript:Banker (The Fractured Archive)
+
+# Made up on purpose: harmless, and nothing the game could contradict
+Biscuit # what a child would call a puppy
+Albert # a nan's late husband

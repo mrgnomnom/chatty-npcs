@@ -22,7 +22,7 @@ import net.runelite.api.QuestState;
  */
 class ChatterData
 {
-	private static final String[] TOPIC_FILES = {"quests.json"};
+	private static final String[] TOPIC_FILES = {"quests.json", "characters.json"};
 
 	static final String COMPLIMENT = "compliment";
 	static final String INSULT = "insult";
@@ -132,6 +132,23 @@ class ChatterData
 		 * Their own oaths in place of "Blimey" and "Gadzooks" on shared lines: a pirate's "Arr"
 		 */
 		Words exclaim;
+		/**
+		 * Says nothing at all. Inside a raid nobody's there for a natter, and Osmumten has been
+		 * sealed in a tomb for decades, so he'd know nothing of what passes for news.
+		 */
+		boolean silent;
+		/**
+		 * Talks without a Talk-to option, and despite a combat level, as long as they can't be
+		 * attacked: the alliance's people in their own camp at the Fractured Archive, where a general
+		 * has a level and a druid on watch has nothing to click.
+		 */
+		boolean atEase;
+		/**
+		 * The share of what they say that's their own: their character's lines, and lines written for
+		 * this persona. The rest is what anyone says. The alliance talks of the Archive four times in
+		 * five, and of your hat or the news the fifth. Zero leaves it to the topics' weights.
+		 */
+		double ownShare;
 
 		transient List<Pattern> compiledNames;
 		transient Quest compiledUntil;
@@ -162,6 +179,11 @@ class ChatterData
 		PetRule pet;
 		QuestRule quest;
 		/**
+		 * One named person's own lines: who they are and what they've been through. Said before
+		 * anything else they could say, until you've heard them all.
+		 */
+		CharacterRule character;
+		/**
 		 * The speech.json id of the people who say this, for sayings of their own
 		 */
 		String speech;
@@ -180,7 +202,7 @@ class ChatterData
 		transient Quest compiledAfter;
 		/**
 		 * Keyed by tone ("insult"), persona and tone ("kid/insult"), or "starter/insult" for
-		 * what the NPC who gives out a quest says about it.
+		 * what the NPC who gives out a quest, or the person a character topic is about, says.
 		 */
 		Map<String, List<String>> lines = Collections.emptyMap();
 	}
@@ -205,6 +227,22 @@ class ChatterData
 		String label;
 
 		transient Pattern compiled;
+	}
+
+	static class CharacterRule
+	{
+		/**
+		 * Their name exactly as the game shows it. There are eight Cooks, so put a topic's regions
+		 * to say which.
+		 */
+		String name;
+		/**
+		 * Only while the player's quests are in these states: the Cook frets about his cake until
+		 * you've helped, then he doesn't
+		 */
+		Map<String, List<String>> quests = Collections.emptyMap();
+
+		transient Map<Quest, Set<QuestState>> compiledQuests;
 	}
 
 	static class PetRule

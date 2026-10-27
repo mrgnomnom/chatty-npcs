@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Deque;
+import java.util.EnumMap;
 import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
@@ -25,17 +25,12 @@ import net.runelite.api.coords.WorldPoint;
 
 /**
  * Picks what an NPC says about the player: the most notable topic wins more often, the tone comes
- * from the persona and mood, and recently used lines and topics are avoided.
+ * from the persona and mood, recently used topics are avoided, and no line the player has heard
+ * is said again.
  */
 class LinePicker
 {
 	private static final Pattern PLACEHOLDER = Pattern.compile("\\{(\\w+)}");
-	private static final int RECENT_LINES = 40;
-	/**
-	 * Never repeated within this many lines, even when there's nothing fresh left to say: better to
-	 * keep quiet
-	 */
-	private static final int NO_REPEAT_LINES = 5;
 	/**
 	 * Don't wrap lines that are already long, overhead text gets hard to read
 	 */
@@ -71,6 +66,10 @@ class LinePicker
 	 * How many recent comments the news budget is kept over
 	 */
 	private static final int NEWS_MEMORY = 6;
+	/**
+	 * How many recent comments a persona's own share is kept over
+	 */
+	private static final int OWN_MEMORY = 10;
 	/**
 	 * Away from a place this long and the next visit gets greeted again
 	 */
@@ -150,12 +149,21 @@ class LinePicker
 	private final Set<Quest> quests = EnumSet.noneOf(Quest.class);
 	private final Map<String, ChatterData.Region> regions = new HashMap<>();
 	private final Map<String, ChatterData.Speech> speechById = new HashMap<>();
-	private final Deque<String> recentLines = new ArrayDeque<>();
+	/**
+	 * Every line the player has heard lately, from anyone. Swapped for the account's own once it's
+	 * loaded from disk.
+	 */
+	private HeardLines heard = new HeardLines();
 	private final Map<String, Long> topicLastUsed = new HashMap<>();
 	/**
 	 * Whether each of the last few comments was quest news, oldest first
 	 */
 	private final Deque<Boolean> recentNews = new ArrayDeque<>();
+	/**
+	 * Whether each of the last few comments from a persona with an own share was their own, oldest
+	 * first
+	 */
+	private final Deque<Boolean> recentOwn = new ArrayDeque<>();
 	/**
 	 * When someone with greetings last spoke at each place, to greet once per visit
 	 */
@@ -184,6 +192,14 @@ class LinePicker
 	 * Who's listening right now, for what they've earned the right to be called
 	 */
 	private CharacterReader.Snapshot hearer;
+
+	/**
+	 * Remembers what's been heard in here from now on, e.g. an account's own memory once it's loaded
+	 */
+	void listenWith(HeardLines heard)
+	{
+		this.heard = heard;
+	}
 
 	/**
 	 * Applies the player's settings
@@ -298,6 +314,17 @@ class LinePicker
 			{
 				topic.compiledAfter = Quest.valueOf(topic.afterQuest);
 				quests.add(topic.compiledAfter);
+			}
+			if (topic.character != null)
+			{
+				topic.character.compiledQuests = new EnumMap<>(Quest.class);
+				topic.character.quests.forEach((name, states) ->
+				{
+					Set<QuestState> compiled = EnumSet.noneOf(QuestState.class);
+					states.forEach(state -> compiled.add(QuestState.valueOf(state)));
+					topic.character.compiledQuests.put(Quest.valueOf(name), compiled);
+				});
+				quests.addAll(topic.character.compiledQuests.keySet());
 			}
 			if (topic.quest != null)
 			{
@@ -460,7 +487,7 @@ class LinePicker
 		hearer = snapshot;
 		pickTip(snapshot);
 		ChatterData.Persona persona = personaFor(npcName, npcLocation);
-		if (persona == null)
+		if (persona == null || persona.silent)
 		{
 			return null;
 		}
@@ -501,7 +528,7 @@ class LinePicker
 				continue;
 			}
 
-			Map<String, String> vars = match(topic, snapshot, npcLocation, speech, home);
+			Map<String, String> vars = match(topic, snapshot, npcName, npcLocation, speech, home);
 			if (vars != null)
 			{
 				candidates.add(topic);
@@ -530,7 +557,7 @@ class LinePicker
 		ChatterData.Persona persona, ChatterData.Speech speech, boolean race, String npcName, WorldPoint npcLocation,
 		ChattyNpcsConfig.Mood mood, long now)
 	{
-		double[] weights = topicWeights(candidates, candidateVars, localNews, persona, npcName, npcLocation, mood);
+		double[] weights = topicWeights(candidates, candidateVars, localNews, persona, npcName, npcLocation, mood, now);
 		int idx;
 		while ((idx = pickWeighted(weights)) >= 0)
 		{
@@ -539,7 +566,7 @@ class LinePicker
 			Map<String, String> vars = candidateVars.get(idx);
 
 			boolean starter = isStarter(topic, npcName);
-			Picked picked = pickLine(topic, persona, starter, mood, vars);
+			Picked picked = pickLine(topic, persona, starter, mood, vars, now);
 			if (picked != null)
 			{
 				topicLastUsed.put(topic.id, now);
@@ -551,6 +578,14 @@ class LinePicker
 				while (recentNews.size() > NEWS_MEMORY)
 				{
 					recentNews.removeFirst();
+				}
+				if (persona.ownShare > 0)
+				{
+					recentOwn.addLast(isOwn(topic, persona, npcName));
+					while (recentOwn.size() > OWN_MEMORY)
+					{
+						recentOwn.removeFirst();
+					}
 				}
 				// Quest givers speak in complete lines of their own, gossip is overheard rather than
 				// said to you, and some topics are too grave for "Next, please."
@@ -596,7 +631,7 @@ class LinePicker
 		List<String> ids = new ArrayList<>();
 		for (ChatterData.Topic topic : data.topics)
 		{
-			if (match(topic, snapshot, location, null, null) != null)
+			if (match(topic, snapshot, null, location, null, null) != null)
 			{
 				ids.add(topic.id);
 			}
@@ -610,7 +645,7 @@ class LinePicker
 	/**
 	 * @param home for a news-teller, their own region: quests starting anywhere in it are known
 	 */
-	private Map<String, String> match(ChatterData.Topic topic, CharacterReader.Snapshot snapshot, WorldPoint npcLocation, ChatterData.Speech speech, ChatterData.Region home)
+	private Map<String, String> match(ChatterData.Topic topic, CharacterReader.Snapshot snapshot, String npcName, WorldPoint npcLocation, ChatterData.Speech speech, ChatterData.Region home)
 	{
 		if (!topic.regions.isEmpty() && topic.regions.stream().noneMatch(r -> inRegion(r, npcLocation)))
 		{
@@ -642,7 +677,27 @@ class LinePicker
 		{
 			return matchQuest(topic.quest, snapshot, npcLocation, home, vars);
 		}
+		if (topic.character != null)
+		{
+			return matchCharacter(topic.character, snapshot, npcName) ? vars : null;
+		}
 		return null;
+	}
+
+	private static boolean matchCharacter(ChatterData.CharacterRule rule, CharacterReader.Snapshot snapshot, String npcName)
+	{
+		if (npcName == null || !rule.name.equalsIgnoreCase(npcName))
+		{
+			return false;
+		}
+		for (Map.Entry<Quest, Set<QuestState>> quest : rule.compiledQuests.entrySet())
+		{
+			if (!quest.getValue().contains(snapshot.quests.get(quest.getKey())))
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 
 	private static Map<String, String> matchItem(ChatterData.ItemRule rule, CharacterReader.Snapshot snapshot, Map<String, String> vars)
@@ -753,6 +808,11 @@ class LinePicker
 	 */
 	private static boolean isStarter(ChatterData.Topic topic, String npcName)
 	{
+		// Their own topic is only ever a candidate when they're the one talking
+		if (topic.character != null)
+		{
+			return topic.character.name.equalsIgnoreCase(npcName);
+		}
 		if (topic.quest == null || topic.quest.compiledStarter == null || !topic.quest.compiledStarter.matcher(npcName).find())
 		{
 			return false;
@@ -777,11 +837,9 @@ class LinePicker
 	 * {@link #newsShare}, so a well-travelled adventurer still hears about their hat.
 	 */
 	private double[] topicWeights(List<ChatterData.Topic> topics, List<Map<String, String>> vars, Set<ChatterData.Topic> local, ChatterData.Persona persona,
-		String npcName, WorldPoint npcLocation, ChattyNpcsConfig.Mood mood)
+		String npcName, WorldPoint npcLocation, ChattyNpcsConfig.Mood mood, long now)
 	{
 		double[] weights = new double[topics.size()];
-		int[] fresh = new int[topics.size()];
-		boolean anyFresh = false;
 		for (int i = 0; i < topics.size(); i++)
 		{
 			ChatterData.Topic topic = topics.get(i);
@@ -799,16 +857,8 @@ class LinePicker
 			{
 				weights[i] *= UNFINISHED_BOOST;
 			}
-			fresh[i] = freshLines(topic, persona, starter, mood, vars.get(i));
-			anyFresh |= fresh[i] > 0;
-		}
-		// Everything's been said lately: fall back to repeating whatever was said longest ago
-		if (anyFresh)
-		{
-			for (int i = 0; i < weights.length; i++)
-			{
-				weights[i] *= Math.min(fresh[i], FRESH_LINES) / (double) FRESH_LINES;
-			}
+			// Nothing fresh to say about it, so it isn't said
+			weights[i] *= Math.min(freshLines(topic, persona, starter, mood, vars.get(i), now), FRESH_LINES) / (double) FRESH_LINES;
 		}
 
 		double news = 0;
@@ -824,8 +874,9 @@ class LinePicker
 				other += weights[i];
 			}
 		}
-		// Over budget lately: let them talk about something else while there's anything else
-		if (other > 0 && recentNews.size() >= NEWS_MEMORY && recentNews.stream().filter(n -> n).count() >= newsShare * NEWS_MEMORY)
+		// Over budget lately: they talk about something else, or keep quiet if there's nothing else
+		// fresh. The player chose how much news they want.
+		if (recentNews.size() >= NEWS_MEMORY && recentNews.stream().filter(n -> n).count() >= newsShare * NEWS_MEMORY)
 		{
 			for (int i = 0; i < weights.length; i++)
 			{
@@ -846,7 +897,67 @@ class LinePicker
 				}
 			}
 		}
+		keepOwnShare(weights, topics, persona, npcName);
 		return weights;
+	}
+
+	/**
+	 * Scales the speaker's own topics against everything else to the persona's {@link
+	 * ChatterData.Persona#ownShare}. Once enough of what they've said lately was something else,
+	 * only their own will do, and with nothing of their own fresh to say they keep quiet.
+	 */
+	private void keepOwnShare(double[] weights, List<ChatterData.Topic> topics, ChatterData.Persona persona, String npcName)
+	{
+		if (persona.ownShare <= 0 || persona.ownShare >= 1)
+		{
+			return;
+		}
+		double own = 0;
+		double other = 0;
+		for (int i = 0; i < weights.length; i++)
+		{
+			if (isOwn(topics.get(i), persona, npcName))
+			{
+				own += weights[i];
+			}
+			else
+			{
+				other += weights[i];
+			}
+		}
+		if (recentOwn.size() >= OWN_MEMORY && recentOwn.stream().filter(o -> !o).count() >= (1 - persona.ownShare) * OWN_MEMORY)
+		{
+			for (int i = 0; i < weights.length; i++)
+			{
+				if (!isOwn(topics.get(i), persona, npcName))
+				{
+					weights[i] = 0;
+				}
+			}
+			return;
+		}
+		if (own <= 0 || other <= 0)
+		{
+			return;
+		}
+		double scale = persona.ownShare * other / ((1 - persona.ownShare) * own);
+		for (int i = 0; i < weights.length; i++)
+		{
+			if (isOwn(topics.get(i), persona, npcName))
+			{
+				weights[i] *= scale;
+			}
+		}
+	}
+
+	private static boolean isOwn(ChatterData.Topic topic, ChatterData.Persona persona, String npcName)
+	{
+		if (isStarter(topic, npcName))
+		{
+			return true;
+		}
+		String prefix = persona.id + "/";
+		return topic.lines.keySet().stream().anyMatch(key -> key.startsWith(prefix));
 	}
 
 	/**
@@ -977,6 +1088,24 @@ class LinePicker
 		return persona != null && persona.newsOnly;
 	}
 
+	/**
+	 * Never says anything, so isn't worth choosing to speak
+	 */
+	boolean silent(String npcName, WorldPoint location)
+	{
+		ChatterData.Persona persona = personaFor(npcName, location);
+		return persona != null && persona.silent;
+	}
+
+	/**
+	 * Counts as someone to chat with, even without Talk-to or with a combat level
+	 */
+	boolean atEase(String npcName, WorldPoint location)
+	{
+		ChatterData.Persona persona = personaFor(npcName, location);
+		return persona != null && persona.atEase;
+	}
+
 	private static String visitKey(WorldPoint location)
 	{
 		// Wide enough that every booth in one bank (even the Grand Exchange) shares a visit
@@ -1041,9 +1170,9 @@ class LinePicker
 	}
 
 	/**
-	 * How many lines this persona could say about a topic in this mood without repeating a recent one
+	 * How many lines this persona could say about a topic in this mood that the player hasn't heard
 	 */
-	private int freshLines(ChatterData.Topic topic, ChatterData.Persona persona, boolean starter, ChattyNpcsConfig.Mood mood, Map<String, String> vars)
+	private int freshLines(ChatterData.Topic topic, ChatterData.Persona persona, boolean starter, ChattyNpcsConfig.Mood mood, Map<String, String> vars, long now)
 	{
 		int fresh = 0;
 		for (String tone : ChatterData.TONES)
@@ -1054,7 +1183,7 @@ class LinePicker
 			}
 			for (Line line : linesFor(topic, persona, starter, tone))
 			{
-				if (!recentLines.contains(line.getTemplate()) && fill(line.getTemplate(), vars) != null)
+				if (!heard.recently(line.getTemplate(), now) && fill(line.getTemplate(), vars) != null)
 				{
 					fresh++;
 				}
@@ -1069,23 +1198,14 @@ class LinePicker
 		return tone.equals(topic.lean) ? weight * LEAN_BOOST : weight;
 	}
 
-	private Picked pickLine(ChatterData.Topic topic, ChatterData.Persona persona, boolean starter, ChattyNpcsConfig.Mood mood, Map<String, String> vars)
-	{
-		Picked picked = pickLine(topic, persona, starter, mood, vars, false);
-		if (picked == null)
-		{
-			// Everything's been said recently, so repeat whatever was said longest ago, unless it was just now
-			picked = pickLine(topic, persona, starter, mood, vars, true);
-		}
-		return picked;
-	}
-
 	/**
-	 * Recently said lines are left out before tones are weighed, so in Balanced mood a topic whose
-	 * insults were all said recently leans on its other tones for a while. That's intended: variety
+	 * Lines the player has heard are left out before tones are weighed, so in Balanced mood a topic
+	 * whose insults have all been heard leans on its other tones. That's intended: never repeating
 	 * matters more than keeping the exact mix.
+	 *
+	 * @return null if the player has heard everything this persona could say about it
 	 */
-	private Picked pickLine(ChatterData.Topic topic, ChatterData.Persona persona, boolean starter, ChattyNpcsConfig.Mood mood, Map<String, String> vars, boolean allowRecent)
+	private Picked pickLine(ChatterData.Topic topic, ChatterData.Persona persona, boolean starter, ChattyNpcsConfig.Mood mood, Map<String, String> vars, long now)
 	{
 		Map<String, List<Line>> usableByTone = new LinkedHashMap<>();
 		Map<String, Double> weights = new LinkedHashMap<>();
@@ -1100,8 +1220,7 @@ class LinePicker
 			List<Line> usable = new ArrayList<>();
 			for (Line line : linesFor(topic, persona, starter, tone))
 			{
-				boolean said = allowRecent ? saidJustNow(line.getTemplate()) : recentLines.contains(line.getTemplate());
-				if (!said && fill(line.getTemplate(), vars) != null)
+				if (!heard.recently(line.getTemplate(), now) && fill(line.getTemplate(), vars) != null)
 				{
 					usable.add(line);
 				}
@@ -1132,45 +1251,9 @@ class LinePicker
 		}
 
 		List<Line> lines = usableByTone.get(chosenTone);
-		Line line = allowRecent ? oldest(lines) : lines.get(random.nextInt(lines.size()));
-		recentLines.remove(line.getTemplate());
-		recentLines.addLast(line.getTemplate());
-		while (recentLines.size() > RECENT_LINES)
-		{
-			recentLines.removeFirst();
-		}
+		Line line = lines.get(random.nextInt(lines.size()));
+		heard.heard(line.getTemplate(), now);
 		return new Picked(chosenTone, line.getKey(), fill(line.getTemplate(), vars));
-	}
-
-	private boolean saidJustNow(String template)
-	{
-		Iterator<String> newestFirst = recentLines.descendingIterator();
-		for (int i = 0; i < NO_REPEAT_LINES && newestFirst.hasNext(); i++)
-		{
-			if (newestFirst.next().equals(template))
-			{
-				return true;
-			}
-		}
-		return false;
-	}
-
-	/**
-	 * @return the line said longest ago, or one never said at all
-	 */
-	private Line oldest(List<Line> lines)
-	{
-		for (String recent : recentLines)
-		{
-			for (Line line : lines)
-			{
-				if (line.getTemplate().equals(recent))
-				{
-					return line;
-				}
-			}
-		}
-		return lines.get(0);
 	}
 
 	private List<Line> linesFor(ChatterData.Topic topic, ChatterData.Persona persona, boolean starter, String tone)

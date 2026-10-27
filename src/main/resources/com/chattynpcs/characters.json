@@ -1,0 +1,5062 @@
+{
+	"topics": [
+		{
+			"id": "aggie_after_one_small_favour",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Aggie",
+				"quests": {
+					"ONE_SMALL_FAVOUR": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Any dye you like, dearie, on the house. Nearly.",
+					"Brought him back safe, you did. A witch remembers a kindness.",
+					"You're welcome at my cauldron any time, dearie. Mind the tomatoes."
+				],
+				"starter/insult": [
+					"Don't you go teaching my Jimmy any adventuring habits.",
+					"Saved my apprentice, and now you think you're owed. You are, a bit.",
+					"Still owe you, do I? Aggie's memory isn't what it was."
+				],
+				"starter/remark": [
+					"Jimmy, stir it the other way! Widdershins, boy!",
+					"The house is noisy again, and I'll not complain about it.",
+					"Two pairs of hands at the cauldron again. The dyes fairly fly out."
+				]
+			}
+		},
+		{
+			"id": "aggie_after_prince_ali_rescue",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Aggie",
+				"quests": {
+					"PRINCE_ALI_RESCUE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"There's my clever one. Got a prince out under a dab of paste!",
+					"You'd make a decent witch, my dear. You know what paste is for."
+				],
+				"starter/insult": [
+					"I'll bet you never picked a redberry for that paste yourself.",
+					"Saved a prince, did you? The fine for cheek is still the fine, dearie.",
+					"Who got the prince out? My paste. You just carried the pot."
+				],
+				"starter/remark": [
+					"Ash, flour, water, redberries. Good enough for a prince, apparently.",
+					"I make things pretty, mostly. Making a prince look ordinary was new.",
+					"Wonder if that prince ever washed my paste off. Shame if he did."
+				]
+			}
+		},
+		{
+			"id": "aggie_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Aggie",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Sensible sort, you. You'd not eat one of my tomatoes.",
+					"Such a pretty way about you, dearie. No paste needed.",
+					"You'd never call a witch names, would you, dearie? No, not you."
+				],
+				"starter/insult": [
+					"Don't make faces at Aggie. Faces have a way of sticking.",
+					"Rushing past a witch without so much as a hello? Brave, dearie.",
+					"That one'd make a fine newt. Not that I do that any more."
+				],
+				"starter/remark": [
+					"Paste wants stirring and muttering. The muttering's the important bit.",
+					"That professor's machine again, I'll bet. Heard a chicken talking.",
+					"Tried for a lesser demon once and got a tomato. They do bite, mind."
+				]
+			}
+		},
+		{
+			"id": "aggie_before_one_small_favour",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Aggie",
+				"quests": {
+					"ONE_SMALL_FAVOUR": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A sensible one, at last. Sensible folk come home when they say.",
+					"If my Jimmy had half your sense, he'd be home by now.",
+					"That one looks like they could find anybody. Even a lost boy."
+				],
+				"starter/insult": [
+					"Don't wander off and not come back. I've one of those already.",
+					"Going off for supplies, are you? That's what Jimmy said.",
+					"Not seen my Jimmy, have you? No, you'd not notice a thing."
+				],
+				"starter/remark": [
+					"I'd go after him myself, but I can't leave till he's back.",
+					"If anyone's hurt that boy, they'll wake up a very odd shape.",
+					"Jimmy the Chisel, odd name for a witch's apprentice. Good boy, though."
+				]
+			}
+		},
+		{
+			"id": "ali_morrisane_after_the_feud",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Ali Morrisane",
+				"quests": {
+					"THE_FEUD": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ah, my best customer! A beard, a headdress, and never a complaint.",
+					"My friend! You went all the way to Pollnivneach. A true tourist.",
+					"Such a good sport, my friend! Not everyone enjoys a little tourism."
+				],
+				"starter/insult": [
+					"A false beard went to your head, my friend. It happens to tourists.",
+					"Still no assistant, and you walk past a perfectly good job, my friend.",
+					"You crossed the desert for my nephew? And you paid for the beard!"
+				],
+				"starter/remark": [
+					"Farid at the Exchange, Baba in hiding. My family does get about.",
+					"Hiding, the boy is. The best salesmen always have to hide a while.",
+					"The mayor and I understand each other. Men of business, both of us."
+				]
+			}
+		},
+		{
+			"id": "ali_morrisane_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Ali Morrisane",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"For you, my friend, a special price. I say that to almost nobody.",
+					"With an eye like yours you could sell. Nearly as well as me, even."
+				],
+				"starter/insult": [
+					"An adventurer with nothing to buy? Every adventurer needs a tinderbox.",
+					"Haggling by walking away, my friend? I invented that trick.",
+					"I could sell you a bucket you do not need. I could sell you two."
+				],
+				"starter/remark": [
+					"I never buy, my friend. Buying is how a merchant becomes poor.",
+					"Sell a carpet? And have every rug merchant fly for himself? Never.",
+					"The gnomes say my carpets will never take off. My carpets disagree."
+				]
+			}
+		},
+		{
+			"id": "ali_morrisane_before_the_feud",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Ali Morrisane",
+				"quests": {
+					"THE_FEUD": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"For a friend like you, the robes are nearly half price. Nearly.",
+					"Now there goes someone who would get to Pollnivneach and back.",
+					"You would make a fine assistant. Better than the one who never came."
+				],
+				"starter/insult": [
+					"I would hire you myself, my friend, but I would have to watch you.",
+					"My nephew is lost somewhere, and you are lost in front of my stall.",
+					"Not interested? I shall put you down as 'later', my friend."
+				],
+				"starter/remark": [
+					"Family is family, my friend, but punctual family is better.",
+					"There is a nephew-shaped gap behind my counter, my friend.",
+					"Who minds the stall while I sell? Not my nephew, apparently."
+				]
+			}
+		},
+		{
+			"id": "ali_morrisane_during_the_feud",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Ali Morrisane",
+				"quests": {
+					"THE_FEUD": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Only you would go. I shall remember that, my friend, at a discount.",
+					"With my headdress on, they will take you for a local. Nearly.",
+					"You bargain badly but you travel well. I respect the second."
+				],
+				"starter/insult": [
+					"Did the beard fall off already? I do not do refunds.",
+					"Lost the way? Buy some papyrus from me and draw yourself a map.",
+					"The boy will have grown a real beard by the time you get there."
+				],
+				"starter/remark": [
+					"I keep a spare false beard for emergencies. One never knows.",
+					"My nephew will be so pleased to meet a stranger in a false beard.",
+					"When the boy arrives I shall take a day off... no, I shall sell more."
+				]
+			}
+		},
+		{
+			"id": "alliance_builder_after_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Alliance builder",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Did for that old guardian, they tell me. Proper job, that.",
+					"Go on, use the finished half of the bridge. You've earned it.",
+					"That's the one who sorted the Nexus. Shift the plank, let them by.",
+					"You helped take the Nexus, pal? Then you can walk my bridge first."
+				],
+				"starter/insult": [
+					"Don't stand there looking heroic. Looking heroic won't hold up a wall.",
+					"Saved the whole archive and still too grand to hand me a nail, pal.",
+					"Took the Nexus, did you? The Nexus didn't need a roof. My camp does.",
+					"Treasure for the heroes and splinters for us. Fair's fair, I suppose."
+				],
+				"starter/remark": [
+					"Crystal rocks sinking and popping up again. Can't lay a floor on that.",
+					"Goblins with a siege engine. I'd give a week's pay to see the joints.",
+					"Somebody's got to build the walls the soldiers stand behind, pal.",
+					"Somebody's walked off with my mallet. A soldier, I'll bet.",
+					"Whoever started this place gave up halfway. Not me. Not my bridge."
+				]
+			}
+		},
+		{
+			"id": "alliance_builder_during_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Alliance builder",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Not stood gawping at my bridge. I like that in a person.",
+					"Steady on their feet, that one. Wouldn't fall off a half-done bridge.",
+					"That one's actually going in. Rather them than me, I'll say that.",
+					"You look like you'd carry a beam without being asked twice."
+				],
+				"starter/insult": [
+					"Admiring the ravine? It's a hole, pal. Holes don't need admiring.",
+					"All that fighting and you'd not know which end of a nail goes in.",
+					"Don't lean on that rail. It's not a rail yet, it's a hope.",
+					"If you're going to stand there, hold the end of this. No? Thought not.",
+					"That one walked through my fresh mortar, I'd swear to it."
+				],
+				"starter/remark": [
+					"Guthix's followers left this place half built. I know how that goes.",
+					"Plank, plank, rope... where's the rope gone? Somebody's had my rope.",
+					"Plenty of swords in this camp. Not a hammer among them, mind.",
+					"Word from the knights is we're barely holding. So, faster hammers."
+				]
+			}
+		},
+		{
+			"id": "apothecary_varrock_after_romeo__juliet",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Apothecary",
+				"quests": {
+					"ROMEO__JULIET": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ah, friend. All that fuss, and nobody actually died.",
+					"Not your fault the lad's a fool. The plan was sound.",
+					"You'd make a fair apothecary's runner. Pity I can't afford one."
+				],
+				"starter/insult": [
+					"Back for another dead-looking potion? One per customer, I think.",
+					"Mind that one. Last time, somebody ended up in a crypt.",
+					"Some matchmaker. The lad left with the cousin."
+				],
+				"starter/remark": [
+					"My potion worked a treat. Too well, by Romeo's account.",
+					"No call for cadava potions now. Strength potions again, then.",
+					"Nobody asks what goes in a cadava potion twice."
+				]
+			}
+		},
+		{
+			"id": "apothecary_varrock_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Apothecary",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"If I gave out free potions, you'd be first in line. I don't, mind.",
+					"That one would never call me out for nothing. Unlike Unferth."
+				],
+				"starter/insult": [
+					"After something for nothing? The only cure for that is work.",
+					"Ingredients, not excuses. I've had enough excuses this week.",
+					"Someone like you would eat a cadava berry to see what happens."
+				],
+				"starter/remark": [
+					"Another crate of doctor's hats, and still nobody calls me doctor.",
+					"Cadava berries look good enough to eat. That's rather the trouble.",
+					"Unferth's ill again, apparently. I'll go. I always go."
+				]
+			}
+		},
+		{
+			"id": "apothecary_varrock_before_romeo__juliet",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Apothecary",
+				"quests": {
+					"ROMEO__JULIET": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"You could talk sense into someone, I'd say. Romeo, for instance.",
+					"You look the sensible sort. Not lovesick, at least."
+				],
+				"starter/insult": [
+					"Need a potion? Bring ingredients. Wanting one isn't an ingredient.",
+					"Strength potion? You'll want two. Or a different line of work.",
+					"You're not lovesick as well, are you? One Romeo's plenty."
+				],
+				"starter/remark": [
+					"All quiet. Apart from Romeo's woman trouble, which is loud.",
+					"No potion for Romeo's trouble. I've looked.",
+					"Quiet week. Nobody ill, nobody poisoned. Dreadful for trade."
+				]
+			}
+		},
+		{
+			"id": "apothecary_varrock_during_romeo__juliet",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Apothecary",
+				"quests": {
+					"ROMEO__JULIET": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Good of you to help, and for the girl's sake, I hope, not Romeo's.",
+					"Not many would run about for a lovesick lad. Decent of you.",
+					"You'll keep a secret, I think. Good. This potion needs one."
+				],
+				"starter/insult": [
+					"Mind the berries. You've the look of someone who snacks.",
+					"Running errands for Romeo now? You'll be writing his letters next.",
+					"You do know you're not meant to drink it? Just checking."
+				],
+				"starter/remark": [
+					"A potion to look dead is easy to brew. Explaining it is the hard part.",
+					"Horn of dog is harder to come by than you'd think. Don't ask.",
+					"Pink berries from the mining pit. Don't eat them on the way, mind."
+				]
+			}
+		},
+		{
+			"id": "aris_after_demon_slayer",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Aris",
+				"quests": {
+					"DEMON_SLAYER": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"History forgot Wally. I'll see to it that it doesn't forget you.",
+					"There's my hero. The ball shows a quieter city, thanks to you.",
+					"Wally's sword found a worthy hand again. He'd have liked you, dear."
+				],
+				"starter/insult": [
+					"Beat a demon, and still you can't guess what I'll say next.",
+					"I'd tell you your future, young one, but you'd only go and spoil it."
+				],
+				"starter/remark": [
+					"A good bit of demon-slaying, that. Wally would have approved.",
+					"Guthix was with the young one after all. I did ask him nicely.",
+					"Wally still gets no song, mind. Some things the ball can't mend."
+				]
+			}
+		},
+		{
+			"id": "aris_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Aris",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"An old soul in one so young... well, younger than me, but who isn't?",
+					"Wisdom in the young! Ye gods, I'd almost given up looking.",
+					"You'll go far, young one. I'd say how far, but you'd only check."
+				],
+				"starter/insult": [
+					"I asked the ball about you, dear. It went cloudy and stayed that way.",
+					"Too late for a fortune, young one. You've already done the daft thing.",
+					"Your future costs silver. Your past is free, and it's muddy."
+				],
+				"starter/remark": [
+					"Another coin, another future. Nobody likes the ones about rain.",
+					"Count the stool legs in the Blue Moon... no, I've said too much.",
+					"Not their night in the Wilderness, I tell them. Off they go anyway."
+				]
+			}
+		},
+		{
+			"id": "aris_before_demon_slayer",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Aris",
+				"quests": {
+					"DEMON_SLAYER": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I've been waiting for a face like yours. Well, waiting for a face.",
+					"The city will need a brave young one soon. You'd do nicely, I think.",
+					"You've the look of someone who could hold a silver sword, young one."
+				],
+				"starter/insult": [
+					"I foresaw a hero. I did not foresee the hero dawdling in the square.",
+					"The ball says you'll be brave one day. It didn't say which day.",
+					"Wally was young once too. Mind, he had a sword and some sense."
+				],
+				"starter/remark": [
+					"Evil sorcerers. Always the stone circle, never anywhere pleasant.",
+					"Sir Prysin has the sword now. I do hope he's been dusting it.",
+					"Somebody's chanting at the stone circle. I can feel it in my teeth."
+				]
+			}
+		},
+		{
+			"id": "aris_during_demon_slayer",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Aris",
+				"quests": {
+					"DEMON_SLAYER": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I knew you'd take it on, dear. I didn't need the ball for that one.",
+					"Keys and wizards and all that bother, and still you're going. Good.",
+					"That one will do. I said so to the ball, and the ball agreed."
+				],
+				"starter/insult": [
+					"Delrith's waited ages. Seems he'll wait a bit longer for this one.",
+					"Lost a key already, dear? The ball rather suggested you might.",
+					"The ball shows you at the circle, and then running the other way."
+				],
+				"starter/remark": [
+					"Delrith stirs. I feel it in the ball, and in my knees.",
+					"Not now, dear, I'm watching the circle.",
+					"Wally did it once, so somebody can do it again. Somebody had better."
+				]
+			}
+		},
+		{
+			"id": "aubury_after_rune_mysteries",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Aubury",
+				"quests": {
+					"RUNE_MYSTERIES": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ah, my favourite courier! Mind you, I'd still sell you a rune.",
+					"For you, adventurer, the good tea. The rest get the dusty sort.",
+					"Sedridor speaks well of you, I'd wager. He certainly ought to."
+				],
+				"starter/insult": [
+					"Back for another free trip? I'll start charging tea money.",
+					"The incantation isn't long, but you'd still muddle it, I expect."
+				],
+				"starter/remark": [
+					"Must lock away the coded notes. Both sets. Now especially.",
+					"Tea, then the mine, then more tea. That's the order of things now.",
+					"The old tower lost those words when it burned. Now I say them daily."
+				]
+			}
+		},
+		{
+			"id": "aubury_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Aubury",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"An honest face. I'd trust you with my death runes. Nearly.",
+					"Careful sort, are you? Good. Runecraft rewards the careful.",
+					"I'll sell you the cape one day, I shouldn't wonder."
+				],
+				"starter/insult": [
+					"Do you know what a rune is? No, no, it's fine. Most don't.",
+					"I'd offer you tea, but you look like you'd spill it on the stock.",
+					"Mind runes for you, I'd guess. For, ah... the mind."
+				],
+				"starter/remark": [
+					"Body runes. Little treasures. Hardly anyone buys them.",
+					"Kettle's on, if anyone wants tea. Anyone at all.",
+					"Reldo still has my book on... no, I have his. One of us has it."
+				]
+			}
+		},
+		{
+			"id": "aubury_before_rune_mysteries",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Aubury",
+				"quests": {
+					"RUNE_MYSTERIES": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A clever-looking sort. The chaos runes are just there, if you like.",
+					"An adventurer who stops at a rune shop! There's hope for you yet.",
+					"You look like a reader. Reldo would like you, and so do I."
+				],
+				"starter/insult": [
+					"Fire runes and elbows don't mix. Somebody always learns that here.",
+					"Runes don't grow on trees, you know. I'm asked weekly.",
+					"You look like you'd use a death rune to light a fire. Please don't."
+				],
+				"starter/remark": [
+					"Quiet day. Even the air runes look bored.",
+					"Runecraft started a whole new age. Not bad for a little stone.",
+					"Tea for one again. Customers do rush off."
+				]
+			}
+		},
+		{
+			"id": "aubury_during_rune_mysteries",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Aubury",
+				"quests": {
+					"RUNE_MYSTERIES": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ah, back again! Any news? No, no, don't let me keep you.",
+					"Tea, adventurer? You've earned it, running about for us rune folk.",
+					"You've a head for secrets. I'd trust you with my coded notes."
+				],
+				"starter/insult": [
+					"Any slower, and the old tower would have rebuilt itself.",
+					"Can you read code? No? Good, that's rather the point.",
+					"Conclusions are for later. You, I see, have jumped to several."
+				],
+				"starter/remark": [
+					"If Sedridor's discovery fits my notes... no, no. Too soon to say.",
+					"Tea's gone cold again. Research does that.",
+					"The shop can mind itself today. I've research on."
+				]
+			}
+		},
+		{
+			"id": "banker_archive_after_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Banker",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Good to see you. It's a long day standing about, and you brighten it.",
+					"If they ever write a poem about this place, I hope you're in it.",
+					"Oh, hello. You're the one who made this place safe enough to read in.",
+					"There goes the one who held the archive, and so quietly. I like that.",
+					"Your things, ready as ever. The least I can do after the vault."
+				],
+				"starter/insult": [
+					"Another trip down the chasm? You must like danger more than I do.",
+					"Back again? I'd only just found my page.",
+					"Held the Nexus, and still you can't keep a tidy bank.",
+					"I'd recommend a book, but I've seen how you treat your bank.",
+					"Such a hurry, always. The cavern will still be here, you know."
+				],
+				"starter/remark": [
+					"Now we're settled, the hardest part of my day is choosing a poem.",
+					"Quiet today. Only the odd demon, by all accounts.",
+					"The alliance always picks somewhere dangerous. I've stopped asking.",
+					"Thought to be from the Second Age, this book. It's held up well.",
+					"Wherever the alliance goes next, I do hope it has a garden."
+				]
+			}
+		},
+		{
+			"id": "banker_archive_during_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Banker",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"It's nice to see someone come down here on purpose. Brave of you.",
+					"Oh, hello! Back in one piece, which is how I like my customers.",
+					"Oh, it's you. That's the nicest thing to walk past all morning.",
+					"You go where it's dangerous so the rest of us can stand about. Thanks.",
+					"You'd like this poem, I think. No, I won't read it out, but you would."
+				],
+				"starter/insult": [
+					"Back so soon? The cavern and I were just getting comfortable.",
+					"I came all this way so you'd have your things. Do try to use them.",
+					"Take your time in your bank. I've a long poem on the go.",
+					"You do know the defence is barely holding? Of course you do, carry on."
+				],
+				"starter/remark": [
+					"Everyone's things are here, safe. It's the people I worry about.",
+					"I like seeing the world. I'd just like to see more of the top of it.",
+					"I've admired this cavern from every angle now. All of them stone.",
+					"Still unpacking the bank boxes. Then comes the standing about.",
+					"The roots round those crystals are the closest thing to a garden here."
+				]
+			}
+		},
+		{
+			"id": "bentnoze_after_goblin_diplomacy",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"goblin_village"
+			],
+			"character": {
+				"name": "General Bentnoze",
+				"quests": {
+					"GOBLIN_DIPLOMACY": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Human could be general, maybe. Small general. Under me.",
+					"Human want beetle pie? Me share. Me not share with Wartface.",
+					"Look, Wartface! Armour fixer back. That one got brain."
+				],
+				"starter/remark": [
+					"Me miss shouting red. Brown not good word for shouting.",
+					"Me so bored, me nearly agree with Wartface. Nearly.",
+					"Wartface see brown on Grubfoot, then say brown his idea. Ha!"
+				]
+			}
+		},
+		{
+			"id": "bentnoze_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"goblin_village"
+			],
+			"character": {
+				"name": "General Bentnoze",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Human walk past Wartface and not laugh. Good manners, that.",
+					"Me give human victory salute. Not silly bow like Wartface do.",
+					"Not one stupid question from human yet. Best human all day."
+				],
+				"starter/insult": [
+					"Human follow me about like Grubfoot. Me not need two Grubfoots.",
+					"Me seen cleverer rocks, human. Rocks not wander into hut.",
+					"Wartface! Look at this one. Nearly ugly as Wartface!"
+				],
+				"starter/remark": [
+					"Goblins always win. Even when goblins lose, goblins win.",
+					"Wartface fat. Me not tell him quiet. Me tell him loud.",
+					"Where me put puzzle box? Wartface sit on it, probably."
+				]
+			}
+		},
+		{
+			"id": "bentnoze_before_goblin_diplomacy",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"goblin_village"
+			],
+			"character": {
+				"name": "General Bentnoze",
+				"quests": {
+					"GOBLIN_DIPLOMACY": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Human got opinion, me can tell. Better than Grubfoot.",
+					"Wartface, see this one? Clever. Wartface hate clever."
+				],
+				"starter/insult": [
+					"Grubfoot! Who let this one in? Shut up, Grubfoot. Me know."
+				],
+				"starter/remark": [
+					"Green? Green make goblin look like no armour at all!",
+					"Red. Red. Red. Me say it till Wartface go deaf.",
+					"Wartface say goblins listen to him. Half village in red! Ha!"
+				]
+			}
+		},
+		{
+			"id": "bentnoze_goblin_diplomacy_in_progress",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"goblin_village"
+			],
+			"character": {
+				"name": "General Bentnoze",
+				"quests": {
+					"GOBLIN_DIPLOMACY": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Good human. Me tell Mudknuckles give you worm stew. Me not want it.",
+					"Human cleverer than both generals. No. Than Wartface."
+				],
+				"starter/insult": [
+					"Human look lost. Dye that way, maybe. Or that way."
+				],
+				"starter/remark": [
+					"Green armour? Me rather wear nothing. Look same anyway.",
+					"Me tell human go north for dye. Human come back! Good, maybe.",
+					"Where dye come from? Me not know. Me general, not dye goblin."
+				]
+			}
+		},
+		{
+			"id": "brundt_after_the_fremennik_trials",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"rellekka"
+			],
+			"character": {
+				"name": "Brundt the Chieftain",
+				"quests": {
+					"THE_FREMENNIK_TRIALS": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"My hall is your hall now. Do not drink it dry.",
+					"The name I gave you suits you. I am rarely wrong about names.",
+					"You earned what most of my people were simply handed at birth."
+				],
+				"starter/remark": [
+					"Call us barbarians now, and one more of us will answer back.",
+					"Koschei passed his trials too. I still fear he will remember and go.",
+					"Seven elders voted! It is not every winter I name a new one."
+				]
+			}
+		},
+		{
+			"id": "brundt_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"rellekka"
+			],
+			"character": {
+				"name": "Brundt the Chieftain",
+				"quests": {}
+			},
+			"lines": {
+				"starter/insult": [
+					"Do not even think of a joke about my helm. I can see it coming.",
+					"I expect you cast a spell to tie your boots, like the Moon Clan."
+				],
+				"starter/remark": [
+					"A dent in this helm for every fight. It is mostly dents now.",
+					"All men were Fremennik once, before some got greedy for rune rocks.",
+					"Pah! The Moon Clan cannot boil water without a spell."
+				]
+			}
+		},
+		{
+			"id": "brundt_before_the_fremennik_trials",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"rellekka"
+			],
+			"character": {
+				"name": "Brundt the Chieftain",
+				"quests": {
+					"THE_FREMENNIK_TRIALS": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"If any outerlander could win seven elders, it might be you.",
+					"Outerlander is no insult, you understand. Least of all for you."
+				],
+				"starter/insult": [
+					"An outerlander in my hall. Keep your hands off the kegs.",
+					"Outerlanders call us barbarians, and then ask us the way.",
+					"Seven elders would have to vote for you. Start with the friendliest."
+				],
+				"starter/remark": [
+					"As chieftain I say who speaks with outerlanders. Mostly I say no.",
+					"Outerlanders gawp at our hall as if they had never seen a roof.",
+					"Twelve elders on the council, and not one agrees on breakfast."
+				]
+			}
+		},
+		{
+			"id": "brundt_during_the_fremennik_trials",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"rellekka"
+			],
+			"character": {
+				"name": "Brundt the Chieftain",
+				"quests": {
+					"THE_FREMENNIK_TRIALS": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Mark that one. Stubborn as a Fremennik already.",
+					"Still outerlander, aye, but I say it fondly now.",
+					"There is more Fremennik in you than in some born here."
+				],
+				"starter/insult": [
+					"Do not come crying to me about the elders. I only rule here.",
+					"Half a Fremennik, you are. The worse half, so far.",
+					"Seven votes? You could not win a drinking contest, outerlander."
+				],
+				"starter/remark": [
+					"A chieftain does not tip the council's scales. Not even a little.",
+					"If the vote goes well, the hall will drink. If not, the hall drinks.",
+					"The council will vote when it votes. I am only chieftain."
+				]
+			}
+		},
+		{
+			"id": "doric_after_dorics_quest",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"ice_mountain"
+			],
+			"character": {
+				"name": "Doric",
+				"quests": {
+					"DORICS_QUEST": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Good honest ore you brought me. Not a speck of rubbish in it.",
+					"Nurmof's order went out on time, friend, and that's thanks to you.",
+					"The pickaxes from your copper are some of my best, friend."
+				],
+				"starter/insult": [
+					"That one's welcome at my anvils and my door. Just not in my wheat.",
+					"There's always work fetching clay, friend, if adventuring dries up.",
+					"Use my anvils by all means, friend. Do try not to dent them."
+				],
+				"starter/remark": [
+					"A few coins for all that ore. Ought to have been more, really.",
+					"Both anvils ringing again. That's the sound of a happy smithy.",
+					"Someone's been at my anvils again. Good. That's what they're for."
+				]
+			}
+		},
+		{
+			"id": "doric_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"ice_mountain"
+			],
+			"character": {
+				"name": "Doric",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Good manners, traveller. That's a rarer metal than mithril.",
+					"Polite and unhurried. You'd get on with the lads in the mine.",
+					"There goes someone who knows good iron from bad, I'd wager."
+				],
+				"starter/insult": [
+					"Do mind the anvils, traveller. They've more manners than some.",
+					"I'd offer you the whetstone, traveller, but it wants a steady hand.",
+					"You'll want a bit more mining practice before you try iron, I'd say."
+				],
+				"starter/remark": [
+					"Another crop circle in the wheat. I do wish they'd ask first.",
+					"Quiet out here, just me and the wheat. Suits me fine.",
+					"That's another pickaxe head done. Nice even temper on this one."
+				]
+			}
+		},
+		{
+			"id": "doric_before_dorics_quest",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"ice_mountain"
+			],
+			"character": {
+				"name": "Doric",
+				"quests": {
+					"DORICS_QUEST": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"There's someone who could carry six lumps of clay and not grumble."
+				],
+				"starter/insult": [
+					"Iron ore's in the mine, traveller, should you ever feel useful.",
+					"Off for a stroll? Bring back some clay if you trip on any."
+				],
+				"starter/remark": [
+					"All that clay just inside the mine, and here I sit without a lump.",
+					"Nurmof will be wanting his order, and me short of copper.",
+					"Pickaxe heads don't cast themselves, more's the pity."
+				]
+			}
+		},
+		{
+			"id": "doric_during_dorics_quest",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"ice_mountain"
+			],
+			"character": {
+				"name": "Doric",
+				"quests": {
+					"DORICS_QUEST": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A helper with manners! I'd almost forgotten there were such folk.",
+					"Iron's no small thing, and you're having a go anyway. Good for you.",
+					"That's the spirit! The lads below will take you for one of theirs."
+				],
+				"starter/insult": [
+					"If you'd sooner buy the iron, traveller, I'll not tell a soul.",
+					"No hurry, traveller. My anvils are used to waiting.",
+					"You're very welcome to dawdle, traveller. Nurmof's the one waiting."
+				],
+				"starter/remark": [
+					"Heard a pickaxe ringing in the mine. That'll be my helper, I expect.",
+					"I've cleared a space for the ore. Hopeful of me, perhaps.",
+					"Kept the casts out. Won't need them till the clay comes."
+				]
+			}
+		},
+		{
+			"id": "drezel_after_nature_spirit",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"morytania"
+			],
+			"character": {
+				"name": "Drezel",
+				"quests": {
+					"NATURE_SPIRIT": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I bless every traveller who passes. You, I bless twice.",
+					"There goes one I would gladly see in the robes of a priest.",
+					"You walked into Mort Myre and came out still yourself. Bless you."
+				],
+				"starter/insult": [
+					"I said there was something of the faith in you. A small something.",
+					"Out in that swamp so long, I feared you'd come back a Guthixian."
+				],
+				"starter/remark": [
+					"Guthixians would call that swamp balance. I call it rot.",
+					"I pray the ghasts go hungry tonight. Travellers too often do.",
+					"The Seven fought ten days without sleep. I nod off at my prayers."
+				]
+			}
+		},
+		{
+			"id": "drezel_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"morytania"
+			],
+			"character": {
+				"name": "Drezel",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I think the Seven would have found room for one like you.",
+					"Not many come this near the Salve on purpose. Good for you.",
+					"Saradomin keep you, adventurer. The road east is not a kind one."
+				],
+				"starter/insult": [
+					"Crossing into Morytania without a prayer? How very brave.",
+					"You have the air of one who skips prayers. I shall pray for two.",
+					"You'd not be a Guthixian, would you? You have that look."
+				],
+				"starter/remark": [
+					"A priest's work is mostly prayer and sweeping. Mostly sweeping.",
+					"Hard to believe that swamp was ever a lovely forest. Yet it was.",
+					"The ghasts take your food first, and then they take you."
+				]
+			}
+		},
+		{
+			"id": "drezel_before_nature_spirit",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"morytania"
+			],
+			"character": {
+				"name": "Drezel",
+				"quests": {
+					"PRIEST_IN_PERIL": [
+						"FINISHED"
+					],
+					"NATURE_SPIRIT": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I have prayed for you every night since. It seems to be working.",
+					"Keep my family's dagger close, friend. You earned it.",
+					"Veliaf would like you, I think. He likes very few."
+				],
+				"starter/insult": [
+					"Every time you visit, something needs blessing afterwards.",
+					"Saved the temple, and still you walk past the altar. Tsk.",
+					"Someone fetch a broom. The saviour of Paterdomus is back."
+				],
+				"starter/remark": [
+					"I set a place for Filliman some evenings. He never comes now.",
+					"Is Filliman eating, out there? Druids do forget.",
+					"That well will not be fouled again while I draw breath."
+				]
+			}
+		},
+		{
+			"id": "drezel_priest_in_peril_in_progress",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"morytania"
+			],
+			"character": {
+				"name": "Drezel",
+				"quests": {
+					"PRIEST_IN_PERIL": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Mind the stairs, my rescuer. I need you in one piece.",
+					"Saradomin chose well when he sent you up those stairs.",
+					"You came! Saradomin heard me after all, adventurer."
+				],
+				"starter/insult": [
+					"Forgive me, but are you quite sure which side you are on?",
+					"Oh, take your time. I have only a vampyre for company.",
+					"Still here, adventurer. Still locked in. In case you wondered."
+				],
+				"starter/remark": [
+					"Such a fine view from up here. I would trade it for a door.",
+					"The Seven held for ten days and nights. I can hold a little longer.",
+					"The lid moved in the night, I am sure of it. Or I dreamt it."
+				]
+			}
+		},
+		{
+			"id": "druid_archive_after_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Druid",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Thank you. Guthix's things are safe again, for a while at least.",
+					"That one faced Ocellus in the vault, and walked out again.",
+					"You fought to defend it, not to own it. That's our way, near enough.",
+					"You stood against Ocellus for the balance. We won't forget it.",
+					"You'd make a fair druid, I think. You know when to stop."
+				],
+				"starter/insult": [
+					"Hero of the vault, and still you step on every root.",
+					"Nature thanks you. It would thank you more if you'd wipe your boots.",
+					"Ocellus thought only Guthix worthy of that blade. Don't get ideas.",
+					"Saved the archive, then straight to the chests. Balance, I suppose.",
+					"That one's pack is heavier coming out than going in, I'd wager."
+				],
+				"starter/remark": [
+					"A broken blade on a vine, still thick with power. Strange fruit.",
+					"Ivy would take the Dagon'hai as allies now. Balance is a hard road.",
+					"Ocellus was set to guard the Blade, not want it. Even guardians fall.",
+					"Those artefacts are like fire, Ivy says. Slowly, or not at all."
+				]
+			}
+		},
+		{
+			"id": "druid_archive_during_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Druid",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"All the way down the Chasm of Tears to help us, that one. Good heart.",
+					"Here to defend it, not to take it. That's the right way round.",
+					"Ivy Sophista sent for you. That's no small thing, among us.",
+					"You walk softly for an adventurer. The roots don't seem to mind you.",
+					"You've a balanced look about you. Not too much of anything."
+				],
+				"starter/insult": [
+					"Break nothing in the archive, please. It's older than your manners.",
+					"Do mind the roots. They're holding more together than you are.",
+					"Here to help, are you? Not to fill a sack like the rest? We'll see.",
+					"You've the look of someone who'd mine those crystals bare."
+				],
+				"starter/remark": [
+					"Looters from every side, each one sure the archive should be theirs.",
+					"The roots hold those crystals so tightly. Something wants them kept."
+				]
+			}
+		},
+		{
+			"id": "duke_horacio_after_dragon_slayer_i",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Duke Horacio",
+				"quests": {
+					"DRAGON_SLAYER_I": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Brave and not reckless, after all. I did wonder, about the dragon.",
+					"By Saradomin, the dragon my father feared is gone. I've you to thank.",
+					"To think Crandor's dragon fell to someone who walks past my door."
+				],
+				"starter/insult": [
+					"Father posted lookouts for a dragon. I may yet post one for you."
+				],
+				"starter/remark": [
+					"Crandor without its dragon. I wonder if word will come from it again.",
+					"Elvarg slain, with one of my shields. I like to think it helped.",
+					"Shields for the worthy, I always said, and for once I was right."
+				]
+			}
+		},
+		{
+			"id": "duke_horacio_after_rune_mysteries",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Duke Horacio",
+				"quests": {
+					"RUNE_MYSTERIES": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A mine found through my talisman and your feet. A fine partnership.",
+					"Ah, the one who took my talisman across! A whole mine, they tell me.",
+					"I chose well with you. One so rarely gets to say that."
+				],
+				"starter/insult": [
+					"Back again? I've no more talismans, I'm afraid, only spoons.",
+					"Credit where it's due, adventurer. Rather more of it is mine.",
+					"One delivery, and you think yourself a wizard. Hmm?"
+				],
+				"starter/remark": [
+					"I wonder if the wizards would name a seam after me. Probably not.",
+					"Rune essence, the wizards call it. Terribly important, I'm told.",
+					"The wizards have their mine, and I've an empty shelf where it sat."
+				]
+			}
+		},
+		{
+			"id": "duke_horacio_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Duke Horacio",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"My father would have had someone like you up on the roof, watching.",
+					"Should a truly worthy cause arise... I'd think of you for a shield.",
+					"The peasantry could learn a great deal from your bearing."
+				],
+				"starter/insult": [
+					"Another adventurer. You'll be wanting a shield too, I suppose.",
+					"I would send you on an errand, but I'm rather fond of the errand.",
+					"You'll forgive me if I don't stand. One stands for the worthy."
+				],
+				"starter/remark": [
+					"Cook says the new range burns less. I've yet to taste the evidence.",
+					"Errands, errands, and never once can I run one myself.",
+					"Father kept lookouts on the roof for Elvarg. I miss the company."
+				]
+			}
+		},
+		{
+			"id": "duke_horacio_before_rune_mysteries",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Duke Horacio",
+				"quests": {
+					"RUNE_MYSTERIES": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Free to come and go, aren't you? One could do great things with that.",
+					"Good heavens, a capable face. The castle has been short of those.",
+					"I'd trust you as far as the Wizards' Tower, and that's a fair way."
+				],
+				"starter/insult": [
+					"Adventurers come and go, and not one of them asks about talismans.",
+					"I'd ask your help, but I fear you'd sell the thing in Varrock.",
+					"You'd lose a talisman before the bridge, I expect."
+				],
+				"starter/remark": [
+					"Ancient, this talisman, or else very dirty.",
+					"The Wizards' Tower is hardly far. For someone else, that is.",
+					"What does one do with a talisman? I've polished it, for a start."
+				]
+			}
+		},
+		{
+			"id": "elena_after_biohazard",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"ardougne"
+			],
+			"character": {
+				"name": "Elena",
+				"quests": {
+					"BIOHAZARD": [
+						"FINISHED"
+					],
+					"MOURNINGS_END_PART_I": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Hey! Thanks again for getting my sample to Guidor in one piece.",
+					"I worry less with you about. Only a little less, mind.",
+					"You went to the king for me. Not many would knock on that door."
+				],
+				"starter/insult": [
+					"All that way with my sample and you didn't drop it. Miracles happen.",
+					"All the way to the king, and back with nothing to tell me?",
+					"You won't tell me what the king said. Fine. I'll guess, loudly."
+				],
+				"starter/remark": [
+					"Quiet day. A burn and a splinter. I could get used to quiet.",
+					"The king had that wall built. He knows why, even if I don't.",
+					"Who invents a plague? Honestly, the trouble it must take."
+				]
+			}
+		},
+		{
+			"id": "elena_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"ardougne"
+			],
+			"character": {
+				"name": "Elena",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Mind yourself out there. I'd rather not be patching you up.",
+					"You help people for nothing, don't you? I can always tell."
+				],
+				"starter/insult": [
+					"If you must fall off something, do it near a healer.",
+					"Some people test things first. Others become adventurers."
+				],
+				"starter/remark": [
+					"Guidor still sends to Rimmington for his chemicals. Creature of habit.",
+					"Nobody ever thanks whoever boils the bandages.",
+					"Now, did I label that sample? I'm sure I labelled it."
+				]
+			}
+		},
+		{
+			"id": "elena_before_plague_city",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"ardougne"
+			],
+			"character": {
+				"name": "Elena",
+				"quests": {
+					"PLAGUE_CITY": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Not many would brave the west side. You have, apparently.",
+					"Someone who isn't a mourner! That makes a nice change."
+				],
+				"starter/insult": [
+					"Are you lost, or just sightseeing the plague houses?",
+					"Don't mind me. I'll just be down here, being kidnapped.",
+					"You're very brave to wander about here. Or you haven't heard."
+				],
+				"starter/remark": [
+					"A cellar. Of all the places to be locked up, a damp cellar.",
+					"I only came over the wall to nurse people. Look where it got me.",
+					"Riddled with plague, this house? Not so much as a sneeze."
+				]
+			}
+		},
+		{
+			"id": "elena_during_plague_city",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"ardougne"
+			],
+			"character": {
+				"name": "Elena",
+				"quests": {
+					"PLAGUE_CITY": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Get me out and I'll stitch anything you like, free.",
+					"Hey, you found the place! That can't have been easy.",
+					"Someone's actually coming for me. Fancy that."
+				],
+				"starter/insult": [
+					"A rescue! At last. I'd started naming the cobwebs.",
+					"Any chance of a key today, or shall I get comfortable?",
+					"Oh good, a rescuer. Are they all this leisurely?"
+				],
+				"starter/remark": [
+					"Footsteps upstairs again. Please let it be someone with a key.",
+					"I keep counting the bricks. There are a great many bricks.",
+					"Who kidnaps a nurse? What did they think I'd do, bandage them?"
+				]
+			}
+		},
+		{
+			"id": "father_aereck_after_restless_ghost",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Father Aereck",
+				"quests": {
+					"THE_RESTLESS_GHOST": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A warlock's mischief, undone by a passer-by. Saradomin does provide.",
+					"I mention you in my prayers, traveller. Most evenings, anyway.",
+					"You were braver in that graveyard than I ever was, my friend."
+				],
+				"starter/insult": [
+					"Good work with the ghost. Now, about your own soul..."
+				],
+				"starter/remark": [
+					"Must write to Urhney and tell him. He'll pretend not to care."
+				]
+			}
+		},
+		{
+			"id": "father_aereck_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Father Aereck",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Bless you for passing my door without a sneer. Not everyone does.",
+					"You'd make a fine letter-carrier for the Wise Old Man, I think.",
+					"You've heard of Saradomin, I can tell. What a relief!"
+				],
+				"starter/insult": [
+					"A short sermon would do you good, traveller, a very short one.",
+					"Rushing past a house of Saradomin? He does notice, you know.",
+					"You look like you'd get stuck up a bell rope. Takes one to know one."
+				],
+				"starter/remark": [
+					"Is it 'smile upon' or 'shine upon'? Smile, I think.",
+					"Saradomin made the world with his brothers. He's the tidy one.",
+					"Two hundred and thirty years, this church. The roof feels them all."
+				]
+			}
+		},
+		{
+			"id": "father_aereck_before_restless_ghost",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Father Aereck",
+				"quests": {
+					"THE_RESTLESS_GHOST": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A good soul like yours would put any ghost at its ease, I think.",
+					"Saradomin's light is in you. Ghosts can't abide that, I hope.",
+					"You don't look like a ghost would frighten you. It frightens me."
+				],
+				"starter/insult": [
+					"Adventurers fight dragons all day, but a little ghost? Suddenly busy.",
+					"Don't let the ghost see you dawdling. It'll think you're staying.",
+					"Ghost-shy, are we? There's no shame in it, or only a little."
+				],
+				"starter/remark": [
+					"Avaunt, I said to it. It didn't avaunt.",
+					"Not a wicked ghost, I think. Just a very persistent one.",
+					"Something cold went past me in the graveyard. I didn't look round."
+				]
+			}
+		},
+		{
+			"id": "father_aereck_during_restless_ghost",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Father Aereck",
+				"quests": {
+					"THE_RESTLESS_GHOST": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ah, there you are again, in and out of my graveyard like a regular.",
+					"Bless you for taking on our ghost. Saradomin smile on the work.",
+					"That's the one seeing to our ghost. Saradomin keep them."
+				],
+				"starter/insult": [
+					"I prayed for help, and Saradomin sent you. He does test us.",
+					"Some of us would like to bury people in peace, traveller.",
+					"Taking your time with that ghost, aren't you? It isn't going anywhere."
+				],
+				"starter/remark": [
+					"I've lit a candle for the ghost, and one for whoever's helping.",
+					"I've stopped saying good night to the graveyard. It answers.",
+					"Things are moving, Saradomin be praised. Slowly, but moving."
+				]
+			}
+		},
+		{
+			"id": "fred_the_farmer_after_cold_war",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Fred the Farmer",
+				"quests": {
+					"COLD_WAR": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Decent folk, you, even if you do hear voices about birds.",
+					"Keen eyes, you've got. See things that aren't there, but keen.",
+					"You meant well, with your penguins. I'll give you that much."
+				],
+				"starter/insult": [
+					"Don't you go poking my sheep for feathers, you scoundrel.",
+					"If you're wanting birds, try Seth Groats. He's got loads.",
+					"There goes the one who thinks my ewes have beaks."
+				],
+				"starter/remark": [
+					"If one of my sheep starts squawking, then I'll worry. Not before.",
+					"Sheep don't waddle. I've farmed long enough to know that much.",
+					"The Thing's bad enough without folk adding penguins to it."
+				]
+			}
+		},
+		{
+			"id": "fred_the_farmer_after_sheep_shearer",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Fred the Farmer",
+				"quests": {
+					"SHEEP_SHEARER": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"My sheep don't run from you now. That's trust, that is.",
+					"Sheared 'em neat, you did. Not a bald patch in the flock.",
+					"That one sheared my whole flock without a word of moaning."
+				],
+				"starter/insult": [
+					"If you've come for more coin, the gate's behind you. Shut it.",
+					"Paid what I promised, near enough. Stop looking at me like that.",
+					"Took your time with that wool. The sheep grew it back faster."
+				],
+				"starter/remark": [
+					"Can see their legs again. Never knew sheep had such knobbly knees.",
+					"Paid up, I did. Hurt, but I did it.",
+					"The Thing didn't like the shearing, or the sheep didn't. Same thing."
+				]
+			}
+		},
+		{
+			"id": "fred_the_farmer_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Fred the Farmer",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Not after my livestock, are you? No, you've an honest look.",
+					"You don't look like a scoundrel. Not much, anyway.",
+					"You'd not fear The Thing, I reckon. Not that it's real... it is."
+				],
+				"starter/insult": [
+					"Adventurers. All swords and no shears.",
+					"Get off my land. No, that's the road... get off my road, then.",
+					"Lost, are you? On a road with a castle at the end of it?"
+				],
+				"starter/remark": [
+					"Counted the flock twice, got two answers. That's The Thing, that is.",
+					"Gate's open again. I know I shut that gate.",
+					"Honest work never hurt anyone. Watching it hurts even less."
+				]
+			}
+		},
+		{
+			"id": "fred_the_farmer_before_sheep_shearer",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Fred the Farmer",
+				"quests": {
+					"SHEEP_SHEARER": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A body could do worse than you, round a farm.",
+					"Them sheep took to you! They don't take to anybody.",
+					"You look like you'd know one end of a sheep from the other."
+				],
+				"starter/insult": [
+					"Don't you go near my sheep with a sword. It's shears they want.",
+					"There goes another one too grand for wool.",
+					"Your sort would sooner kill a sheep than shear one."
+				],
+				"starter/remark": [
+					"Any woollier and they'll float off in a stiff wind.",
+					"I'd shear 'em myself, only... no, I wouldn't.",
+					"Some payment, I said. I never said how much."
+				]
+			}
+		},
+		{
+			"id": "general_montoya_after_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "General Montoya",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Now there's someone I'd give any chamber to without a second look.",
+					"The troops talk about you, you know. Mostly kindly.",
+					"You faced Ocellus in the vault and walked out. That goes on the board."
+				],
+				"starter/insult": [
+					"Armacus is a good judge of character. He has his off days, of course.",
+					"Every hero in the lobby wants a word. Few want a chamber.",
+					"If you're waiting for a parade, the builders haven't built one.",
+					"Some adventurers rest on their laurels. You've brought a cushion."
+				],
+				"starter/remark": [
+					"A whole squad, and a single knight. I still don't like that report.",
+					"Armacus says evil is on the back foot. I'd like that in writing.",
+					"Fresh troops in, wounded out. The rota never stops down here.",
+					"Ivy doubts Ocellus is truly dead. I've left room on the board for him."
+				]
+			}
+		},
+		{
+			"id": "general_montoya_during_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "General Montoya",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"If the Nexus can be taken, I'd wager you're the one to take it.",
+					"Newcomers usually need the plan twice. You had it the first time.",
+					"The line is thin, but it's a deal thicker with you on it."
+				],
+				"starter/insult": [
+					"Ah, our adventurer. The plan rather depends on you leaving the lobby.",
+					"Do stop admiring the board. It works better if somebody acts on it.",
+					"I've briefed raw recruits who left the lobby quicker than you.",
+					"They've a huge ork and a siege engine. We have you, which is a start."
+				],
+				"starter/remark": [
+					"Goblins with a siege engine. I never thought I'd put that on a board.",
+					"One scout came back from that lone knight. One, out of a whole squad.",
+					"Six chambers, all open to the Nexus. I'd sooner have two.",
+					"Skeletons and Zamorakian mages at war in the deep tunnels. Let them."
+				]
+			}
+		},
+		{
+			"id": "gertrude_after_gertrudes_cat",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Gertrude",
+				"quests": {
+					"GERTRUDES_CAT": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Into the Lumber Yard for my cat! Not many would, dear.",
+					"That's the one who found my Fluffs, that is. Saved my wits.",
+					"You do your bit, dear. I like that in a person. And in a cat."
+				],
+				"starter/insult": [
+					"After another reward, dear? I've only kittens, and plenty of those.",
+					"Medals are for cats who catch rats, dear. None for people, I'm afraid."
+				],
+				"starter/remark": [
+					"Fluffs looks at me as if I'm the one who went missing. Cats!",
+					"Kittens to spare, if anyone wants one. Fed and stroked, mind.",
+					"Medal's ready for the next young cat that does its bit with the rats."
+				]
+			}
+		},
+		{
+			"id": "gertrude_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Gertrude",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A good sort, you. The sort who'd stop for a stray. Not a dog, mind.",
+					"Bob would take to that one, I'll bet. He's a fine judge, that cat.",
+					"Well well! A helpful-looking sort. Not like my boys, bless them."
+				],
+				"starter/insult": [
+					"I'd not trust you with a kitten. A goldfish, perhaps. Just about.",
+					"My boys have better manners, and my boys have none.",
+					"You look like you'd forget to feed a cat, then blame the cat."
+				],
+				"starter/remark": [
+					"Another stray kitten on the step. Well, I can't leave it there, can I?",
+					"Bob was a kitten in a basket once. Look at him now, the great lump.",
+					"Shilop! Wilough! Out of that sewer this instant! Oh, crumbs."
+				]
+			}
+		},
+		{
+			"id": "gertrude_before_gertrudes_cat",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Gertrude",
+				"quests": {
+					"GERTRUDES_CAT": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Crumbs, you look capable. I've lost something, you know. Furry.",
+					"Sharp eyes, dear. Keep them open for a lost cat, would you?",
+					"You look like a cat-finder, dear. Do you find cats? I think you do."
+				],
+				"starter/insult": [
+					"Don't you go in that sewer looking for her. You'd only need fetching.",
+					"Off adventuring while poor Fluffs is out there. Well, don't mind me.",
+					"You've not seen a cat, have you? No. You'd have tripped over it."
+				],
+				"starter/remark": [
+					"If those boys know where Fluffs is, they'll want paying. By me!",
+					"Nearly ten years she's purred at my side, and now not a whisker.",
+					"Oh dear, oh dear. Who's going to sit on my knitting now?"
+				]
+			}
+		},
+		{
+			"id": "gertrude_during_gertrudes_cat",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Gertrude",
+				"quests": {
+					"GERTRUDES_CAT": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Bless you for trying, dear. Most people only say they'll look.",
+					"My boys could learn a thing or two from you. Mostly manners.",
+					"Paid my boys, did you? Oh, you're too good. They're terrors."
+				],
+				"starter/insult": [
+					"Did my boys fleece you? They did, didn't they? Oh, dear.",
+					"Fluffs hides from people who stomp. Some people stomp.",
+					"Shilop could've found her quicker, and he can't find his own boots."
+				],
+				"starter/remark": [
+					"Any news of Fluffs? No? No. I'll put the kettle on.",
+					"I hope those two didn't charge much. They will have. Little monkeys.",
+					"Shilop says he knows nothing. Shilop always knows something."
+				]
+			}
+		},
+		{
+			"id": "haig_halen_after_bone_voyage",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Curator Haig Halen",
+				"quests": {
+					"BONE_VOYAGE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ah, our island explorer! The new room downstairs is half your doing.",
+					"If the fossils could talk, they'd thank you. I'll have to do instead.",
+					"You've the museum's spirit, you know. Off to an island for old bones!"
+				],
+				"starter/insult": [
+					"Don't climb the skeletons. The children do quite enough of that.",
+					"Mind the fossils, please. They've lasted ages without your elbows.",
+					"Our island explorer, back to read the labels like everyone else."
+				],
+				"starter/remark": [
+					"A palaeontology room downstairs! My word, I still get lost in it.",
+					"Children adore the new bones. I do wish they'd stop climbing them.",
+					"Must finish the labels downstairs. One can't have unlabelled bones."
+				]
+			}
+		},
+		{
+			"id": "haig_halen_after_shield_of_arrav",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Curator Haig Halen",
+				"quests": {
+					"SHIELD_OF_ARRAV": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"History will remember you, I'm sure. I'll write the card myself.",
+					"I wrote your half-certificate in my best hand, you know.",
+					"There's a slice of cake with your name on it, shield-finder."
+				],
+				"starter/insult": [
+					"One shield, and now you think you're an archaeologist. Pish-posh.",
+					"The reward's been paid, if that's why you're lingering.",
+					"You found half the shield. Shall I put half your name on the card?"
+				],
+				"starter/remark": [
+					"Back in its case, and hardly a scratch. Well, a crack down the middle.",
+					"Half-certificates! I'd never written one before. Rather proud of them.",
+					"Two halves of a shield, and two finders to match. How tidy."
+				]
+			}
+		},
+		{
+			"id": "haig_halen_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Curator Haig Halen",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A student of the past, are we? There's cake for those who pass.",
+					"You look like you've dug something up in your time. Do tell!"
+				],
+				"starter/insult": [
+					"Adventurers, looking for treasure in a museum. It's all labelled!",
+					"Passed your exams yet? No? The cake will keep. Probably.",
+					"The macabre relics are over there, if that's more your sort of thing."
+				],
+				"starter/remark": [
+					"Macabre inscriptions on these shipwreck relics. Lovely, though.",
+					"Seven priestly warriors, and I still say the display undersells them.",
+					"The museum goes to great lengths for a treasure. Great lengths!"
+				]
+			}
+		},
+		{
+			"id": "haig_halen_before_shield_of_arrav",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Curator Haig Halen",
+				"quests": {
+					"SHIELD_OF_ARRAV": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"My word, an honest face! The Phoenix Gang never had one of those.",
+					"Now that one has a sense of history. Rarer than a shield, nowadays.",
+					"You'd look rather good on a plaque. Returned by... well, we'll see."
+				],
+				"starter/insult": [
+					"Not a Phoenix, I hope? You've a slightly shifty look about you.",
+					"The king's reward is for the shield, not for pacing my galleries."
+				],
+				"starter/remark": [
+					"I dust the empty plinth every morning. Habit, I suppose.",
+					"If that shield ever comes home, I'll bake the biggest cake in Varrock.",
+					"Years we've searched for that shield. Years! Not so much as a rivet."
+				]
+			}
+		},
+		{
+			"id": "hans_after_lost_tribe",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Hans",
+				"quests": {
+					"THE_LOST_TRIBE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Oh, it's you! The one who made friends under the castle.",
+					"Sigmund hid the silverware, they say. You found him out, I'll bet.",
+					"You arrived not knowing the way, and now there's a treaty."
+				],
+				"starter/insult": [
+					"All that peace, and you still march through here like it's a war.",
+					"Friend to goblins now, are you? Mind they don't pick up your manners.",
+					"I'd thank you properly, but you never stand still long enough."
+				],
+				"starter/remark": [
+					"Below ground's theirs, except the cellars. Those are ours, I think.",
+					"Goblins under the castle! I wave down the cellar steps of a morning.",
+					"Quieter than adventurers, goblins. Much kinder to the floors."
+				]
+			}
+		},
+		{
+			"id": "hans_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Hans",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A face that wants neither directions nor a casket. How refreshing.",
+					"Look at that one. Came through here green as grass, once.",
+					"You didn't make me jump at all. Most strangers make me jump."
+				],
+				"starter/insult": [
+					"Adventurers. Always in a rush, and not one of them waves.",
+					"Must you stride in like that? I thought it was that man again.",
+					"Seen ever so many come through, and you're... well, one of them."
+				],
+				"starter/remark": [
+					"If anyone asks, I'm not resting. I'm inspecting the flagstones.",
+					"Still can't hear a raised voice without thinking of that awful man.",
+					"Treasure hunters again. Why does every scroll send them to me?"
+				]
+			}
+		},
+		{
+			"id": "hans_before_lost_tribe",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Hans",
+				"quests": {
+					"THE_LOST_TRIBE": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Thank you for not treading rubble about. I swept all day.",
+					"That one'd not run screaming from an earthquake. Not like some.",
+					"You've a steady look. I'd want you about if the ground shook again."
+				],
+				"starter/insult": [
+					"Heavy-footed, aren't you? I thought the cellar was going again.",
+					"Not you who knocked the cellar wall in, is it? You've the elbows.",
+					"That one would be first out the gate if it shook again. After me."
+				],
+				"starter/remark": [
+					"An earthquake, the Duke says. I never felt it, but he'd know.",
+					"Funny sort of earthquake, just the one wall. Lucky, really.",
+					"Rubble, rubble, rubble... I'm a servant, not a mole."
+				]
+			}
+		},
+		{
+			"id": "hassan_after_prince_ali_rescue",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Chancellor Hassan",
+				"quests": {
+					"PRINCE_ALI_RESCUE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"On behalf of the Emir, good day to the one who brought his son home.",
+					"The Emir is too frail to say it himself, so I shall. Thank you.",
+					"Water for you, whenever you wish. It is the least we can offer."
+				],
+				"starter/insult": [
+					"A friend of Al Kharid, yes. The windows are still not a door.",
+					"Do not expect a statue. We are a wealthy city, not a foolish one.",
+					"Our gratitude is boundless. Our treasury, I must remind you, is not."
+				],
+				"starter/remark": [
+					"Scrabbling at the windows again. Not our rescuer, I do hope.",
+					"We have water, and now we have our prince. A rich city indeed."
+				]
+			}
+		},
+		{
+			"id": "hassan_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Chancellor Hassan",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A visitor with manners. Al Kharid is always glad of those.",
+					"Ah, a traveller who walks round the palace, not up it. Thank you.",
+					"Not one complaint about the heat from you. I shall tell the Emir."
+				],
+				"starter/insult": [
+					"Do not even think of the window. We have doors, you know.",
+					"Visitors usually bow. Or nod. A nod would do.",
+					"With respect, you strike me as a person who climbs things."
+				],
+				"starter/remark": [
+					"Count the wells before the coins, I always say.",
+					"Someone has been climbing in at the palace window again. Disgraceful.",
+					"The Emir's Arena cost us dearly. I have the accounts to prove it."
+				]
+			}
+		},
+		{
+			"id": "hassan_before_prince_ali_rescue",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Chancellor Hassan",
+				"quests": {
+					"PRINCE_ALI_RESCUE": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Travelled far, I think, and kept your head. Admirable."
+				],
+				"starter/insult": [
+					"Are you capable? Do not answer, one can usually tell.",
+					"I am looking for someone who can get a job done. I shall keep looking.",
+					"The palace needs someone capable. Do not take that personally."
+				],
+				"starter/remark": [
+					"How does one tell the Emir that his son is still not found?",
+					"Osman has his methods. I have learnt not to ask what they are.",
+					"The accounts can wait. The prince cannot."
+				]
+			}
+		},
+		{
+			"id": "hassan_during_prince_ali_rescue",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Chancellor Hassan",
+				"quests": {
+					"PRINCE_ALI_RESCUE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Osman does not trust easily. If he trusts you, so do I.",
+					"There goes the one who answered for the prince. Every courtesy, now.",
+					"Your reward is ready whenever the prince is. I have every confidence."
+				],
+				"starter/insult": [
+					"I would offer you water, but I fear you would stop to drink it.",
+					"The prince is still not home. I mention it only in passing.",
+					"We are paying a reward for this, you understand. Not a pension."
+				],
+				"starter/remark": [
+					"Someone is finally doing something. I may even sleep tonight.",
+					"The prince's rooms are aired and ready. Optimism, or habit.",
+					"The reward is counted and waiting. I counted it twice."
+				]
+			}
+		},
+		{
+			"id": "king_arthur_after_holy_grail",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"camelot"
+			],
+			"character": {
+				"name": "King Arthur",
+				"quests": {
+					"HOLY_GRAIL": [
+						"FINISHED"
+					],
+					"KINGS_RANSOM": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Merlin, look! Our Grail-finder's back!",
+					"There goes the finest quester at Camelot. Don't tell Lancelot.",
+					"Welcome back, brave knight! The Grail's home, thanks to you."
+				],
+				"starter/insult": [
+					"You did take your time finding the Grail. Still, it's here now!"
+				],
+				"starter/remark": [
+					"I've moved the Grail twice today. It looks best by the window.",
+					"Must write to Percival. Do kings of the Fisher Realm get letters?",
+					"The Grail, here at Camelot! I keep going to look at it."
+				]
+			}
+		},
+		{
+			"id": "king_arthur_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"camelot"
+			],
+			"character": {
+				"name": "King Arthur",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Lancelot would find you a terrible bother. High praise, that.",
+					"You'd hold your own at the Round Table, I shouldn't wonder.",
+					"You'd make fine company at dinner. Better than Lancelot, anyway."
+				],
+				"starter/insult": [
+					"Aha! Another adventurer. We do have a few of those already.",
+					"Brave, I'm sure. My knights are braver, but they've had practice.",
+					"Do wipe your feet. This was Lord Sinclair's floor before it was mine."
+				],
+				"starter/remark": [
+					"Has anyone seen Bedivere? He was here a moment ago.",
+					"Merlin's the clever one. I'm just the one with the crown.",
+					"Our own land won't be needing us for a good while yet."
+				]
+			}
+		},
+		{
+			"id": "king_arthur_before_merlins_crystal",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"camelot"
+			],
+			"character": {
+				"name": "King Arthur",
+				"quests": {
+					"MERLINS_CRYSTAL": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Aha! Now there's a would-be knight if ever I saw one.",
+					"Gawain, look. That one has the makings of a knight.",
+					"I can tell a knight in the making. Lancelot can't, but I can."
+				],
+				"starter/insult": [
+					"Fancy a knighthood? So does everyone who passes, it seems.",
+					"Lancelot would ask what you've ever done. I shan't, of course.",
+					"You're welcome at court, of course. Only knights sit at the table."
+				],
+				"starter/remark": [
+					"Court isn't the same with Merlin glittering away upstairs.",
+					"How does a wizard get himself stuck in a crystal? Honestly!",
+					"We carried him all the way up from that cave. Heavy, crystal."
+				]
+			}
+		},
+		{
+			"id": "king_arthur_during_merlins_crystal",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"camelot"
+			],
+			"character": {
+				"name": "King Arthur",
+				"quests": {
+					"MERLINS_CRYSTAL": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Brave of you to go anywhere near Morgan's keep.",
+					"Lancelot doubted you. I'm rather looking forward to his face.",
+					"There goes the one who'll free Merlin. I'd stake my crown on it."
+				],
+				"starter/insult": [
+					"Aha, the quester returns! With Merlin? No. Ah well.",
+					"Morgan's keep is south, my friend. You did know that?",
+					"Still no Merlin? He's not getting any less crystal, you know."
+				],
+				"starter/remark": [
+					"Morgan Le Faye. I should have guessed it'd be Morgan Le Faye.",
+					"Sir Mordred, guarding a sorceress's door. Of all things.",
+					"The knights all blame Morgan. I'd quite like to blame her too."
+				]
+			}
+		},
+		{
+			"id": "king_roald_after_priest_in_peril",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "King Roald",
+				"quests": {
+					"PRIEST_IN_PERIL": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Had I a medal for rescuing priests, citizen, I would consider it.",
+					"I have forgiven you the dog, citizen. Very nearly. A royal kindness.",
+					"You did well at Paterdomus, adventurer. Apart from the dog."
+				],
+				"starter/insult": [
+					"Next time a priest wants looking in on, I shall send a dog lover.",
+					"Only you would rescue a priest by slaying his dog first, citizen.",
+					"Run along, citizen. The Salve is seen to, and so, alas, is the dog."
+				],
+				"starter/remark": [
+					"Drezel free, the river blessed, and not a coin spent. Splendid.",
+					"Soldiers for Paterdomus, yes, yes. Once other priorities are balanced.",
+					"The temple wants soldiers, and the treasury wants a rest. Hmm."
+				]
+			}
+		},
+		{
+			"id": "king_roald_after_shield_of_arrav",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "King Roald",
+				"quests": {
+					"SHIELD_OF_ARRAV": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Aeonisig, that is the shield-finder. Do try to look grateful.",
+					"You claimed a reward older than you are, I expect. Well done, citizen.",
+					"You found what my father never could. He might have knighted you."
+				],
+				"starter/insult": [
+					"Aeonisig, lock the treasury. The shield-finder is back.",
+					"Ah, the one who emptied my treasury. Kindly touch nothing else.",
+					"Two of you claimed that reward, I recall. You were the lesser half."
+				],
+				"starter/remark": [
+					"A shield in two halves, held by two gangs. How very like Varrock.",
+					"At last I have paid my father's reward. I had not budgeted for it.",
+					"That reward outlived my father, and very nearly outlived me."
+				]
+			}
+		},
+		{
+			"id": "king_roald_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "King Roald",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Misthalin is fortunate in some of its citizens. Possibly in you.",
+					"Serving your king is reward enough, and you look the serving sort.",
+					"You may tell people the King nodded at you, citizen. I have, just now."
+				],
+				"starter/insult": [
+					"Aeonisig, have the silver counted once this one has gone.",
+					"Another adventurer wanting something from the crown. How novel.",
+					"You must be new to palaces, citizen. One does not gawp at the King."
+				],
+				"starter/remark": [
+					"Captain Rovin takes orders from nobody but his king. Quite right too.",
+					"Some of my subjects say I am not much of a king. Quietly, I trust.",
+					"The queen has views on the curtains. I have learned to share them."
+				]
+			}
+		},
+		{
+			"id": "king_roald_before_shield_of_arrav",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "King Roald",
+				"quests": {
+					"SHIELD_OF_ARRAV": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A capable sort! My father would have had you hunting that shield.",
+					"Aeonisig, there is a sensible face. Not in any gang, one trusts.",
+					"You might yet earn my father's reward, citizen. Stranger things have."
+				],
+				"starter/insult": [
+					"Aeonisig, does that one look like a shield-finder? Nor to me.",
+					"My father waited his whole reign for that shield. I see I shall too.",
+					"You would not know the Phoenix Gang if they took your boots, I expect."
+				],
+				"starter/remark": [
+					"Heaven knows what a gang wants with a shield. To hang over the fire?",
+					"My library has a whole book on that shield. I have not read it.",
+					"Somebody will claim my father's reward one day. Then I must pay it."
+				]
+			}
+		},
+		{
+			"id": "lumbridge_cook_after_cooks_assistant",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Cook",
+				"quests": {
+					"COOKS_ASSISTANT": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I told the goat about you. It stopped chewing for a whole minute.",
+					"Need a cook, my friend? You know where I am, burning things.",
+					"Nobody brings a bucket of milk like you do, my friend."
+				],
+				"starter/insult": [
+					"I'd let you cook for the Duke, but he likes his food edible.",
+					"Oh, it's you. I'd just got the kitchen tidy.",
+					"Use the range by all means, only don't burn anything. That's my job."
+				],
+				"starter/remark": [
+					"Saved! I still say it to myself of a morning.",
+					"The range is behaving, or I'm behaving. One of us is.",
+					"You can use my range whenever you like now. Not the goat, though."
+				]
+			}
+		},
+		{
+			"id": "lumbridge_cook_after_recipe_for_disaster",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Cook",
+				"quests": {
+					"COOKS_ASSISTANT": [
+						"FINISHED"
+					],
+					"RECIPE_FOR_DISASTER": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I tested you with a birthday that wasn't. You passed, and then some.",
+					"My friend, the big cheeses owe you their lives. Not that they'll say.",
+					"Ooh, it's you! The Culinaromancer's done for, and so nearly were we."
+				],
+				"starter/insult": [
+					"Mind you don't touch that old cookbook. Look what happened last time.",
+					"You never asked if it was really the Duke's birthday. Trusting sort."
+				],
+				"starter/remark": [
+					"Franizzard Van Lumbcook. Big boots to fill, and I've small feet.",
+					"It was never the Duke's birthday. I still don't know when it is.",
+					"Plain cakes from now on. Burnt, I expect, but plain."
+				]
+			}
+		},
+		{
+			"id": "lumbridge_cook_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Cook",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"If you're ever hungry, come by and I'll make you something. Not cake.",
+					"The goat would like you. The goat doesn't like anybody.",
+					"There goes a helpful sort. Not that I'd ask... well, I might."
+				],
+				"starter/insult": [
+					"Don't come in here after food. It's all burnt, and spoken for.",
+					"Off to sea, are you? Rather you than me, with all those eyepatches.",
+					"You're not a salesman, are you? Only the last one sold me that range."
+				],
+				"starter/remark": [
+					"Millie's flour is lovely. It's what I do to it that's the trouble.",
+					"Temperature control and magic, the salesman said. Smells of smoke.",
+					"Wonder what the Duke's table looks like with food that isn't burnt."
+				]
+			}
+		},
+		{
+			"id": "lumbridge_cook_before_cooks_assistant",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"lumbridge"
+			],
+			"character": {
+				"name": "Cook",
+				"quests": {
+					"COOKS_ASSISTANT": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Somewhere about you there's a bucket. I can feel it.",
+					"You look the capable sort! The sort who'd know where a cow is.",
+					"You'd not let a man be thrown into the street. I can tell."
+				],
+				"starter/insult": [
+					"Don't stand there sniffing. Nothing's cooking, nothing at all.",
+					"Oh, don't mind me. I'm only about to lose my job.",
+					"The one day I need an adventurer, and I get you."
+				],
+				"starter/remark": [
+					"I can't even go for flour. Who'd mind the kitchen, the goat?",
+					"If I stand very still, maybe nobody will ask about the cake.",
+					"Thrown into the street, that's me. Hat and all."
+				]
+			}
+		},
+		{
+			"id": "morgan_after_vampyre_slayer",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Morgan",
+				"quests": {
+					"VAMPYRE_SLAYER": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Bold adventurer! I knew it the moment I saw you. Well, I hoped it.",
+					"If ever you need garlic, adventurer, mine's yours. All of it.",
+					"Oh! It's you again! Have I thanked you today? Thank you!"
+				],
+				"starter/insult": [
+					"Don't let it go to your head. I did all the reading."
+				],
+				"starter/remark": [
+					"Still named after him, this village. Somebody ought to see to that."
+				]
+			}
+		},
+		{
+			"id": "morgan_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Morgan",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Oh! You look ever so bold, bolder than me, which isn't hard.",
+					"You don't jump at shadows, do you? I jump at everything.",
+					"You've nerve, you have. I've been looking for nerve all my life."
+				],
+				"starter/insult": [
+					"Brave, or just not read the legends? I'd guess the second.",
+					"Don't stand so near my door. Things follow adventurers home.",
+					"Heading north, are you? Rather you than me."
+				],
+				"starter/remark": [
+					"Did that shutter just move? Wind, probably... probably wind.",
+					"Garlic's going soft. I'll need fresh, to be safe.",
+					"Many tried to slay him. I've a list of them somewhere."
+				]
+			}
+		},
+		{
+			"id": "morgan_before_vampyre_slayer",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Morgan",
+				"quests": {
+					"VAMPYRE_SLAYER": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I've waited ages for someone who looks like you. Bold, I mean.",
+					"Oh, at last, an adventurer with sense! Everyone here is so calm.",
+					"You'd not laugh at a man for keeping garlic, would you? No."
+				],
+				"starter/insult": [
+					"Not afraid? Everyone should be, and nobody is.",
+					"Plenty tried and failed with the Count. You'd fail quicker, I expect.",
+					"Walking about so carefree, with a vampyre just up the road?"
+				],
+				"starter/remark": [
+					"Everybody says he's harmless. Well, he'd want them to.",
+					"Generations since he left the manor. He's saving himself, mark me.",
+					"Not since I moved here, he hasn't. But that's just it, isn't it?"
+				]
+			}
+		},
+		{
+			"id": "morgan_during_vampyre_slayer",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Morgan",
+				"quests": {
+					"VAMPYRE_SLAYER": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I'd lend you my garlic, but I can't spare it. Well, a clove.",
+					"Saradomin be with you. I'll be upstairs, with the garlic.",
+					"That's the one going after the Count. Not a tremble on them."
+				],
+				"starter/insult": [
+					"All that hoping I did, and it's all riding on you... oh dear.",
+					"Did you even go to the Blue Moon, or just drink there?",
+					"I could've done it myself by now. Well, no... but someone could."
+				],
+				"starter/remark": [
+					"Any day now... any day, and I can open the shutters.",
+					"If it goes wrong, I'm moving somewhere with no manors.",
+					"Told the neighbours help was coming. They just shrugged."
+				]
+			}
+		},
+		{
+			"id": "narnode_after_the_grand_tree",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"gnome_stronghold"
+			],
+			"character": {
+				"name": "King Narnode Shareen",
+				"quests": {
+					"THE_GRAND_TREE": [
+						"FINISHED"
+					],
+					"MONKEY_MADNESS_I": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Guards, a salute, please. There goes the one who saved our Tree.",
+					"If every human were like you, I'd have had no war to call off.",
+					"You killed a black demon in my tunnels. I shan't ever forget that."
+				],
+				"starter/insult": [
+					"Glough warned me about humans. Some days I almost see his point.",
+					"One black demon, and you've been strutting about ever since.",
+					"You did leave the mine as you found it, I hope? Mostly?"
+				],
+				"starter/remark": [
+					"Daconia rocks in my own roots, and me none the wiser. Harumph.",
+					"Daero learns so quickly. A far better head guardian than the last.",
+					"I very nearly went to war with the humans. On Glough's word alone."
+				]
+			}
+		},
+		{
+			"id": "narnode_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"gnome_stronghold"
+			],
+			"character": {
+				"name": "King Narnode Shareen",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Great Guthix, a polite human! Do stay as long as you like.",
+					"Let that one through, please. A guest of the Grand Tree.",
+					"Welcome to Ta Quir Priw, traveller. You're as welcome as anyone."
+				],
+				"starter/insult": [
+					"Harumph! Do mind the roots, traveller. They were here first.",
+					"Harumph. You humans do clomp so on the ramps.",
+					"You'd make a fine gnome, traveller, give or take a few feet."
+				],
+				"starter/remark": [
+					"Is it a crunchies night or a batta night? Decisions, decisions.",
+					"My dinner from Aluft Gianne's is late again. A king can wait.",
+					"Oaknock built most of this place. I only have to keep it standing."
+				]
+			}
+		},
+		{
+			"id": "narnode_before_the_grand_tree",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"gnome_stronghold"
+			],
+			"character": {
+				"name": "King Narnode Shareen",
+				"quests": {
+					"THE_GRAND_TREE": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A visitor, with the Tree so poorly! You're braver than you know.",
+					"Kind of you to call, with half the Stronghold glaring at humans.",
+					"Leave that one be. Not every outsider is a saboteur."
+				],
+				"starter/insult": [
+					"Don't lean on the Tree, please. It has quite enough troubles.",
+					"Harumph. Whatever ails the Tree, trampling its roots won't help.",
+					"If you're the saboteur, you're a poor one. You came in by the front."
+				],
+				"starter/remark": [
+					"Glough's been strange since his wife died, poor fellow.",
+					"Glough's the best guardian I have. If even he can't save it...",
+					"Half the town's nervous of humans now. That isn't like us."
+				]
+			}
+		},
+		{
+			"id": "narnode_during_the_grand_tree",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"gnome_stronghold"
+			],
+			"character": {
+				"name": "King Narnode Shareen",
+				"quests": {
+					"THE_GRAND_TREE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"All the way to Hazelmere with a bit of bark! You're a good sort.",
+					"I'd swear the Tree stands a little straighter when you're about.",
+					"There goes our helper. See the guards give them no trouble."
+				],
+				"starter/insult": [
+					"Harumph. Still no word on the bark? The Tree won't wait forever.",
+					"Mind where you tread near the foundations. They're older than you.",
+					"You did take the translation book? Hazelmere won't say a word else."
+				],
+				"starter/remark": [
+					"Hazelmere helped grow this tree. If he can't read the bark, who can?",
+					"Hazelmere only speaks the old tongue. I hope that book's up to it.",
+					"Sabotage by humans, Glough says. I'm not convinced. Not yet."
+				]
+			}
+		},
+		{
+			"id": "ned_after_dragon_slayer_i",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Ned",
+				"quests": {
+					"DRAGON_SLAYER_I": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Best passenger I ever wrecked.",
+					"You gave old Ned his last ship. Well, his latest.",
+					"You stood that deck like you were born to it. Mind, it was sinking."
+				],
+				"starter/insult": [
+					"Heroes get songs. Captains who got 'em there get seaweed.",
+					"Killed a dragon and still buys rope off somebody else, I'll bet.",
+					"Wrecked on Crandor, home on a whale, and did you so much as wave?"
+				],
+				"starter/remark": [
+					"Lost a ship, found a whale. The sea gives and takes, it does.",
+					"Saw a dragon close up, and my hair's still its own colour. Mostly.",
+					"That whale... never asked its name. Rude of me, really."
+				]
+			}
+		},
+		{
+			"id": "ned_after_prince_ali_rescue",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Ned",
+				"quests": {
+					"PRINCE_ALI_RESCUE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Anything you want in wool, old Ned's yours. Bar jumpers.",
+					"There goes the one who smuggled a prince out in old Ned's wig.",
+					"You knew where to come for a wig. Clever, that. Old Ned's the best."
+				],
+				"starter/insult": [
+					"A wig! I sailed the seas, and you had me doing hair.",
+					"Folk'll think old Ned's gone soft, making wigs for the likes of you.",
+					"You'd make a poor prince, you would. Wig'd slip off at the gate."
+				],
+				"starter/remark": [
+					"If a wool wig can fool a kidnapper, think what my rope could do.",
+					"Ned's Handmade Wigs, I could call it. Royal custom, an' all.",
+					"Never thought old Ned's wool would sit on royalty. Itchy, I'd expect."
+				]
+			}
+		},
+		{
+			"id": "ned_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Ned",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Brave, I'd say. Not monster-brave like me, but brave enough.",
+					"Decent sort, you. You'd not ask old Ned to knit.",
+					"You look like someone who knows good rope when they sees it."
+				],
+				"starter/insult": [
+					"Hemp, is it? I've seen how you look at my rope.",
+					"Tie a knot? You'd tie a granny, if you gets me.",
+					"You'd be green over the side before we'd left harbour."
+				],
+				"starter/remark": [
+					"Dry land doesn't roll, doesn't creak. Unnatural, I calls it.",
+					"Salt on the wind? No... that's the pig-sty.",
+					"Sea's behind me, they say. Sea's never behind a sailor."
+				]
+			}
+		},
+		{
+			"id": "ned_before_dragon_slayer_i",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Ned",
+				"quests": {
+					"DRAGON_SLAYER_I": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"If you ever needs a captain, old Ned's still got his sea legs.",
+					"Nobody'll give old Ned a ship, but they'd give you one, I'd wager.",
+					"That one'd make a fine first mate. Better than them as turned me down."
+				],
+				"starter/insult": [
+					"Course that one'd get work at sea. Young and daft, but young.",
+					"Too old, they tell me. You look too green, if anyone asks me.",
+					"When you're old and nobody'll hire you, you'll understand."
+				],
+				"starter/remark": [
+					"Asked at the docks again. They looked at my knees.",
+					"Grey hair's the sea's doing, not the years. Someone tell 'em.",
+					"Gulls go out to sea every morning. Nobody tells a gull it's too old."
+				]
+			}
+		},
+		{
+			"id": "osman_after_prince_ali_rescue",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Osman",
+				"quests": {
+					"PRINCE_ALI_RESCUE": [
+						"FINISHED"
+					],
+					"CONTACT": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I do not trust people. You I distrust a little less.",
+					"You walk past the palace as though you belong. You have earned it."
+				],
+				"starter/insult": [
+					"Do not ask me for sq'irk juice. I have barely enough for myself."
+				],
+				"starter/remark": [
+					"I keep a short list for dangerous work. It is shorter than one thinks.",
+					"Juice before noon? A spymaster must keep his fingers light.",
+					"She gives me no more fruit. We had words, once. That is all."
+				]
+			}
+		},
+		{
+			"id": "osman_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Osman",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I have filed you under 'possibly useful'. Do not make me refile you.",
+					"Not a word out of you as you passed. I approve.",
+					"You remind me of myself, long ago. Before I had the sense to stay put."
+				],
+				"starter/insult": [
+					"If you are trying to look inconspicuous, do keep trying.",
+					"That one would sell the Emir's secrets for a kebab. Watch them.",
+					"They say adventurers can keep a secret. They say a great many things."
+				],
+				"starter/remark": [
+					"Every Menaphite knows my face. I take that as a compliment.",
+					"Nobody stands outside a palace all day for the view.",
+					"The Chancellor would trust a camel if it bowed nicely."
+				]
+			}
+		},
+		{
+			"id": "osman_before_prince_ali_rescue",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Osman",
+				"quests": {
+					"PRINCE_ALI_RESCUE": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A stranger who does not gossip. Rarer than rain, in this city.",
+					"Not a hero, I think. Something more useful than that.",
+					"You did not ask what I do here. Already you are ahead of most."
+				],
+				"starter/insult": [
+					"Subtle as a camel in a tent, that one.",
+					"Word is the Chancellor will hire anyone. I see the word has spread.",
+					"You? Hassan would hire you. That is precisely the trouble."
+				],
+				"starter/remark": [
+					"Hassan sends me every stranger with a sword. I sift them.",
+					"I know more of the prince than I say. That is rather the point.",
+					"The Emir's heir taken. Someone was careless, and it was not me."
+				]
+			}
+		},
+		{
+			"id": "osman_during_prince_ali_rescue",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"al_kharid"
+			],
+			"character": {
+				"name": "Osman",
+				"quests": {
+					"PRINCE_ALI_RESCUE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Good. You have told nobody. I would know if you had.",
+					"There is a spy's patience in you somewhere. Keep it till Draynor.",
+					"You heard the whole plan without interrupting once. Remarkable."
+				],
+				"starter/insult": [
+					"Do try not to start a war. It is a key, not a siege.",
+					"If Keli spots you first, I shall deny ever having met you.",
+					"So you are the hope of Al Kharid. How very... brave of us."
+				],
+				"starter/remark": [
+					"Dressing the prince as Keli is absurd. That is why it will work.",
+					"East of Draynor, of all places. Bandits have no taste in jails.",
+					"Keli calls herself a lady. I have met camels with better manners."
+				]
+			}
+		},
+		{
+			"id": "oziach_after_dragon_slayer_i",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"edgeville"
+			],
+			"character": {
+				"name": "Oziach",
+				"quests": {
+					"DRAGON_SLAYER_I": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A dragon slayer at my door. Sit, if ye must. Briefly.",
+					"Best the Guildmaster ever sent me. Don't tell him I said so.",
+					"Real deeds, that one. Not like the fancy-pants lot."
+				],
+				"starter/insult": [
+					"Apologised once. Ye'll not get another out of me, adventurer.",
+					"One dragon slain, and still ye can't haggle a master smith down."
+				],
+				"starter/remark": [
+					"A visage, now. Dragonkin made, they say. Rarer than a quiet day.",
+					"My plate's finally for sale. Only took a dragon.",
+					"Shield soaks up the fire, and it goes... where? That's what I'd know."
+				]
+			}
+		},
+		{
+			"id": "oziach_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"edgeville"
+			],
+			"character": {
+				"name": "Oziach",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Not much swagger on you. I'll grant you that much.",
+					"Not one of the Guildmaster's peacocks, are ye?"
+				],
+				"starter/insult": [
+					"Don't ask me how to kill anything. That's the Guildmaster's job.",
+					"Prices go up for folk who stare. Mine do, anyhow.",
+					"Wilderness is just up the road, if ye're bored. Do us both a favour."
+				],
+				"starter/remark": [
+					"A master smith charges what he likes. That's the point of being one.",
+					"Folk call me odd. Odd's better than chatty.",
+					"Ghost Town, they used to call this place. Quieter then, I'll bet."
+				]
+			}
+		},
+		{
+			"id": "oziach_before_dragon_slayer_i",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"edgeville"
+			],
+			"character": {
+				"name": "Oziach",
+				"quests": {
+					"DRAGON_SLAYER_I": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Might be sommat in you after all. Might.",
+					"Short and to the point, you. I like a short visit.",
+					"Thought you were another fancy-pants. No... you'll do."
+				],
+				"starter/insult": [
+					"Fancy-pants hero, are we? I'll believe it when I see a dragon's head.",
+					"Hero, that one? Not slain so much as a chicken, I'd wager.",
+					"Rune platemail's for heroes, and I don't see one."
+				],
+				"starter/remark": [
+					"Cliff behind me and fools in front. 'Tis a hard life.",
+					"Grand Exchange sells everything, they say. Not my armour, it don't.",
+					"Heroes, they call themselves. Not a dragon between 'em."
+				]
+			}
+		},
+		{
+			"id": "oziach_during_dragon_slayer_i",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"edgeville"
+			],
+			"character": {
+				"name": "Oziach",
+				"quests": {
+					"DRAGON_SLAYER_I": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Bit less swagger on you since I mentioned that dragon. Good.",
+					"Still in one piece? Crandor hasn't had you yet, then.",
+					"You went and took it on. Didn't think ye would."
+				],
+				"starter/insult": [
+					"Ask the Guildmaster how to kill it. I'm not yer nursemaid.",
+					"Cold feet, is it? Crandor's not getting any closer.",
+					"Dragon's on Crandor, not in Edgeville. Ye might've noticed."
+				],
+				"starter/remark": [
+					"A dragon for a platebody. Fair trade, by my reckoning.",
+					"If they come back wi' the dragon slain, I'll eat my words.",
+					"Wonder if that last one's been eaten yet."
+				]
+			}
+		},
+		{
+			"id": "record_keeper_after_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Record Keeper",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Aspirant! Your page has grown so, I've had to sew another in.",
+					"I've underlined your name. I never underline anything.",
+					"Nobody reads my pages. For you I'd nearly make an exception.",
+					"Ocellus himself, and the Aspirant still standing. A fine entry.",
+					"There goes the one who took the Nexus. Write that down... oh, I did."
+				],
+				"starter/insult": [
+					"Another visit, another line. I'm running out of ink on you.",
+					"I wrote 'heroic' by your name. Then I added a question mark.",
+					"The records are impressed. I'm reserving judgement.",
+					"Your page is long now, Aspirant. Long and, in places, repetitive."
+				],
+				"starter/remark": [
+					"A busy chapter in the records, the Nexus. I've had to add pages.",
+					"Guthix's guardians, a page each. Ocellus gets two, and a warning.",
+					"I keep the alliance's progress. I don't always keep it in order.",
+					"Ocellus, Guardian of Ascension. Now how is that spelt..."
+				]
+			}
+		},
+		{
+			"id": "record_keeper_during_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Record Keeper",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A promising entry, this one. Very promising, I shall underline it.",
+					"Aspirant! The records are very keen on you, and so am I, I think.",
+					"Such purposeful steps. Those will look splendid on the page.",
+					"The alliance struggles, and in walks the Aspirant! I'll write that.",
+					"Your page is filling up nicely. No, you may not see it."
+				],
+				"starter/insult": [
+					"A short entry, yours, Aspirant. I've written longer notes to myself.",
+					"Ah, the Aspirant! At least, I'm fairly sure it's the Aspirant.",
+					"Dawdling, noted. The records are very thorough, Aspirant.",
+					"The records expected the Aspirant days ago. Still, here you are."
+				],
+				"starter/remark": [
+					"Every step in this lobby goes in the records. Every... single... one.",
+					"Hands off the pages! Ah, you weren't touching them at all.",
+					"My apprentice is at those crystals again. He'd better be taking notes.",
+					"People call me 'a' record keeper. As if there were others!",
+					"The archive's secrets, all in these pages. Somewhere in these pages."
+				]
+			}
+		},
+		{
+			"id": "reldo_after_shield_of_arrav",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Reldo",
+				"quests": {
+					"SHIELD_OF_ARRAV": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Arrav himself would tip his hat to you, if the tales are true.",
+					"Let's see... shield found, reward paid. And by you! Ah, yes.",
+					"You did history a kindness, friend. It so rarely gets one."
+				],
+				"starter/insult": [
+					"A gang member, in my library? I'll be counting the books tonight.",
+					"Half a shield! Was the other half too heavy for you, I wonder?",
+					"Joined a gang for the sake of history. I'd have simply read about it."
+				],
+				"starter/remark": [
+					"Arrav's shield back in the museum. The histories were right, for once.",
+					"Half with each gang, all those years. Wright never guessed that.",
+					"The king paid up, I hear. I do hope he read the certificate himself."
+				]
+			}
+		},
+		{
+			"id": "reldo_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Reldo",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A reader, I'd wager. You've a thoughtful sort of face, stranger.",
+					"Careful hands, I see. The sort that bring a book back in one piece.",
+					"Interested in history? I could tell from the door, you know."
+				],
+				"starter/insult": [
+					"Adventurers only come in here to ask the way out. Every one of them.",
+					"I'd lend you a book, stranger, but I'd like it back, you see.",
+					"Reading isn't catching, you know. You could try it quite safely."
+				],
+				"starter/remark": [
+					"I'd read in here even if they didn't pay me. Don't tell the king.",
+					"People borrow books and return pressed flowers. Not the books, mind.",
+					"The Imcando dwarves loved redberry pie. History's full of pie."
+				]
+			}
+		},
+		{
+			"id": "reldo_before_shield_of_arrav",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Reldo",
+				"quests": {
+					"SHIELD_OF_ARRAV": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I'd lend you the shield history, stranger. You've an honest face.",
+					"There's a sharp look about you, stranger. Fond of a puzzle, I'd guess.",
+					"You've a reader's patience about you. That's rarer than courage."
+				],
+				"starter/insult": [
+					"Another one who thinks a library's for standing out of the rain.",
+					"Do you know who Arrav was? Ah. Well, there's a book.",
+					"You look like you'd lose a shield faster than the museum did."
+				],
+				"starter/remark": [
+					"A stolen shield and a gang split in two. Better than most romances.",
+					"That history of the shield... now which shelf did I give it?",
+					"Then the Black Arm lot split from the Phoenix... gangs are like that."
+				]
+			}
+		},
+		{
+			"id": "reldo_during_shield_of_arrav",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Reldo",
+				"quests": {
+					"SHIELD_OF_ARRAV": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ah, the shield-hunter. You'll be a footnote in the histories, surely.",
+					"Been to see Baraek, have you? Good. Most people only buy furs.",
+					"Brave of you, poking about after gangs for the sake of history."
+				],
+				"starter/insult": [
+					"Asking Baraek about gangs? I'd have bought a fur first, to be polite.",
+					"If the histories ever mention you, it'll be in very small print.",
+					"You, in a gang? I can't picture it, and I've a fine imagination."
+				],
+				"starter/remark": [
+					"Baraek and the Phoenix Gang, I heard. A fur trader! Who'd think it?",
+					"Did I send them to the right fur stall? There's only one, I believe.",
+					"The shield history's out on loan. Or behind the goblin tribes."
+				]
+			}
+		},
+		{
+			"id": "romeo_after_romeo__juliet",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Romeo",
+				"quests": {
+					"ROMEO__JULIET": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Thank you for being there when Juliet... ermmm... you know.",
+					"Without you I'd never have met Phillipa, so golly, thank you!",
+					"Wooooo! My favourite friend! Second favourite. Phillipa's first."
+				],
+				"starter/insult": [
+					"You were meant to save Juliet, weren't you? Ermmm... never mind."
+				],
+				"starter/remark": [
+					"Ermmm... was it a crypt or a cellar? Somewhere damp and sad, anyway.",
+					"I'd be a hero if I weren't frightened of ghosts. Well, one ghost.",
+					"Saw Juliet's ghost again! Up on the balcony! I ran ever so fast."
+				]
+			}
+		},
+		{
+			"id": "romeo_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Romeo",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Have a flower! No, wait, they're for... somebody. Have a sniff, then.",
+					"Kind face! I'd tell you my troubles if I could remember them.",
+					"Oh, it's you! At least I think it's you. Hello anyway, my friend!"
+				],
+				"starter/insult": [
+					"Have we met? You've a very forgettable face. Not that I remember any.",
+					"Looks as lost as I am, that one. That's quite lost.",
+					"You look the sort who gets court summonses. I get them too!"
+				],
+				"starter/remark": [
+					"A message? No, a court summons. They always are.",
+					"I went to school with Father Lawrence. Or someone very like him.",
+					"The square, then the general store, then... where was I going?"
+				]
+			}
+		},
+		{
+			"id": "romeo_before_romeo__juliet",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Romeo",
+				"quests": {
+					"ROMEO__JULIET": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"That one walks like a hero. I walk like a man carrying flowers.",
+					"You'd understand love, I can tell. Do you? I can't tell, actually.",
+					"You're nearly as lovely as Juliet! Not quite. Close, though."
+				],
+				"starter/insult": [
+					"Oh. You're not Juliet. Never mind, you're still... somebody.",
+					"You look like a court summons, my friend. Official and frightening.",
+					"You'd never get up a balcony. Neither could I. We're alike!"
+				],
+				"starter/remark": [
+					"Flowers for Juliet again. She'll throw them back. She's a good arm.",
+					"Her name's Juliet, I'm almost sure. It begins with a J, anyway.",
+					"I'll wait in the square. Love waits in squares, I think."
+				]
+			}
+		},
+		{
+			"id": "romeo_during_romeo__juliet",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"varrock"
+			],
+			"character": {
+				"name": "Romeo",
+				"quests": {
+					"ROMEO__JULIET": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"My dearest, bravest messenger! What was your name again?",
+					"You're braver than me. You'd walk right past her father!",
+					"You've not got a face like a father. That's the nicest thing I know."
+				],
+				"starter/insult": [
+					"Did you forget the message? I'd forget the message. We're so alike!",
+					"Wait, are you her father? You're not? Then why the stern look?",
+					"You took your time! Or I did. One of us is late, my friend."
+				],
+				"starter/remark": [
+					"Her father's sworn to kill me. I'd hide, if I knew who from.",
+					"Is that him? Is that her father? No... a baker. Probably.",
+					"Should I wear a disguise? I'd only forget I was wearing it."
+				]
+			}
+		},
+		{
+			"id": "safalaan_after_a_taste_of_hope",
+			"priority": 55,
+			"wrap": false,
+			"regions": [],
+			"character": {
+				"name": "Safalaan Hallow",
+				"quests": {
+					"A_TASTE_OF_HOPE": [
+						"FINISHED"
+					],
+					"SINS_OF_THE_FATHER": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"There goes the one who turned the tide. Let them pass, quietly.",
+					"You gave this city something real to hope for. Not a myth.",
+					"You killed Ranis Drakan, my friend. The ghetto will tell it for years."
+				],
+				"starter/insult": [
+					"Every vampyre in Meiyerditch must know your face by now. Well done.",
+					"I've a power I can't control. You've a temper you won't. Some pair.",
+					"Reckless again. I'm too tired to keep counting you back in."
+				],
+				"starter/remark": [
+					"Mekritus, Andiess, Flaygian. I say their names before I sleep.",
+					"My own blood, used against my own people. I cannot wash that off.",
+					"Three empty bunks below. I've not had the heart to clear them."
+				]
+			}
+		},
+		{
+			"id": "safalaan_after_darkness_of_hallowvale",
+			"priority": 55,
+			"wrap": false,
+			"regions": [],
+			"character": {
+				"name": "Safalaan Hallow",
+				"quests": {
+					"DARKNESS_OF_HALLOWVALE": [
+						"FINISHED"
+					],
+					"A_TASTE_OF_HOPE": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A hidden laboratory, and you just walked in. Of course you did.",
+					"Without you, those sketches would still be half a castle.",
+					"You are welcome at our table, such as it is. Mind the rats."
+				],
+				"starter/insult": [
+					"Find another secret laboratory if you like. Just don't drink anything.",
+					"Next time you meet Vanstrom, perhaps bring a friend. Several.",
+					"You walk through Meiyerditch like it's market day. It isn't."
+				],
+				"starter/remark": [
+					"Myreque prevail. It sounds less like a prayer these days.",
+					"We have their castle on paper. Now we need a plan worth the ink.",
+					"Why would Sarius save anyone? Nothing in this city is a gift."
+				]
+			}
+		},
+		{
+			"id": "safalaan_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [],
+			"character": {
+				"name": "Safalaan Hallow",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"My friend, you'd have made a fine runner in the ghettos.",
+					"Sven could sell you a disguise, but I think you'd bluff instead.",
+					"You have the look of someone people would follow. Careful with that."
+				],
+				"starter/insult": [
+					"I admire recklessness. From a safe distance, mostly.",
+					"Old Man Ral would call you a fool. Kindly, but he would.",
+					"You'd be spotted in a ghetto before you'd taken a step."
+				],
+				"starter/remark": [
+					"Myreque prevail. I have said it so often it has worn smooth.",
+					"Trader Sven's disguises have served us before. Itchy things, though.",
+					"We told the world what happens in those ghettos. The world nodded."
+				]
+			}
+		},
+		{
+			"id": "safalaan_darkness_of_hallowvale_in_progress",
+			"priority": 55,
+			"wrap": false,
+			"regions": [],
+			"character": {
+				"name": "Safalaan Hallow",
+				"quests": {
+					"DARKNESS_OF_HALLOWVALE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Every time you come back alive, the whole base breathes again.",
+					"My friend, you'd pass for a local if you looked more frightened.",
+					"With you here, that castle looks a little smaller."
+				],
+				"starter/insult": [
+					"If you're caught, I have never met you. Myreque prevail.",
+					"Sven's disguises fool the vyrewatch. Your walk might not.",
+					"You can't just stroll past the vyrewatch, my friend. Well. You did."
+				],
+				"starter/remark": [
+					"Castle Drakan never sleeps. Neither, lately, do I.",
+					"Pull the silver lever and down we go. Home, such as it is.",
+					"Ral finds us papyrus. Nerve we have to find for ourselves."
+				]
+			}
+		},
+		{
+			"id": "shantay_after_the_tourist_trap",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"north_desert"
+			],
+			"character": {
+				"name": "Shantay",
+				"quests": {
+					"THE_TOURIST_TRAP": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A mother sleeps at night because of you, friend. No small thing.",
+					"A rescuer who still pays the toll. You are a credit, friend.",
+					"I sell waterskins to many. I tip my hat to very few, friend."
+				],
+				"starter/insult": [
+					"Saving girls in the desert is good work. So is paying for a robe.",
+					"The cell is still there, friend. Heroes have been known to need it."
+				],
+				"starter/remark": [
+					"Ana is home, and already eyeing the dunes again. That girl!",
+					"Next time Ana passes, she reads the billboard first. Twice."
+				]
+			}
+		},
+		{
+			"id": "shantay_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"north_desert"
+			],
+			"character": {
+				"name": "Shantay",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ah, effendi! I would wager you actually read the billboard.",
+					"I would trust you with the bank chest, effendi, and I trust nobody.",
+					"Something tells me the sands will give you back, effendi."
+				],
+				"starter/insult": [
+					"Did I not lock you up once? No? My mistake, effendi.",
+					"So long, effendi. I shall keep a cell warm for you.",
+					"You will come back thirsty, effendi, and you will blame me."
+				],
+				"starter/remark": [
+					"My guards say my price is very reasonable. I do pay their wages.",
+					"The cell is empty today. I always find that suspicious.",
+					"The gate needs mending again. Sand gets into everything, even hinges."
+				]
+			}
+		},
+		{
+			"id": "shantay_before_the_tourist_trap",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"north_desert"
+			],
+			"character": {
+				"name": "Shantay",
+				"quests": {
+					"THE_TOURIST_TRAP": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"There goes someone a mother could trust. Not many come through here."
+				],
+				"starter/insult": [
+					"I would sell you a pass, effendi, but I would rather sell you a robe.",
+					"Irena needs a hero. Let us both hope one comes along soon.",
+					"Mind you do not get lost as well, effendi. One is enough."
+				],
+				"starter/remark": [
+					"Days, now. The desert does not give people back after days.",
+					"No word of Irena's girl. Outlaws would not dare... would they?",
+					"That girl went south, and my gate has not seen her since."
+				]
+			}
+		},
+		{
+			"id": "shantay_during_the_tourist_trap",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"north_desert"
+			],
+			"character": {
+				"name": "Shantay",
+				"quests": {
+					"THE_TOURIST_TRAP": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"If anyone can bring that girl home, effendi, I would bet on you.",
+					"Irena talks of nobody but you now, friend.",
+					"You gave a mother hope. That is worth more than any pass I sell."
+				],
+				"starter/insult": [
+					"Do not come back without her. Well, do come back, but with her.",
+					"Irena's hopes rest on you. I would walk a little faster.",
+					"So long, effendi. Try not to be the next one Irena waits for."
+				]
+			}
+		},
+		{
+			"id": "sir_amik_varze_after_black_knights_fortress",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Amik Varze",
+				"quests": {
+					"BLACK_KNIGHTS_FORTRESS": [
+						"FINISHED"
+					],
+					"RECRUITMENT_DRIVE": [
+						"NOT_STARTED"
+					],
+					"WANTED": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ah, our agent! Err... our friend. Simply a friend, naturally.",
+					"Asgarnia owes you a debt, friend. The order can scarcely pay it.",
+					"You broke only what needed breaking, friend. I am most grateful."
+				],
+				"starter/insult": [
+					"A spy who fights with cabbages. Heaven knows what the charter says.",
+					"Honour obliges me to thank you again. Honour can be very tiresome.",
+					"No knighthood for a cabbage, friend. Things are not that dire."
+				],
+				"starter/remark": [
+					"Let them sulk in their fortress. They have earned a good sulk.",
+					"That fee for the fortress business has left the order lighter still.",
+					"Years their witch spent on that potion. Years! Spoilt by a vegetable."
+				]
+			}
+		},
+		{
+			"id": "sir_amik_varze_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Amik Varze",
+				"quests": {}
+			},
+			"lines": {
+				"starter/insult": [
+					"Err... you are not one of my squires, are you? No, they salute.",
+					"Honour forbids me to say what I think of your timing, friend.",
+					"Sir Burrus has taken against this one. He is usually a fine judge."
+				],
+				"starter/remark": [
+					"Err... where did I leave the charter? Sir Burrus looks guilty.",
+					"Every Black Knight knows my knights by sight. So much for stealth.",
+					"Regent of Asgarnia, and still nobody brings the ale."
+				]
+			}
+		},
+		{
+			"id": "sir_amik_varze_before_black_knights_fortress",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Amik Varze",
+				"quests": {
+					"BLACK_KNIGHTS_FORTRESS": [
+						"NOT_STARTED"
+					],
+					"WANTED": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I would wager no Black Knight has ever heard of you, friend.",
+					"Saradomin sends help in odd shapes. Yours will do nicely."
+				],
+				"starter/insult": [
+					"Falador under threat, and its visitors come to look at the furniture.",
+					"I have five years of errands for anyone who stands about like that.",
+					"My corgi has more fight in him, I suspect, and he is asleep."
+				],
+				"starter/remark": [
+					"My ale has gone warm while I read their demands. Again.",
+					"Someone ought to slip into that fortress. Someone nobody knows.",
+					"The charter forbids spying. The charter did not foresee this."
+				]
+			}
+		},
+		{
+			"id": "sir_amik_varze_during_black_knights_fortress",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Amik Varze",
+				"quests": {
+					"BLACK_KNIGHTS_FORTRESS": [
+						"IN_PROGRESS"
+					],
+					"WANTED": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Asgarnia is in your hands just now, friend, and they look steady.",
+					"I knew a stranger would serve better than a knight. I was right.",
+					"It is good to see you, friend. Mind who is listening."
+				],
+				"starter/insult": [
+					"A fine time to admire the view, friend, with the realm under threat.",
+					"Err... you are meant to be in the fortress. Are you in the fortress?",
+					"Spies are meant to be unseen, friend. I can see you quite clearly."
+				],
+				"starter/remark": [
+					"If the spy is caught, the order knows nothing of it. Err... naturally.",
+					"The longer the silence, the bigger that weapon grows in my head.",
+					"Their weapon is bluster, I expect. Saradomin, let it be bluster."
+				]
+			}
+		},
+		{
+			"id": "sir_tiffy_cashien_after_recruitment_drive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Tiffy Cashien",
+				"quests": {
+					"RECRUITMENT_DRIVE": [
+						"FINISHED"
+					],
+					"WANTED": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I'd say how proud the order is of you, old bean, but it's a secret.",
+					"One of ours now, that one, though nobody's to know it.",
+					"Should you ever die, old bean, you'll wake in Falador. Much nicer."
+				],
+				"starter/insult": [
+					"Do try not to die in Lumbridge, old bean. Frightful swamp.",
+					"That one sat the tests empty-handed and came out a little cleverer.",
+					"You squeaked into the Temple Knights, old bean. By a whisker."
+				],
+				"starter/remark": [
+					"Must have a word with Sir Amik about briefings. Again.",
+					"Sir Vey Lance will be pleased with the latest one. Brains, at last.",
+					"Spiffing weather for a new knight, what? Not that anyone's to know."
+				]
+			}
+		},
+		{
+			"id": "sir_tiffy_cashien_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Tiffy Cashien",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"There goes a brainbox, if I'm any judge, and I usually am.",
+					"Top-hole! Somebody in this town who isn't dumb muscle."
+				],
+				"starter/insult": [
+					"Bit of dumb muscle, are we? Never mind, the world needs those too.",
+					"Jolly good show, walking past. Most people manage it too, mind.",
+					"Muscles are all very well, but one does like a brain to go with them."
+				],
+				"starter/remark": [
+					"Another day on the bench. Somebody has to keep an eye on things.",
+					"Haw haw haw! Oh, the things one hears from a park bench.",
+					"I'd sooner sleep in a hedge than spend a night in Lumbridge."
+				]
+			}
+		},
+		{
+			"id": "sir_tiffy_cashien_before_recruitment_drive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Tiffy Cashien",
+				"quests": {
+					"RECRUITMENT_DRIVE": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Now there's somebody who reads more than the notice board.",
+					"Oh, top-hole. A stranger with their wits about them, at last.",
+					"Spot of brains on that one, haw haw. Must remember the face."
+				],
+				"starter/insult": [
+					"Bit of a plodder, what? Still, plodders get there in the end.",
+					"One can see the cogs turning, old sport. Slowly, but turning."
+				],
+				"starter/remark": [
+					"Lumbridge folk keep wandering in here. The swamp follows them.",
+					"Sir Amik sends his squire for ale before breakfast, I hear. Haw haw!",
+					"That corgi of Sir Amik's is a Sir, dontchaknow. Haw haw!"
+				]
+			}
+		},
+		{
+			"id": "sir_tiffy_cashien_during_recruitment_drive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Tiffy Cashien",
+				"quests": {
+					"RECRUITMENT_DRIVE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Jolly good show finding me, old bean. Half Sir Amik's lot get lost.",
+					"Sir Amik put your name forward, and for once he chose well.",
+					"Too clever by half for the White Knights, that one. Haw haw!"
+				],
+				"starter/insult": [
+					"Good heavens, still here? Most recruits have passed or fled by now.",
+					"Still dithering, old bean? The tests won't sit themselves.",
+					"That one's thinking. One can hear it from the bench, haw haw."
+				],
+				"starter/remark": [
+					"Any fool with a sword can be a White Knight. We want the other sort.",
+					"Mind your head on the way down, I always say. Nobody listens.",
+					"Secret order, and here I sit on a park bench. Best hiding place going."
+				]
+			}
+		},
+		{
+			"id": "sir_vyvin_after_knights_sword",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Vyvin",
+				"quests": {
+					"THE_KNIGHTS_SWORD": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Good day to you, traveller! Even strangers look cheerful to me lately.",
+					"My sword is home and the visitors are polite. A good day all round."
+				],
+				"starter/insult": [
+					"A sword like mine needs a hand like mine. Yours would drop it.",
+					"Not every stranger gets to stand near an Imcando blade. Do stand back."
+				],
+				"starter/remark": [
+					"Asrol brought it back without a mark on it. Good lad.",
+					"My family sword is back where it belongs. Five generations, unbroken.",
+					"Same sword my father held. I would know it anywhere."
+				]
+			}
+		},
+		{
+			"id": "sir_vyvin_after_wanted",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Vyvin",
+				"quests": {
+					"WANTED": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A White Knight in my armoury, and a keen one. As it should be.",
+					"Every Black Knight you fell is a rank closer to Master, knight.",
+					"Should you reach Adept, knight, I shall be very glad to serve you."
+				],
+				"starter/insult": [
+					"Chatter will not raise your rank, knight. Black Knights will.",
+					"Mind which knights you strike. Ours are the white ones.",
+					"Sir Amik knighted you, did he? He must have had his reasons."
+				],
+				"starter/remark": [
+					"A knight who strikes down a White Knight will find my counter shut.",
+					"One so seldom sees an Adept. I would shake their hand, I think.",
+					"The white two-handed sword waits for a Master. It may wait a while."
+				]
+			}
+		},
+		{
+			"id": "sir_vyvin_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Vyvin",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"There goes someone who would not waste an old knight's time.",
+					"You've a soldier's eye, traveller. I notice, even with only one."
+				],
+				"starter/insult": [
+					"... ...are you lost, traveller, or merely slow?",
+					"You would not last a week as a squire, traveller. Asrol has.",
+					"Your manners would get you a mop in our order, not a sword."
+				],
+				"starter/remark": [
+					"Another knight in for a new helmet. They lose them like buttons.",
+					"Stairs again. Whoever put my rooms two floors up was a young man.",
+					"With one good eye I can still read a plume across the courtyard."
+				]
+			}
+		},
+		{
+			"id": "sir_vyvin_before_knights_sword",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"falador"
+			],
+			"character": {
+				"name": "Sir Vyvin",
+				"quests": {
+					"THE_KNIGHTS_SWORD": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/insult": [
+					"Asrol would not dawdle like that, traveller. Well, not much.",
+					"No place in the parade for you, traveller. That much is plain.",
+					"Out of the way, traveller. I am expecting a sword."
+				],
+				"starter/remark": [
+					"An Imcando blade at the parade. Let the Black Knights hear of that.",
+					"Asrol is fetching my sword from Lumbridge. A good lad, Asrol.",
+					"The road from Lumbridge must be slow going, this time of year."
+				]
+			}
+		},
+		{
+			"id": "temple_knight_archive_after_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Temple Knight",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Discipline like that, you'd do well in white. Not that I'm asking.",
+					"Faced Ocellus and came back. Saradomin was with you, whoever's yours.",
+					"That's the one who took the Nexus with us. Stand straight.",
+					"We were barely holding when you came down. We hold now.",
+					"Whatever's left of Ocellus, I'd sooner you faced it than me."
+				],
+				"starter/insult": [
+					"Ocellus forgot his post. Don't you forget yours.",
+					"Saved the archive. Don't expect a salute every time you pass.",
+					"Took the Nexus, and now you wander the camp like it's a market day.",
+					"You'd be a fine knight, if you ever stood still long enough."
+				],
+				"starter/remark": [
+					"Armacus Selles is fond of a joke. A good thing, down here.",
+					"Ocellus was set to guard, and chose to rule. A knight's worst failing.",
+					"Plinths of relics in that vault. None of them ours to touch.",
+					"That justiciar called us servants of evil. Wouldn't be told otherwise.",
+					"The Nexus is ours. Now we hold it, chamber by chamber."
+				]
+			}
+		},
+		{
+			"id": "temple_knight_archive_during_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Temple Knight",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ready to go in, by the look of you. Saradomin guard your back.",
+					"That one walks in like they mean to come back out. Good discipline.",
+					"Whatever god you keep, you're welcome on this line.",
+					"You carry yourself like you've stood a watch before."
+				],
+				"starter/insult": [
+					"Gawping at the ravine won't hold the line. Move along.",
+					"That one's late. The looters got here first.",
+					"You'd not last a day at drill. Lucky for you there's a war on."
+				],
+				"starter/remark": [
+					"A lone knight cut down a whole squad, the scouts say. One knight.",
+					"Druids on watch with us. Steadier than they look, I'll grant them.",
+					"Even the Record Keeper says we're struggling. He's rarely that plain.",
+					"Every rabble with a god behind it has come to loot this place."
+				]
+			}
+		},
+		{
+			"id": "thurgo_after_knights_sword",
+			"priority": 55,
+			"wrap": false,
+			"regions": [],
+			"character": {
+				"name": "Thurgo",
+				"quests": {
+					"THE_KNIGHTS_SWORD": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Not many humans know what I am. You're one. Mind that.",
+					"Sharp of you, finding an old dwarf out with a pie.",
+					"That one brought me pie and listened. Rare as an Imcando, that."
+				],
+				"starter/insult": [
+					"Don't go telling Port Sarim what I am. They'd only want swords.",
+					"Fetched blurite past an ice giant, and still you can't swing a hammer.",
+					"Prying again? I told you about my people. That's your lot."
+				],
+				"starter/remark": [
+					"Iron bars and blurite make a sword. A pie makes it a good one.",
+					"Made a knight's sword from a portrait once. Best copy I ever did.",
+					"Wonder if that knight's noticed. Shouldn't think so. Good work, that."
+				]
+			}
+		},
+		{
+			"id": "thurgo_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [],
+			"character": {
+				"name": "Thurgo",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Decent sort, that one. Not one for nosy questions."
+				],
+				"starter/insult": [
+					"I'd not let you near my anvil, human. Not without a pie.",
+					"My ancestors would have laughed you off this cliff, human."
+				],
+				"starter/remark": [
+					"Cape's earned, not bought. Well, earned, then bought.",
+					"Smell of pie on the wind, I'd swear. No, just the sea.",
+					"That ice giant downstairs. Noisy neighbour, that."
+				]
+			}
+		},
+		{
+			"id": "thurgo_before_knights_sword",
+			"priority": 55,
+			"wrap": false,
+			"regions": [],
+			"character": {
+				"name": "Thurgo",
+				"quests": {
+					"THE_KNIGHTS_SWORD": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"You mind your own business, human. More folk should.",
+					"You'd make a fine smith if you'd sit still long enough."
+				],
+				"starter/insult": [
+					"Mind the giant on your way down. He's friendlier than me.",
+					"No pie, no talk. Simple rule, that.",
+					"Snooping round an old smith's hut? Nothing here but iron and crumbs."
+				],
+				"starter/remark": [
+					"Could do with an iron bar or two. Could do with a pie more.",
+					"No pie through my door in an age. What's the world coming to?",
+					"Port Sarim's handy enough for supplies. Not one decent pie in it."
+				]
+			}
+		},
+		{
+			"id": "thurgo_during_knights_sword",
+			"priority": 55,
+			"wrap": false,
+			"regions": [],
+			"character": {
+				"name": "Thurgo",
+				"quests": {
+					"THE_KNIGHTS_SWORD": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Fair hand at errands, that one. Somebody's lucky.",
+					"If that's pie I smell, you're my favourite visitor.",
+					"You're the one asking about swords. Polite about it, too."
+				],
+				"starter/insult": [
+					"I'm not a sword shop, human. I'm a smith with a cliff.",
+					"Running errands for some knight, are you? Sounds about right.",
+					"Still asking about swords? Ask with a pie next time."
+				],
+				"starter/remark": [
+					"Blurite's no use for a blade, but it dresses up a hilt nicely.",
+					"Had a decent pie lately. Still thinking about it.",
+					"One more pie and I might start remembering things. Might."
+				]
+			}
+		},
+		{
+			"id": "veliaf_after_in_aid_of_the_myreque",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"morytania"
+			],
+			"character": {
+				"name": "Veliaf Hurtz",
+				"quests": {
+					"IN_AID_OF_THE_MYREQUE": [
+						"FINISHED"
+					],
+					"DARKNESS_OF_HALLOWVALE": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"If the Myreque were organised, I'd give you a rank. We're not.",
+					"There's one I'd trust with silver, and with Ivan.",
+					"You brought back a rod that works. I'd stopped hoping it would."
+				],
+				"starter/insult": [
+					"Don't look so pleased. Gadderanks answered to someone worse.",
+					"Keep away from Ivan with your stories. He's trouble enough already.",
+					"Look at that one, strolling about like Morytania owes them a favour."
+				],
+				"starter/remark": [
+					"Drezel will make a priest of Ivan yet. Or Ivan will drive him mad.",
+					"Folk named us after a swamp. Fitting. We're about as tidy.",
+					"One rod against all of Morytania. Still, it's more than we had."
+				]
+			}
+		},
+		{
+			"id": "veliaf_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"morytania"
+			],
+			"character": {
+				"name": "Veliaf Hurtz",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"If the Myreque had ten of you, I'd sleep easier.",
+					"You've not been bitten yet. That's more than most can say.",
+					"You've the look of someone who'd carry silver without being told."
+				],
+				"starter/insult": [
+					"Another adventurer come to see the sights. The sights bite.",
+					"You'd last a night out here. Two, if you ran.",
+					"You've a lot of questions on your face. Keep them there."
+				],
+				"starter/remark": [
+					"Drezel keeps the faith at Paterdomus. Someone has to.",
+					"Never asked to lead anyone. The others just started looking at me.",
+					"Someone called us an organisation once. I laughed for a week."
+				]
+			}
+		},
+		{
+			"id": "veliaf_before_in_aid_of_the_myreque",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"morytania"
+			],
+			"character": {
+				"name": "Veliaf Hurtz",
+				"quests": {
+					"IN_SEARCH_OF_THE_MYREQUE": [
+						"FINISHED"
+					],
+					"IN_AID_OF_THE_MYREQUE": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"The Myreque owe you. We're poor at paying, but we owe you.",
+					"Whatever Vanstrom is, you didn't run from it. I noticed.",
+					"You killed that hound. Without you, we'd all be in the ground."
+				],
+				"starter/insult": [
+					"Adventurers. Never about when there's packing to be done.",
+					"Don't look at me like that. I'm fine. Go and bother someone else.",
+					"Hero of the cave, and you still can't come in quietly."
+				],
+				"starter/remark": [
+					"Silver at the door, garlic on the shelf. Small comfort now.",
+					"Two fewer at supper. The cave feels bigger than it should.",
+					"We weren't much of an organisation before. Fewer of us now."
+				]
+			}
+		},
+		{
+			"id": "veliaf_in_search_of_the_myreque_in_progress",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"morytania"
+			],
+			"character": {
+				"name": "Veliaf Hurtz",
+				"quests": {
+					"IN_SEARCH_OF_THE_MYREQUE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Saradomin sends help in odd shapes. You'll do nicely.",
+					"You didn't bring a crowd. That's rarer than courage, round here.",
+					"You found us. Not many could. Not many should, mind."
+				],
+				"starter/insult": [
+					"Another hero wanting to join. Join the queue. There isn't one.",
+					"Don't touch the swords. They're blunt enough already.",
+					"Quieter, friend. You walk like a cart full of pans."
+				],
+				"starter/remark": [
+					"Blunt swords and good intentions. That's the Myreque armoury.",
+					"Every noise up top, and the whole cave holds its breath.",
+					"Lying low's harder than fighting. Less to do with your hands."
+				]
+			}
+		},
+		{
+			"id": "wartface_after_goblin_diplomacy",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"goblin_village"
+			],
+			"character": {
+				"name": "General Wartface",
+				"quests": {
+					"GOBLIN_DIPLOMACY": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Grubfoot! Get this one juicy maggot. Earned it."
+				],
+				"starter/insult": [
+					"Human make peace. Now nobody to shout at but Bentnoze. Thanks.",
+					"Orange, human! Me still see orange when me shut eyes."
+				],
+				"starter/remark": [
+					"Brown like mud. Like soggy mud. Me like soggy.",
+					"Brown look good on Grubfoot. Look better on me. Bigger."
+				]
+			}
+		},
+		{
+			"id": "wartface_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"goblin_village"
+			],
+			"character": {
+				"name": "General Wartface",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Human got Garagorshuun heart, maybe. Green heart.",
+					"Me like human. Nearly much as juicy maggot.",
+					"Sharp look on this human. Like battleaxe, not silly hammer."
+				],
+				"starter/insult": [
+					"Big High War God use up all strong on goblins. Human get leftovers.",
+					"Human crunchy like bread. Goblin not like crunchy.",
+					"Me seen prettier maggot. Juicy one, too."
+				],
+				"starter/remark": [
+					"Juicy maggot. Soggy bread. That proper dinner.",
+					"Me could do peace. Peace in green, though.",
+					"Without Big High War God, goblin just small green thing."
+				]
+			}
+		},
+		{
+			"id": "wartface_before_goblin_diplomacy",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"goblin_village"
+			],
+			"character": {
+				"name": "General Wartface",
+				"quests": {
+					"GOBLIN_DIPLOMACY": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Good ears on this human. Good for listen to bigger general.",
+					"Human not smell of beetle pie. Big point for human.",
+					"Shut up, Grubfoot, me talk to human. Human more interesting."
+				],
+				"starter/insult": [
+					"Goblins bad at peace. Humans worse. You worst, probably.",
+					"Human brain like warhammer. Only good for nails.",
+					"Look, Bentnoze. This one ugly as whole village in red."
+				],
+				"starter/remark": [
+					"Me think. Me think hard. Still green.",
+					"Peace with Bentnoze? Maybe. If Bentnoze wear green.",
+					"Village listen to me. Me bigger general. Shut up, Bentnoze."
+				]
+			}
+		},
+		{
+			"id": "wartface_goblin_diplomacy_in_progress",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"goblin_village"
+			],
+			"character": {
+				"name": "General Wartface",
+				"quests": {
+					"GOBLIN_DIPLOMACY": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Human quick on feet. Quick like hungry maggot.",
+					"You do good job. Me bigger general. Me know good job."
+				],
+				"starter/insult": [
+					"Bentnoze, look. This one fetch, we shout. Good system."
+				],
+				"starter/remark": [
+					"Bentnoze practise saying red. Me practise saying green. Louder.",
+					"Me bigger general, so me try armour first. Fair.",
+					"Need more dye? Goblin nick it off Draynor witch before. Do it again!"
+				]
+			}
+		},
+		{
+			"id": "wise_old_man_after_making_friends_with_my_arm",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Wise Old Man",
+				"quests": {
+					"MAKING_FRIENDS_WITH_MY_ARM": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ah, the young hero! You'd never tell about the snoring, would you?",
+					"Good to see you up and about, my dear. Some of us had to lie in boxes.",
+					"You'd make a fine sage one day. Learn to snore quietly first."
+				],
+				"starter/insult": [
+					"Can't tell a dead sage from a sleeping one? Mother could, worse luck.",
+					"I've driven trolls out of tunnels. You'd struggle with a cellar."
+				],
+				"starter/remark": [
+					"Drove Mother's band out of those tunnels in my youth. She remembers.",
+					"Lay so still in that box, I nearly fooled myself.",
+					"Oh dear, oh dear. Fooling a troll Mother at my age, and from a coffin."
+				]
+			}
+		},
+		{
+			"id": "wise_old_man_after_swan_song",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Wise Old Man",
+				"quests": {
+					"SWAN_SONG": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"I retired with a clear conscience, knowing you're about.",
+					"My partner in crime! Er, in trolls, I mean.",
+					"That's the one who finished the troll queen. While I had a lie down."
+				],
+				"starter/insult": [
+					"Shopping trip? Never heard the phrase, and keep your voice down.",
+					"There goes the hero who let an old sage get flattened by a troll.",
+					"You got the glory and I got a bad back. Fair trade, I suppose."
+				],
+				"starter/remark": [
+					"No more quests for me, I promise you. The odd shopping trip, perhaps.",
+					"Odd, how that bank guard watches me now I'm retired. Very odd.",
+					"Piscatoris was my last. One ought to end on something with fish in it."
+				]
+			}
+		},
+		{
+			"id": "wise_old_man_always",
+			"priority": 40,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Wise Old Man",
+				"quests": {}
+			},
+			"lines": {
+				"starter/compliment": [
+					"A proper adventurer, I see. Your bank must be full of old junk.",
+					"Keep it up, my dear, and you too may earn a house by a pig-sty.",
+					"You remind me of myself, you know. Before the stick."
+				],
+				"starter/insult": [
+					"I could send you for bread, I suppose. If you can manage bread.",
+					"Listening to that bank guard, have you? Gullible lot, adventurers.",
+					"That one just called me old with their eyes!"
+				],
+				"starter/remark": [
+					"Dionysius the Sage. Has a ring to it, wouldn't you say?",
+					"Lovely architecture, that Wizards' Tower. I study it nightly.",
+					"There are three gods, and I'll hear no talk of a fourth."
+				]
+			}
+		},
+		{
+			"id": "wise_old_man_before_swan_song",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"draynor"
+			],
+			"character": {
+				"name": "Wise Old Man",
+				"quests": {
+					"SWAN_SONG": [
+						"NOT_STARTED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Ah, a young hero with places to be. Do write to your elders.",
+					"I'd lend you my hat for luck, but it's far too lucky to lend.",
+					"Seasoned, I'd say. Not as seasoned as me, but pleasantly salted."
+				],
+				"starter/insult": [
+					"If you're here about the bank, I've no idea what you mean.",
+					"Would-be heroes. They're ten a penny since I stopped.",
+					"You'd do for one of my little jobs, I expect. Beer's not heavy."
+				],
+				"starter/remark": [
+					"Bronze bars and beer. Hardly the stuff of legend, these little jobs.",
+					"I braved the deadliest dungeons. Now I brave the draughts.",
+					"The telescope's for architecture. Nothing to do with boredom."
+				]
+			}
+		},
+		{
+			"id": "wizard_apprentice_after_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Wizard apprentice",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"FINISHED"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"If I ever need someone to hold a sprite still, I'll ask you first!",
+					"The crystals seem livelier when you're about. Unscientific, but true!",
+					"You're the one who took the Nexus! Might I take a few notes on you?"
+				],
+				"starter/insult": [
+					"Heroes! Always rushing about, never once wondering why anything glows.",
+					"Keep the rocks, honestly. I've seen what you do to things.",
+					"Took the Nexus, and you still hit crystals like they owe you money!"
+				],
+				"starter/remark": [
+					"Everyone mines the crystals, and nobody writes anything down but me!",
+					"I asked the roots a question today. No answer yet, but I'll try again.",
+					"Pages and pages on these crystals now. The Record Keeper's jealous.",
+					"Sprites turn to crystal when they're noticed, so I've stopped staring."
+				]
+			}
+		},
+		{
+			"id": "wizard_apprentice_during_fractured_archive",
+			"priority": 55,
+			"wrap": false,
+			"regions": [
+				"fractured_archive"
+			],
+			"character": {
+				"name": "Wizard apprentice",
+				"quests": {
+					"WHILE_GUTHIX_SLEEPS": [
+						"FINISHED"
+					],
+					"THE_FRACTURED_ARCHIVE": [
+						"IN_PROGRESS"
+					]
+				}
+			},
+			"lines": {
+				"starter/compliment": [
+					"Every sprite you shake loose is another note for me. Thank you!",
+					"Oh, a curious one! You look at the crystals properly, I can tell.",
+					"You look like someone who'd find a sprite interesting. Most don't!"
+				],
+				"starter/insult": [
+					"Do you have to look so bored? These rocks are full of magic!",
+					"Just passing, are you? Everyone's always just passing the crystals.",
+					"You noticed the sprite, didn't you? That's why it's crystal now.",
+					"You walked right past the crystals! The finest rocks in Gielinor!"
+				],
+				"starter/remark": [
+					"Did the roots just pull back? They did, somebody write that down!",
+					"Do the roots think? That's the question, the whole question!",
+					"Sprites go to crystal the moment anyone looks. Awfully hard to study.",
+					"The Record Keeper writes down what people do. I do the rocks."
+				]
+			}
+		}
+	]
+}

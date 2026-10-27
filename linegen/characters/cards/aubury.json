@@ -1,0 +1,62 @@
+{
+	"id": "aubury",
+	"npc": "Aubury",
+	"x": 3253, "y": 3402, "plane": 0,
+	"region": "varrock",
+	"speech": null,
+	"who": "Layte Aubury keeps the rune shop near Varrock's east bank, and runes are his passion. Not much of a wizard by Archmage Sedridor's reckoning but an expert in runecrafting, he swaps runes for Reldo's books, offers visitors tea, and once the lost incantation is found he sends people to the rune essence mine.",
+	"notices": [
+		"runes, staves and talismans you're carrying",
+		"whether you look like you might buy runes",
+		"rune essence in your pack, and whether you've made anything from it",
+		"a runecrafting cape"
+	],
+	"values": [
+		"runes and the art of runecrafting",
+		"careful research: no jumping to conclusions",
+		"a sale, politely made",
+		"keeping knowledge out of the wrong hands"
+	],
+	"measuresBy": [
+		"runes and what they'll do",
+		"the old Wizards' Tower and everything lost when it burned",
+		"Sedridor's opinion"
+	],
+	"talksAbout": [
+		"runes for sale, and who might want them (char.aubury.shop, char.aubury.stock, char.aubury.pitch, char.aubury.passion)",
+		"runecrafting's history (char.aubury.lost_art, char.aubury.tower_burnt)",
+		"Sedridor and the research (char.aubury.sedridor, char.aubury.research, char.aubury.code)",
+		"the essence mine and buying back runes (char.aubury.teleport, char.aubury.buys_runes)",
+		"his friend Reldo and his books (char.aubury.reldo)",
+		"tea (char.aubury.tea)",
+		"the runecrafting cape (char.aubury.cape)"
+	],
+	"address": "Opens with the pitch rather than a title (\"Do you want to buy some runes?\"); \"adventurer\" when grateful (\"My gratitude to you adventurer\").",
+	"grammar": [
+		"opens with a question that's also a sales pitch",
+		"excited half-thoughts he reins in: \"I think we might just... No, no\"",
+		"polite and a touch fussy; mild exasperation (\"Honestly.\")"
+	],
+	"rhythm": "Shopkeeper patter, eager but careful: gets carried away about runes, then checks himself and goes back to selling.",
+	"canon": [
+		"\"Do you want to buy some runes?\" (Transcript:Aubury)",
+		"\"Well, if you find someone who does want runes, please send them my way.\" (Transcript:Aubury)",
+		"\"No, no, I'm getting ahead of myself.\" (Transcript:Rune Mysteries)",
+		"\"Before you leave, why not have a cup of tea?\" (Transcript:Rune Mysteries)",
+		"\"Senventior Disthine Molenko!\" (Transcript:Aubury, after Rune Mysteries)"
+	],
+	"neverSay": [
+		"the essence mine teleport or its incantation as working, before Rune Mysteries is finished",
+		"the lost incantation or Sedridor's package before Rune Mysteries is started",
+		"that he is a great wizard: he's a runecrafting expert and a shopkeeper",
+		"the Abyss, Zamorak's mages or other runecraft lore the sources here don't give him",
+		"Varrock street slang like \"guv\": the game never has him use it",
+		"rude or pushy selling: he's polite even when refused"
+	],
+	"states": [
+		{"id": "always", "quests": {}},
+		{"id": "before_rune_mysteries", "quests": {"RUNE_MYSTERIES": "NOT_STARTED"}},
+		{"id": "during_rune_mysteries", "quests": {"RUNE_MYSTERIES": "IN_PROGRESS"}},
+		{"id": "after_rune_mysteries", "quests": {"RUNE_MYSTERIES": "FINISHED"}}
+	]
+}

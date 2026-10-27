@@ -2258,6 +2258,76 @@
 			"estimated": true,
 			"note": "https://oldschool.runescape.wiki/w/Banker_(Bank_boat) {{Map|x=2279|y=2544}}; Bank_Crab 2281,2545",
 			"nameOnly": true
+		},
+		{
+			"id": "chambers_of_xeric",
+			"name": "Chambers of Xeric",
+			"boxes": [
+				[
+					3200,
+					5120,
+					3455,
+					5759
+				]
+			],
+			"estimated": true,
+			"note": "Raid instance, in template coordinates (fromLocalInstance); the wiki gives no map for its rooms, so this is the 4x10 map regions around the Great Olm's (12889)"
+		},
+		{
+			"id": "theatre_of_blood",
+			"name": "Theatre of Blood",
+			"boxes": [
+				[
+					3136,
+					4224,
+					3391,
+					4479
+				]
+			],
+			"estimated": true,
+			"note": "Raid instance, in template coordinates: the map regions of the Maiden (12613), Bloat (13125), Nylocas (13122), Sotetseg (13123, 13379), Xarpus (12612) and Verzik (12611). The Last King of the Yarasa's wiki polygon (3136-3200, 4352-4416) sits inside it"
+		},
+		{
+			"id": "tombs_of_amascut",
+			"name": "Tombs of Amascut",
+			"boxes": [
+				[
+					3520,
+					5120,
+					3967,
+					5471
+				]
+			],
+			"estimated": true,
+			"note": "Raid instance, in template coordinates. Wiki pins: Helpful Spirit 3547,5157; Osmumten 3680,5144; the paths 3539-3562,5146-5155; Kephri 3551,5409; Zebak 3921,5408; the Wardens 3794-3823,5154"
+		},
+		{
+			"id": "fractured_archive",
+			"name": "Fractured Archive",
+			"boxes": [
+				[
+					4096,
+					5504,
+					4159,
+					5823
+				]
+			],
+			"estimated": true,
+			"note": "The lobby and the raid's rooms: map regions 16470-16474. The wiki's pins put the lobby's NPCs at 4110-4138, 5532-5585, the Blade's vault at 4127, 5672 and the reward chests at 4128, 5792 (plane 1). The wiki doesn't say whether the rooms are instanced"
+		},
+		{
+			"id": "fractured_archive_raid",
+			"name": "Fractured Archive",
+			"boxes": [
+				[
+					4096,
+					5568,
+					4159,
+					5823
+				]
+			],
+			"estimated": true,
+			"note": "The raid itself, past the lobby: map regions 16471-16474. The wiki has no pins in the raid's rooms but these two: the Blade's vault at 4127, 5672 and the reward chests at 4128, 5792 (plane 1). Every lobby NPC's pin is in 16470, below it"
 		}
 	]
 }

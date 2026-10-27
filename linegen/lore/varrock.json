@@ -1,0 +1,554 @@
+{"facts": [
+	{
+		"id": "varrock.capital",
+		"says": "Varrock is the capital of Misthalin and the biggest city most people will ever see.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock",
+		"canon": "wiki",
+		"knownIn": ["everywhere"],
+		"gate": null
+	},
+	{
+		"id": "varrock.avarrocka",
+		"says": "The city began as a camp called Avarrocka, pitched by a tribe who found the boy Arrav and took him for a good omen.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_Museum",
+		"canon": "in-game",
+		"knownIn": ["varrock", "barbarian_village", "grand_exchange"],
+		"gate": null
+	},
+	{
+		"id": "varrock.arrav_hero",
+		"says": "The museum calls Arrav the best-known hero of the Fourth Age, and there are plenty of legends about him.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_Museum",
+		"canon": "in-game",
+		"knownIn": ["varrock", "grand_exchange"],
+		"gate": null
+	},
+	{
+		"id": "varrock.king_roald",
+		"says": "King Roald rules Misthalin from Varrock Palace, and Queen Ellamaria lives there with him.",
+		"source": "https://oldschool.runescape.wiki/w/King_Roald",
+		"canon": "in-game",
+		"knownIn": ["varrock", "lumbridge", "draynor", "edgeville", "grand_exchange"],
+		"gate": null
+	},
+	{
+		"id": "varrock.roald_grumbles",
+		"says": "Some townsfolk grumble that the king isn't much good and that they could do with a new one.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Man",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.roald_edgeville",
+		"says": "King Roald rebuilt a ruin in the north-west that people called Ghost Town and renamed it Edgeville.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_Museum",
+		"canon": "in-game",
+		"knownIn": ["varrock", "edgeville"],
+		"gate": null
+	},
+	{
+		"id": "varrock.palace",
+		"says": "The palace is the largest building in the city, with barracks for the guard, kitchens, a library and the Queen's garden.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_Palace",
+		"canon": "wiki",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.palace_bear",
+		"says": "A grizzly bear is kept in a cage in the north-east corner of the palace grounds.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_Palace",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.guards",
+		"says": "Guards stand at every gate into Varrock and keep quarters along the city walls.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.guard_turnover",
+		"says": "The city loses guards so quickly that even their sergeant can't keep track of the new faces.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Children_of_the_Sun",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.captain_rovin",
+		"says": "Captain Rovin heads the palace guard, takes his job very seriously, and will only take orders from the king.",
+		"source": "https://oldschool.runescape.wiki/w/Demon_Slayer",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.pillory",
+		"says": "There's a pillory behind the general store where wrongdoers are locked up.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.thieves",
+		"says": "Muggers and thieves work Varrock's streets, and one thief loiters watching the fancy house by the south gate.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.dark_wizards",
+		"says": "Dark wizards hang about the stone circle just south of the city, on the road to Lumbridge, and set on weaker travellers.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock", "lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "varrock.wilderness_north",
+		"says": "The Wilderness starts not far north of the city, just beyond Edgeville's ditch, which is why so many armed adventurers pass through.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock",
+		"canon": "wiki",
+		"knownIn": ["varrock", "edgeville", "grand_exchange"],
+		"gate": null
+	},
+	{
+		"id": "varrock.square",
+		"says": "Varrock Square in the middle of town is where most of the shops are, with five stalls in the square itself.",
+		"source": "https://oldschool.runescape.wiki/w/Baraek",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.baraek",
+		"says": "Baraek runs the fur stall in the square, and he'll only haggle so far because he has a family to feed.",
+		"source": "https://oldschool.runescape.wiki/w/Baraek",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.herald",
+		"says": "Benny sells the Varrock Herald in the square for fifty coins and promises interviews and scandal in every edition.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Benny",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.tea_stall",
+		"says": "The tea stall south-east of the east bank sells a cup for ten coins, and the seller shouts if you touch the cups on display.",
+		"source": "https://oldschool.runescape.wiki/w/Tea_seller",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.armour_weapon_shops",
+		"says": "Horvik sells platebodies and chainmail, Lowe sells bows and arrows, Zaff sells staves, and the swordshop sells daggers and swords.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.thessalia",
+		"says": "Thessalia's shop sells robes, capes, gloves and boots, and she'll change how you're dressed for nothing.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.hair_salon",
+		"says": "Emma runs the hair salon north of the museum, with her shy sister Suzie and their parrot Rio.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_hair_salon",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.apothecary",
+		"says": "The apothecary in the south-west of the city mixes strength and energy potions if you bring him what he needs.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.aubury",
+		"says": "Aubury keeps the rune shop near the east bank and sells most sorts of rune, chaos and death runes included.",
+		"source": "https://oldschool.runescape.wiki/w/Aubury",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.grand_exchange",
+		"says": "The Grand Exchange, just north-west of the palace, is where the whole world comes to buy and sell, and it's the busiest place there is.",
+		"source": "https://oldschool.runescape.wiki/w/Grand_Exchange",
+		"canon": "wiki",
+		"knownIn": ["everywhere"],
+		"gate": null
+	},
+	{
+		"id": "varrock.museum",
+		"says": "The museum east of the palace keeps the history of Gielinor, run by the curator Haig Halen, with a historian who swaps rewards for adventurers' stories.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_Museum",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.museum_salve",
+		"says": "The museum tells how seven priestly warriors drove evil back into Morytania and Saradomin blessed the River Salve to keep it there.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_Museum",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.church",
+		"says": "Saradomin's church in the north-east of the city is draughty and shabby, and the two regulars sleep through in the pews.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_church",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.father_lawrence",
+		"says": "Father Lawrence, the priest at the church, is a religious man and a regular drinker.",
+		"source": "https://oldschool.runescape.wiki/w/Father_Lawrence",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.elsie_story",
+		"says": "Old Elsie knits upstairs in the church, and for a cup of tea she'll tell how the Wise Old Man, as a young lad, daubed Saradominist boasts on the Zamorakian chapel.",
+		"source": "https://oldschool.runescape.wiki/w/Elsie",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.sewers",
+		"says": "Under the city are big sewers, reached by a manhole east of the palace, full of rats and moss giants, with a giant rat king called Scurrius.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_Sewers",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.champions_guild",
+		"says": "The Champions' Guild south of the city only lets in adventurers who've made a name for themselves, and sells rune armour upstairs.",
+		"source": "https://oldschool.runescape.wiki/w/Champions'_Guild",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.evil_chicken",
+		"says": "Among the hens in the Champions' Guild yard lives a very nasty chicken.",
+		"source": "https://oldschool.runescape.wiki/w/Champions'_Guild",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.cooks_guild",
+		"says": "The Cooks' Guild just west of the city is only for proper cooks, and it has its own pie shop.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.inns",
+		"says": "The Blue Moon Inn is the city's favourite pub; the Jolly Boar sits outside the walls to the north-east, and hardly anyone knows the Dancing Donkey.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock",
+		"canon": "wiki",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.aris",
+		"says": "Aris is an old fortune-teller with a tent by the square who will read your future for a coin.",
+		"source": "https://oldschool.runescape.wiki/w/Aris",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.aris_age",
+		"says": "Ask Aris her age and she tells you to count the stool legs in the Blue Moon Inn and multiply by seven.",
+		"source": "https://oldschool.runescape.wiki/w/Aris",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.wally",
+		"says": "About a hundred and fifty years ago a hero called Wally beat the demon Delrith with the sword Silverlight and sealed him in the stone circle.",
+		"source": "https://oldschool.runescape.wiki/w/Delrith",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.sir_prysin",
+		"says": "Sir Prysin, one of the king's knights at the palace, is Wally's great-grandson.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Prysin",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.lumbridge",
+		"says": "Lumbridge, down the road to the south, is where fresh new adventurers turn up, and it's named for its bridge over the River Lum.",
+		"source": "https://oldschool.runescape.wiki/w/Lumbridge",
+		"canon": "in-game",
+		"knownIn": ["varrock", "lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "varrock.falador",
+		"says": "Falador, the White Knights' city and capital of Asgarnia, is a big place, though a little smaller than Varrock.",
+		"source": "https://oldschool.runescape.wiki/w/Falador",
+		"canon": "wiki",
+		"knownIn": ["varrock", "falador"],
+		"gate": null
+	},
+	{
+		"id": "varrock.falador_knights",
+		"says": "A museum display says the White Knights took over Falador when its old king fell ill, and they have been at war with the Black Knights ever since.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_Museum",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.charlie",
+		"says": "Charlie the Tramp hangs about the city asking passers-by for spare change.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Charlie_the_Tramp",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.gertrude",
+		"says": "Gertrude, a busy mother with four sons and a lot of cats, lives just west of the city, south of the Cooks' Guild.",
+		"source": "https://oldschool.runescape.wiki/w/Gertrude",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.juliet_mansion",
+		"says": "Juliet lives in the Leptoc mansion just outside the western wall, by the west bank, and often stands on its balcony.",
+		"source": "https://oldschool.runescape.wiki/w/Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.romeo",
+		"says": "Romeo looks rather dense and soppy, wanders all over town, and will start talking to strangers without being asked.",
+		"source": "https://oldschool.runescape.wiki/w/Romeo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.romeo_pining",
+		"says": "Romeo is desperately in love with Juliet and hangs about the square pining for her.",
+		"source": "https://oldschool.runescape.wiki/w/Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ROMEO__JULIET", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "varrock.juliet_father",
+		"says": "Juliet's father, Draul Leptoc, an angry-looking lord, won't hear of her marrying Romeo.",
+		"source": "https://oldschool.runescape.wiki/w/Draul_Leptoc",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ROMEO__JULIET", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "varrock.juliet_potion",
+		"says": "Juliet drank a potion from the apothecary to look dead, so that Romeo could fetch her from the crypt.",
+		"source": "https://oldschool.runescape.wiki/w/Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ROMEO__JULIET", "states": ["FINISHED"]}
+	},
+	{
+		"id": "varrock.romeo_phillipa",
+		"says": "In the crypt Romeo fell for Juliet's cousin Phillipa instead, still thinks Juliet is dead, and Juliet is thoroughly fed up with him.",
+		"source": "https://oldschool.runescape.wiki/w/Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ROMEO__JULIET", "states": ["FINISHED"]}
+	},
+	{
+		"id": "varrock.delrith_returning",
+		"says": "Aris has foreseen that dark wizards are summoning the demon Delrith again, at the stone circle south of the city.",
+		"source": "https://oldschool.runescape.wiki/w/Demon_Slayer",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEMON_SLAYER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "varrock.silverlight_box",
+		"says": "Sir Prysin keeps Silverlight locked in a box that needs three keys, one his, one Captain Rovin's and one held by a wizard.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Prysin",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEMON_SLAYER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "varrock.delrith_sealed",
+		"says": "An adventurer took up Silverlight, beat the demon Delrith at the stone circle and sealed him away again.",
+		"source": "https://oldschool.runescape.wiki/w/Delrith",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEMON_SLAYER", "states": ["FINISHED"]}
+	},
+	{
+		"id": "varrock.museum_silverlight",
+		"says": "The museum's copy of Silverlight now has a card saying the sword was recently used to drive off Delrith once more.",
+		"source": "https://oldschool.runescape.wiki/w/Varrock_Museum",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEMON_SLAYER", "states": ["FINISHED"]}
+	},
+	{
+		"id": "varrock.fluffs_lost",
+		"says": "Gertrude has lost her cat Fluffs and wants someone to find her.",
+		"source": "https://oldschool.runescape.wiki/w/Gertrude's_Cat",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "GERTRUDES_CAT", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "varrock.gertrude_boys",
+		"says": "Gertrude's boys Shilop and Wilough, who play about the square, were the last to see Fluffs, and they want paying before they'll say where.",
+		"source": "https://oldschool.runescape.wiki/w/Gertrude's_Cat",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "GERTRUDES_CAT", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "varrock.fluffs_found",
+		"says": "Fluffs turned up in the Lumber Yard north-east of the city with a kitten, and both went home to Gertrude.",
+		"source": "https://oldschool.runescape.wiki/w/Gertrude's_Cat",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "GERTRUDES_CAT", "states": ["FINISHED"]}
+	},
+	{
+		"id": "varrock.gertrude_kittens",
+		"says": "Gertrude now has kittens to spare, and sells them to people who'll raise them.",
+		"source": "https://oldschool.runescape.wiki/w/Gertrude",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "GERTRUDES_CAT", "states": ["FINISHED"]}
+	},
+	{
+		"id": "varrock.arrav_thrall",
+		"says": "The necromancer Zemouregal raised Arrav, Avarrocka's old hero, from the dead and keeps him as his servant.",
+		"source": "https://oldschool.runescape.wiki/w/Arrav",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "THE_CURSE_OF_ARRAV", "states": ["FINISHED"]}
+	},
+	{
+		"id": "varrock.arrav_heart",
+		"says": "An adventurer broke into Zemouregal's vault, fought off Arrav himself, and got away with Arrav's heart, still beating.",
+		"source": "https://oldschool.runescape.wiki/w/The_Curse_of_Arrav",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "THE_CURSE_OF_ARRAV", "states": ["FINISHED"]}
+	},
+	{
+		"id": "varrock.arrav_not_free",
+		"says": "Even with his heart back, Arrav isn't free of the necromancer yet, and the explorer Elias White is still looking for a way.",
+		"source": "https://oldschool.runescape.wiki/w/The_Curse_of_Arrav",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "THE_CURSE_OF_ARRAV", "states": ["FINISHED"]}
+	},
+	{
+		"id": "varrock.varlamore_sun",
+		"says": "Varlamore, the Shining Kingdom far across the western sea, is ruled by a Sun Queen, and its people worship the sun and the moon.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Children_of_the_Sun",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.bards_blue_moon",
+		"says": "Some bards passing through stayed a night at the Blue Moon Inn and talked for hours about Varlamore.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Children_of_the_Sun",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "varrock.delegation_coming",
+		"says": "A delegation from Varlamore is due at the palace to sign a treaty with King Roald, and the square is waiting to see them.",
+		"source": "https://oldschool.runescape.wiki/w/Children_of_the_Sun",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "CHILDREN_OF_THE_SUN", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "varrock.varlamore_shut",
+		"says": "Varlamore has kept itself shut off for hundreds of years, letting hardly anyone in or out, and is only now opening for travel and trade.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Children_of_the_Sun",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "CHILDREN_OF_THE_SUN", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "varrock.alina_noah",
+		"says": "Alina in the square can't wait to visit Varlamore, while her friend Noah reckons it sounds like a prison and means to stay put.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Children_of_the_Sun",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "CHILDREN_OF_THE_SUN", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "varrock.bandit_guards",
+		"says": "Four bandits dressed as city guards were caught in the square before they could attack the Varlamore delegation.",
+		"source": "https://oldschool.runescape.wiki/w/Children_of_the_Sun",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "CHILDREN_OF_THE_SUN", "states": ["FINISHED"]}
+	},
+	{
+		"id": "varrock.teokan_target",
+		"says": "The bandits had been paid to kill Servius, the Varlamore high priest, by someone who didn't look local.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Children_of_the_Sun",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "CHILDREN_OF_THE_SUN", "states": ["FINISHED"]}
+	},
+	{
+		"id": "varrock.prince_roof",
+		"says": "Prince Itzla of Varlamore got bored of the talks and questioned one of the bandits himself, in the cell on the palace roof.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Children_of_the_Sun",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "CHILDREN_OF_THE_SUN", "states": ["FINISHED"]}
+	}
+]}

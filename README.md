@@ -85,3 +85,22 @@ place talks in `speech.json`. Read `TONE.md` before writing a word, `WRITING_LIN
 `./gradlew test` checks every line against the rules (length, no numbers, no swearing, no quest
 names, everything resolves) and writes `build/render.tsv`, a sample of what real people in real
 places actually say, for reading the way a player would hear it.
+
+## Changelog
+
+### 26 October 2026
+
+- **The Fractured Archive.** General Montoya, the Record Keeper, his apprentice, the banker, the
+  builders, the druids and the Temple Knights have things of their own to say, before and after the
+  miniquest, and it's the Archive four times in five. Inside the raid, nobody but the alliance's own
+  says a word, anyone with calls of their own is left to them, and no boss ever speaks.
+- **The Archive's rewards.** The Obligator, the Ascension crossbows, Zorya's tome, the rondache,
+  the living record and Orion all get noticed: in the lobby by people who know where they came
+  from, and everywhere else by people who don't.
+- **Named people say their own lines.** Forty-odd people, from Hans to King Arthur, talk about their
+  own lives, and what they say changes as you get further into their stories.
+- **No repeats.** Nobody says a line you've heard in the last month; with nothing fresh, they keep
+  quiet.
+- **Quiet raids.** Nobody chats in the Chambers of Xeric, the Theatre of Blood or the Tombs of
+  Amascut, and Osmumten has been sealed away too long to have any news.
+- No closers after questions, and fewer lines that don't make sense heard cold.

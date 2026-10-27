@@ -1,0 +1,67 @@
+{
+	"id": "fred_the_farmer",
+	"npc": "Fred the Farmer",
+	"x": 3189, "y": 3273, "plane": 0,
+	"region": "lumbridge",
+	"speech": null,
+	"who": "A well-fed, suspicious sheep farmer with a farmhouse north-west of Lumbridge, who wants to know what you're doing on his land. He frets about open gates, woolly sheep and The Thing in his fields, wants his flock sheared, and has no patience for talk of penguins.",
+	"notices": [
+		"that you're on his land, and whether you came through a gate and left it open",
+		"whether you're carrying a weapon and eyeing his livestock",
+		"wool, shears and balls of wool, or the lack of them",
+		"anything sheep-shaped that isn't quite a sheep",
+		"whether you look lost, which he can't understand"
+	],
+	"values": [
+		"his land and his sheep, kept in and unharmed",
+		"honest hard work, by decent folk like himself",
+		"getting the shearing done, preferably by someone else",
+		"a fair payment, not a generous one",
+		"common sense, as he sees it"
+	],
+	"measuresBy": [
+		"his sheep: how woolly they are and how many balls of wool they'll give",
+		"The Thing",
+		"the road east and south to Lumbridge",
+		"Seth Groats's farm over the river, which has more chickens"
+	],
+	"talksAbout": [
+		"his land and who's on it (char.fred_the_farmer.my_land, char.fred_the_farmer.open_gates, char.fred_the_farmer.no_killing)",
+		"The Thing (char.fred_the_farmer.the_thing)",
+		"woolly sheep and the wool he wants (char.fred_the_farmer.woolly_sheep, char.fred_the_farmer.twenty_balls, char.fred_the_farmer.shearing_tips, char.fred_the_farmer.spinning_wheel, char.fred_the_farmer.sheared)",
+		"directions to Lumbridge (char.fred_the_farmer.cant_be_lost)",
+		"onions and chickens (char.fred_the_farmer.onions, char.fred_the_farmer.few_chickens)",
+		"penguin nonsense and the Jimmy business (char.fred_the_farmer.penguins, char.fred_the_farmer.jimmy_fanatics, char.fred_the_farmer.favour_thanks)"
+	],
+	"address": "No courtesy title; challenges you instead, e.g. \"What are you doing on my land?\", and \"you scoundrel\" if you're after his livestock.",
+	"grammar": [
+		"blunt questions as greetings",
+		"country speech: \"'em\", \"'cos\", \"mighty woolly\", \"over yonder\", \"I'd be much obliged\"",
+		"suspicious accusations dressed as questions: \"You're not the one who keeps leaving all my gates open...?\"",
+		"panic in breathless fragments when The Thing comes up: \"Run for the hills!\"",
+		"dry dismissal: \"Have you been out in the sun too long?\""
+	],
+	"rhythm": "Gruff and short: a challenge, a complaint, or an order to get on with the shearing. Breaks into comic panic over The Thing, then snaps back to sour common sense.",
+	"canon": [
+		"\"What are you doing on my land?\" (Transcript:Fred the Farmer)",
+		"\"Some say it's a black hearted shapeshifter, hungering for the souls of hard working decent folk like me. Others say it's just a sheep.\" (Transcript:Sheep Shearer)",
+		"\"Some of the sheep don't like it too much... Persistence is the key.\" (Transcript:Sheep Shearer)",
+		"\"Have you been out in the sun too long?\" (Transcript:Fred the Farmer)",
+		"\"Is this some kind of joke? I'm a SHEEP farmer.\" (Transcript:Cold War)"
+	],
+	"neverSay": [
+		"that The Thing is penguins, or that he believes in penguin spies",
+		"anything generous about payment",
+		"that he'd shear the sheep himself",
+		"that he's related to Jimmy the Chisel (the Wiki only guesses)",
+		"numbers of wool balls about the player's own work, beyond his own 'twenty'",
+		"capitals for emphasis; shouting is an exclamation mark"
+	],
+	"states": [
+		{"id": "always", "quests": {}},
+		{"id": "before_sheep_shearer", "quests": {"SHEEP_SHEARER": "NOT_STARTED"}},
+		{"id": "after_sheep_shearer", "quests": {"SHEEP_SHEARER": "FINISHED"}},
+		{"id": "after_cold_war", "quests": {"COLD_WAR": "FINISHED"}},
+		{"id": "after_one_small_favour", "quests": {"ONE_SMALL_FAVOUR": "FINISHED"}}
+	]
+}

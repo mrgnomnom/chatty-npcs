@@ -1,0 +1,113 @@
+{
+	"voices": {
+		"passerby": {
+			"npc": "Man",
+			"x": 3215,
+			"y": 3425,
+			"plane": 0,
+			"speech": null,
+			"key": null,
+			"quests": {},
+			"who": "Anyone in the street who sees the gear and knows nothing of the archive: lines go in the topic's shared remark, compliment and insult."
+		},
+		"alliance": {
+			"npc": "Temple Knight",
+			"x": 4125,
+			"y": 5560,
+			"plane": 0,
+			"speech": null,
+			"key": "alliance",
+			"quests": {
+				"WHILE_GUTHIX_SLEEPS": "FINISHED",
+				"THE_FRACTURED_ARCHIVE": "FINISHED"
+			},
+			"who": "Anyone of the alliance in the archive's lobby, who knows where the gear came from: lines go under alliance/<tone>."
+		}
+	},
+	"topics": [
+		{
+			"id": "obligator",
+			"priority": 95,
+			"lean": "compliment",
+			"item": {
+				"slots": [
+					"WEAPON"
+				],
+				"pattern": "^Obligator",
+				"label": "mace"
+			},
+			"worn": {
+				"WEAPON": "Obligator"
+			}
+		},
+		{
+			"id": "ascension_crossbows",
+			"priority": 85,
+			"lean": "compliment",
+			"item": {
+				"slots": [
+					"WEAPON"
+				],
+				"pattern": "^Ascension crossbows$",
+				"label": "crossbows"
+			},
+			"worn": {
+				"WEAPON": "Ascension crossbows"
+			}
+		},
+		{
+			"id": "zoryas_tome",
+			"priority": 85,
+			"lean": "compliment",
+			"item": {
+				"slots": [
+					"WEAPON"
+				],
+				"pattern": "^Zorya's tome",
+				"label": "tome"
+			},
+			"worn": {
+				"WEAPON": "Zorya's tome"
+			}
+		},
+		{
+			"id": "rondache",
+			"priority": 72,
+			"lean": "compliment",
+			"item": {
+				"slots": [
+					"SHIELD"
+				],
+				"pattern": "^Rondache$",
+				"label": "shield"
+			},
+			"worn": {
+				"SHIELD": "Rondache"
+			}
+		},
+		{
+			"id": "living_record",
+			"priority": 85,
+			"lean": "compliment",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Living record",
+				"label": "cape"
+			},
+			"worn": {
+				"CAPE": "Living record (tier 1)"
+			}
+		},
+		{
+			"id": "pet_orion",
+			"priority": 72,
+			"lean": "remark",
+			"pet": {
+				"pattern": "^Orion$"
+			},
+			"follower": "Orion"
+		}
+	]
+}

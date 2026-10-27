@@ -4,6 +4,10 @@ import com.google.gson.Gson;
 import com.google.inject.Provides;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.io.Reader;
+import java.io.Writer;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -11,6 +15,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 import javax.inject.Inject;
 import javax.swing.SwingUtilities;
@@ -32,6 +39,7 @@ import net.runelite.api.events.GameTick;
 import net.runelite.api.events.NpcChanged;
 import net.runelite.api.events.NpcDespawned;
 import net.runelite.api.events.NpcSpawned;
+import net.runelite.api.events.OverheadTextChanged;
 import net.runelite.api.events.VarbitChanged;
 import net.runelite.api.gameval.InterfaceID;
 import net.runelite.api.gameval.VarPlayerID;
@@ -45,11 +53,13 @@ import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.ClientToolbar;
 import net.runelite.client.ui.NavigationButton;
 import net.runelite.client.util.ColorUtil;
+import net.runelite.client.util.Filepath;
 import net.runelite.client.util.ImageUtil;
 
 @Slf4j
 @PluginDescriptor(
 	name = "Chatty NPCs",
+	internalName = "chatty-npcs",
 	description = "The locals pass comment on your gear, your pets, your deeds and your haircut as you walk by. Terribly British about it.",
 	tags = {"npc", "chat", "overhead", "banter", "british", "fun", "immersion", "quests", "pets", "gossip"}
 )
@@ -66,6 +76,7 @@ public class ChattyNpcsPlugin extends Plugin
 	 * the character every tick
 	 */
 	private static final long RETRY_MILLIS = 3000;
+	private static final long SAVE_MINUTES = 5;
 	/**
 	 * The game's own public chat colours, for players who haven't picked their own
 	 */
@@ -110,6 +121,9 @@ public class ChattyNpcsPlugin extends Plugin
 	@Inject
 	private ConfigManager configManager;
 
+	@Inject
+	private ScheduledExecutorService executor;
+
 	// Only touched on the client thread
 	/**
 	 * NPCs in the scene that could plausibly talk to you: Talk-to option, not attackable, not a pet.
@@ -117,10 +131,30 @@ public class ChattyNpcsPlugin extends Plugin
 	 */
 	private final Set<NPC> chattyNpcs = new HashSet<>();
 	private final Map<Integer, Long> npcLastSpoke = new HashMap<>();
+	/**
+	 * People in an instance who have said something of their own, like the Fractured Archive's
+	 * quartermaster calling out his supplies: the game gives them their lines, so they're left be
+	 */
+	private final Set<NPC> ownVoices = new HashSet<>();
+	/**
+	 * The last line this plugin put over each head, to tell it apart from the game's own
+	 */
+	private final Map<NPC, String> saidByUs = new HashMap<>();
 	private final Random random = new Random();
 	private long lastComment;
 	private long nextAttempt;
 	private CharacterReader.Snapshot cachedSnapshot;
+	/**
+	 * What this account has heard, and which account that is: -1 until someone's logged in
+	 */
+	private HeardLines heard;
+	private long heardFor = -1;
+	/**
+	 * What's heard in debug mode, which talks every few seconds: forgotten afterwards, so testing
+	 * doesn't use up the lines the account would have heard
+	 */
+	private HeardLines debugHeard = new HeardLines();
+	private ScheduledFuture<?> saveTask;
 
 	// Set on the client thread, but read by the config handler on the Swing thread
 	private volatile ChatterData data;
@@ -132,15 +166,21 @@ public class ChattyNpcsPlugin extends Plugin
 		ChatterData loaded = ChatterData.load(gson);
 		LinePicker loadedPicker = new LinePicker(loaded, random);
 		showDebugTools(config.debugMode());
+		saveTask = executor.scheduleWithFixedDelay(() -> clientThread.invoke(this::saveHeard), SAVE_MINUTES, SAVE_MINUTES, TimeUnit.MINUTES);
 
 		// startUp runs on the Swing thread, and everything below belongs to the client thread
 		clientThread.invoke(() ->
 		{
 			chattyNpcs.clear();
 			npcLastSpoke.clear();
+			ownVoices.clear();
+			saidByUs.clear();
 			lastComment = 0;
 			nextAttempt = 0;
 			cachedTick = -1;
+			heard = null;
+			heardFor = -1;
+			debugHeard = new HeardLines();
 			characterReader.questsChanged();
 			data = loaded;
 			picker = loadedPicker;
@@ -159,14 +199,96 @@ public class ChattyNpcsPlugin extends Plugin
 	protected void shutDown() throws Exception
 	{
 		showDebugTools(false);
+		if (saveTask != null)
+		{
+			saveTask.cancel(false);
+			saveTask = null;
+		}
 		clientThread.invoke(() ->
 		{
+			saveHeard();
+			heard = null;
+			heardFor = -1;
 			chattyNpcs.clear();
 			npcLastSpoke.clear();
+			ownVoices.clear();
+			saidByUs.clear();
 			cachedSnapshot = null;
 			picker = null;
 			data = null;
 		});
+	}
+
+	/**
+	 * Starts remembering for this account, and fetches what it heard in earlier sessions
+	 */
+	private void listenAs(long account)
+	{
+		if (account == -1 || account == heardFor)
+		{
+			return;
+		}
+		HeardLines listening = new HeardLines();
+		heard = listening;
+		heardFor = account;
+		executor.execute(() ->
+		{
+			try
+			{
+				Filepath file = heardFile(account);
+				if (!file.exists())
+				{
+					return;
+				}
+				HeardLines.Saved saved;
+				try (Reader in = file.openReader())
+				{
+					saved = gson.fromJson(in, HeardLines.Saved.class);
+				}
+				clientThread.invoke(() -> listening.load(saved));
+			}
+			catch (IOException | RuntimeException e)
+			{
+				log.warn("Couldn't read which lines you've heard", e);
+			}
+		});
+	}
+
+	/**
+	 * Writes what's been heard to disk, if anything new has been
+	 */
+	private void saveHeard()
+	{
+		if (heard == null || heardFor == -1 || !heard.takeChanged())
+		{
+			return;
+		}
+		long account = heardFor;
+		String json = gson.toJson(heard.save(System.currentTimeMillis()));
+		executor.execute(() ->
+		{
+			try
+			{
+				Filepath file = heardFile(account);
+				Filepath part = file.getParent().joinSegment(file.getFileName() + ".part");
+				try (Writer out = part.openWriter())
+				{
+					out.write(json);
+				}
+				part.moveTo(file, StandardCopyOption.REPLACE_EXISTING);
+			}
+			catch (IOException | RuntimeException e)
+			{
+				log.warn("Couldn't save which lines you've heard", e);
+			}
+		});
+	}
+
+	private Filepath heardFile(long account) throws IOException
+	{
+		Filepath dir = getPluginDirectory().joinSegment("heard");
+		dir.createDirectories();
+		return dir.joinSegment(account + ".json");
 	}
 
 	@Provides
@@ -193,6 +315,23 @@ public class ChattyNpcsPlugin extends Plugin
 	{
 		chattyNpcs.remove(event.getNpc());
 		npcLastSpoke.remove(event.getNpc().getIndex());
+		ownVoices.remove(event.getNpc());
+		saidByUs.remove(event.getNpc());
+	}
+
+	@Subscribe
+	public void onOverheadTextChanged(OverheadTextChanged event)
+	{
+		if (!(event.getActor() instanceof NPC) || event.getOverheadText() == null)
+		{
+			return;
+		}
+		NPC npc = (NPC) event.getActor();
+		if (npc.getWorldView() != null && npc.getWorldView().isInstance() && !event.getOverheadText().equals(saidByUs.get(npc))
+			&& ownVoices.add(npc))
+		{
+			log.debug("{} has lines of their own, so is left be: {} [at {}]", npc.getName(), event.getOverheadText(), mapLocation(npc));
+		}
 	}
 
 	@Subscribe
@@ -202,9 +341,13 @@ public class ChattyNpcsPlugin extends Plugin
 		{
 			chattyNpcs.clear();
 			npcLastSpoke.clear();
+			ownVoices.clear();
+			saidByUs.clear();
 		}
 		if (event.getGameState() == GameState.LOGIN_SCREEN)
 		{
+			saveHeard();
+			heardFor = -1;
 			// The next login may be a different account. Quest points arriving as the next login
 			// syncs also marks quests changed, so region loads don't need to
 			characterReader.questsChanged();
@@ -232,6 +375,8 @@ public class ChattyNpcsPlugin extends Plugin
 		{
 			return;
 		}
+		listenAs(client.getAccountHash());
+		picker.listenWith(config.debugMode() || heard == null ? debugHeard : heard);
 
 		long now = System.currentTimeMillis();
 
@@ -421,8 +566,18 @@ public class ChattyNpcsPlugin extends Plugin
 				continue;
 			}
 
+			if (picker != null && picker.silent(npc.getName(), mapLocation(npc)))
+			{
+				continue;
+			}
+
+			if (ownVoices.contains(npc))
+			{
+				continue;
+			}
+
 			// Re-check, they might have become attackable since they spawned
-			if ((isChatty(npc) || isGuardOnWatch(npc) || isGoblinAtEase(npc)) && npc.getWorldLocation().distanceTo(myLocation) <= radius)
+			if ((isChatty(npc) || isGuardOnWatch(npc) || isGoblinAtEase(npc) || isAtEase(npc)) && npc.getWorldLocation().distanceTo(myLocation) <= radius)
 			{
 				nearby.add(npc);
 			}
@@ -445,8 +600,11 @@ public class ChattyNpcsPlugin extends Plugin
 			return false;
 		}
 
-		log.debug("{} ({}, {}) on {}: {}", npc.getName(), comment.getPersona(), comment.getTone(), comment.getTopicId(), comment.getText());
+		log.debug("{} ({}, {}) on {}: {} [at {}{}]", npc.getName(), comment.getPersona(), comment.getTone(), comment.getTopicId(), comment.getText(),
+			mapLocation(npc), npc.getWorldView() != null && npc.getWorldView().isInstance() ? ", instanced" : "");
 
+		// Before setting it, in case the game reports the change straight away
+		saidByUs.put(npc, comment.getText());
 		npc.setOverheadText(comment.getText());
 		npc.setOverheadCycle(overheadCycles(comment.getText()));
 		if (config.showInChat())
@@ -492,7 +650,7 @@ public class ChattyNpcsPlugin extends Plugin
 
 		// Guards wander in and out of town, so keep track of them all and check where they are later.
 		// Goblins too, since they mutter even when you could attack them.
-		if (isChatty(npc) || isGuard(npc) || isGoblin(npc))
+		if (isChatty(npc) || isGuard(npc) || isGoblin(npc) || isAtEase(npc))
 		{
 			chattyNpcs.add(npc);
 		}
@@ -607,6 +765,34 @@ public class ChattyNpcsPlugin extends Plugin
 	private static boolean isGoblinAtEase(NPC npc)
 	{
 		return isGoblin(npc) && npc.getInteracting() == null && npc.getHealthRatio() == -1;
+	}
+
+	/**
+	 * Someone whose persona talks without Talk-to or despite a combat level, as long as there's no
+	 * Attack option on them
+	 */
+	private boolean isAtEase(NPC npc)
+	{
+		LinePicker picker = this.picker;
+		NPCComposition composition = npc.getTransformedComposition();
+		if (picker == null || composition == null || composition.isFollower() || npc == client.getFollower())
+		{
+			return false;
+		}
+		String name = composition.getName();
+		String[] actions = composition.getActions();
+		if (name == null || name.isEmpty() || "null".equals(name) || actions == null)
+		{
+			return false;
+		}
+		for (String action : actions)
+		{
+			if ("Attack".equalsIgnoreCase(action))
+			{
+				return false;
+			}
+		}
+		return picker.atEase(name, mapLocation(npc));
 	}
 
 	private static boolean isGuard(NPC npc)

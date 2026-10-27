@@ -1,0 +1,1161 @@
+{"facts": [
+	{
+		"id": "char.king_roald.full_name",
+		"says": "The king's full name is Roald Remanis, third of that name, and he rules Misthalin from Varrock Palace.",
+		"source": "https://oldschool.runescape.wiki/w/King_Roald",
+		"canon": "in-game",
+		"knownIn": ["varrock", "grand_exchange"],
+		"gate": null
+	},
+	{
+		"id": "char.king_roald.queen",
+		"says": "Queen Ellamaria rules beside him; he calls her pumpkin and she calls him Rollie, and he does what she tells him.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Garden_of_Tranquillity",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.king_roald.busy",
+		"says": "He sends off anyone without important business, insisting he is very busy with a kingdom to run.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:King_Roald",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.king_roald.reldo_taught",
+		"says": "He had a pampered upbringing and learned to read from Reldo, the palace librarian.",
+		"source": "https://oldschool.runescape.wiki/w/King_Roald",
+		"canon": "wiki",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.king_roald.aeonisig",
+		"says": "His advisor Aeonisig Raispher, a stern Saradominist priest, stands beside him in the throne room.",
+		"source": "https://oldschool.runescape.wiki/w/Aeonisig_Raispher",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.king_roald.saradomin_salve",
+		"says": "He holds that Misthalin is Saradomin's kingdom and that the blessed River Salve keeps Morytania's vampyres out.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Priest_in_Peril",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.king_roald.no_reward",
+		"says": "He considers knowing you have helped your king to be reward enough, and says so without blushing.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Priest_in_Peril",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.king_roald.father_reward",
+		"says": "His father, Roald the Second, offered a big reward for the Shield of Arrav after the Phoenix Gang stole it, and Roald says the reward still stands.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Book_(Shield_of_Arrav)",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "SHIELD_OF_ARRAV", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.king_roald.paid_reward",
+		"says": "When the museum's certificate for the shield was finally brought to him, he paid out his father's old reward, amazed he had lived to see it claimed.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Shield_of_Arrav",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "SHIELD_OF_ARRAV", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_roald.drezel_silent",
+		"says": "He hasn't heard from Drezel, the priest who watches over the Salve at Paterdomus, for some days, and wants someone to look in on the old fellow.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Priest_in_Peril",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "PRIEST_IN_PERIL", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.king_roald.squires",
+		"says": "He would have sent one of the palace squires to Paterdomus, but they wanted paying for it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Priest_in_Peril",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "PRIEST_IN_PERIL", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.king_roald.dog_fury",
+		"says": "He called the adventurer who killed the temple's guard dog an imbecile, though the river has since been reblessed and Drezel set free.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Priest_in_Peril",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "PRIEST_IN_PERIL", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_roald.zamorakians_later",
+		"says": "He promises soldiers will deal with the Zamorakians at Paterdomus eventually, once he has balanced his other priorities.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:King_Roald",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "PRIEST_IN_PERIL", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_roald.hay_fever",
+		"says": "He has hay fever, says orchids bring him out in a rash and hates delphiniums, and was far from grateful for the queen's new garden.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Garden_of_Tranquillity",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "GARDEN_OF_TRANQUILLITY", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_roald.mercenary_protocol",
+		"says": "When werewolves took people from his side of the Salve he wanted to march on Morytania, but his advisor held him back over the Edicts of Guthix, so he allowed mercenaries to go instead.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Darkness_of_Hallowvale",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DARKNESS_OF_HALLOWVALE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_roald.edicts_tosh",
+		"says": "He privately thinks the Edicts of Guthix are tosh, but waits on the Church of Saradomin to finish studying them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Darkness_of_Hallowvale",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DARKNESS_OF_HALLOWVALE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_roald.morytania_friends",
+		"says": "Now the vampyre trouble is over he is delighted that Morytania wants to be friends, so long as it stays at a safe and healthy distance.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:King_Roald",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "THE_BLOOD_MOON_RISES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_roald.shield_dud",
+		"says": "When zombies overran the palace he was sure he'd be the one to wield the Shield of Arrav, and nothing at all happened when he held it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Defender_of_Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEFENDER_OF_VARROCK", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_roald.dragon_council",
+		"says": "When the dragons rose he called the rulers of the realms to his dining room, Chieftain Brundt of the Fremennik included, and sent his armies out with the fleets.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_II",
+		"canon": "in-game",
+		"knownIn": ["varrock", "grand_exchange"],
+		"gate": {"quest": "DRAGON_SLAYER_II", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.king_roald.varlamore_delegation",
+		"says": "He met the first delegation from Varlamore, Prince Itzla and the high priest Servius among them, by the fountain in Varrock Square.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Children_of_the_Sun",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "CHILDREN_OF_THE_SUN", "states": ["FINISHED"]}
+	},
+
+	{
+		"id": "char.reldo.librarian",
+		"says": "Reldo is the palace librarian, and says he'd be in the library reading even if he didn't work there.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.sharing",
+		"says": "He loves sharing what he learns with anyone who shows an interest.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.full_name",
+		"says": "The city census lists him as Reldo Trimmly.",
+		"source": "https://oldschool.runescape.wiki/w/Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.only_knowledge",
+		"says": "Ask him what he has to trade and he jokes that he deals only in knowledge, then admits he isn't the trading type.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.salary",
+		"says": "He says King Roald pays him generously enough that he can spare a few coins for a helpful stranger.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.taught_king",
+		"says": "He taught King Roald to read when the king was a boy.",
+		"source": "https://oldschool.runescape.wiki/w/King_Roald",
+		"canon": "wiki",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.aubury_friend",
+		"says": "His old friend Aubury, the rune seller, sends him runes in return for books.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.wise_old_man",
+		"says": "He is always delighted to hear from the Wise Old Man of Draynor Village, whose wisdom he rates very highly.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock", "draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.misplaces",
+		"says": "He is forever certain a book is around here somewhere without knowing quite where.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Shield_of_Arrav",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.shield_book",
+		"says": "The library holds A. R. Wright's history of the Shield of Arrav, which tells how the Phoenix Gang stole it from the museum and how the Black Arm Gang later split from them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Book_(Shield_of_Arrav)",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.gang_rumours",
+		"says": "He has heard that Baraek the fur trader has dealings with the Phoenix Gang, and that the Black Arm Gang works out of the south-west of the city.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Shield_of_Arrav",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "SHIELD_OF_ARRAV", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.reldo.shield_split",
+		"says": "The shield turned up split in two, half with each gang, and he sent the finder off to have it checked at the museum.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Shield_of_Arrav",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "SHIELD_OF_ARRAV", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.reldo.imcando",
+		"says": "He knows the Imcando dwarves were once the finest smiths in the world until the barbarian invasions all but wiped them out, and that they were said to love redberry pie.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.robert_the_strong",
+		"says": "His histories of the Fourth Age tell of Robert the Strong, a towering hero with a huge longbow and a panther called Odysseus, who fought the dragonkin.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.folk_tales",
+		"says": "He warns that old folk tales get exaggerated in the telling, but usually rest on something that really happened.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.census",
+		"says": "The library keeps census records going back to when the city was still called Avarrocka, though nothing older.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.goblin_book",
+		"says": "He filed a book on the ancient goblin tribes somewhere at the west end of the library.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.postie_pete",
+		"says": "Postie Pete sometimes drops in to ask after books he has ordered, and Reldo has to go and look for them.",
+		"source": "https://oldschool.runescape.wiki/w/Reldo",
+		"canon": "wiki",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.reldo.surok_guarded",
+		"says": "The Zamorakian mage Surok Magis, caught plotting against the king, is kept under guard in the palace library itself.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:What_Lies_Below",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "WHAT_LIES_BELOW", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.reldo.surok_escaped",
+		"says": "Surok slipped away during the zombie attack on the palace, and Reldo admits that locking a deadly mage in a library wasn't the best-thought-out plan.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Defender_of_Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEFENDER_OF_VARROCK", "states": ["FINISHED"]}
+	},
+
+	{
+		"id": "char.aris.fortune_teller",
+		"says": "Aris is a fortune-teller with a big tent beside Varrock Square, and she reads the future in a crystal ball.",
+		"source": "https://oldschool.runescape.wiki/w/Aris",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aris.full_name",
+		"says": "The city census lists her as Aris Maye.",
+		"source": "https://oldschool.runescape.wiki/w/Aris",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aris.palm_silver",
+		"says": "She wants her palm crossed with silver before she'll look into the swirling mists of her ball for you.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Demon_Slayer",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aris.age",
+		"says": "Nobody knows her age; ask her and she tells you to count the legs on the Blue Moon Inn's stools and multiply by seven.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aris",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aris.young_one",
+		"says": "She calls people young one, because in the scheme of things nearly everyone is young to her.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aris",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aris.knowing",
+		"says": "She knows things nobody has told her, and says that's simply what she is good at.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aris",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aris.answers_first",
+		"says": "She has a habit of answering a question before it has been asked, because she can tell the future.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aris",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aris.wilderness_warning",
+		"says": "She has been known to warn people that tonight is not their night in the Wilderness.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aris",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aris.guthix_blessing",
+		"says": "She sends people off on dangerous errands wishing that Guthix be with them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Demon_Slayer",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aris.wally",
+		"says": "She tells how the hero Wally trapped the demon Delrith in the stone circle south of the city with the sword Silverlight, long ago.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Demon_Slayer",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aris.wally_name",
+		"says": "She admits Wally isn't a very heroic name, which may be why history forgot him, though he was a very great hero.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Demon_Slayer",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aris.delrith_vision",
+		"says": "Her crystal ball has shown her the demon Delrith coming back, and she dearly hopes he didn't see her looking.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Demon_Slayer",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEMON_SLAYER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.aris.sorcerer",
+		"says": "She suspects an evil sorcerer is already working the rituals to summon Delrith at the stone circle.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Demon_Slayer",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEMON_SLAYER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.aris.prysin_sword",
+		"says": "She knows Silverlight passed down Wally's family and is now in the keeping of Sir Prysin at the palace.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Demon_Slayer",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEMON_SLAYER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.aris.hero_now",
+		"says": "Since Delrith was beaten she greets the one who did it as a hero, and calls it a good bit of demon-slaying.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aris",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEMON_SLAYER", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.aris.tempus_cessit",
+		"says": "At the Lumbridge banquet she stopped time in the hall with a spell called Tempus Cessit to hold off the Culinaromancer.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recipe_for_Disaster/Another_Cook%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["varrock", "lumbridge"],
+		"gate": {"quest": "RECIPE_FOR_DISASTER", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.aris.culinaromancer",
+		"says": "The Culinaromancer seemed to remember her from somewhere, and the sight of him gave her a terrible fright.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recipe_for_Disaster/Another_Cook%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["varrock", "lumbridge"],
+		"gate": {"quest": "RECIPE_FOR_DISASTER", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.aris.world_safe",
+		"says": "She tells anyone still muddled by all the time-stopping not to worry, since the world is safe again and that's what matters.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aris",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "RECIPE_FOR_DISASTER", "states": ["FINISHED"]}
+	},
+
+	{
+		"id": "char.aubury.shop",
+		"says": "Aubury runs the rune shop in the south-east of Varrock, close to the east bank.",
+		"source": "https://oldschool.runescape.wiki/w/Aubury",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aubury.passion",
+		"says": "Runes are his passion.",
+		"source": "https://oldschool.runescape.wiki/w/Aubury",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aubury.full_name",
+		"says": "The city census lists him as Layte Aubury.",
+		"source": "https://oldschool.runescape.wiki/w/Aubury",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aubury.stock",
+		"says": "He sells air, water, earth, fire, mind and body runes, with smaller stocks of chaos and death runes.",
+		"source": "https://oldschool.runescape.wiki/w/Aubury",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aubury.pitch",
+		"says": "He greets everyone by asking if they want to buy runes, and asks those who don't to send anyone who does his way.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aubury",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aubury.sedridor",
+		"says": "He is a close associate of Archmage Sedridor at the Wizards' Tower, who calls him not much of a wizard but an expert on runecrafting.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Rune_Mysteries",
+		"canon": "in-game",
+		"knownIn": ["varrock", "wizards_tower"],
+		"gate": null
+	},
+	{
+		"id": "char.aubury.reldo",
+		"says": "He sends runes to his old friend Reldo, the palace librarian, in return for books.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Reldo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aubury.tea",
+		"says": "He likes to offer visitors a cup of tea before they go.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Rune_Mysteries",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aubury.cape",
+		"says": "He sells the cape for those who have mastered runecrafting, and says it has been worked with every talisman so it opens every altar.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aubury",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.aubury.lost_art",
+		"says": "Runecrafting was a lost art until its rediscovery, which began the Fifth Age and led to the first Wizards' Tower.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Rune_Mysteries",
+		"canon": "in-game",
+		"knownIn": ["varrock", "wizards_tower"],
+		"gate": null
+	},
+	{
+		"id": "char.aubury.tower_burnt",
+		"says": "When the first Wizards' Tower burnt down, the incantation for reaching the hidden rune essence mine was lost with it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Rune_Mysteries",
+		"canon": "in-game",
+		"knownIn": ["varrock", "wizards_tower"],
+		"gate": {"quest": "RUNE_MYSTERIES", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.aubury.research",
+		"says": "He has been combining his own research with Sedridor's latest discovery in hope of recovering the lost incantation, and won't jump to conclusions yet.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Rune_Mysteries",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "RUNE_MYSTERIES", "states": ["IN_PROGRESS"]}
+	},
+	{
+		"id": "char.aubury.code",
+		"says": "He writes his research notes in code, so the wrong sort of person can't read them, and keeps duplicates.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Rune_Mysteries",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "RUNE_MYSTERIES", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.aubury.teleport",
+		"says": "Now the incantation has been found again, he teleports people to the rune essence mine, chanting Senventior Disthine Molenko.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aubury",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "RUNE_MYSTERIES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.aubury.buys_runes",
+		"says": "He will happily buy any runes people make from the essence they mine.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aubury",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "RUNE_MYSTERIES", "states": ["FINISHED"]}
+	},
+
+	{
+		"id": "char.haig_halen.curator",
+		"says": "Haig Halen is curator of the Varrock Museum and welcomes every visitor to the museum of Varrock.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Curator_Haig_Halen",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.haig_halen.treasures",
+		"says": "He insists the museum is full of treasures, and that it goes to great lengths to acquire any treasure it hears of.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Curator_Haig_Halen",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.haig_halen.baking",
+		"says": "He bakes chocolate cakes himself, and keeps a new gnome cocktail on hand for students who pass all their exams.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Curator_Haig_Halen",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.haig_halen.exams",
+		"says": "He stamps the letters that let students sit the Earth Sciences exams at the Digsite, and keeps their certificates safe for them.",
+		"source": "https://oldschool.runescape.wiki/w/Curator_Haig_Halen",
+		"canon": "in-game",
+		"knownIn": ["varrock", "digsite"],
+		"gate": null
+	},
+	{
+		"id": "char.haig_halen.medallion",
+		"says": "He'll hand over a curator's medallion for a great many rubies, a pile of runes and a digsite pendant, and takes part payment with no refunds.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Curator_Haig_Halen",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.haig_halen.salvage_relics",
+		"says": "The museum swaps lamps for strange relics salvaged from shipwrecks, though the inscriptions on them are rather macabre.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Curator_Haig_Halen",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.haig_halen.shield_search",
+		"says": "The museum has searched for years for the Shield of Arrav, its old prize exhibit, stolen by the Phoenix Gang.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Shield_of_Arrav",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "SHIELD_OF_ARRAV", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.haig_halen.half_certificates",
+		"says": "When half the shield came back, he wrote out half-certificates so that the two finders could join them and claim the king's reward.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Shield_of_Arrav",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "SHIELD_OF_ARRAV", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.haig_halen.island_found",
+		"says": "The museum has found an island north of Morytania that may be of great archaeological importance, and he is making the final preparations for a voyage.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Bone_Voyage",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "BONE_VOYAGE", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.haig_halen.barge",
+		"says": "Word from the Digsite is that the canal is dug and the barge needs only final touches, and the foreman wants a qualified, experienced adventurer.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Bone_Voyage",
+		"canon": "in-game",
+		"knownIn": ["varrock", "digsite"],
+		"gate": {"quest": "BONE_VOYAGE", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.haig_halen.specimens",
+		"says": "Incredible specimens have come back from Fossil Island, and the museum has opened a new palaeontology room downstairs just for them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Curator_Haig_Halen",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "BONE_VOYAGE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.haig_halen.camdozaal",
+		"says": "He was lost for words to hear that the lost Imcando city of Camdozaal had been found beneath Ice Mountain, and pays for relics brought from it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Curator_Haig_Halen",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "BELOW_ICE_MOUNTAIN", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.haig_halen.adopted",
+		"says": "His great-grandfather was adopted into the Halen family, so he isn't of the blood of Marv Halen, one of the elders of old Avarrocka.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Defender_of_Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEFENDER_OF_VARROCK", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.haig_halen.guard_past",
+		"says": "Before the museum he served in the Varrock Guard, and he can still put a thief on the floor.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ethically_Acquired_Antiquities",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ETHICALLY_ACQUIRED_ANTIQUITIES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.haig_halen.diadem",
+		"says": "He brought Xerna's Diadem home from the Grand Museum in Varlamore after stopping a thief there, hid it in his storeroom, and was shamed into sending it back.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ethically_Acquired_Antiquities",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ETHICALLY_ACQUIRED_ANTIQUITIES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.haig_halen.ethically_acquired",
+		"says": "He maintains the pieces in his storeroom are ethically acquired, merely borrowed from other museums for further study.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ethically_Acquired_Antiquities",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ETHICALLY_ACQUIRED_ANTIQUITIES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.haig_halen.funding",
+		"says": "He grumbles that the museum hasn't room to display everything it holds, if only it had the funding.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ethically_Acquired_Antiquities",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ETHICALLY_ACQUIRED_ANTIQUITIES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.haig_halen.not_cursed",
+		"says": "He is tired of adventurers assuming any artefact from another land must be cursed.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ethically_Acquired_Antiquities",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ETHICALLY_ACQUIRED_ANTIQUITIES", "states": ["FINISHED"]}
+	},
+
+	{
+		"id": "char.apothecary_varrock.shop",
+		"says": "The Apothecary brews potions in his shop in the south-west of Varrock, near the sword shop.",
+		"source": "https://oldschool.runescape.wiki/w/Apothecary",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.apothecary_varrock.full_name",
+		"says": "The city census lists the Apothecary as Ingald Belger.",
+		"source": "https://oldschool.runescape.wiki/w/Apothecary",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.apothecary_varrock.intro",
+		"says": "He introduces himself plainly as the Apothecary who brews potions, and asks what you need.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Apothecary",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.apothecary_varrock.potions",
+		"says": "Bring him the ingredients and he'll mix strength and energy potions, among others.",
+		"source": "https://oldschool.runescape.wiki/w/Apothecary",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.apothecary_varrock.charity",
+		"says": "Asked for free potions, he says charity isn't his strong point, though about half the time he hands over a free potion for spots anyway.",
+		"source": "https://oldschool.runescape.wiki/w/Apothecary",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.apothecary_varrock.mother",
+		"says": "He says he knows a potion that makes hair fall out, gave it to his mother, and that's why he lives alone.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Apothecary",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.apothecary_varrock.cadava_berries",
+		"says": "Cadava berries, bright pink and not for eating, grow by the mining pit south-east of Varrock, and a children's outing there was cut short when the kids started picking them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.apothecary_varrock.romeo_gossip",
+		"says": "His only gossip is that young Romeo is having a little woman trouble, and otherwise all is quiet.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Apothecary",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ROMEO__JULIET", "states": ["NOT_STARTED"]}
+	},
+	{
+		"id": "char.apothecary_varrock.cadava_potion",
+		"says": "His cadava potion, made of cadava berries, wing of rat, tail of frog, ear of snake and horn of dog, makes whoever drinks it look dead for a while.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ROMEO__JULIET", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.apothecary_varrock.romeo_after",
+		"says": "He thinks the Romeo and Juliet affair was sad, hears Romeo runs off screaming about ghosts whenever he sees Juliet, and always thought the lad a bit strange.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Apothecary",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ROMEO__JULIET", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.apothecary_varrock.unferth",
+		"says": "He has been out to see Unferth more often than he can count, and says the man is a hypochondriac who only thinks he's ill.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:A_Tail_of_Two_Cats",
+		"canon": "in-game",
+		"knownIn": ["varrock", "burthorpe"],
+		"gate": null
+	},
+	{
+		"id": "char.apothecary_varrock.hats",
+		"says": "He gets plenty of nurse's and doctor's hats from Gielinor Hospital Supplies.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Apothecary",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.apothecary_varrock.not_a_vet",
+		"says": "He reminds people who bring him cat troubles that he is an apothecary, not a vet.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ratcatchers",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.apothecary_varrock.pox",
+		"says": "He remembers Hooknosed Jack's cat Pox as a kitten, and once mixed a cat antipoison from milk, unicorn horn and marrentill to save her.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ratcatchers",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "RATCATCHERS", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.apothecary_varrock.cat_potions",
+		"says": "He has no plans to branch out into cat potions, unless there turns out to be enough demand.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Apothecary",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "RATCATCHERS", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.apothecary_varrock.airtight_pot",
+		"says": "He dropped and smashed the airtight pot, a family heirloom, that kept his breathing salts fresh, and they were a top seller.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:One_Small_Favour",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ONE_SMALL_FAVOUR", "states": ["IN_PROGRESS"]}
+	},
+	{
+		"id": "char.apothecary_varrock.barbarians",
+		"says": "He has no great opinion of Barbarian Village, where they're all barbarians, though the potter Tassie Slipcast lives there.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:One_Small_Favour",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.apothecary_varrock.sealegs",
+		"says": "Superstitious sailors buy his potion of sealegs, but he admits it's a herbal remedy with a great deal of vodka and no magic at all.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Bone_Voyage",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "BONE_VOYAGE", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+
+	{
+		"id": "char.romeo.wanders",
+		"says": "Romeo wanders all over Varrock, from the square to the general store, the east bank and even the palace courtyard.",
+		"source": "https://oldschool.runescape.wiki/w/Romeo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.romeo.full_name",
+		"says": "The city census lists him as Romeo Gontamue.",
+		"source": "https://oldschool.runescape.wiki/w/Romeo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.romeo.talks_first",
+		"says": "He is one of the few people in town who will start talking to a stranger without being spoken to.",
+		"source": "https://oldschool.runescape.wiki/w/Romeo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.romeo.flowers",
+		"says": "He carries a bunch of assorted flowers about with him.",
+		"source": "https://oldschool.runescape.wiki/w/Romeo",
+		"canon": "wiki",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.romeo.muddles",
+		"says": "He muddles his words and swaps their first letters, calling Varrock Warrock and Father Lawrence Lather Fawrence.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.romeo.memory",
+		"says": "He has a dreadful memory for names and faces, and can't even keep hold of Juliet's name.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.romeo.summons",
+		"says": "Apart from the odd court summons, he says he's never had a message in his life.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.romeo.lawrence",
+		"says": "He thinks he went to school with Father Lawrence, whom they called Diddy Dorrence, and reckons his sermons send the whole church to sleep.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.romeo.balcony",
+		"says": "He used to sing up to Juliet's balcony, and she would throw her belongings down at him with considerable force.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.romeo.hero_wish",
+		"says": "He has always wanted to be a hero.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Defender_of_Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.romeo.juliet_love",
+		"says": "He is desperately in love with Juliet, but her father forbids them to meet and keeps her at home on the west side of the city.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ROMEO__JULIET", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.romeo.fears_draul",
+		"says": "Juliet's father has sworn to kill him on sight, and since Romeo can't remember what the man looks like, he is afraid of every man he meets.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Romeo_%26_Juliet",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ROMEO__JULIET", "states": ["IN_PROGRESS"]}
+	},
+	{
+		"id": "char.romeo.phillipa",
+		"says": "He believes Juliet died, calls it a terrible business, and is getting on rather well with her cousin Phillipa.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Romeo",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ROMEO__JULIET", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.romeo.ghosts",
+		"says": "Word is he runs away screaming about ghosts whenever he catches sight of Juliet.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Apothecary",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "ROMEO__JULIET", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.romeo.adopted",
+		"says": "His great-grandfather was adopted into the Gontamue family, so he isn't of the blood of Ramone Gontamue, an elder of old Avarrocka.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Defender_of_Varrock",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "DEFENDER_OF_VARROCK", "states": ["FINISHED"]}
+	},
+
+	{
+		"id": "char.gertrude.home",
+		"says": "Gertrude is a busy housewife who lives in a house just west of Varrock.",
+		"source": "https://oldschool.runescape.wiki/w/Gertrude",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.full_name",
+		"says": "The city census lists her as Gertrude Fairweather.",
+		"source": "https://oldschool.runescape.wiki/w/Gertrude",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.sons",
+		"says": "She has four sons, Wilough, Shilop, Philop and Kanel, and the kids drive her up the wall.",
+		"source": "https://oldschool.runescape.wiki/w/Gertrude",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.husband",
+		"says": "Her husband, Walter Fairweather, is a travelling merchant and is away from home.",
+		"source": "https://oldschool.runescape.wiki/w/Gertrude",
+		"canon": "wiki",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.sewers",
+		"says": "She has had to drag Shilop and Wilough out of the sewers under Varrock more times than she cares to count, and can't stand it down there.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ratcatchers",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.kids_or_cats",
+		"says": "She can't decide which is harder, raising children or raising cats.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ratcatchers",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.animals",
+		"says": "People round about know she takes in sick and abandoned animals.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:A_Tail_of_Two_Cats",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.bob",
+		"says": "She once found a kitten in a basket on her doorstep and raised him; he grew into Bob, the big tomcat who hangs about the Heroes' Guild.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:A_Tail_of_Two_Cats",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.cousin",
+		"says": "She has a cousin in West Ardougne, where she hears they have a rat epidemic.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Gertrude%27s_Cat",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.doogle",
+		"says": "Fluffs loves raw sardines seasoned with doogle leaves, which grow in the woods behind Gertrude's house.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Gertrude%27s_Cat",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.strays",
+		"says": "She thinks the flea-bitten stray dogs by the west entrance to Varrock are a nuisance, always begging for food when she walks through.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:A_Ruff_Situation",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.shelter",
+		"says": "She helped Talia and Chase with their animal shelter, which couldn't keep the cats and dogs apart and now takes only dogs.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:A_Ruff_Situation",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.cat_ears",
+		"says": "She mistakes anyone wearing cat ears for a lost kitty and offers them a sardine.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Gertrude",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": null
+	},
+	{
+		"id": "char.gertrude.fluffs_lost",
+		"says": "She has lost Fluffs, the cat who has purred at her side for nearly ten years, and is beside herself.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Gertrude%27s_Cat",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "GERTRUDES_CAT", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.gertrude.boys_saw",
+		"says": "Her sons Shilop and Wilough saw Fluffs last, and they're somewhere out in the marketplace, if she could only keep an eye on them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Gertrude%27s_Cat",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "GERTRUDES_CAT", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.gertrude.fluffs_home",
+		"says": "Fluffs came home after all; she had only been upset because she couldn't find her kitten.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Gertrude%27s_Cat",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "GERTRUDES_CAT", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.gertrude.kittens",
+		"says": "She has kittens to spare and sells them, one at a time, to people who'll feed and stroke them till they're grown.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Gertrude",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "GERTRUDES_CAT", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.gertrude.medal",
+		"says": "She gives a little medal to anyone whose young cat catches a hundred rats.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Gertrude",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "GERTRUDES_CAT", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.gertrude.ratcatchers",
+		"says": "She has met two ladies calling themselves the Ratcatchers, who hang about the sewers under Varrock looking for adventurers with cats.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ratcatchers",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "RATCATCHERS", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.gertrude.ratcatchers_after",
+		"says": "She likes to ask whether people ever did meet those ratcatchers she told them about.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Gertrude",
+		"canon": "in-game",
+		"knownIn": ["varrock"],
+		"gate": {"quest": "RATCATCHERS", "states": ["FINISHED"]}
+	}
+]}

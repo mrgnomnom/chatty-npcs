@@ -1,0 +1,895 @@
+{
+	"facts": [
+		{
+			"id": "item.iron_armour.look",
+			"says": "Iron armour is plain dark-grey metal.",
+			"source": "https://oldschool.runescape.wiki/w/Iron_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.iron_armour.weak",
+			"says": "Iron is the second-weakest armour metal, a step above bronze, and anyone can wear it without any training.",
+			"source": "https://oldschool.runescape.wiki/w/Iron_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.iron_armour.smithed",
+			"says": "A middling smith can hammer iron armour out of iron bars on an anvil; an iron platebody takes a good few bars.",
+			"source": "https://oldschool.runescape.wiki/w/Iron_platebody",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.iron_armour.horvik",
+			"says": "Iron platebodies are sold over the counter at Horvik's armour shop in Varrock.",
+			"source": "https://oldschool.runescape.wiki/w/Iron_platebody",
+			"canon": "in-game",
+			"knownIn": [
+				"varrock"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.steel_armour.look",
+			"says": "Steel armour is a light, silvery grey, paler and brighter than iron.",
+			"source": "https://oldschool.runescape.wiki/w/Steel_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.steel_armour.bars",
+			"says": "Steel is made by smelting iron ore together with coal, and the bars are then smithed into armour on an anvil.",
+			"source": "https://oldschool.runescape.wiki/w/Steel_bar",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.steel_armour.rank",
+			"says": "Steel armour is stronger than iron but still near the bottom of the metals, and it needs only a little combat training to wear.",
+			"source": "https://oldschool.runescape.wiki/w/Steel_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.steel_armour.horvik",
+			"says": "Steel platebodies can be bought ready-made at Horvik's armour shop in Varrock.",
+			"source": "https://oldschool.runescape.wiki/w/Steel_platebody",
+			"canon": "in-game",
+			"knownIn": [
+				"varrock"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.dragon_armour.look",
+			"says": "Dragon armour is a hard, dark-red metal, and the platebody has a black design across the chest and little spikes at the shoulders.",
+			"source": "https://oldschool.runescape.wiki/w/Dragon_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.dragon_armour.full_helm",
+			"says": "The dragon full helm is spiked and so dear that people wear it more to show off their wealth than for the fighting.",
+			"source": "https://oldschool.runescape.wiki/w/Dragon_full_helm",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.dragon_armour.not_smithed",
+			"says": "Most dragon armour can't be smithed from ore; the pieces are rare finds off fierce monsters such as metal dragons, and fetch a high price. Only a master smith at the Dragon Forge can make the platebody.",
+			"source": "https://oldschool.runescape.wiki/w/Dragon_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.dragon_armour.training",
+			"says": "Nobody can wear dragon armour without a good deal of defensive training, and the platebody is only for those who have slain a dragon.",
+			"source": "https://oldschool.runescape.wiki/w/Dragon_platebody",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.dragon_armour.helm_cavern",
+			"says": "Dragon full helms come only from the mithril dragons of the Ancient Cavern, either straight off a dragon or from a barbarian spirit called up with their chewed bones.",
+			"source": "https://oldschool.runescape.wiki/w/Dragon_full_helm",
+			"canon": "in-game",
+			"knownIn": [
+				"barbarian_outpost",
+				"baxtorian_falls"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.abyssal_whip.look",
+			"says": "An abyssal whip is a long, segmented lash of dark red and black that ends in a barbed point.",
+			"source": "https://oldschool.runescape.wiki/w/Abyssal_whip",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.abyssal_whip.abyss",
+			"says": "The whip is a weapon from the Abyss, dropped by abyssal demons, and only a well-trained fighter can wield one.",
+			"source": "https://oldschool.runescape.wiki/w/Abyssal_whip",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.abyssal_whip.spine",
+			"says": "An abyssal whip is made from the spine of an abyssal demon.",
+			"source": "https://oldschool.runescape.wiki/w/Abyssal_whip",
+			"canon": "developer",
+			"knownIn": [
+				"canifis",
+				"morytania",
+				"kourend"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.abyssal_whip.common",
+			"says": "The whip is one of the most common weapons among serious fighters: quick, strong and not too dear.",
+			"source": "https://oldschool.runescape.wiki/w/Abyssal_whip",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.rune_scimitar.look",
+			"says": "A rune scimitar is a wicked curved sword with a blade of teal-coloured runite.",
+			"source": "https://oldschool.runescape.wiki/w/Rune_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.rune_scimitar.smithed",
+			"says": "Only a near-master smith can forge a rune scimitar from runite bars, though fire giants and Zamorak warriors sometimes drop them.",
+			"source": "https://oldschool.runescape.wiki/w/Rune_scimitar",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.rune_scimitar.rank",
+			"says": "The rune scimitar is the second-best scimitar there is, beaten only by the dragon one.",
+			"source": "https://oldschool.runescape.wiki/w/Rune_scimitar",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.dragon_scimitar.look",
+			"says": "A dragon scimitar has a jagged, blood-red curved blade on a dark grey hilt.",
+			"source": "https://oldschool.runescape.wiki/w/Dragon_scimitar",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.dragon_scimitar.rank",
+			"says": "The dragon scimitar is the strongest scimitar there is, and it can't be smithed from raw metal.",
+			"source": "https://oldschool.runescape.wiki/w/Dragon_scimitar",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.dragon_scimitar.daga",
+			"says": "Dragon scimitars are sold by Daga, a monkey smith on Ape Atoll, and only those who have finished the monkeys' troubles there may wield one.",
+			"source": "https://oldschool.runescape.wiki/w/Dragon_scimitar",
+			"canon": "in-game",
+			"knownIn": [
+				"ape_atoll"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.dragon_scimitar.sever",
+			"says": "When one fighter strikes another with a dragon scimitar's special attack, it can knock out the victim's protective prayers for a short while.",
+			"source": "https://oldschool.runescape.wiki/w/Dragon_scimitar",
+			"canon": "in-game",
+			"knownIn": [
+				"wilderness"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.green_dhide.look",
+			"says": "Green d'hide armour is made from scaly green dragon leather, and the shield is a maple shield covered in the same green hide.",
+			"source": "https://oldschool.runescape.wiki/w/Green_dragonhide_armour",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.green_dhide.real",
+			"says": "Green d'hide is real dragonhide, worn by archers rather than swordsmen.",
+			"source": "https://oldschool.runescape.wiki/w/Green_d'hide_body",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.green_dhide.wilderness",
+			"says": "The hides come from green dragons, which live out in the Wilderness, where hunters of them often get set upon by other fighters.",
+			"source": "https://oldschool.runescape.wiki/w/Green_dragon",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.green_dhide.body_slayer",
+			"says": "Only someone who has proven themselves a dragon slayer may wear a green d'hide body.",
+			"source": "https://oldschool.runescape.wiki/w/Green_d'hide_body",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.graceful.look",
+			"says": "The graceful outfit is pale, near-white hooded clothing with black trim and touches of teal and red, and the hood covers most of the face.",
+			"source": "https://oldschool.runescape.wiki/w/Graceful_outfit",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.graceful.light",
+			"says": "Graceful clothing is very light, and wearing it helps a runner get their breath back faster, more so with the full set on.",
+			"source": "https://oldschool.runescape.wiki/w/Graceful_outfit",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.graceful.marks",
+			"says": "Graceful can't be bought with coins; it's paid for with marks of grace, little tokens that turn up on rooftop and agility courses for those who run laps.",
+			"source": "https://oldschool.runescape.wiki/w/Mark_of_Grace",
+			"canon": "in-game",
+			"knownIn": [
+				"gnome_stronghold",
+				"draynor",
+				"al_kharid",
+				"varrock",
+				"canifis",
+				"falador",
+				"seers_village",
+				"pollnivneach",
+				"rellekka",
+				"ardougne",
+				"barbarian_outpost",
+				"ape_atoll",
+				"shayzien",
+				"dorgesh_kaan",
+				"burthorpe"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.graceful.grace",
+			"says": "Grace sells the graceful outfit in the Rogues' Den, under the Toad and Chicken inn in Burthorpe.",
+			"source": "https://oldschool.runescape.wiki/w/Graceful_outfit",
+			"canon": "in-game",
+			"knownIn": [
+				"burthorpe",
+				"taverley_burthorpe"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.graceful.osten",
+			"says": "Osten in Shayzien will dye graceful clothing in the colours of the Kourend houses, for a price in marks of grace.",
+			"source": "https://oldschool.runescape.wiki/w/Graceful_outfit",
+			"canon": "in-game",
+			"knownIn": [
+				"kourend",
+				"shayzien"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.barrows.names",
+			"says": "Barrows gear comes in six sets, each named for the brother who wore it: Ahrim, Dharok, Guthan, Karil, Torag and Verac.",
+			"source": "https://oldschool.runescape.wiki/w/Barrows_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.barrows.dharok_look",
+			"says": "Dharok's armour is dark, greenish-grey plate studded with yellowed spikes, and it goes with a huge greataxe.",
+			"source": "https://oldschool.runescape.wiki/w/Barrows_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.barrows.crypts",
+			"says": "Barrows gear is won from the crypts of six undead brothers buried under mounds in southern Morytania; they were once famous Saradominist warriors from a small town in Misthalin.",
+			"source": "https://oldschool.runescape.wiki/w/Barrows_brothers",
+			"canon": "in-game",
+			"knownIn": [
+				"morytania"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.barrows.repair",
+			"says": "Barrows gear wears down with fighting and stops working until it's mended; Bob the axe seller in Lumbridge and Dunstan the Burthorpe smith both repair it.",
+			"source": "https://oldschool.runescape.wiki/w/Barrows_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"lumbridge",
+				"burthorpe",
+				"bank_void_knights",
+				"prifddinas",
+				"civitas"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.barrows.dharok_effect",
+			"says": "A full set of Dharok's hits harder the more badly hurt its wearer is.",
+			"source": "https://oldschool.runescape.wiki/w/Barrows_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"morytania"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.fire_cape.look",
+			"says": "A fire cape looks like molten rock, mottled orange and gold, and its pattern shifts and flows as if it were burning.",
+			"source": "https://oldschool.runescape.wiki/w/Fire_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.fire_cape.earned",
+			"says": "A fire cape is earned by surviving every wave of the TzHaar Fight Cave and then beating TzTok-Jad at the end.",
+			"source": "https://oldschool.runescape.wiki/w/Fire_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.fire_cape.no_buying",
+			"says": "A fire cape can't be bought or traded; lose one and the only way to get another is to beat the Fight Cave again.",
+			"source": "https://oldschool.runescape.wiki/w/Fire_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.fire_cape.no_light",
+			"says": "For all its flames, a fire cape gives off no light at all.",
+			"source": "https://oldschool.runescape.wiki/w/Fire_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.fire_cape.mor_ul_rek",
+			"says": "The TzHaar guards will only let you into the inner city of Mor Ul Rek if you show them a fire cape.",
+			"source": "https://oldschool.runescape.wiki/w/Fire_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"bank_mor_ul_rek"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.infernal_cape.look",
+			"says": "An infernal cape looks like a sheet of cooled black rock, cracked in a honeycomb with glowing orange lava between the plates, and it moves as if alive.",
+			"source": "https://oldschool.runescape.wiki/w/Infernal_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.infernal_cape.earned",
+			"says": "An infernal cape is won by beating TzKal-Zuk at the bottom of the Inferno, and it is the strongest cape a fighter can wear, better even than the fire cape.",
+			"source": "https://oldschool.runescape.wiki/w/Infernal_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.infernal_cape.lava",
+			"says": "An infernal cape is, in effect, a cape made of lava, which seems an odd thing to want to wear.",
+			"source": "https://oldschool.runescape.wiki/w/Infernal_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.infernal_cape.entry",
+			"says": "To get into the Inferno at all, you have to hand over a fire cape to the TzHaar as the price of entry.",
+			"source": "https://oldschool.runescape.wiki/w/Fire_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"bank_mor_ul_rek"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.partyhat.look",
+			"says": "A partyhat is a crown-shaped hat with jagged points, all in one bright colour: red, yellow, blue, purple, green or white, and there are black, rainbow and silver ones too.",
+			"source": "https://oldschool.runescape.wiki/w/Partyhat",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.partyhat.cracker",
+			"says": "Partyhats come out of Christmas crackers, which have to be pulled with somebody else, and they only turn up around Christmas.",
+			"source": "https://oldschool.runescape.wiki/w/Christmas_cracker",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.partyhat.choose",
+			"says": "Whoever pulls a Christmas cracker gets to pick the partyhat colour, and both people get one.",
+			"source": "https://oldschool.runescape.wiki/w/Christmas_cracker",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.partyhat.specs",
+			"says": "Patchy in Mos Le'Harmless will stitch a blue partyhat and a pair of sagacious spectacles together into one partyhat and specs.",
+			"source": "https://oldschool.runescape.wiki/w/Partyhat",
+			"canon": "in-game",
+			"knownIn": [
+				"mos_le_harmless"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.max_cape.look",
+			"says": "A max cape is a long red cape edged in gold, with red gems set in gold on its back and a pale collar at the neck.",
+			"source": "https://oldschool.runescape.wiki/w/Max_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.max_cape.meaning",
+			"says": "The max cape is only for those who have reached the highest level in every single skill, and nobody else can even put one on.",
+			"source": "https://oldschool.runescape.wiki/w/Max_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.max_cape.mac",
+			"says": "Max capes are sold by Mac, who lives on a little island west of the Warriors' Guild that only the most skilled can reach, and he charges a fortune.",
+			"source": "https://oldschool.runescape.wiki/w/Max_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"burthorpe",
+				"taverley_burthorpe"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.max_cape.congratulations",
+			"says": "When someone buys their first max cape, Hans and the Wise Old Man send them their congratulations by magic.",
+			"source": "https://oldschool.runescape.wiki/w/Max_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"lumbridge",
+				"draynor"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.twisted_bow.look",
+			"says": "A twisted bow has gnarled black limbs streaked with white, hooked tips, and a yellow-green string.",
+			"source": "https://oldschool.runescape.wiki/w/Twisted_bow",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.twisted_bow.olm",
+			"says": "The twisted bow is carved from the twisted remains of the Great Olm, the creature in the deepest part of the Chambers of Xeric.",
+			"source": "https://oldschool.runescape.wiki/w/Twisted_bow",
+			"canon": "in-game",
+			"knownIn": [
+				"kourend"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.twisted_bow.raid",
+			"says": "Twisted bows are a rare reward from the Chambers of Xeric, the caves under Mount Quidamortem in Kebos, and they are among the most valuable weapons there are.",
+			"source": "https://oldschool.runescape.wiki/w/Twisted_bow",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.twisted_bow.magic",
+			"says": "The more magic a foe has in it, the harder a twisted bow hits it.",
+			"source": "https://oldschool.runescape.wiki/w/Twisted_bow",
+			"canon": "in-game",
+			"knownIn": [
+				"kourend"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.void.look",
+			"says": "The Void Knight top is black and dark grey, crossed by a white band, with a white zig-zag emblem on the chest.",
+			"source": "https://oldschool.runescape.wiki/w/Void_Knight_top",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.void.order",
+			"says": "Void gear is the armour of the order of the Void Knights, and it's never sold for coins.",
+			"source": "https://oldschool.runescape.wiki/w/Void_Knight_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.void.pest_control",
+			"says": "The Void Knights hand out their armour only to those who earn their commendation by helping fight off the pests that pour out of portals at their island outpost.",
+			"source": "https://oldschool.runescape.wiki/w/Pest_Control",
+			"canon": "in-game",
+			"knownIn": [
+				"bank_void_knights",
+				"port_sarim"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.void.all_rounder",
+			"says": "Void gear needs a fair bit of training in every kind of fighting, and a full set works with whichever helm is worn: melee, ranged or magic.",
+			"source": "https://oldschool.runescape.wiki/w/Void_Knight_equipment",
+			"canon": "in-game",
+			"knownIn": [
+				"bank_void_knights",
+				"port_sarim"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.void.squire",
+			"says": "A squire on the Port Sarim docks ferries fighters out to the Void Knights' Outpost.",
+			"source": "https://oldschool.runescape.wiki/w/Pest_Control",
+			"canon": "in-game",
+			"knownIn": [
+				"port_sarim",
+				"bank_void_knights"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.saradomin_cape.look",
+			"says": "The plain Saradomin cape is deep blue with a pale yellow hem, hung from a silvery clasp.",
+			"source": "https://oldschool.runescape.wiki/w/Saradomin_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.saradomin_cape.gift",
+			"says": "A Saradomin cape is a gift from the god Saradomin himself to a battle mage who has proven themselves.",
+			"source": "https://oldschool.runescape.wiki/w/Saradomin_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.saradomin_cape.mage_arena",
+			"says": "The cape is won at the Mage Arena deep in the Wilderness: you beat Kolodion in all four of his forms, step through the sparkling pool, and pray at Saradomin's statue.",
+			"source": "https://oldschool.runescape.wiki/w/Saradomin_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"wilderness",
+				"bank_mage_arena"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.saradomin_cape.charge",
+			"says": "A battle mage wearing the Saradomin cape and carrying Saradomin's staff can charge up the Saradomin Strike spell to hit much harder.",
+			"source": "https://oldschool.runescape.wiki/w/Saradomin_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"wilderness",
+				"bank_mage_arena"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.saradomin_cape.imbued",
+			"says": "An imbued Saradomin cape has been charged with great power using trophies from the Mage Arena's second trial, and it is among the best capes a mage can wear.",
+			"source": "https://oldschool.runescape.wiki/w/Imbued_Saradomin_cape",
+			"canon": "in-game",
+			"knownIn": [
+				"wilderness",
+				"bank_mage_arena"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.skillcape.meaning",
+			"says": "A skillcape shows that its wearer has reached the highest level there is in one skill.",
+			"source": "https://oldschool.runescape.wiki/w/Cape_of_Accomplishment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.skillcape.look",
+			"says": "Each skillcape is a long cape in its skill's own colours with the skill's emblem on the back, and it comes with a matching hood; the cooking cape is purple.",
+			"source": "https://oldschool.runescape.wiki/w/Cape_of_Accomplishment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.skillcape.masters",
+			"says": "Skillcapes are bought for a hefty sum from each skill's master, who wears one proudly and keeps to a place that suits the skill.",
+			"source": "https://oldschool.runescape.wiki/w/Cape_of_Accomplishment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.skillcape.trim",
+			"says": "Someone who has mastered more than one skill wears their capes with a trim of a different colour along the edge.",
+			"source": "https://oldschool.runescape.wiki/w/Cape_of_Accomplishment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "item.skillcape.perks",
+			"says": "Each skillcape has its own small blessing: nobody wearing a cooking cape ever burns their food, and a firemaking cape works as a light that never goes out.",
+			"source": "https://oldschool.runescape.wiki/w/Cape_of_Accomplishment",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.rocky.look",
+			"says": "Rocky is a small dark-grey raccoon; Red is a red panda and Ziggy a tanuki, the same pet in other shapes.",
+			"source": "https://oldschool.runescape.wiki/w/Rocky",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.rocky.thieves",
+			"says": "Rocky very rarely takes up with someone who steals a great deal, from picking pockets to raiding market stalls, and follows them about from then on.",
+			"source": "https://oldschool.runescape.wiki/w/Rocky",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.rocky.berries",
+			"says": "Feed Rocky redberries and he becomes Red the red panda, poison ivy berries make him Ziggy the tanuki, and white berries turn him back.",
+			"source": "https://oldschool.runescape.wiki/w/Rocky",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.beaver.look",
+			"says": "The beaver is a small, dark-brown beaver that looks like it has chewed through a great deal of wood.",
+			"source": "https://oldschool.runescape.wiki/w/Beaver",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.beaver.woodcutters",
+			"says": "A beaver very rarely turns up to follow someone who chops a great many trees.",
+			"source": "https://oldschool.runescape.wiki/w/Beaver",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.beaver.colours",
+			"says": "With a funky shaped log from the Forestry Shop, a beaver can be changed to the colour of whatever logs it's given, and it can even be turned into a pheasant or a fox.",
+			"source": "https://oldschool.runescape.wiki/w/Beaver",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.heron.look",
+			"says": "The heron is a grey wading bird on long legs, fond of fishing; the great blue heron is a blue version of the same pet.",
+			"source": "https://oldschool.runescape.wiki/w/Heron",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.heron.fishers",
+			"says": "A heron very rarely comes to follow someone who fishes a great deal.",
+			"source": "https://oldschool.runescape.wiki/w/Heron",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.heron.flakes",
+			"says": "Feeding a heron a great heap of spirit flakes turns it into a great blue heron, and any raw fish turns it back.",
+			"source": "https://oldschool.runescape.wiki/w/Heron",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.rock_golem.look",
+			"says": "A rock golem is a little walking figure of brown stone.",
+			"source": "https://oldschool.runescape.wiki/w/Rock_golem",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.rock_golem.miners",
+			"says": "A rock golem very rarely breaks loose to follow someone who mines a great deal.",
+			"source": "https://oldschool.runescape.wiki/w/Rock_golem",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		},
+		{
+			"id": "pet.rock_golem.ores",
+			"says": "Give a rock golem a lump of ore and it takes on that ore's colour; a plain rock turns it back.",
+			"source": "https://oldschool.runescape.wiki/w/Rock_golem",
+			"canon": "in-game",
+			"knownIn": [
+				"everywhere"
+			],
+			"gate": null
+		}
+	]
+}

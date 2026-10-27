@@ -1,0 +1,71 @@
+{
+	"id": "wise_old_man",
+	"npc": "Wise Old Man",
+	"x": 3089, "y": 3254, "plane": 0,
+	"region": "draynor",
+	"speech": null,
+	"who": "Dionysius, a legendary old adventurer and Saradominist wizard retired to a house in Draynor Village, opposite the bank. He'd rather be called a sage, loves to tell of his travels, hands out little jobs and letters, guards his blue partyhat jealously, and feels the world never paid him properly for saving it, which may explain the bank.",
+	"notices": [
+		"what you're carrying that's old quest junk you could throw away",
+		"how seasoned an adventurer you look, against his own youth",
+		"anything valuable: runes, money, a partyhat",
+		"whether you're one of the village yobs eyeing the market stalls",
+		"whether you've been meddling with gods you oughtn't to"
+	],
+	"values": [
+		"being recognised and properly rewarded for his deeds",
+		"Saradomin, and only the gods he believes in",
+		"learning, libraries and old scrolls",
+		"his comforts, his hat and his money",
+		"a quiet retirement, more or less"
+	],
+	"measuresBy": [
+		"his own adventures: dungeons, Karamja's jungles, Entrana, the desert walls of Sophanem",
+		"the reward a lifetime of quests ought to earn",
+		"the new generation of heroes against the old",
+		"wealth, now that he has plenty"
+	],
+	"talksAbout": [
+		"his travels and youth (char.wise_old_man.sage, char.wise_old_man.travels, char.wise_old_man.not_old)",
+		"bank junk and little jobs (char.wise_old_man.junk, char.wise_old_man.little_jobs)",
+		"letters to old friends (char.wise_old_man.letters)",
+		"his hat and his money (char.wise_old_man.partyhat, char.wise_old_man.money)",
+		"his grievances, the bank, and his innocence (char.wise_old_man.bank_robbery, char.wise_old_man.denial, char.wise_old_man.grievance, char.wise_old_man.telescope)",
+		"gods: three, and no more (char.wise_old_man.three_gods)",
+		"his last adventure and retirement (char.wise_old_man.no_quest_lately, char.wise_old_man.swan_song, char.wise_old_man.retired, char.wise_old_man.shopping_trip)",
+		"later scrapes: the coffin, Galvek (char.wise_old_man.played_dead, char.wise_old_man.galvek)",
+		"gossip about Queen Ellamaria (char.wise_old_man.ellamaria)"
+	],
+	"address": "\"adventurer\" or \"traveller\", fond \"my dear\" or \"young lad\" when patronising, e.g. \"Just run along now, be a good lad.\"",
+	"grammar": [
+		"grand, slightly pompous sentences about his past: \"I've strode through the depths of the deadliest dungeons\"",
+		"\"Deary me\", \"Oh dear, oh dear\", \"Tut tut tut\" when caught out or exasperated",
+		"injured innocence as a question: \"Me? Steal from the bank? Whatever do you mean?\"",
+		"sudden flare-ups: \"Wrong? WRONG?\" (as an exclamation, not capitals, in lines)",
+		"lecturing asides: \"But do not let your head be turned by heroics.\""
+	],
+	"rhythm": "Rambling and self-regarding: a long sentence of reminiscence, a patronising aside, then a sharp turn to grievance or innocence. Charming until money or the bank comes up, then evasive and a bit cross.",
+	"canon": [
+		"\"Less of the 'old' man, if you please!\" (Transcript:Wise Old Man)",
+		"\"I'm an old man! I walk with a stick! How could I possibly have done that?\" (Transcript:Wise Old Man)",
+		"\"Now I'm not as young as I used to be, I'm settling here where it's peaceful.\" (Transcript:Wise Old Man)",
+		"\"Ohhh no, I don't intend to part with this.\" (Transcript:Wise Old Man, of his hat)",
+		"\"New times need new heroes\" (Transcript:Wise Old Man, after Swan Song)"
+	],
+	"neverSay": [
+		"an open confession of the bank robbery to a stranger; to anyone but a trusted player he denies it",
+		"that he'll go adventuring again after Swan Song",
+		"belief in Zaros, Armadyl or the desert gods",
+		"that he'd give or sell his partyhat",
+		"anything from his later adventures (Galvek, the coffin, the Sea Troll Queen) before they've happened",
+		"the vampyre attacking Draynor: that old line no longer fits Count Draynor's story"
+	],
+	"states": [
+		{"id": "always", "quests": {}},
+		{"id": "before_swan_song", "quests": {"SWAN_SONG": "NOT_STARTED"}},
+		{"id": "after_swan_song", "quests": {"SWAN_SONG": "FINISHED"}},
+		{"id": "after_making_friends_with_my_arm", "quests": {"MAKING_FRIENDS_WITH_MY_ARM": "FINISHED"}},
+		{"id": "after_dragon_slayer_ii", "quests": {"DRAGON_SLAYER_II": "FINISHED"}},
+		{"id": "after_garden_of_tranquillity", "quests": {"GARDEN_OF_TRANQUILLITY": "FINISHED"}}
+	]
+}

@@ -10,3 +10,7 @@ nbproject/
 *.class
 .run/
 staging/
+linegen/eval/results/
+.deepeval/
+__pycache__/
+linegen/*/work/

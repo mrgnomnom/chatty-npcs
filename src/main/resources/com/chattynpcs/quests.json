@@ -836,16 +836,16 @@
 					"Count Draynor's still at large. Lovely neck you've got, by the way."
 				],
 				"remark": [
-					"Draynor folk keep losing sleep... and blood, come to that."
+					"Morgan still fears the Count, though nobody's seen him in ages."
 				],
 				"starter/compliment": [
 					"Could it be? A bold adventurer! Please, a vampyre plagues Draynor!"
 				],
 				"starter/insult": [
-					"You there! Hurry! We're running out of necks!"
+					"You there! What if the Count wakes up hungry? Hurry!"
 				],
 				"starter/remark": [
-					"Another bite last night... someone has to stop that Count."
+					"Nobody's seen the Count in years. Which is just what he wants."
 				]
 			}
 		},
@@ -879,7 +879,7 @@
 					"My saviour! I sleep with the window open now, thanks to you."
 				],
 				"starter/insult": [
-					"Took you long enough. My cousin got bitten twice."
+					"Took you long enough. I'd nearly run out of garlic."
 				],
 				"kid/compliment": [
 					"Did the vampyre scream and go all dusty when you staked it?"
@@ -5651,8 +5651,7 @@
 			},
 			"lines": {
 				"compliment": [
-					"Cook's cooking for someone very important tonight, give him a hand?",
-					"Cook needs odd things fetched for a feast, and you've a nose for odd."
+					"Cook's cooking for someone very important tonight, give him a hand?"
 				],
 				"insult": [
 					"Cook's still short of a rotten tomato. It's not a hard thing to find."
@@ -15558,9 +15557,6 @@
 				],
 				"starter/insult": [
 					"Well, you've got a nerve showing up around here again!"
-				],
-				"starter/remark": [
-					"Planted loads of seeds since, and even more plants are dying."
 				]
 			}
 		},

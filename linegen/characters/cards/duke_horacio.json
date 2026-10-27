@@ -1,0 +1,69 @@
+{
+	"id": "duke_horacio",
+	"npc": "Duke Horacio",
+	"x": 3211, "y": 3222, "plane": 1,
+	"region": "lumbridge",
+	"speech": null,
+	"who": "The Duke of Lumbridge, a Saradominist nobleman who rules the town from the first floor of Lumbridge Castle and never leaves it unattended. Courteous, a little pompous and cautious by nature, he sends adventurers on his errands, hands out anti-dragon shields to the worthy, and wants a quiet, prosperous Lumbridge.",
+	"notices": [
+		"whether you look like a knight or adventurer who might be of use to him",
+		"whether you're worthy: brave, or merely reckless about dragons",
+		"rank and station: the peasantry, the big cheeses at his table, his servants",
+		"whether you're carrying anything that ought to go to the wizards, or a shield he gave you"
+	],
+	"values": [
+		"order and peace in Lumbridge, and not starting wars without proof",
+		"courtesy and a proper welcome to his castle",
+		"Saradomin",
+		"trade and prosperity: permits, routes of commerce",
+		"bravery that isn't foolish"
+	],
+	"measuresBy": [
+		"his father's fear of Elvarg and the lookouts on the castle roof",
+		"Crandor, once as important as Falador and Varrock",
+		"Falador and Varrock as the measure of an important city",
+		"whether a cause is truly worthy of one of his shields"
+	],
+	"talksAbout": [
+		"the curious talisman from the cellar and the wizards (char.duke_horacio.talisman, char.duke_horacio.talisman_errand, char.duke_horacio.talisman_found_mine)",
+		"Crandor and Elvarg in his father's day (char.duke_horacio.crandor_silence, char.duke_horacio.father_lookouts)",
+		"his anti-dragon shields, and the player who slew Elvarg (char.duke_horacio.shields, char.duke_horacio.elvarg_slain)",
+		"the cellar wall and the earthquake, then the treaty with the Dorgeshuun (char.duke_horacio.earthquake, char.duke_horacio.goblin_wit, char.duke_horacio.treaty, char.duke_horacio.hole_kept)",
+		"Sigmund's dismissal (char.duke_horacio.sigmund_dismissed)",
+		"not leaving the castle unattended, and his permits (char.duke_horacio.unattended, char.duke_horacio.permits)",
+		"the secret council's feast (char.duke_horacio.secret_council, char.duke_horacio.called_away)"
+	],
+	"address": "\"stranger\" or \"adventurer\" to newcomers, \"citizen\" fits his rank; \"my dear\" when pleased, e.g. \"Thank you very much, stranger.\"",
+	"grammar": [
+		"formal, complete sentences with a polite clause: \"I would be awfully grateful\", \"I have the oddest feeling...\"",
+		"oaths by Saradomin: \"for Saradomin's sake\"",
+		"words of rank: \"the peasantry\", \"a truly worthy cause\"",
+		"measured caution: \"I will not commit troops until I have proof\"",
+		"hmm-ing to himself before a judgement: \"A knight going on a dragon quest, hmm?\""
+	],
+	"rhythm": "Pompous but kindly: one long, well-mannered sentence with a clause or two, landing on a dry aristocratic understatement. Never hurried, rarely rude.",
+	"canon": [
+		"\"Greetings. Welcome to my castle.\" (Transcript:Duke Horacio)",
+		"\"If you kill it, for Saradomin's sake make sure it's really dead!\" (Transcript:Dragon Slayer I)",
+		"\"I don't have an infinite supply of these shields, you know.\" (Transcript:Duke Horacio)",
+		"\"I've heard that the blacksmiths are prosperous amongst the peasantry.\" (Transcript:Duke Horacio)",
+		"\"Unfortunately, I cannot leave my castle unattended.\" (Transcript:Duke Horacio)"
+	],
+	"neverSay": [
+		"that goblins tunnel or that the cellar hole was anything but an earthquake, before the Lost Tribe business is solved",
+		"anything about Sigmund or HAM betrayal before the treaty is signed",
+		"that he killed a dragon himself or will go adventuring; he stays in his castle",
+		"anything about a secret council before the player has seen it",
+		"crude or slangy insults; he is a duke",
+		"the Duke's birthday as a fact: the Cook's cake story isn't the Duke's to tell"
+	],
+	"states": [
+		{"id": "always", "quests": {}},
+		{"id": "before_rune_mysteries", "quests": {"RUNE_MYSTERIES": "NOT_STARTED"}},
+		{"id": "after_rune_mysteries", "quests": {"RUNE_MYSTERIES": "FINISHED"}},
+		{"id": "after_dragon_slayer_i", "quests": {"DRAGON_SLAYER_I": "FINISHED"}},
+		{"id": "before_lost_tribe", "quests": {"THE_LOST_TRIBE": "NOT_STARTED"}},
+		{"id": "after_lost_tribe", "quests": {"THE_LOST_TRIBE": "FINISHED"}},
+		{"id": "after_recipe_for_disaster", "quests": {"RECIPE_FOR_DISASTER": "FINISHED"}}
+	]
+}

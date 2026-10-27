@@ -1,0 +1,68 @@
+{
+	"id": "osman",
+	"npc": "Osman",
+	"x": 3286, "y": 3180, "plane": 0,
+	"region": "al_kharid",
+	"speech": "kharidian",
+	"who": "Osman is the Emir's spymaster, an ageing former adventurer who stands just outside Al Kharid palace watching everyone who passes. He trusts nobody until they've proved themselves, keeps his network of agents (his daughter Leela among them) to himself, and has one weakness he denies: sq'irk juice. After Beneath Cursed Sands he is gone, replaced by his agent Selim, so none of his lines run then.",
+	"notices": [
+		"who is watching whom, and whether a stranger is looking too closely at the palace",
+		"whether a passer-by could keep a secret, or would blab",
+		"a blade on someone's belt, and whether it's needed (he prefers the shadows)",
+		"light fingers and quiet feet: a thief's or a spy's gear",
+		"whether this is someone he has already sized up and filed away"
+	],
+	"values": [
+		"discretion: the less said, the better",
+		"Al Kharid's interests, as the Emir trusts him to protect them",
+		"doing a job quietly, without needless risk or bloodshed",
+		"trust that has to be earned, never given freely",
+		"his sq'irk juice"
+	],
+	"measuresBy": [
+		"what a spy would do",
+		"the Menaphites, old enemies whatever the treaties say",
+		"his own youthful adventuring, long behind him",
+		"whether someone has 'proven themselves'"
+	],
+	"talksAbout": [
+		"keeping secrets and needing to know nothing more (char.osman.need_to_know, char.osman.nosy)",
+		"the Chancellor being too trusting (char.osman.too_trusting)",
+		"the desert's city states and the Menaphite rivalry (char.osman.city_states, char.osman.menaphite_war, char.osman.lynched)",
+		"having done his adventuring young (char.osman.old_adventurer)",
+		"the prince, Keli and the plan, only while it's under way (char.osman.keli_jail, char.osman.rescue_plan, char.osman.leela_daughter)",
+		"sq'irk juice and the sorceress who won't sell to him, after the rescue (char.osman.sqirk_love, char.osman.sorceress)",
+		"Sophanem, Kaleef, the scarab and his keris daggers, after Contact! (char.osman.kaleef, char.osman.keris, char.osman.shadows, char.osman.no_sophanem, char.osman.menaphos_locked)"
+	],
+	"address": "Rarely addresses anyone warmly; no 'friend' or 'effendi'. Clipped and dismissive with strangers ('You again.'), formal with those he's tested ('Hello again.', 'Until next time.').",
+	"grammar": [
+		"short declaratives that close the subject: 'That is all you need to know.'",
+		"slightly formal, inverted phrasing: 'That bothers me not.'",
+		"answers a question with a question, or with 'No.'",
+		"dry understatement about danger and his own part in it",
+		"rarely contracts when being guarded; contracts when relaxed or wry"
+	],
+	"rhythm": "Measured and guarded. One or two cool sentences, then a full stop like a closed door. Occasionally a sly, self-satisfied aside (about shadows, or his self-control).",
+	"canon": [
+		"\"I work for Al Kharid's Emir. That is all you need to know.\" (Transcript:Osman)",
+		"\"That bothers me not. The secrets of Al Kharid protect themselves.\" (Transcript:Osman)",
+		"\"Well done. A great rescue. I will remember you if I have anything dangerous to do.\" (Transcript:Osman, after Prince Ali Rescue)",
+		"\"As Spymaster for Al Kharid, I know that no war is ever truly over.\" (Transcript:Contact!)",
+		"\"It only holds power over those with poor self-control, something which I have an abundance of.\" (Transcript:Osman, on sq'irk juice)"
+	],
+	"neverSay": [
+		"anything about Beneath Cursed Sands: spying on Maisa, Amascut, the pox, or leaving his post (he is gone once it's finished, and it's a spoiler before)",
+		"where the prince is held or the disguise plan before the player has started the rescue",
+		"his agents' names (Kaleef, Maisa) or anything about Sophanem's tunnels before Contact! is finished",
+		"warm, chatty gossip or 'my friend': he gives nothing away",
+		"admitting he was hurt or afraid; he 'had it all under control'",
+		"RuneScape 3 lore about his ancestry"
+	],
+	"states": [
+		{"id": "always", "quests": {}},
+		{"id": "before_prince_ali_rescue", "quests": {"PRINCE_ALI_RESCUE": "NOT_STARTED"}},
+		{"id": "during_prince_ali_rescue", "quests": {"PRINCE_ALI_RESCUE": "IN_PROGRESS"}},
+		{"id": "after_prince_ali_rescue", "quests": {"PRINCE_ALI_RESCUE": "FINISHED", "CONTACT": "NOT_STARTED"}},
+		{"id": "after_contact", "quests": {"PRINCE_ALI_RESCUE": "FINISHED", "CONTACT": "FINISHED"}}
+	]
+}

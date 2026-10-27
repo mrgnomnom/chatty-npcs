@@ -1,0 +1,826 @@
+{"facts": [
+	{
+		"id": "char.sir_amik_varze.leader",
+		"says": "Sir Amik leads the White Knights of Falador and governs Asgarnia as regent, because old King Vallance is too ill to rule.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Amik_Varze",
+		"canon": "in-game",
+		"knownIn": ["falador", "port_sarim", "rimmington", "taverley"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.quarters",
+		"says": "He receives visitors in the western part of the White Knights' Castle, two floors above the courtyard.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Amik_Varze",
+		"canon": "wiki",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.kinshra_feud",
+		"says": "When he took charge he stripped the Black Knights of any say in Asgarnia; they declared war, fought the White Knights to a standstill north of Falador, and both sides went home to plot.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Amik_Varze",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.no_spying",
+		"says": "The White Knights' charter forbids them any kind of spying, which he says is the Temple Knights' business, and he won't tell outsiders anything more about that order.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Black_Knights%27_Fortress",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.known_faces",
+		"says": "Every one of his knights is known by sight to the Black Knights, and he admits that subtlety isn't the order's strong point.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Black_Knights%27_Fortress",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.bkf_threat",
+		"says": "The Black Knights are demanding money and land from Falador and threatening to invade, boasting of a powerful new secret weapon, and he wants someone to slip into their fortress and wreck it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Black_Knights%27_Fortress",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "BLACK_KNIGHTS_FORTRESS", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.sir_amik_varze.bkf_done",
+		"says": "The Black Knights' secret weapon was an invincibility potion their witch had spent years brewing; an adventurer spoilt it with an ordinary cabbage, the Black Knights withdrew their demands, and he paid the adventurer for it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Black_Knights%27_Fortress",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "BLACK_KNIGHTS_FORTRESS", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_amik_varze.not_a_knight",
+		"says": "He won't make a freelance helper a White Knight except in dire circumstances, though he gives them his personal gratitude and a fair fee.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Black_Knights%27_Fortress",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.recommended",
+		"says": "After the business at the fortress he put the adventurer's name forward to the Temple Knights before asking them, then sent them to Sir Tiffy in Falador Park without explaining much.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recruitment_Drive",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "RECRUITMENT_DRIVE", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.sir_amik_varze.squires",
+		"says": "Anyone who wants to be a White Knight serves as his squire first: five years of unpaid errands before he will even think of putting their name forward.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wanted!",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.ale_and_liege",
+		"says": "He likes an Asgarnian ale, sends his squire for one first thing, and wants to be called Sir Amik or my liege, never boss.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wanted!",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.no_crisis",
+		"says": "He thanks Saradomin that Asgarnia hasn't had a real crisis in many years.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wanted!",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WANTED", "states": ["NOT_STARTED"]}
+	},
+	{
+		"id": "char.sir_amik_varze.solus_loose",
+		"says": "Word has come from a scout that Solus Dellagar, the murder-mage the White Knights once caught and exiled, is back in Asgarnia with magic they cannot stand against, and he has deputised the adventurer to hunt him down.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wanted!",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WANTED", "states": ["IN_PROGRESS"]}
+	},
+	{
+		"id": "char.sir_amik_varze.honour",
+		"says": "He holds that killing an unarmed foe is not the way of Saradomin or of the White Knights.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wanted!",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.poorer_order",
+		"says": "The White Knights are not as rich as they once were, and too many of them lose their equipment, so the order sells kit to its own knights at cost and buys it back at the same price.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wanted!",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.white_knight_now",
+		"says": "The adventurer brought him Solus's hat as proof and he made them a full White Knight; he now expects them out hunting Black Knights, since that raises their standing and killing White Knights lowers it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sir_Amik_Varze",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WANTED", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_amik_varze.burrus",
+		"says": "He has adopted a corgi called Sir Burrus, who lives with him at the White Knights' Castle.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Burrus",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.moat_swords",
+		"says": "Long ago a sword was thrown into the castle moat whenever a knight died; later the knights used cheap swords set with semi-precious gems, since it was the gesture that counted.",
+		"source": "https://oldschool.runescape.wiki/w/White_Knights",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_amik_varze.secret_council",
+		"says": "He sits on a secret council that meets at Lumbridge Castle, and at one meeting a vengeful wizard-cook's magic froze him until a creme brulee supreme, flambeed by a fairy dragon, protected him.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Amik_Varze",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "RECIPE_FOR_DISASTER", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_amik_varze.dragon_council",
+		"says": "When dragons were seen flying over the land, he travelled to Varrock to meet the other rulers, urging them to stop bickering and deal with the threat, and noting that boats do badly against dragonfire.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_II",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "DRAGON_SLAYER_II", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.park_bench",
+		"says": "Sir Tiffy sits on a bench in Falador Park most of the day and thinks it a splendid place for a walk.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sir_Tiffy_Cashien",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_tiffy_cashien.falador_first",
+		"says": "He thinks Falador far superior to Lumbridge, which he calls a smelly little swamp village.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sir_Tiffy_Cashien",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_tiffy_cashien.recruiter",
+		"says": "He is head of recruitment for the Temple Knights, a secret elite order within the White Knights.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Tiffy_Cashien",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "RECRUITMENT_DRIVE", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.founded_by_saradomin",
+		"says": "He says Saradomin founded the Temple Knights centuries ago, and that their orders come through Sir Vey Lance, their head of operations and the only one of them ever to have met the god.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recruitment_Drive",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "RECRUITMENT_DRIVE", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.white_knights_dim",
+		"says": "He reckons any fool with a sword can get into the White Knights, which is why they're so incompetent, and that the Temple Knights want brains, leaving thugs to the White Knights and the guards.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recruitment_Drive",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "RECRUITMENT_DRIVE", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.tests",
+		"says": "Recruits sit five tests of wits at a secret training ground, taking no items or armour in, and the way there involves minding your head and ignoring a smell.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recruitment_Drive",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "RECRUITMENT_DRIVE", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.amik_bad_form",
+		"says": "Sir Amik is supposed to brief recruits before sending them to him, and Sir Tiffy finds it jolly bad form when he doesn't.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recruitment_Drive",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "RECRUITMENT_DRIVE", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.dossiers",
+		"says": "The Temple Knights keep a dossier on everyone, and he says knowledge is his business.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wanted!",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WANTED", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.ancient_decree",
+		"says": "By ancient decree only White Knights may join the Temple Knights, and becoming a White Knight normally means five years as a squire, which puts off impatient adventurers.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wanted!",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WANTED", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.the_ruse",
+		"says": "He got the adventurer into the White Knights by letting Sir Amik believe they had turned the Temple Knights down, and by sending Sir Amik word of Solus so that he would deputise them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wanted!",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WANTED", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.solus_caught",
+		"says": "Solus Dellagar was brought down at the rune essence mine with a squad of Temple Knights to help, which Sir Tiffy likes to point out with a laugh.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wanted!",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WANTED", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.commorb",
+		"says": "He makes communication orbs from a law rune, a slayer gem and molten glass, and tells off anyone careless enough to lose one.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wanted!",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WANTED", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.gaze_of_saradomin",
+		"says": "Through the Gaze of Saradomin he can arrange for a Temple Knight who dies to wake at Falador's castle rather than in Lumbridge.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sir_Tiffy_Cashien",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "RECRUITMENT_DRIVE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.armour",
+		"says": "He sells Temple Knight initiate armour from his bench, and proselyte armour once a knight has been promoted.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Tiffy_Cashien",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "RECRUITMENT_DRIVE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.witchaven_mission",
+		"says": "He is sending the adventurer to Witchaven, south-east of Ardougne, to see Col. O'Niall, a retired Temple Knight, with a silly code phrase about Falador's geese flying backwards.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Slug_Menace",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "THE_SLUG_MENACE", "states": ["IN_PROGRESS"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.mother_mallum",
+		"says": "Mother Mallum, the sea slugs' queen, is free again after Witchaven; he expects her to go after Gielinor's important people next, has stepped up the knights' watch, and has ordered Col. O'Niall killed on sight.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Slug_Menace",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "THE_SLUG_MENACE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.proselyte",
+		"says": "After Witchaven he promoted the adventurer to proselyte, though he wished it were under better circumstances.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Slug_Menace",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "THE_SLUG_MENACE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.entrana_relic",
+		"says": "The Temple Knights are looking into a relic stolen from the altar on Entrana, which he already knew about before anyone came to tell him.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Devious_Minds",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "DEVIOUS_MINDS", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.dragon_war",
+		"says": "Before the rulers met in Varrock about the dragons he went through the Temple Knights' archives and decided war was inevitable, and he later sailed with the fleet that came to the adventurer's aid.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_II",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "DRAGON_SLAYER_II", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_tiffy_cashien.lucien",
+		"says": "He heard from Akrisae what happened with Lucien and expects the Temple Knights to catch him sooner or later.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sir_Tiffy_Cashien",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WHILE_GUTHIX_SLEEPS", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_vyvin.elderly",
+		"says": "Sir Vyvin is an elderly White Knight officer who wears an eyepatch.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Vyvin",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_vyvin.rooms",
+		"says": "He lives in the eastern part of the White Knights' Castle, two floors up.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Vyvin",
+		"canon": "wiki",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_vyvin.mightiest_order",
+		"says": "He calls the White Knights of Falador the most powerful order of knights in the land.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sir_Vyvin",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_vyvin.helping_vallance",
+		"says": "He says the knights help King Vallance rule because the king is getting old and tired.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sir_Vyvin",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_vyvin.heirloom",
+		"says": "His family sword has been handed down for five generations and was made by the Imcando dwarves, a clan of famously skilled smiths.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Knight%27s_Sword",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_vyvin.portrait",
+		"says": "He keeps a small portrait of his father, showing the family sword, in a cupboard in his room.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Knight%27s_Sword",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "THE_KNIGHTS_SWORD", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.sir_vyvin.sword_coming",
+		"says": "He had the family sword stored in Lumbridge and his squire is fetching it to Falador, as he wants it for a parade.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Knight%27s_Sword",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "THE_KNIGHTS_SWORD", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.sir_vyvin.sword_home",
+		"says": "His squire brought the family sword back to him and he is satisfied it is the same heirloom.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Knight%27s_Sword",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "THE_KNIGHTS_SWORD", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_vyvin.squire",
+		"says": "His squire, Squire Asrol, works in the castle courtyard, is loyal to him and works hard, but frets about displeasing him.",
+		"source": "https://oldschool.runescape.wiki/w/Squire",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_vyvin.armourer",
+		"says": "He is the White Knights' armourer and sells white armour and weapons only to White Knights.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Vyvin",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_vyvin.ranks",
+		"says": "He sells to a White Knight according to their rank, from Novice through Peon, Page, Noble and Adept up to Master, and only a Master may buy the best, such as the white two-handed sword.",
+		"source": "https://oldschool.runescape.wiki/w/Sir_Vyvin",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WANTED", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_vyvin.earn_rank",
+		"says": "A knight's rank rises with every Black Knight they kill and falls with every White Knight, and he refuses anything to a knight without rank until they prove themselves.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sir_Vyvin",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WANTED", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_vyvin.rare_adepts",
+		"says": "He seldom sees a White Knight who has reached Adept, and is delighted to serve a Noble.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sir_Vyvin",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": {"quest": "WANTED", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.sir_vyvin.plumes",
+		"says": "A White Knight's helmet plume shows their rank: red for initiates, yellow for proselytes, green for acolytes and blue for partisans.",
+		"source": "https://oldschool.runescape.wiki/w/White_Knights",
+		"canon": "wiki",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.sir_vyvin.no_patience",
+		"says": "He has no patience for strangers who talk at him slowly to keep him busy, and will simply stop talking to them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sir_Vyvin",
+		"canon": "in-game",
+		"knownIn": ["falador"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.hut",
+		"says": "Doric lives alone in a small hut north of Falador, just east of the Taverley gate and south of Goblin Village, and enjoys the solitude.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Doric",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.pickaxes",
+		"says": "He makes pickaxes for a living and calls himself the best pickaxe maker in the whole of Gielinor.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Doric",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.nurmof",
+		"says": "He has a standing order with Nurmof, who sells Doric's pickaxes from a shop in the Dwarven Mine, so he won't sell one to you directly.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Doric",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.mine_friends",
+		"says": "The entrance to the Dwarven Mine is in the side of Ice Mountain just east of his hut, and he calls the dwarves down there his friends and a friendly bunch.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Doric",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.anvils",
+		"says": "His hut has two anvils and a whetstone, and the anvils get plenty of work from his own pickaxe making.",
+		"source": "https://oldschool.runescape.wiki/w/Doric%27s_hut",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.whetstone",
+		"says": "He keeps the whetstone for more advanced smithing.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Doric",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.clay_casts",
+		"says": "Clay is what he uses most, to make his casts.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Doric%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.needs_ore",
+		"says": "He is short of materials, six clay, four copper ore and two iron ore, and will let whoever fetches them use his anvils.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Doric%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": {"quest": "DORICS_QUEST", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.doric.ores_nearby",
+		"says": "Clay, copper and iron can all be mined in the rocks just inside the Dwarven Mine.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Doric%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.mining_advice",
+		"says": "He thinks mining a useful skill, and tells weak miners to practise or buy their iron ore from someone more experienced.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Doric%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.ores_delivered",
+		"says": "An adventurer brought him his clay and ore; he paid them a few coins and lets them use his anvils whenever they like.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Doric%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": {"quest": "DORICS_QUEST", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.doric.love_of_metal",
+		"says": "He holds the love of metal close to his heart and likes to ask how a friend's metalworking is going.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Doric",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.steel_pickaxe",
+		"says": "He carries a steel pickaxe on his back.",
+		"source": "https://oldschool.runescape.wiki/w/Doric",
+		"canon": "wiki",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.wheat_field",
+		"says": "He keeps a little wheat field just south of his hut, where a crop circle sometimes appears.",
+		"source": "https://oldschool.runescape.wiki/w/Doric",
+		"canon": "in-game",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.doric.closest_anvils",
+		"says": "His anvils are the closest ones to the Dwarven Mine.",
+		"source": "https://oldschool.runescape.wiki/w/Doric",
+		"canon": "wiki",
+		"knownIn": ["ice_mountain"],
+		"gate": null
+	},
+	{
+		"id": "char.thurgo.home",
+		"says": "Thurgo lives in a small hut on the cliffs of Asgarnia's southern peninsula, south of Port Sarim and just north of Mudskipper Point, by the way down into the Asgarnian Ice Dungeon.",
+		"source": "https://oldschool.runescape.wiki/w/Thurgo",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": null
+	},
+	{
+		"id": "char.thurgo.skillcape",
+		"says": "He wears a Smithing skillcape, which shows he is a master blacksmith.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Thurgo",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": null
+	},
+	{
+		"id": "char.thurgo.ancestors",
+		"says": "He says his ancestors were the greatest blacksmiths in dwarven history, so being a master smith is only to be expected.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Thurgo",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": null
+	},
+	{
+		"id": "char.thurgo.getting_old",
+		"says": "He brushes off questions about his people, saying he doesn't talk about that sort of thing any more because he's getting old.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Knight%27s_Sword",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": {"quest": "THE_KNIGHTS_SWORD", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.thurgo.redberry_pie",
+		"says": "Redberry pie is his favourite food; he never says no to one, likes anyone who bakes a good one, and could eat them all day.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Thurgo",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": null
+	},
+	{
+		"id": "char.thurgo.imcando",
+		"says": "He is an Imcando dwarf, of a clan once famed as the world's finest smiths, and believes he is the last of them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Thurgo",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": {"quest": "THE_KNIGHTS_SWORD", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.thurgo.imcando_fall",
+		"says": "Most of the Imcando were wiped out in barbarian invasions about a century ago, and the few survivors kept to themselves.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Knight%27s_Sword",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": {"quest": "THE_KNIGHTS_SWORD", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.thurgo.blurite",
+		"says": "Blurite ore lies in the cliff under his hut, guarded by a powerful ice giant; it is useless for weapons except crossbows, but fine for decorating a hilt.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Knight%27s_Sword",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": null
+	},
+	{
+		"id": "char.thurgo.knights_swords",
+		"says": "Falador's knights used to carry swords with designs that matched their position.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Knight%27s_Sword",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": null
+	},
+	{
+		"id": "char.thurgo.vyvin_sword",
+		"says": "He forged a copy of Sir Vyvin's lost family sword from a portrait, a lump of blurite and two iron bars, and will make another for anyone who brings the materials and a pie.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Thurgo",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": {"quest": "THE_KNIGHTS_SWORD", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.thurgo.keldagrim",
+		"says": "He let slip that his people haven't been to Keldagrim in a long time.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Giant_Dwarf",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": {"quest": "THE_GIANT_DWARF", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.thurgo.ancient_axe",
+		"says": "He restored an ancient dwarven battleaxe from Keldagrim, needing only a single iron bar and a pie.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Giant_Dwarf",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": {"quest": "THE_GIANT_DWARF", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.thurgo.crowbar",
+		"says": "He talked an adventurer through hammering a crowbar out of a steel bar, giving directions with his mouth full of pie.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Prying_Times",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": {"quest": "PRYING_TIMES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.thurgo.ramarno",
+		"says": "He has heard that another Imcando dwarf, Ramarno, keeps the ruins of Camdozaal going beneath Ice Mountain; he means to see the city one day, but hasn't gone because he wouldn't know what to say.",
+		"source": "https://oldschool.runescape.wiki/w/Thurgo",
+		"canon": "developer",
+		"knownIn": ["port_sarim"],
+		"gate": {"quest": "BELOW_ICE_MOUNTAIN", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.thurgo.not_magic",
+		"says": "Magic isn't really his thing.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Thurgo",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": null
+	},
+	{
+		"id": "char.thurgo.wise_old_man",
+		"says": "He sometimes waits on information from the Wise Old Man, though he'd rather the old man sent a pie.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Thurgo",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": null
+	},
+	{
+		"id": "char.thurgo.master_smiths",
+		"says": "He believes master smiths must stick together, and that a smith of real skill can earn a fortune quickly.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Thurgo",
+		"canon": "in-game",
+		"knownIn": ["port_sarim"],
+		"gate": null
+	},
+	{
+		"id": "char.oziach.hut",
+		"says": "Oziach lives in a hut by the cliffs at the north-western edge of Edgeville.",
+		"source": "https://oldschool.runescape.wiki/w/Oziach",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": null
+	},
+	{
+		"id": "char.oziach.master_smith",
+		"says": "He is a master smith, the maker of rune armour, and calls himself the master smith of Misthalin.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Oziach",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": null
+	},
+	{
+		"id": "char.oziach.heroes_only",
+		"says": "He won't let just anyone wear his rune platemail; it is only for heroes.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": null
+	},
+	{
+		"id": "char.oziach.guildmaster",
+		"says": "The Guildmaster of the Champions' Guild keeps sending fancy-pants heroes up to bother him for a quest.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": null
+	},
+	{
+		"id": "char.oziach.odd",
+		"says": "Even the Guildmaster says Oziach can be a little odd, and strangers take him for a strange little man.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": null
+	},
+	{
+		"id": "char.oziach.own_armour",
+		"says": "He wears a bulkier rune platebody than usual, in unusual colours.",
+		"source": "https://oldschool.runescape.wiki/w/Oziach",
+		"canon": "wiki",
+		"knownIn": ["edgeville"],
+		"gate": null
+	},
+	{
+		"id": "char.oziach.left_alone",
+		"says": "He'd rather be left alone, and has nothing to sell to people who aren't heroes.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Oziach",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.oziach.slay_elvarg",
+		"says": "He has told the adventurer they may wear his rune platemail only once they have slain the dragon of Crandor.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["IN_PROGRESS"]}
+	},
+	{
+		"id": "char.oziach.no_handholding",
+		"says": "He won't hold any adventurer's hand; questions about how to kill a dragon go to the Guildmaster.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": null
+	},
+	{
+		"id": "char.oziach.apology",
+		"says": "When the adventurer came back having slain the dragon of Crandor, he admitted he'd underestimated them and apologised.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.oziach.shop",
+		"says": "He sells rune platebodies, green dragonhide bodies and anti-dragon shields to proven dragon slayers.",
+		"source": "https://oldschool.runescape.wiki/w/Oziach",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.oziach.shield_theory",
+		"says": "He reckons an anti-dragon shield soaks up dragonfire and lets it radiate away, and wonders how to get the fire back out again.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Oziach",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.oziach.visage",
+		"says": "He has heard legends of a draconic visage made by the dragonkin that can channel dragonfire; it is mighty rare, and if any creature carries one it will be a dragon.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Oziach",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.oziach.dragonfire_shield",
+		"says": "For a very steep fee he will fix a draconic visage to an anti-dragon shield to make a dragonfire shield, or a skeletal visage to make a dragonfire ward.",
+		"source": "https://oldschool.runescape.wiki/w/Oziach",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.oziach.own_prices",
+		"says": "He reckons a master smith can charge what he likes, unless the customer is as good a smith as he is.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Oziach",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": null
+	},
+	{
+		"id": "char.oziach.maze_keys",
+		"says": "Keys to Melzar's Maze are the Guildmaster's business now, not his.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Oziach",
+		"canon": "in-game",
+		"knownIn": ["edgeville"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["FINISHED"]}
+	}
+]}

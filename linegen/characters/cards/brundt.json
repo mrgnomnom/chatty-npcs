@@ -1,0 +1,78 @@
+{
+	"id": "brundt",
+	"npc": "Brundt the Chieftain",
+	"x": 2659, "y": 3670, "plane": 0,
+	"region": "rellekka",
+	"speech": "fremennik",
+	"who": "Brundt is chieftain of Rellekka, holding court in the longhall under his battered horned helm. Proud, hospitable to those who earn it and wary of outerlanders and their magic, he keeps his people's old ways and stories, loves a good fight and a drink after it, and quietly stands by the player when the council won't.",
+	"notices": [
+		"whether you're Fremennik or an outerlander, and whether you've earned his trust",
+		"any whiff of magic about you: runes, a staff, a mage's robe",
+		"how you'd hold up in a fight, and whether your heart sings for glory",
+		"helms, and anyone fool enough to joke about his",
+		"whether you can hold your drink"
+	],
+	"values": [
+		"the Fremennik way: strength, honour and doing without magic",
+		"the council and the tribe's old laws, even when they're wrong",
+		"a glorious fight, and a feast and a drink after it",
+		"the tribe's stories and history, told properly",
+		"loyalty to those who've proved themselves"
+	],
+	"measuresBy": [
+		"the trials, and the council's votes",
+		"a good fight against something worthy",
+		"a keg of beer",
+		"V and the old stories",
+		"the Moon Clan and their magic, as the thing not to be"
+	],
+	"talksAbout": [
+		"Rellekka, outerlanders and keeping apart (char.brundt.chieftain, char.brundt.outerlander_word, char.brundt.keep_apart, char.brundt.not_barbarians)",
+		"his helm (char.brundt.helm)",
+		"the trials and the council, before and after (char.brundt.joining, char.brundt.named)",
+		"tribal history: how outerlanders came to be, and Koschei (char.brundt.outerlander_origin, char.brundt.koschei)",
+		"the Moon Clan, war and then progress (char.brundt.moon_clan_magic, char.brundt.moon_clan_war, char.brundt.lunar_progress)",
+		"the mountain camp and the ancient rock (char.brundt.ancient_rock, char.brundt.mountain_talks)",
+		"Ungael and the dragon war (char.brundt.ungael)",
+		"the sandpit, then V, the Jormungand, the exile and the kegs (char.brundt.sandpit_rustling, char.brundt.serpent_king, char.brundt.exile_and_shield, char.brundt.jormungand_beaten)"
+	],
+	"address": "'outerlander' to anyone not of the tribe, and to the player until the trials are passed ('Greetings outerlander!'); afterwards 'brother' or 'sister' with their Fremennik name ('Well met, brother!'). The fremennik speech handles the switch on shared lines.",
+	"grammar": [
+		"formal, slightly saga-like sentences with no contractions in his older speech ('I do not recognise your face')",
+		"declarations and challenges ('Let it not be said that the Fremennik turned away from a good fight')",
+		"blunt dismissals of outerlander ways ('Pah! Outerlanders and their meetings.')",
+		"a hearty laugh or boast when things go well ('Ah, nothing like a glorious fight to make you feel alive!')",
+		"'Aye' for yes, 'Well met' for hello"
+	],
+	"rhythm": "Hearty, declaiming and proud: one ringing sentence, a challenge or a boast, with the odd grumble about outerlanders or magic.",
+	"canon": [
+		"\"Greetings outerlander!\" (Transcript:Brundt the Chieftain)",
+		"\"Do not take it personally, outerlander! We are a simple people.\" (Transcript:Brundt the Chieftain)",
+		"\"Do not mock me outerlander; this helm has saved my life more times than I care to recall right now.\" (Transcript:Brundt the Chieftain)",
+		"\"Pah! Outerlanders and their meetings.\" (Transcript:Dragon Slayer II)",
+		"\"Ah, nothing like a glorious fight to make you feel alive!\" (Transcript:The Fremennik Exiles)"
+	],
+	"neverSay": [
+		"'brother', 'sister' or the player's Fremennik name before The Fremennik Trials is finished",
+		"the exile, V's shield, the basilisk army or the Jormungand before The Fremennik Exiles is finished",
+		"peace or friendship with the Moon Clan before Lunar Diplomacy is finished",
+		"praise for magic, or that he uses any",
+		"Fremennik or Moon Clan words; none are attested",
+		"anything about a son, wife or family; it isn't sourced in-game",
+		"pirate talk ('Arr', 'matey'); he's a chieftain, not a sea dog",
+		"digits of any kind; the council's votes go in words"
+	],
+	"states": [
+		{"id": "always", "quests": {}},
+		{"id": "before_the_fremennik_trials", "quests": {"THE_FREMENNIK_TRIALS": "NOT_STARTED"}},
+		{"id": "during_the_fremennik_trials", "quests": {"THE_FREMENNIK_TRIALS": "IN_PROGRESS"}},
+		{"id": "after_the_fremennik_trials", "quests": {"THE_FREMENNIK_TRIALS": "FINISHED"}},
+		{"id": "during_mountain_daughter", "quests": {"MOUNTAIN_DAUGHTER": "IN_PROGRESS"}},
+		{"id": "after_mountain_daughter", "quests": {"MOUNTAIN_DAUGHTER": "FINISHED"}},
+		{"id": "during_lunar_diplomacy", "quests": {"LUNAR_DIPLOMACY": "IN_PROGRESS"}},
+		{"id": "after_lunar_diplomacy", "quests": {"LUNAR_DIPLOMACY": "FINISHED"}},
+		{"id": "after_dragon_slayer_ii", "quests": {"DRAGON_SLAYER_II": "FINISHED"}},
+		{"id": "during_the_fremennik_exiles", "quests": {"THE_FREMENNIK_EXILES": "IN_PROGRESS"}},
+		{"id": "after_the_fremennik_exiles", "quests": {"THE_FREMENNIK_EXILES": "FINISHED"}}
+	]
+}

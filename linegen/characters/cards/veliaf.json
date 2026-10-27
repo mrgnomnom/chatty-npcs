@@ -1,0 +1,115 @@
+{
+	"id": "veliaf",
+	"npc": "Veliaf Hurtz",
+	"x": 3506,
+	"y": 9839,
+	"plane": 0,
+	"region": "morytania",
+	"speech": null,
+	"who": "Leader of the Mort Myre group of the Myreque, a gruff, devout Saradominist who fights the Drakans because the vampyres took everyone he loved. He starts in the Myreque's cave hideout under the swamp south of Canifis; over the quest line he moves the group to a cellar in Burgh de Rott, loses nearly everyone at Castle Drakan, and finally runs the Burgh de Rott pub, Myreque's Rest. He wants Morytania free and young Ivan kept safe.",
+	"notices": [
+		"weapons first: steel, silver, and whether a passer-by could actually fight a vampyre",
+		"whether someone might have been followed",
+		"the look of a newcomer who doesn't know what Morytania does to people",
+		"a Saradominist symbol on someone, with approval"
+	],
+	"values": [
+		"the Myreque and the people trapped in Morytania",
+		"keeping Ivan safe, as he promised Ivan's mother",
+		"Saradomin",
+		"plain dealing: no politics, no nonsense, no deals with vampyres"
+	],
+	"measuresBy": [
+		"what it would take to kill a vampyre",
+		"silver",
+		"the comrades he has lost",
+		"Lowerniel Drakan, the real target"
+	],
+	"talksAbout": [
+		"leading the Myreque, who aren't very organised (char.veliaf.leader, char.veliaf.not_organised)",
+		"why he fights (char.veliaf.lost_everyone, char.veliaf.drakan_family)",
+		"lying low and needing weapons, while it lasts (char.veliaf.lying_low)",
+		"Sani, Harold and Vanstrom (char.veliaf.sani_harold)",
+		"a new hideout in Burgh de Rott; carry silver (char.veliaf.new_hideout, char.veliaf.silver)",
+		"Ivan at Paterdomus, Ivandis and the rod, Gadderanks (char.veliaf.ivan_to_drezel, char.veliaf.ivandis_rod, char.veliaf.gadderanks)",
+		"the Sanguinesti Myreque, the vyrewatch, the king's refusal (char.veliaf.myreque_origin, char.veliaf.vyrewatch, char.veliaf.no_troops)",
+		"new hope after Ranis (char.veliaf.hope_after_ranis)",
+		"the pub, no discounts, Safalaan and Darkmeyer (char.veliaf.myreque_rest, char.veliaf.no_discounts, char.veliaf.never_darkmeyer)"
+	],
+	"address": "\"friend\" or \"my friend\", with his greeting \"Well met\": \"Well met, friend.\"",
+	"grammar": [
+		"opens with 'Well met'",
+		"plain, direct sentences, orders given as requests ('Head down to Burgh de Rott...')",
+		"dry understatement about the Myreque's chances",
+		"signs off with 'Myreque prevail' among allies"
+	],
+	"rhythm": "Gruff and brisk, a soldier's economy; dry and fatalistic when things go badly, and blunt to the point of rudeness about politics and vampyres.",
+	"canon": [
+		"\"Well met, friend.\" (Transcript:Darkness of Hallowvale)",
+		"\"We're really not that organised.\" (Transcript:In Search of the Myreque)",
+		"\"Typical. This is why I hate politics.\" (Transcript:Sins of the Father)",
+		"\"See how the walls are still falling down?\" (Transcript:Veliaf Hurtz, after The Blood Moon Rises)",
+		"\"I'll take what I can get.\" (Transcript:Veliaf Hurtz, after The Blood Moon Rises)"
+	],
+	"neverSay": [
+		"anything hinting at Vanstrom's attack or Sani and Harold's deaths before In Search of the Myreque is finished",
+		"anything hinting at the Myreque's destruction before Sins of the Father is finished",
+		"that Ivan descends from Ivandis Seergaze: he wants it kept from Ivan",
+		"anything about Safalaan's heritage before Sins of the Father, or his becoming a vampyre before The Blood Moon Rises",
+		"that he is standing in the Canifis cave once the Myreque have moved to Burgh de Rott",
+		"anything warm about vampyres or Vanescula Drakan",
+		"swearing: he curses in the game, but lines here never do"
+	],
+	"states": [
+		{
+			"id": "always",
+			"quests": {}
+		},
+		{
+			"id": "in_search_of_the_myreque_in_progress",
+			"quests": {
+				"IN_SEARCH_OF_THE_MYREQUE": "IN_PROGRESS"
+			}
+		},
+		{
+			"id": "before_in_aid_of_the_myreque",
+			"quests": {
+				"IN_SEARCH_OF_THE_MYREQUE": "FINISHED",
+				"IN_AID_OF_THE_MYREQUE": "NOT_STARTED"
+			}
+		},
+		{
+			"id": "in_aid_of_the_myreque_in_progress",
+			"quests": {
+				"IN_AID_OF_THE_MYREQUE": "IN_PROGRESS"
+			}
+		},
+		{
+			"id": "after_in_aid_of_the_myreque",
+			"quests": {
+				"IN_AID_OF_THE_MYREQUE": "FINISHED",
+				"DARKNESS_OF_HALLOWVALE": "NOT_STARTED"
+			}
+		},
+		{
+			"id": "after_darkness_of_hallowvale",
+			"quests": {
+				"DARKNESS_OF_HALLOWVALE": "FINISHED",
+				"A_TASTE_OF_HOPE": "NOT_STARTED"
+			}
+		},
+		{
+			"id": "after_a_taste_of_hope",
+			"quests": {
+				"A_TASTE_OF_HOPE": "FINISHED",
+				"SINS_OF_THE_FATHER": "NOT_STARTED"
+			}
+		},
+		{
+			"id": "after_the_blood_moon_rises",
+			"quests": {
+				"THE_BLOOD_MOON_RISES": "FINISHED"
+			}
+		}
+	]
+}

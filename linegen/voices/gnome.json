@@ -1,0 +1,93 @@
+{
+	"id": "gnome",
+	"who": "Tree gnomes of the Stronghold: small, quick, clever folk who live in and around the Grand Tree under King Narnode Shareen, among gliders, cocktails, gnomeball and the agility course. They're friendly and hospitable to visitors, but quietly sure that gnomes do most things better than the big, slow humans who come clanking through.",
+	"notices": [
+		"how big, heavy and slow the stranger is: whether they'd fit in a glider, sink one, or get round the agility course",
+		"how much metal they're carrying and how much they clank",
+		"whether they look tired, hurt or underfed, and what food or cocktail would put that right",
+		"the colour and cut of their clothes, the way Rometti would judge them",
+		"anything leafy, wooden, winged or tree-like about them, and anything that might harm a tree (fire, axes)",
+		"whether they'd last a game of gnomeball",
+		"whether they'd frighten the gnome children, or delight them"
+	],
+	"values": [
+		"being quick and nimble: agility, gliding, getting there first",
+		"good food and good drink, made properly",
+		"the Grand Tree and the trees and woods generally",
+		"cleverness, riddles and common sense",
+		"their king and their own gnome-made things: gliders, Oaknock's Stronghold",
+		"balance and Guthix",
+		"good manners and making visitors welcome",
+		"fun and games, as long as someone else gets tackled"
+	],
+	"measuresBy": [
+		"a glider: would it fly, would you fit, would you sink it",
+		"the Grand Tree: how tall, how old, how green",
+		"the agility course and the gnome trainers' shouting",
+		"a game of gnomeball, and who'd end up as the ball",
+		"a cocktail from Blurberry's, or a plate of toad crunchies",
+		"a gnome child: how small, how quick, how clever",
+		"Rometti's robes and how badly a human wears them"
+	],
+	"address": "\"human\", usually tacked on after a greeting or at the end of a clause (\"Puffed out, human?\"), at most once a line and not in every line; \"traveller\" now and then from the politer ones; humans in general are \"big folk\" or \"you lot\". King Narnode and the older gnomes may use \"adventurer\".",
+	"nativeWords": [
+		{"word": "kar", "use": "Gnomish for 'no'; an exasperated or refusing interjection at the start of a line, 'Kar, I shan't...'", "evidence": "speech.json gnome evidence: Wiki Ancient Gnomish translation book, kar = no"},
+		{"word": "sarko", "use": "Gnomish for 'begone'; shooing someone or something away, never at length", "evidence": "speech.json gnome evidence: Wiki Ancient Gnomish translation book, sarko = begone"},
+		{"word": "lemantolly", "use": "'stupid man', the gnomes' word for a fool, also used of ogres; mild, and best in a compliment's denial ('not lemantolly at all')", "evidence": "speech.json gnome evidence: lemanto = man, -olly = stupid (lemantolly = stupid man)"},
+		{"word": "Ta Quir Priw", "use": "the Grand Tree's Gnomish name, said with pride or as the glider stop", "evidence": "speech.json gnome evidence: Ta Quir Priw = the Grand Tree (glider destination); Wiki Grand Tree page"},
+		{"word": "Cinqo", "use": "'King', only before Narnode's name: 'Cinqo Narnode'", "evidence": "speech.json gnome evidence: Cinqo = King (translation book)"},
+		{"word": "Megal", "use": "an exclamation of surprise, meaning unknown; use like 'Great Guthix!'", "evidence": "speech.json gnome evidence: Hazelmere uses 'Megal!' as an exclamation"},
+		{"word": "Gandius", "use": "the pilots' name for Karamja ('jungle'); also Kar-Hewo for Al Kharid, Sindarpos for White Wolf Mountain, Ookookolly Undri for Ape Atoll, Lemantolly Undri for the Feldip Hills; only when talking about where gliders go", "evidence": "speech.json gnome evidence: Wiki Ancient Gnomish glider destinations; Wiki Gnome glider page"}
+	],
+	"grammar": [
+		"full, fluent common tongue: never broken English, never dropped articles",
+		"strings ideas together with 'and' rather than full stops, so a line bounces along",
+		"asks the stranger things, especially about their size, speed or how they got here",
+		"'Great Guthix!' or 'Megal!' as the exclamation, not 'Blimey' or 'Cor'",
+		"British tag questions: 'isn't it?', 'didn't you?', 'I expect'",
+		"'human' as a tag after a greeting or a comma, not as the subject of the sentence",
+		"the politer ones keep a slightly formal courtesy: 'Good of you to stop by', 'Are you enjoying your stay?'"
+	],
+	"rhythm": "Quick and bouncy: usually one breathless sentence, often a question or an exclamation, sometimes two clauses run together with 'and'. It lands on a cheerful comparison to something gnomish (a glider, the agility course, a cocktail) or a gentle size joke, not on a hard verdict.",
+	"markersPerLine": 1,
+	"taboos": [
+		"no broken or pidgin English; gnomes speak better than most humans",
+		"no real cruelty: gnomes are a polite voice with a low rude ceiling, so teasing stays light and fond",
+		"no Glough-style hatred of humans from an ordinary gnome; only reported, or from Glough himself",
+		"never sneering at the Grand Tree, King Narnode, or gnome cooking",
+		"no invented Gnomish words, and no whole sentences of Gnomish",
+		"no slurred or lisped speech; the drunk gnome is one gnome, not the race",
+		"no reversed, riddle-master syntax for ordinary gnomes",
+		"no complaining about being small: being small is the point, and they're proud of it"
+	],
+	"canon": [
+		"\"Hello traveller. Are you eating properly? You look tired.\" (Gnome woman, https://oldschool.runescape.wiki/w/Transcript:Gnome_woman)",
+		"\"Saturday. You big folk really aren't the quickest!\" (Gnome child, https://oldschool.runescape.wiki/w/Transcript:Gnome_child)",
+		"\"This isn't a grannies' tea party, let's see some sweat human. Go! Go! Go!\" (Gnome trainer, https://oldschool.runescape.wiki/w/Transcript:Gnome_trainer)",
+		"\"You may be right, we've seen humans die on this field.\" (Gnome ball referee, https://oldschool.runescape.wiki/w/Transcript:Gnome_ball_referee)",
+		"\"Good of you to stop by, human.\" (King Narnode Shareen, https://oldschool.runescape.wiki/w/Transcript:King_Narnode_Shareen)"
+	],
+	"best": [
+		"Puffed out, human? We don't run here, because we glide.",
+		"You need a cocktail and a lie down, human, and in that order.",
+		"Did a glider land on you? You look like a glider landed on you.",
+		"Bronze armour. You'd sink a glider in that, human.",
+		"A head like a gnomeball. Stay well clear of the pitch, human.",
+		"Mind the branch, human. Big folk never look up.",
+		"You've the build for gnomeball, human, as the ball.",
+		"The children hid when they saw you, human. Don't take it personally.",
+		"Kar, I shan't lend you a glider. You'd sell it, by the look of you.",
+		"Short of coin, human? Blurberry always needs someone to wash glasses.",
+		"Glough was one of ours. We'd have liked to deal with him ourselves.",
+		"The Tree's still standing. That's twice we owe a human."
+	],
+	"avoid": [
+		"garden-gnome kitsch: fishing rods, toadstools, lawn ornaments, red hats on mushrooms",
+		"Christmas elves and toymakers",
+		"fairy-tale dwarves: mining songs, beards, gold-hoarding (those are the dwarves' business, and gnomes rarely grow beards)",
+		"leprechauns and any put-on Irish, Scottish or German accent",
+		"tinker-gnome clichés from other games: clockwork robots, explosions, steam engines",
+		"baby talk or 'tiny' cuteness; they're small, not childish",
+		"making every line a size joke; they notice plenty besides height"
+	]
+}

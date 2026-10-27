@@ -1,0 +1,1218 @@
+{"facts": [
+	{
+		"id": "char.hans.servant",
+		"says": "Hans is a servant of Duke Horacio at Lumbridge Castle.",
+		"source": "https://oldschool.runescape.wiki/w/Hans",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.hans.walks",
+		"says": "Hans spends his days walking round and round the castle courtyard, and has done for longer than anyone remembers.",
+		"source": "https://oldschool.runescape.wiki/w/Hans",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.hans.lap",
+		"says": "His walk goes clockwise round the courtyard, and a lap takes him about a minute.",
+		"source": "https://oldschool.runescape.wiki/w/Hans",
+		"canon": "wiki",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.hans.newcomers",
+		"says": "Hans watches the newcomers arrive in Lumbridge, eager for adventure, and remembers each of them, down to how long they've been about in the world.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Hans",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.hans.directions",
+		"says": "When someone's lost, Hans tells them they're in Lumbridge Castle in Misthalin, that the road over the river runs north to Varrock, and that Draynor Village lies to the west.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Hans",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.hans.duke_upstairs",
+		"says": "Anyone looking for whoever's in charge gets sent by Hans up to the Duke's study on the first floor.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Hans",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.hans.easily_scared",
+		"says": "Hans frightens easily: threaten the castle and he runs off screaming for help.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Hans",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.hans.old_threat",
+		"says": "Years later, Hans still panics at the memory of the stranger who once came in threatening to kill everyone in the castle.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Magic,_Hans_and_Bankers!",
+		"canon": "developer",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.hans.chair",
+		"says": "One Christmas the Duke gave Hans a chair from his own room, and Hans was overjoyed to rest his aching feet at last.",
+		"source": "https://oldschool.runescape.wiki/w/Hans",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.hans.clues",
+		"says": "Treasure hunters with clue scrolls are sometimes sent to find Hans, and he hands them their next clue or a casket.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Hans",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.hans.cellar_rubble",
+		"says": "When part of the castle cellar wall fell in, Hans had to spend all day clearing up, and the Duke says it was an earthquake.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Lost_Tribe",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_LOST_TRIBE", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.hans.goblin_neighbours",
+		"says": "Hans is delighted to have the cave goblins as new neighbours under the castle, though he knows not everyone in Lumbridge liked the peace treaty.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Death_to_the_Dorgeshuun",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_LOST_TRIBE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.duke_horacio.duke",
+		"says": "Horacio is the Duke of Lumbridge and rules the town and the land around it from Lumbridge Castle.",
+		"source": "https://oldschool.runescape.wiki/w/Duke_Horacio",
+		"canon": "wiki",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.duke_horacio.rooms",
+		"says": "The Duke lives on the castle's first floor, in the northern bedroom.",
+		"source": "https://oldschool.runescape.wiki/w/Duke_Horacio",
+		"canon": "wiki",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.duke_horacio.unattended",
+		"says": "The Duke says he can't leave his castle unattended, so he sends others on his errands.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Duke_Horacio",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.duke_horacio.saradomin",
+		"says": "The Duke is a follower of Saradomin and swears by him.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Duke_Horacio",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.duke_horacio.peasantry",
+		"says": "Asked where the money is, the Duke says he's heard blacksmiths do well for themselves among the peasantry.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Duke_Horacio",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.duke_horacio.talisman",
+		"says": "The Duke's household turned up a curious old talisman while sorting through things stored in the castle cellar, and he has an odd feeling it matters.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Rune_Mysteries",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "RUNE_MYSTERIES", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.duke_horacio.talisman_errand",
+		"says": "The Duke wants the talisman taken to Archmage Sedridor at the Wizards' Tower, across the bridge from Draynor Village, as the wizards have been hunting for magical artefacts.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Rune_Mysteries",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "RUNE_MYSTERIES", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.duke_horacio.talisman_found_mine",
+		"says": "The talisman the Duke sent to the Wizards' Tower helped the wizards find their lost way back to a hidden rune essence mine.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Rune_Mysteries",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "RUNE_MYSTERIES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.duke_horacio.crandor_silence",
+		"says": "In the Duke's father's day Crandor was as important as Falador or Varrock, but when the Duke was little all word from it suddenly stopped.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.duke_horacio.father_lookouts",
+		"says": "The Duke's father was so afraid of the dragon Elvarg that he posted lookouts on the castle roof.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.duke_horacio.shields",
+		"says": "The Duke keeps anti-dragon shields, but he hasn't an endless supply and gives one only for a truly worthy cause.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Duke_Horacio",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.duke_horacio.shield_given",
+		"says": "When the player said they meant to slay Elvarg, the Duke judged them up to it and handed over one of his anti-dragon shields.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.duke_horacio.elvarg_slain",
+		"says": "The player slew Elvarg on Crandor, and the Duke now lets them have a dragon shield whenever they ask.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Duke_Horacio",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.duke_horacio.earthquake",
+		"says": "The Duke insists the castle cellar wall fell in because of an earthquake, and he's waiting on builders to mend it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Lost_Tribe",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_LOST_TRIBE", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.duke_horacio.goblin_wit",
+		"says": "The Duke holds that goblins live in natural caves and haven't the wit to dig tunnels of their own.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Lost_Tribe",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_LOST_TRIBE", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.duke_horacio.treaty",
+		"says": "The Duke signed a peace treaty with Ur-tag of the Dorgeshuun: above ground is Lumbridge's, below ground is the cave goblins', except the town's cellars.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Death_to_the_Dorgeshuun",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_LOST_TRIBE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.duke_horacio.hole_kept",
+		"says": "The Duke chose to leave the hole in the castle cellar open, as a road for trade with the cave goblins.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Lost_Tribe",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_LOST_TRIBE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.duke_horacio.sigmund_dismissed",
+		"says": "The Duke threw his adviser Sigmund out of his service for hiding the castle silverware to start a war with the cave goblins; he'd known Sigmund was in HAM, which he disapproves of but says isn't against the law.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Lost_Tribe",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_LOST_TRIBE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.duke_horacio.permits",
+		"says": "The Duke grants the trading permits in Lumbridge, and the Groats family hold the one for milk.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Ides_of_Milk",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.duke_horacio.secret_council",
+		"says": "The Duke hosts a secret council of leaders from across the lands at Lumbridge Castle, from the White Knights' Sir Amik Varze to Pirate Pete and the ogre Skrach.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recipe_for_Disaster/Another_Cook%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "RECIPE_FOR_DISASTER", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.duke_horacio.called_away",
+		"says": "At the council's feast the Duke was whisked away by a strange old man moments before the Culinaromancer froze his guests in time.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recipe_for_Disaster/Another_Cook%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "RECIPE_FOR_DISASTER", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.lumbridge_cook.head_cook",
+		"says": "The Cook is the head cook of Lumbridge Castle and works in the kitchen on its ground floor.",
+		"source": "https://oldschool.runescape.wiki/w/Cook_(Lumbridge)",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.lumbridge_cook.uniform",
+		"says": "The Cook wears standard cook's issue, a plain hat, apron and stripey trousers, and is put out if anyone doubts he's a real cook.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook%27s_Assistant",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.lumbridge_cook.family",
+		"says": "The Cook says he has a wife, four children and a goat to look after.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook%27s_Assistant",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.lumbridge_cook.no_pirate",
+		"says": "Running off to sea as a pirate is out for the Cook: his wife gets seasick and he has an irrational fear of eyepatches.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook%27s_Assistant",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.lumbridge_cook.no_holidays",
+		"says": "The Duke doesn't allow holidays for his core staff, the Cook included.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook%27s_Assistant",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.lumbridge_cook.suppliers",
+		"says": "The Cook gets his flour from Millie at Mill Lane Mill and his eggs from the Groats' farm across the river, where Gillie Groats looks after the dairy cows.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook%27s_Assistant",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.lumbridge_cook.big_cheeses",
+		"says": "Only the big cheeses get to dine at the Duke's table, never the people who fetch the ingredients.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook%27s_Assistant",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.lumbridge_cook.burns_cakes",
+		"says": "The Cook has admitted that every cake he's ever tried has burned, which is why he keeps sending adventurers for more ingredients.",
+		"source": "https://oldschool.runescape.wiki/w/Cook_(Lumbridge)",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.lumbridge_cook.birthday_panic",
+		"says": "The Cook is in a terrible state: it's the Duke's birthday, he forgot to buy the cake ingredients, and he's sure he'll be sacked and thrown into the street.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook%27s_Assistant",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "COOKS_ASSISTANT", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.lumbridge_cook.cake_ingredients",
+		"says": "For the cake the Cook needs a bucket of milk, an egg and a pot of flour.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook%27s_Assistant",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "COOKS_ASSISTANT", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.lumbridge_cook.cake_saved",
+		"says": "The player brought the Cook his milk, egg and flour, and he declared himself saved.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook%27s_Assistant",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "COOKS_ASSISTANT", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.lumbridge_cook.range",
+		"says": "The Cook's range is the Cook-o-matic, which uses temperature control and magic, and the salesman promised it burns less food.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook_(Lumbridge)",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.lumbridge_cook.range_allowed",
+		"says": "Since the player helped with the cake, the Cook lets them use his own range; before that he'd chase them off it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook_(Lumbridge)",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "COOKS_ASSISTANT", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.lumbridge_cook.rock_dust",
+		"says": "When the cellar wall fell in, rock dust went everywhere in the kitchen and got on all the Cook's ingredients.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Lost_Tribe",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_LOST_TRIBE", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.lumbridge_cook.ancestor",
+		"says": "The Cook's ancestor, the great chef Franizzard Van Lumbcook, cooked a banquet at the castle a century ago so fine that he and all his descendants were given a job for life.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recipe_for_Disaster/Another_Cook%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "RECIPE_FOR_DISASTER", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.lumbridge_cook.feels_a_failure",
+		"says": "The Cook has always felt he owes his job to his ancestor rather than his own cooking, and longs to prove he's a great cook too.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recipe_for_Disaster/Another_Cook%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "RECIPE_FOR_DISASTER", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.lumbridge_cook.not_birthday",
+		"says": "The Cook has owned up that it was never really the Duke's birthday; he doesn't even know when it is, and he was testing whether the player could be trusted.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recipe_for_Disaster/Another_Cook%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "RECIPE_FOR_DISASTER", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.lumbridge_cook.odd_recipe",
+		"says": "The Cook is recreating his ancestor's banquet from an ancient cookbook that calls for odd things: an eye of newt, a rotten tomato, greenman's ale and a Dirty Blast, a fruit blast with ash in it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Recipe_for_Disaster/Another_Cook%27s_Quest",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "RECIPE_FOR_DISASTER", "states": ["IN_PROGRESS"]}
+	},
+	{
+		"id": "char.lumbridge_cook.culinaromancer",
+		"says": "The Cook's old recipe let the Culinaromancer into the feast, and the Cook can't believe he nearly got all those people killed before the player defeated him.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cook_(Lumbridge)",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "RECIPE_FOR_DISASTER", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.father_aereck.priest",
+		"says": "Father Aereck is the priest of Saradomin who looks after the church of Lumbridge.",
+		"source": "https://oldschool.runescape.wiki/w/Father_Aereck",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.father_aereck.church_age",
+		"says": "Lumbridge church was built more than two hundred and thirty years ago, and Aereck is proud of it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Father_Aereck",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.father_aereck.succeeded_urhney",
+		"says": "Aereck took over as Lumbridge's priest after Father Urhney left to pray and meditate in the swamp.",
+		"source": "https://oldschool.runescape.wiki/w/Father_Aereck",
+		"canon": "wiki",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.father_aereck.urhney_hermit",
+		"says": "Aereck's old friend Father Urhney lives as a hermit in a shack in the far west of Lumbridge Swamp, and Aereck calls him the expert on ghosts.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Restless_Ghost",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.father_aereck.bell_ropes",
+		"says": "Urhney says that when the two of them were trainee priests, Aereck kept getting stuck up the bell ropes.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Restless_Ghost",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.father_aereck.most_followers",
+		"says": "Aereck holds that Saradomin has more followers than any other god, at least in this part of the world, and can't believe anyone hasn't heard of him.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Father_Aereck",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.father_aereck.creation",
+		"says": "Aereck teaches that Saradomin made the world together with his brothers Guthix and Zamorak.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Father_Aereck",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.father_aereck.tentacles",
+		"says": "Aereck supposes that anything not from this world is all slime and tentacles.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Father_Aereck",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.father_aereck.god_wars",
+		"says": "Aereck had always taken the old stories of a war between the gods as a symbol of the struggle between light and darkness in people's hearts.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Death_to_the_Dorgeshuun",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.father_aereck.ghost",
+		"says": "A ghost is haunting the church graveyard, and Aereck wants someone to get rid of it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Restless_Ghost",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_RESTLESS_GHOST", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.father_aereck.warlocks",
+		"says": "Aereck heard that a warlock had stolen the graveyard ghost's skull, and he hates warlocks.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:The_Restless_Ghost",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_RESTLESS_GHOST", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.father_aereck.ghost_gone",
+		"says": "The player got rid of the graveyard ghost, and Aereck asks Saradomin to smile on them for it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Father_Aereck",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_RESTLESS_GHOST", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.father_aereck.one_quest",
+		"says": "Aereck admits he only ever had the one quest to give.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Father_Aereck",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_RESTLESS_GHOST", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.father_aereck.wom_letters",
+		"says": "The Wise Old Man of Draynor sometimes sends Aereck a letter by an adventurer, and Aereck rewards whoever brings it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Father_Aereck",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.father_aereck.goblins_light",
+		"says": "Aereck hopes the cave goblins under Lumbridge, who have lived in darkness so long, will come into the light of Saradomin.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Death_to_the_Dorgeshuun",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "THE_LOST_TRIBE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.fred_the_farmer.farm",
+		"says": "Fred keeps sheep at a farmhouse north-west of Lumbridge, south of the windmill and beside the sheep pen.",
+		"source": "https://oldschool.runescape.wiki/w/Fred_the_Farmer",
+		"canon": "wiki",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.fred_the_farmer.well_fed",
+		"says": "Fred is a well-fed looking farmer.",
+		"source": "https://oldschool.runescape.wiki/w/Fred_the_Farmer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.fred_the_farmer.my_land",
+		"says": "Fred meets every visitor by demanding to know what they're doing on his land.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Fred_the_Farmer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.fred_the_farmer.open_gates",
+		"says": "Somebody keeps leaving Fred's gates open and letting all his sheep out, and he suspects passing strangers.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sheep_Shearer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.fred_the_farmer.no_killing",
+		"says": "Fred won't have anyone looking for things to kill on his farm, and calls such folk scoundrels.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Fred_the_Farmer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.fred_the_farmer.cant_be_lost",
+		"says": "Fred can't see how anyone gets lost near his farm: follow the road east and south and you're in Lumbridge.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Fred_the_Farmer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.fred_the_farmer.the_thing",
+		"says": "Fred fears The Thing in his fields, which nobody has ever properly seen: some say it's a black-hearted shapeshifter after the souls of decent folk, others say it's just a sheep.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sheep_Shearer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.fred_the_farmer.onions",
+		"says": "Onions grow on Fred's farm, next to the sheep field, and folk come by for them.",
+		"source": "https://oldschool.runescape.wiki/w/Fred_the_Farmer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge", "draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.fred_the_farmer.few_chickens",
+		"says": "Fred keeps only a few chickens; Seth Groats, on the other farm over the river towards Varrock, has loads.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:One_Small_Favour",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.fred_the_farmer.shearing_tips",
+		"says": "Fred lends out shears and warns that some sheep don't like being sheared, so persistence is the key.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sheep_Shearer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.fred_the_farmer.spinning_wheel",
+		"says": "The nearest spinning wheel, Fred says, is on the first floor of Lumbridge Castle, just east along the road from his house.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sheep_Shearer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": null
+	},
+	{
+		"id": "char.fred_the_farmer.woolly_sheep",
+		"says": "Fred's sheep are getting mighty woolly, and he wants someone to shear them and spin the wool into balls for him.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sheep_Shearer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "SHEEP_SHEARER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.fred_the_farmer.twenty_balls",
+		"says": "Fred wants twenty balls of wool, and he's promised some sort of payment for them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sheep_Shearer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "SHEEP_SHEARER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.fred_the_farmer.sheared",
+		"says": "The player sheared Fred's sheep and brought him the wool, and he paid up, if a little grudgingly.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Sheep_Shearer",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "SHEEP_SHEARER", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.fred_the_farmer.penguins",
+		"says": "The player keeps telling Fred that penguins disguised as sheep are up to something; Fred is a sheep farmer, and he thinks they've been hearing voices.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Cold_War",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "COLD_WAR", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.fred_the_farmer.jimmy_fanatics",
+		"says": "Fred was dismayed to hear HAM fanatics were holding Jimmy the Chisel, and admits he's just a farmer with no idea how to deal with fanatics.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:One_Small_Favour",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "ONE_SMALL_FAVOUR", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.fred_the_farmer.favour_thanks",
+		"says": "Fred was full of thanks once the player sorted out the business with Jimmy the Chisel.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:One_Small_Favour",
+		"canon": "in-game",
+		"knownIn": ["lumbridge"],
+		"gate": {"quest": "ONE_SMALL_FAVOUR", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.wise_old_man.sage",
+		"says": "The Wise Old Man, whose real name is Dionysius, is a famous old adventurer and wizard of Saradomin who has settled in a house in Draynor Village.",
+		"source": "https://oldschool.runescape.wiki/w/Wise_Old_Man",
+		"canon": "wiki",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.not_old",
+		"says": "He'd rather you left out the 'old' and called him a sage.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.travels",
+		"says": "In his time he has delved the deadliest dungeons, roamed the jungles of Karamja, meditated on Entrana, crossed the desert to Menaphos and Sophanem, and read dusty tomes in Varrock's library.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.junk",
+		"says": "He offers to look through adventurers' banks and tell them which old quest junk they can chuck away.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.little_jobs",
+		"says": "He gives out little jobs rather than quests: bronze bars, beer, leather cowls against the hail, and bread, since he has no decent larder.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.letters",
+		"says": "He sends adventurers off with letters to old friends: Father Aereck, Reldo the librarian, Thurgo the dwarf, Abbot Langley, the Oracle on Ice Mountain and Father Lawrence, whom he hears is drinking too much.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.partyhat",
+		"says": "He wears a blue partyhat and spectacles, is very fond of the hat, and won't part with it for anyone.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.bank_robbery",
+		"says": "Draynor bank was robbed, and the guard outside will show anyone a recording of the robbery that shows the Wise Old Man doing it.",
+		"source": "https://oldschool.runescape.wiki/w/Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.denial",
+		"says": "Accused of robbing the bank, he protests that he's an old man who walks with a stick, and tells people not to worry about him or his finances.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.grievance",
+		"says": "He grumbles that a lifetime of saving villages earned him nothing but a freezing old house next to a pig-sty, among yobs who can't keep their hands off the market stalls.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.telescope",
+		"says": "He keeps a telescope pointed at the Wizards' Tower, and says he simply admires its architecture.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.money",
+		"says": "He says money is terribly important when you haven't enough of it, but once you have as much as he has, it doesn't matter.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.three_gods",
+		"says": "He holds there are three gods, Saradomin, Guthix and Zamorak, and gets very cross at talk of any others.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.wise_old_man.no_quest_lately",
+		"says": "He hasn't been on what you'd call a quest in a long while.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Swan_Song",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "SWAN_SONG", "states": ["NOT_STARTED"]}
+	},
+	{
+		"id": "char.wise_old_man.swan_song",
+		"says": "His last adventure was defending the Piscatoris Fishing Colony from sea trolls, where the Sea Troll Queen laid him low and the player finished her off.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Swan_Song",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "SWAN_SONG", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.wise_old_man.retired",
+		"says": "Since then he says he's retired from adventuring: he's an old man, and new times need new heroes.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "SWAN_SONG", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.wise_old_man.shopping_trip",
+		"says": "To the player alone, he has hinted he might rob again, calling the bank job a shopping trip rather than a quest.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Wise_Old_Man",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "SWAN_SONG", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.wise_old_man.played_dead",
+		"says": "He once played dead in a mahogany coffin to fool the troll Mother, whose band he'd driven out of the tunnels in his youth, and gave the game away by snoring.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Making_Friends_with_My_Arm",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "MAKING_FRIENDS_WITH_MY_ARM", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.wise_old_man.galvek",
+		"says": "He came with other heroes to help the player against Galvek's dragons, and cheered when Galvek fell.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_II",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "DRAGON_SLAYER_II", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.wise_old_man.ellamaria",
+		"says": "He says he knew Queen Ellamaria long before she married King Roald, when she was a barmaid at the Blue Moon Inn.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Garden_of_Tranquillity",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "GARDEN_OF_TRANQUILLITY", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.aggie.witch",
+		"says": "Aggie is a witch who lives in Draynor Village, in a house off a dead-end road on the village's east side.",
+		"source": "https://oldschool.runescape.wiki/w/Aggie",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.makes_pretty",
+		"says": "Aggie mostly makes whatever she finds pretty, and makes dyes to brighten up the women's clothes.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aggie",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.dyes",
+		"says": "Aggie makes red dye from redberries, yellow dye from onions and blue dye from woad leaves, for a few coins a time.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aggie",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.redberries",
+		"says": "Aggie picks her redberries in the woods south of Varrock, and the food shop in Port Sarim sometimes has them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aggie",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.yellow",
+		"says": "Aggie thinks yellow a strange colour to come by, since it comes from onion skins, and sends people to the farm east of Draynor, by the sheep field, for onions.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aggie",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.woad",
+		"says": "Woad leaves are hard to find; Aggie's customers tell her the chief gardener in Falador grows them.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aggie",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.no_frogs",
+		"says": "Aggie hasn't turned anyone into a frog in years.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aggie",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.professor_machine",
+		"says": "Aggie blames talking chickens, and the flying fish of a few years back, on the professor's menace of a machine in the manor north of the village.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aggie",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.insult_fine",
+		"says": "Call Aggie names and she waves her hands and takes a few coins from your purse as a fine, or a pot of flour if you have one.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aggie",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.wrong_shape",
+		"says": "Aggie warns that anyone who insults a witch never knows what shape they might wake up in.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Aggie",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.skin_paste",
+		"says": "Aggie's skin paste, mixed from ash, flour, water and redberries in her cauldron, is one of her most popular potions with people who want to pretty up their faces.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Prince_Ali_Rescue",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.varrock_dances",
+		"says": "Aggie mutters strange words over the cauldron as she mixes, and reckons her paste will make you look good at the Varrock dances.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Prince_Ali_Rescue",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.tomato",
+		"says": "Aggie claims she once made a tomato by accident while trying to summon a lesser demon, and that tomatoes do sometimes bite.",
+		"source": "https://oldschool.runescape.wiki/w/Aggie",
+		"canon": "developer",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.aggie.jimmy_missing",
+		"says": "Aggie's new apprentice, Jimmy the Chisel, went to Lumbridge for supplies and hasn't come back, and she's worried sick but can't leave until he returns.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:One_Small_Favour",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "ONE_SMALL_FAVOUR", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.aggie.jimmy_back",
+		"says": "Jimmy the Chisel is back with Aggie, safe and sound, and she was happy to repay the favour.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:One_Small_Favour",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "ONE_SMALL_FAVOUR", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.aggie.prince_paste",
+		"says": "The skin paste Aggie mixed for the player helped disguise Prince Ali when he escaped from Lady Keli.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Prince_Ali_Rescue",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "PRINCE_ALI_RESCUE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.aggie.dye_removal",
+		"says": "Aggie can take the dye out of poorly made clothes using something from the gut of a Hemenster whitefish, which only bites on slimy eels.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Land_of_the_Goblins",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "LAND_OF_THE_GOBLINS", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.aggie.no_white_dye",
+		"says": "Aggie says black dye is easy, ground from black mushrooms, but there's no such thing as white dye.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Land_of_the_Goblins",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "LAND_OF_THE_GOBLINS", "states": ["IN_PROGRESS", "FINISHED"]}
+	},
+	{
+		"id": "char.ned.old_sailor",
+		"says": "Ned is an old sailor who lives in a small house in the east of Draynor Village.",
+		"source": "https://oldschool.runescape.wiki/w/Ned",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.ned.sea_behind_him",
+		"says": "Ned was a man of the sea, but he says those days are behind him now.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ned",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.ned.rope",
+		"says": "Ned sells rope, or makes you one from balls of wool, under the name Ned's Handmade Rope, all wool.",
+		"source": "https://oldschool.runescape.wiki/w/Ned",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.ned.wool_rope",
+		"says": "Ned insists you can make strong rope from wool, and gets short with anyone who mentions hemp or jute.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ned",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.ned.rum",
+		"says": "Ned says an old sailor needs his money for a little drop of rum.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ned",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.ned.hair_blue",
+		"says": "Ned boasts he has fought monsters that would turn your hair blue, and won't be laughed at for getting old.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Prince_Ali_Rescue",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.ned.no_sewing_circle",
+		"says": "Ned is no member of a sewing circle and won't knit sweaters, though he'll make a wool wig or stitch arrow holes in a shirt.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Prince_Ali_Rescue",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.ned.salt_spray",
+		"says": "To Ned a ship will always beat dry land, however long he lives ashore, and he loves the salt spray on his face.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.ned.too_old",
+		"says": "Nobody will give Ned work at sea any more; they say he's too old.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.ned.sail_anywhere",
+		"says": "Ned would sail anywhere for the chance to captain a ship once more.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.ned.crandor_voyage",
+		"says": "Ned captained the Lady Lumbridge to Crandor for the player, and the dragon wrecked her on the island.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Dragon_Slayer_I",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.ned.whale",
+		"says": "Ned says he got home from Crandor towed by a passing friendly whale.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ned",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.ned.steer_better",
+		"says": "Ned will happily sail the player to Crandor again, and promises to steer a little better this time.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ned",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "DRAGON_SLAYER_I", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.ned.wig",
+		"says": "Ned made the wool wig that helped disguise Prince Ali when he escaped from Lady Keli.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Prince_Ali_Rescue",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "PRINCE_ALI_RESCUE", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.ned.ruins_gossip",
+		"says": "Ned has been talking about strange goings-on in the ruined building full of goblins and spiders between Draynor and Lumbridge.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:One_Small_Favour",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "ONE_SMALL_FAVOUR", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.ned.yak_rope",
+		"says": "Ned's rope really comes from Neitiznot, traded for balls of wool, because his fingers aren't nimble enough any more; the player knows and has promised to keep quiet.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ned",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "THE_FREMENNIK_ISLES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.ned.jofridr",
+		"says": "Ned has a sweetheart on the Fremennik Isles, Jofridr, who knows him as her Neddie, and he means to visit her soon.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Ned",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "THE_FREMENNIK_ISLES", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.morgan.home",
+		"says": "Morgan lives in a house in Draynor Village, just north of Ned's.",
+		"source": "https://oldschool.runescape.wiki/w/Morgan",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.morgan.looks_scared",
+		"says": "Morgan always looks scared.",
+		"source": "https://oldschool.runescape.wiki/w/Morgan",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.morgan.garlic",
+		"says": "Morgan keeps garlic in a cupboard upstairs, just in case Count Draynor comes and tries anything.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Vampyre_Slayer",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.morgan.named_after",
+		"says": "Morgan points out that the village is even named after the Count.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Vampyre_Slayer",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.morgan.legends",
+		"says": "Morgan has studied the legends: Count Draynor came long ago from dark lands in the east and built Draynor Manor, and many who tried to slay him failed.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Vampyre_Slayer",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": null
+	},
+	{
+		"id": "char.morgan.count_threat",
+		"says": "Morgan is convinced the vampyre Count Draynor, in the manor to the north, must be stopped once and for all.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Vampyre_Slayer",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "VAMPYRE_SLAYER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.morgan.no_attacks",
+		"says": "Morgan admits the Count hasn't left his manor or attacked the village in generations, certainly not since Morgan moved here, but asks what happens if he starts again.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Vampyre_Slayer",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "VAMPYRE_SLAYER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.morgan.alone_afraid",
+		"says": "Hardly anyone else in Draynor is afraid of the Count, and Morgan thinks them fools for it.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Vampyre_Slayer",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "VAMPYRE_SLAYER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.morgan.long_hoped",
+		"says": "Morgan has hoped for a long time that a bold adventurer would come and deal with the Count.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Vampyre_Slayer",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "VAMPYRE_SLAYER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.morgan.dr_harlow",
+		"says": "Morgan has heard of a retired vampyre hunter, Dr Harlow, a bit of an old soak who spends his days in the Blue Moon Inn in Varrock.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Vampyre_Slayer",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "VAMPYRE_SLAYER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.morgan.hard_to_kill",
+		"says": "Morgan has read that vampyres are not killed easily, and only someone with the right skills and kit stands a chance.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Vampyre_Slayer",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "VAMPYRE_SLAYER", "states": ["NOT_STARTED", "IN_PROGRESS"]}
+	},
+	{
+		"id": "char.morgan.count_staked",
+		"says": "The player staked Count Draynor, and Morgan says the village can finally live without fear.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Morgan",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "VAMPYRE_SLAYER", "states": ["FINISHED"]}
+	},
+	{
+		"id": "char.morgan.true_hero",
+		"says": "Every time they meet, Morgan thanks the player again for slaying the vampyre and calls them a hero.",
+		"source": "https://oldschool.runescape.wiki/w/Transcript:Morgan",
+		"canon": "in-game",
+		"knownIn": ["draynor"],
+		"gate": {"quest": "VAMPYRE_SLAYER", "states": ["FINISHED"]}
+	}
+]}
