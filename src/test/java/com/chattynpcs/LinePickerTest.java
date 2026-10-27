@@ -1422,7 +1422,7 @@ public class LinePickerTest
 		// Everything's been heard, from Hans or anyone else
 		assertNull(pick(picker, s, "Hans", null, ChattyNpcsConfig.Mood.BALANCED, 6));
 		assertNull(pick(picker, s, "Bob", null, ChattyNpcsConfig.Mood.BALANCED, 7));
-		// A month on, it's fair game again
+		// Four hours on, it's fair game again
 		assertNotNull(pick(picker, s, "Hans", null, ChattyNpcsConfig.Mood.BALANCED, HeardLines.REHEAR_MILLIS + 10));
 	}
 

@@ -99,8 +99,8 @@ places actually say, for reading the way a player would hear it.
   from, and everywhere else by people who don't.
 - **Named people say their own lines.** Forty-odd people, from Hans to King Arthur, talk about their
   own lives, and what they say changes as you get further into their stories.
-- **No repeats.** Nobody says a line you've heard in the last month; with nothing fresh, they keep
-  quiet.
+- **No repeats.** Nobody says a line you've heard in the last four hours; with nothing fresh, they
+  keep quiet.
 - **Quiet raids.** Nobody chats in the Chambers of Xeric, the Theatre of Blood or the Tombs of
   Amascut, and Osmumten has been sealed away too long to have any news.
 - No closers after questions, and fewer lines that don't make sense heard cold.

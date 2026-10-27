@@ -6,13 +6,13 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Every line this account has heard, and when. Nobody says a line again for a month after you've
+ * Every line this account has heard, and when. Nobody says a line again for four hours after you've
  * heard it, from anyone: when someone has nothing fresh, they keep quiet. Kept between sessions.
  */
 class HeardLines
 {
-	static final long REHEAR_MILLIS = TimeUnit.DAYS.toMillis(30);
-	private static final long DAY = TimeUnit.DAYS.toMillis(1);
+	static final long REHEAR_MILLIS = TimeUnit.HOURS.toMillis(4);
+	private static final long MINUTE = TimeUnit.MINUTES.toMillis(1);
 
 	/**
 	 * When each line was heard, by a hash of the line as written
@@ -43,7 +43,7 @@ class HeardLines
 	}
 
 	/**
-	 * What's on disk: when each line was last heard, in days since the epoch, by its hash in hex
+	 * What's on disk: when each line was last heard, in minutes since the epoch, by its hash in hex
 	 */
 	static class Saved
 	{
@@ -60,7 +60,7 @@ class HeardLines
 		{
 			if (now - at < REHEAR_MILLIS)
 			{
-				saved.heard.put(Long.toHexString(hash), at / DAY);
+				saved.heard.put(Long.toHexString(hash), at / MINUTE);
 			}
 		});
 		return saved;
@@ -73,7 +73,7 @@ class HeardLines
 	{
 		if (saved != null && saved.heard != null)
 		{
-			saved.heard.forEach((hash, day) -> heardAt.putIfAbsent(Long.parseUnsignedLong(hash, 16), day * DAY));
+			saved.heard.forEach((hash, minute) -> heardAt.putIfAbsent(Long.parseUnsignedLong(hash, 16), minute * MINUTE));
 		}
 	}
 
