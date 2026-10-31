@@ -25,13 +25,15 @@ import net.runelite.api.Quest;
 import net.runelite.api.QuestState;
 import net.runelite.api.coords.WorldPoint;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assume.assumeTrue;
 import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Lines from the generator in linegen/ are held to the same rules as the bank, and to two more:
  * every claim about the world cites a fact the speaker could know, and nothing is said that the
- * player hasn't reached yet.
+ * player hasn't reached yet. linegen/ lives in the chatty-npcs-tools repo, beside this plugin's
+ * folder there; without it, these tests are skipped.
  *
  * Each folder in linegen/ with a cells.json is a batch: the pilot, the named characters. For each,
  * this also writes build/linegen/(batch)/baseline.tsv, what the plugin says in each cell today, and
@@ -39,8 +41,8 @@ import org.junit.Test;
  */
 public class GeneratedLinesTest
 {
-	private static final Path LINEGEN = Paths.get("linegen");
-	private static final Path LORE = Paths.get("linegen", "lore");
+	private static final Path LINEGEN = Paths.get("..", "linegen");
+	private static final Path LORE = LINEGEN.resolve("lore");
 	private static final Path OUT = Paths.get("build", "linegen");
 	private static final Set<String> FOOTINGS = new LinkedHashSet<>(Arrays.asList("to", "aside", "gossip", "self", "pet"));
 	private static final Pattern MOVE = Pattern.compile("M([1-9]|10)");
@@ -152,6 +154,7 @@ public class GeneratedLinesTest
 	@Before
 	public void before() throws Exception
 	{
+		assumeTrue("No linegen/ beside the plugin", Files.isDirectory(LINEGEN));
 		data = ChatterData.load(gson);
 		rules = LineRules.load(data);
 		try (DirectoryStream<Path> dirs = Files.newDirectoryStream(LINEGEN, Files::isDirectory))
