@@ -1109,6 +1109,19 @@ public class LinePickerTest
 			}
 		}
 		assertEquals("goblin", fresh(0).personaFor("Goblin guard").id);
+		// Goblins named in the goblin way, even ones the game data doesn't list, are goblins too
+		for (String name : new String[]{"Mudfoot", "Smellytoes", "Wagchin", "Picklenose"})
+		{
+			assertEquals(name, "goblin", fresh(0).personaFor(name).id);
+		}
+		assertNotEquals("goblin", fresh(0).personaFor("Sorebones").id);
+		CharacterReader.Snapshot staff = snapshot("bald", "skint");
+		staff.worn.put(EquipmentInventorySlot.WEAPON, "Dust battlestaff");
+		for (int i = 0; i < 80; i++)
+		{
+			LinePicker.Comment c = pick(fresh(i), staff, "Mudfoot", FALADOR, ChattyNpcsConfig.Mood.BALANCED, 0);
+			assertTrue(c == null || c.getKey().startsWith("goblin/") || c.getTopicId().startsWith("goblin_sayings"));
+		}
 		for (int i = 0; i < 60; i++)
 		{
 			LinePicker.Comment c = pick(fresh(i), s, "Burntmeat", FALADOR, ChattyNpcsConfig.Mood.BALANCED, 0);

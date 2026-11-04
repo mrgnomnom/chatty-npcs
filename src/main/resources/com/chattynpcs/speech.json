@@ -788,7 +788,9 @@
 				"^Clothears$",
 				"^Sergeant (Slimetoes|Mossfists|Strongstack|Steelwill|Grimspike)$",
 				"^High Priest Bighead$",
-				"^(Snothead|Snailfeet|Mosschin|Redeyes|Strongbones)$"
+				"^(Snothead|Snailfeet|Mosschin|Redeyes|Strongbones)$",
+				"^(Creakyknees|Naghead|Wagchin|Smellytoes|Picklenose)$",
+				"^(Beetle|Bent|Blob|Bone|Dirt|Drip|Earth|Fat|Foul|Frog|Grass|Grub|Lump|Maggot|Moss|Mud|Roach|Slime|Slug|Small|Smelly|Snail|Snot|Stupid|Thick|Thin|Toad|Ugly|Wart|Weed|Worm|Red|Strong|Scrub|Creaky|Nag|Wag|Pickle|Cloth)(foot|feet|toes?|nose|ears?|eyes?|head|chin|fists?|knees?|bones?|belly|teeth|tooth|neck|face|fingers?|lips?|guts?|arms?|legs?|hands?|skin|knuckles|back|bum|mouth|tongue|brain|nostrils?|elbows?|shins?|heels?)$"
 			],
 			"regions": [
 				"goblin_village"
@@ -875,6 +877,7 @@
 			},
 			"sayingsPriority": 50,
 			"evidence": [
+				"Names: a goblin word plus a body part (Grubfoot, Mudknuckles, Snothead, Smellytoes, Creakyknees, Wagchin, Picklenose). Some goblins have generated names the game data doesn't list, like Mudfoot, so names are matched by pattern. Checked against every NPC name in RuneLite's NpcID: it only matches goblins ('Sore' left out, since Sorebones is a pirate surgeon).",
 				"Grammar: articles and 'is/are' dropped, verbs uninflected: General Wartface 'Green armour best.' / Goblin (Goblin Village) 'He bigger than me.' / 'We busy' / 'You stupid!' / 'Human ugly!' / 'He say Bentnoze is leader but real leader is Wartface!' (Transcript:Goblin Diplomacy, Transcript:Another Slice of H.A.M.)",
 				"'Me' for 'I': General Wartface 'Me not care what human think!' / 'Me dunno... maybe we change armour colour again.' / General Bentnoze 'Me not like worm stew!' / Grubfoot 'Me lonely.' / 'Me not allowed to talk.' / Wormbrain 'Me not sure. Me pick some stuff up and take it away.' / Goblin (Land of the Goblins) 'Me hear Dorgesh tribe come back from underground.' (Transcripts: Goblin Diplomacy, General Wartface, Grubfoot, Wormbrain, Land of the Goblins)",
 				"Address 'human', every surface goblin: Bentnoze 'Go away human, we busy.' / 'Human! You bring us armour in new colour!' / 'Even stupid human think red best.' / Wartface 'Shut up human, we sort this one out ourselves!' / Goblin (Goblin Village) 'I kill you human!' / 'Go away smelly human!' / Goblin guard (Land of the Goblins) 'Human! Where you think you going?' / 'you stupid stinky puny human' / Goblin Cook 'Go away human, me's busy here!' / 'You the human who helped me.'",
