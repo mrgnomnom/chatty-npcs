@@ -3047,9 +3047,6 @@
 					"Ah, the {item}. You'll want everyone to know, then.",
 					"Lovely {item}. Bit of a cardigan, mind."
 				],
-				"remark": [
-					"So you're the one who's good at that."
-				],
 				"kid/compliment": [
 					"Ooh, you're good at something!"
 				],
@@ -3161,6 +3158,438 @@
 				],
 				"barbarian/remark": [
 					"Here we don't give capes for mastery, only scars."
+				]
+			}
+		},
+		{
+			"id": "skillcape_attack",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Attack cape"
+			},
+			"lines": {
+				"remark": [
+					"You've the look of someone who hits things for a living.",
+					"Remind me never to argue with you over the bill.",
+					"Swung at more goblins than I've had hot dinners, I'd bet."
+				]
+			}
+		},
+		{
+			"id": "skillcape_strength",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Strength cape"
+			},
+			"lines": {
+				"remark": [
+					"Shoulders like a cart horse. That cape explains it.",
+					"Could you shift a barrel for me while you're passing?",
+					"I'd not want to be a door you're in a hurry to open."
+				]
+			}
+		},
+		{
+			"id": "skillcape_defence",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Defence cape"
+			},
+			"lines": {
+				"remark": [
+					"I'd wager things just bounce off you, don't they?",
+					"Been hit a lot, have you? Doesn't seem to have bothered you.",
+					"Stand by me if the goblins come, would you?"
+				]
+			}
+		},
+		{
+			"id": "skillcape_ranged",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Ranging cape"
+			},
+			"lines": {
+				"remark": [
+					"Bet you never miss. Don't go proving it on my hens.",
+					"Eyeing my weathervane? Leave it be, it's new.",
+					"Bet you could take an apple off my head. Please don't."
+				]
+			}
+		},
+		{
+			"id": "skillcape_prayer",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Prayer cape"
+			},
+			"lines": {
+				"remark": [
+					"You'll have worn a groove in some altar, I reckon.",
+					"Say one for me while you're at it, would you?",
+					"Very calm, you are. Makes me want to confess something."
+				]
+			}
+		},
+		{
+			"id": "skillcape_magic",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Magic cape"
+			},
+			"lines": {
+				"remark": [
+					"Keep your hands where I can see them, if you please.",
+					"Don't turn me into a frog. I've seen it done.",
+					"There's a whiff of singed eyebrow about you."
+				]
+			}
+		},
+		{
+			"id": "skillcape_runecraft",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Runecraft cape"
+			},
+			"lines": {
+				"remark": [
+					"All those trips to the altars. Rather you than me.",
+					"Bet you could find an altar with your eyes shut.",
+					"Those pouches of yours ever split? Mine would."
+				]
+			}
+		},
+		{
+			"id": "skillcape_hitpoints",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Hitpoints cape"
+			},
+			"lines": {
+				"remark": [
+					"Takes a lot to knock you down, I'd guess.",
+					"Heal quick, do you? I'm still nursing a stubbed toe.",
+					"I'd bet you've been knocked flat and got up laughing."
+				]
+			}
+		},
+		{
+			"id": "skillcape_agility",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Agility cape"
+			},
+			"lines": {
+				"remark": [
+					"Bet you take the long way round just for the climb.",
+					"You'll not need the gate, I suppose. Over the wall, is it?",
+					"Do you ever walk anywhere, or is it all leaping?"
+				]
+			}
+		},
+		{
+			"id": "skillcape_herblore",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Herblore cape"
+			},
+			"lines": {
+				"remark": [
+					"You'll be the one to ask about this rash, then.",
+					"Is that a whiff of newt? Don't tell me what it's for.",
+					"My knees creak something awful. Brew anything for that?"
+				]
+			}
+		},
+		{
+			"id": "skillcape_thieving",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Thieving cape"
+			},
+			"lines": {
+				"remark": [
+					"I'll keep a hand on my purse, if it's all the same.",
+					"You're not counting my pockets, are you?",
+					"Funny, I had a ring on a moment ago."
+				]
+			}
+		},
+		{
+			"id": "skillcape_crafting",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Crafting cape"
+			},
+			"lines": {
+				"remark": [
+					"Clever hands, you'll have. Could you fix a strap?",
+					"Did you make that cape yourself? Looks like you could.",
+					"My good jug's got a crack in it. Any use to you?"
+				]
+			}
+		},
+		{
+			"id": "skillcape_fletching",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Fletching cape"
+			},
+			"lines": {
+				"remark": [
+					"Must've whittled half a forest to earn that.",
+					"Smell of shavings on you. Bows, is it?",
+					"Bet you can't pass a good stick without picking it up."
+				]
+			}
+		},
+		{
+			"id": "skillcape_slayer",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Slayer cape"
+			},
+			"lines": {
+				"remark": [
+					"Seen some horrors, I expect. Don't tell me about them.",
+					"Whatever's on your list, I hope I'm not on it.",
+					"You've the stare of someone who's seen things in caves."
+				]
+			}
+		},
+		{
+			"id": "skillcape_construction",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Construct\\. cape"
+			},
+			"lines": {
+				"remark": [
+					"Good with a hammer? My roof's been leaking since spring.",
+					"My shed leans a bit. You'd not have a minute, would you?",
+					"Bet you can't walk past a wonky shelf without fixing it."
+				]
+			}
+		},
+		{
+			"id": "skillcape_mining",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Mining cape"
+			},
+			"lines": {
+				"remark": [
+					"Spent years down a hole for that, I'll bet.",
+					"You've rock dust in your eyebrows, you know.",
+					"Spot a good vein of ore across a field, can you?"
+				]
+			}
+		},
+		{
+			"id": "skillcape_smithing",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Smithing cape"
+			},
+			"lines": {
+				"remark": [
+					"Arms like that come from a forge, I reckon.",
+					"Bet your ears prick up every time you hear a hammer.",
+					"My gate hinge squeals something awful. Any good with hinges?"
+				]
+			}
+		},
+		{
+			"id": "skillcape_fishing",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Fishing cape"
+			},
+			"lines": {
+				"remark": [
+					"You'll be the one emptying the river, then.",
+					"Patient sort, I'd guess. Sat by a river half your life.",
+					"Caught anything good lately? Besides that cape, I mean."
+				]
+			}
+		},
+		{
+			"id": "skillcape_cooking",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Cooking cape"
+			},
+			"lines": {
+				"remark": [
+					"You'll never burn a lobster again, I suppose.",
+					"Smells like fresh bread round you. Is there any going?",
+					"I'd ask you round for supper, but you'd judge my stew."
+				]
+			}
+		},
+		{
+			"id": "skillcape_firemaking",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Firemaking cape"
+			},
+			"lines": {
+				"remark": [
+					"Keep that tinderbox away from my thatch, please.",
+					"You smell of woodsmoke. Takes me back, that.",
+					"Bet you've never once had a damp log beat you."
+				]
+			}
+		},
+		{
+			"id": "skillcape_woodcutting",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Woodcut(ting|\\.) cape"
+			},
+			"lines": {
+				"remark": [
+					"So that's where all the trees went.",
+					"Bet the squirrels have a name for you, and it's not nice.",
+					"There's sawdust in your hair, you know."
+				]
+			}
+		},
+		{
+			"id": "skillcape_farming",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Farming cape"
+			},
+			"lines": {
+				"remark": [
+					"Could you look at my cabbages? They're not right.",
+					"Bet you can tell rain's coming before the clouds do.",
+					"Got any tips for slugs? They've had my lettuces."
+				]
+			}
+		},
+		{
+			"id": "skillcape_hunter",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Hunter cape"
+			},
+			"lines": {
+				"remark": [
+					"Mind you don't set a trap in my garden.",
+					"You move very quiet. Gave me a fright, that.",
+					"Bet you could catch a chinchompa with your bare hands."
+				]
+			}
+		},
+		{
+			"id": "skillcape_sailing",
+			"priority": 45,
+			"lean": "remark",
+			"item": {
+				"slots": [
+					"CAPE"
+				],
+				"pattern": "^Sailing cape"
+			},
+			"lines": {
+				"remark": [
+					"Sea legs and all. Bet the ground feels wrong to you.",
+					"Do you sway when you stand still, or is that me?",
+					"Smells of salt and tar round you. Been far, have you?"
 				]
 			}
 		},
