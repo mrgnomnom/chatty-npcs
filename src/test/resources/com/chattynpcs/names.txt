@@ -27,6 +27,11 @@ Crux Eqal # the Guthixian order, Crux Eqal (organisation)
 Guardians of Armadyl # Guardians of Armadyl (organisation)
 Temple Knights # Temple Knights (organisation)
 Smorks # Bork's goblin crew, The Smorks
+Harlan # Captain Harlan, Mudfoot's Big Adventure
+Mudfoot # Mudfoot, Mudfoot's Big Adventure
+Bea # Farmer Bea, The Birds and the Wasps
+Holland # Betty (The Writing's on the Wall), Transcript:The Writing's on the Wall
+Hudson # Sergeant Hudson, The Writing's on the Wall
 
 # Titles, things and places
 Highness # Royal Trouble

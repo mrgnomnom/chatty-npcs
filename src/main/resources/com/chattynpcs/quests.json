@@ -9606,7 +9606,10 @@
 					"y": 3504,
 					"radius": 25
 				},
-				"starter": "^Odd Old Man$"
+				"starter": "^Odd Old Man$",
+				"supersededBy": [
+					"RAG_AND_BONE_MAN_III"
+				]
 			},
 			"lines": {
 				"compliment": [
@@ -15734,6 +15737,449 @@
 				],
 				"starter/insult": [
 					"Dissolved, did it? Well, don't come asking me for another."
+				]
+			}
+		},
+		{
+			"id": "mudfoots_big_adventure_todo",
+			"priority": 30,
+			"quest": {
+				"name": "MUDFOOTS_BIG_ADVENTURE",
+				"states": [
+					"NOT_STARTED",
+					"IN_PROGRESS"
+				],
+				"near": {
+					"x": 3218,
+					"y": 3238,
+					"radius": 25
+				},
+				"starter": "^Captain Harlan$"
+			},
+			"lines": {
+				"gossip": [
+					"Somebody's robbed the general store. In Lumbridge, of all places.",
+					"Goblins over the river have new pots and pans. Funny, that."
+				],
+				"remark": [
+					"Captain Harlan's put a bounty on those shop thieves, I hear."
+				],
+				"goblin/gossip": [
+					"Humans say goblins rob shop. Goblins find shiny pots. Not rob!"
+				],
+				"starter/compliment": [
+					"Good luck, adventurer. There's a bounty on those store thieves."
+				],
+				"starter/insult": [
+					"The store's been robbed. You'll do, I suppose. Know your styles?"
+				],
+				"starter/remark": [
+					"Robbed in broad daylight, and in Lumbridge. It won't do."
+				]
+			}
+		},
+		{
+			"id": "mudfoots_big_adventure_done",
+			"priority": 35,
+			"quest": {
+				"name": "MUDFOOTS_BIG_ADVENTURE",
+				"states": [
+					"FINISHED"
+				],
+				"near": {
+					"x": 3218,
+					"y": 3238,
+					"radius": 25
+				},
+				"starter": "^Captain Harlan$"
+			},
+			"lines": {
+				"compliment": [
+					"Word is the general store got its goods back, thanks to you.",
+					"You saw off those shop thieves, I hear. Lumbridge thanks you."
+				],
+				"insult": [
+					"Split a bounty with a goblin, I hear. Down the middle, too.",
+					"They say a goblin called you his sidekick. Fair, really."
+				],
+				"gossip": [
+					"Those shop thieves were HAM folk, they say. The captain's worried.",
+					"There's a goblin about calling himself a hero. Wants a mystery next."
+				],
+				"kid/compliment": [
+					"Were you really a goblin's sidekick? That's brilliant!"
+				],
+				"goblin/remark": [
+					"Mudfoot say human is good sidekick. Mudfoot say lots of things."
+				],
+				"starter/compliment": [
+					"Thanks again for your help with those thieves, adventurer."
+				],
+				"starter/insult": [
+					"Remember, adventurer: stab the archers. You got there eventually."
+				],
+				"starter/remark": [
+					"These HAM folk are becoming a problem. That is unfortunate."
+				]
+			}
+		},
+		{
+			"id": "writings_on_the_wall_todo",
+			"priority": 30,
+			"quest": {
+				"name": "THE_WRITINGS_ON_THE_WALL",
+				"states": [
+					"NOT_STARTED",
+					"IN_PROGRESS"
+				],
+				"near": {
+					"x": 1518,
+					"y": 3437,
+					"radius": 25
+				},
+				"starter": "^Betty$"
+			},
+			"lines": {
+				"gossip": [
+					"The old judge at Land's End was murdered, they say. Horrible.",
+					"Some say the constabulary don't care who killed the old judge."
+				],
+				"remark": [
+					"Blood up the walls at Land's End, I heard. Don't go looking."
+				],
+				"guard/remark": [
+					"A murder at Land's End. The sergeant's on it, so don't you meddle."
+				],
+				"starter/compliment": [
+					"My father's been murdered! Please, the guards don't seem to care."
+				],
+				"starter/insult": [
+					"You? Fine. Nobody in authority is any use here anyway."
+				],
+				"starter/remark": [
+					"Father used to be a judge. A lot of criminals hated him."
+				]
+			}
+		},
+		{
+			"id": "writings_on_the_wall_done",
+			"priority": 40,
+			"quest": {
+				"name": "THE_WRITINGS_ON_THE_WALL",
+				"states": [
+					"FINISHED"
+				],
+				"near": {
+					"x": 1518,
+					"y": 3437,
+					"radius": 25
+				}
+			},
+			"lines": {
+				"compliment": [
+					"You found the Land's End killer, I hear. Sharp eyes, you've got.",
+					"They say you followed the killer's trail right across Kourend."
+				],
+				"insult": [
+					"Hired you herself, the killer did. And you never guessed?",
+					"Took a few bodies before you worked it out, didn't it?"
+				],
+				"gossip": [
+					"Betty Holland did it all, they say. Her own father, even.",
+					"Sergeant Hudson's buried in paperwork after all those murders."
+				],
+				"guard/remark": [
+					"The sergeant says it's all tidied up. I don't sleep any better."
+				],
+				"kid/remark": [
+					"Mum says I'm not allowed near Land's End now. Is it haunted?"
+				]
+			}
+		},
+		{
+			"id": "birds_and_the_wasps_todo",
+			"priority": 30,
+			"quest": {
+				"name": "THE_BIRDS_AND_THE_WASPS",
+				"states": [
+					"NOT_STARTED",
+					"IN_PROGRESS"
+				],
+				"near": {
+					"x": 3316,
+					"y": 3376,
+					"radius": 25
+				},
+				"starter": "^Farmer Bea$"
+			},
+			"lines": {
+				"gossip": [
+					"There's a woman by the Digsite setting up a bee farm, I hear.",
+					"Some shady bloke's selling bees by the Grand Exchange. Bees!"
+				],
+				"remark": [
+					"Farmer Bea's after help with her hives. I'd bring a hat."
+				],
+				"starter/compliment": [
+					"Alright, me luvver! Welcome to me farm! Fancy a cider?"
+				],
+				"starter/insult": [
+					"Yer look like yer could carry a box. Just about, anyway."
+				],
+				"starter/remark": [
+					"Bea's farm be a bee farm, just as soon as we set 'er up."
+				]
+			}
+		},
+		{
+			"id": "birds_and_the_wasps_done",
+			"priority": 35,
+			"quest": {
+				"name": "THE_BIRDS_AND_THE_WASPS",
+				"states": [
+					"FINISHED"
+				],
+				"near": {
+					"x": 3316,
+					"y": 3376,
+					"radius": 25
+				},
+				"starter": "^Farmer Bea$"
+			},
+			"lines": {
+				"compliment": [
+					"Helped Farmer Bea with her wasps, I hear. Brave, that."
+				],
+				"insult": [
+					"Went for bees and came back with wasps. Good shopping, that.",
+					"Bea wanted honey and got buzzards. You do get results."
+				],
+				"gossip": [
+					"Bea's bee farm is all wasps and buzzards now. Not a drop of honey.",
+					"That bee seller by the Grand Exchange has gone very quiet."
+				],
+				"remark": [
+					"Mind the buzzards up by the Digsite. Nasty birds."
+				],
+				"kid/compliment": [
+					"You caught a buzzard in a snare? Teach me!"
+				],
+				"starter/compliment": [
+					"Alright, me luvver! Not much 'oney, but I'm getting by."
+				],
+				"starter/insult": [
+					"Oh, it's you. I'm still not gonna' get me 'oney, am I?"
+				],
+				"starter/remark": [
+					"Birds really wasn't wot I was 'opin' to farm."
+				]
+			}
+		},
+		{
+			"id": "shell_of_a_friend_todo",
+			"priority": 30,
+			"quest": {
+				"name": "A_SHELL_OF_A_FRIEND",
+				"states": [
+					"NOT_STARTED",
+					"IN_PROGRESS"
+				],
+				"near": {
+					"x": 3564,
+					"y": 3493,
+					"radius": 25
+				}
+			},
+			"lines": {
+				"gossip": [
+					"There's a little pink snail stuck on an island in the woods."
+				],
+				"remark": [
+					"A lost snail in these woods won't last long, poor thing."
+				]
+			}
+		},
+		{
+			"id": "shell_of_a_friend_done",
+			"priority": 35,
+			"quest": {
+				"name": "A_SHELL_OF_A_FRIEND",
+				"states": [
+					"FINISHED"
+				],
+				"near": {
+					"x": 3564,
+					"y": 3493,
+					"radius": 25
+				}
+			},
+			"lines": {
+				"compliment": [
+					"You looked after that lost snail, I heard. Kind of you.",
+					"Word is you saw off whoever hurt that little snail."
+				],
+				"insult": [
+					"Left a baby snail on its own to fetch leaves? Leaves can wait."
+				],
+				"gossip": [
+					"Some snelm collector came to a bad end in these woods, they say."
+				],
+				"remark": [
+					"Pink snelms are rare. I'd not ask where one came from."
+				]
+			}
+		},
+		{
+			"id": "rag_and_bone_man_iii_todo",
+			"priority": 35,
+			"quest": {
+				"name": "RAG_AND_BONE_MAN_III",
+				"states": [
+					"NOT_STARTED",
+					"IN_PROGRESS"
+				],
+				"near": {
+					"x": 3360,
+					"y": 3504,
+					"radius": 25
+				},
+				"starter": "^Odd Old Man$",
+				"requires": [
+					"RAG_AND_BONE_MAN_II"
+				]
+			},
+			"lines": {
+				"gossip": [
+					"The old man wants still more bones. Where does he put them all?"
+				],
+				"remark": [
+					"The old man's been staring into that sack again. Never blinks."
+				],
+				"starter/compliment": [
+					"Oh, hello again. I just wonder... what if we had even more bones!"
+				],
+				"starter/insult": [
+					"More bones! It should take you no time at all, errr, even you."
+				],
+				"starter/remark": [
+					"Yes, sack, more... errr, a bigger collection. Much bigger."
+				]
+			}
+		},
+		{
+			"id": "rag_and_bone_man_iii_done",
+			"priority": 50,
+			"quest": {
+				"name": "RAG_AND_BONE_MAN_III",
+				"states": [
+					"FINISHED"
+				],
+				"near": {
+					"x": 3360,
+					"y": 3504,
+					"radius": 25
+				},
+				"starter": "^Odd Old Man$"
+			},
+			"lines": {
+				"compliment": [
+					"They say you freed the old man from that awful skull.",
+					"Word is you put down a horror made of bones. Brave soul."
+				],
+				"insult": [
+					"Fetched every bone for that horror, then moaned when it fought back."
+				],
+				"gossip": [
+					"The old man's put his sack down at last. Seems a new man.",
+					"The old man used to teach at the Digsite, I hear. Before the skull."
+				],
+				"kid/remark": [
+					"The old man's not creepy any more. Just old."
+				],
+				"starter/compliment": [
+					"Ah, my friend! I do love visitors. All the best to you."
+				],
+				"starter/insult": [
+					"Have we met? Perhaps you should go and have a lie down."
+				],
+				"starter/remark": [
+					"Sorry, I think I got distracted there. What were you saying?"
+				]
+			}
+		},
+		{
+			"id": "new_leaf_todo",
+			"priority": 30,
+			"quest": {
+				"name": "A_NEW_LEAF",
+				"states": [
+					"NOT_STARTED",
+					"IN_PROGRESS"
+				],
+				"near": {
+					"x": 1297,
+					"y": 3724,
+					"radius": 25
+				},
+				"starter": "^Dishop Dennis$"
+			},
+			"lines": {
+				"gossip": [
+					"There's a fellow by the Farming Guild who prays to cabbages.",
+					"Someone carved a face in a cabbage south of Hosidius. Creepy."
+				],
+				"remark": [
+					"The cabbage fellow wants his church back on its feet, I hear."
+				],
+				"starter/compliment": [
+					"Brassica save me, you are everything I'd hoped for!"
+				],
+				"starter/insult": [
+					"Do not laugh in the face of the one true god of Gielinor!"
+				],
+				"starter/remark": [
+					"I've conjured more cabbages than you've had hot dinners, you know."
+				]
+			}
+		},
+		{
+			"id": "new_leaf_done",
+			"priority": 40,
+			"quest": {
+				"name": "A_NEW_LEAF",
+				"states": [
+					"FINISHED"
+				],
+				"near": {
+					"x": 1297,
+					"y": 3724,
+					"radius": 25
+				},
+				"starter": "^Dishop Dennis$"
+			},
+			"lines": {
+				"compliment": [
+					"Word is the Guild's allotments never take ill now. Your doing?"
+				],
+				"insult": [
+					"Fought a gardener for a cabbage god? Takes all sorts, I suppose.",
+					"Smells of stew and sprouts round you. A believer now, are you?"
+				],
+				"gossip": [
+					"The cabbage fellow's church is on the up, they say. Who knew?",
+					"Some say there are sprouts hidden by cooking ranges, listening."
+				],
+				"kid/remark": [
+					"Mum says the cabbage god isn't real. Is he real?"
+				],
+				"starter/compliment": [
+					"Brassica smiles upon us this day, friend. Thank you."
+				],
+				"starter/insult": [
+					"You eat your greens in straight lines? Diagonals, friend."
+				],
+				"starter/remark": [
+					"The Church of Brassica will be a force to be reckoned with."
 				]
 			}
 		}
